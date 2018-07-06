@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=SRB2
+Comment=Sonic Robo Blast v2.07
+Exec=srb2.dge
+Terminal=false
+Type=Application
+StartupNotify=true
+Icon=srb2
+Categories=games

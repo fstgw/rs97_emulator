@@ -1,0 +1,18 @@
+// $Id: CacheLine.hh 5954 2006-12-22 08:10:58Z mthuurne $
+
+#ifndef CACHELINE_HH
+#define CACHELINE_HH
+
+namespace openmsx {
+namespace CacheLine {
+
+static const unsigned BITS = 8; // 256 bytes
+static const unsigned SIZE = 1 << BITS;
+static const unsigned NUM  = 0x10000 / SIZE;
+static const unsigned LOW  = SIZE - 1;
+static const unsigned HIGH = 0xFFFF - LOW;
+
+} // namespace CacheLine
+} // namespace openmsx
+
+#endif

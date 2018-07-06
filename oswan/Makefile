@@ -1,0 +1,33 @@
+CC 		= mipsel-linux-gcc
+
+CFLAGS 		= -O2 -g -std=gnu89 $(shell /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/bin/sdl-config --cflags) -Wall -I./main/emu -I./main/sdl -I./main/headers ${DEFINES} 
+DEFINES 	= -DDINGOO -DBETTER_ACCURACY
+LDFLAGS 	= -Wl,--as-needed -flto -lSDL
+OUT	 	= oswan.dge
+
+SDL 		= main/sdl/main.c main/sdl/menu.c main/sdl/input.c main/sdl/game_input.c main/sdl/drawing.c main/sdl/gui_drawing.c
+CPU 		= main/emu/cpu/nec.c
+CORE 		= main/emu/WS.c main/emu/WSFileio.c main/emu/WSRender.c
+
+# Sound support
+CORE 	   	+= main/emu/WSApu.c 
+DEFINES    	+= -DSOUND_ON -DSOUND_EMULATION
+
+SOURCES 	= ${SDL} ${CPU} ${CORE} 
+SOURCES	   	+= ${THIRD_PARTY}
+
+OBJS 		= ${SOURCES:.c=.o}
+
+all		: ${OUT} move
+
+move :
+		mv $(OUT) ./oswan-dingoo/$(OUT)
+		#zip -r ./release/oswan_dingoo.zip ./oswan-dingoo
+
+${OUT}	: ${OBJS}
+		${CC} -o ${OUT} ${SOURCES} ${CFLAGS} ${LDFLAGS}
+	
+clean	:
+		rm -f ${OBJS}
+		rm -f ${OUT}
+		rm -f ./oswan-dingoo/${OUT}

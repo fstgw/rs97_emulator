@@ -1,0 +1,68 @@
+Release Notes for openMSX 0.9.1 (2012-09-30)
+============================================
+
+This release mostly fixes a bug in dir-as-disk that was introduced in openMSX
+0.9.0, when adding support for the DMK format and low level disk emulation. We
+not only fixed that bug, we rewrote dir-as-disk almost completely, making it a
+lot more robust.
+
+Here's the list with all highlights:
+
+MSX device support:
+- Accuracy improvements:
+  - improved some details on the laserdisc emulation
+  - improved timing of the VDP LINE command (thanks to NYYRIKKI for the ideas)
+- added Toshiba HX-21, Toshiba HX-22 and Toshiba HX-22I. The latter two have a
+  switchable RS-232C interface (use the new toshiba_rs232c_switch setting)
+
+New or improved emulator features:
+- fixed crash with fast resampler and 8192 samples
+- dir-As-Disk:
+  - dir-as-disk works properly again and is now a lot more robust
+  - improve error reporting when something goes wrong
+- console support/scripts:
+  - added script to save current screen to file in MSX loadable format, thanks
+    to NYYRIKKI
+- performance improvements:
+  - improved console rendering speed (uses less CPU)
+  - improved Tcl integration
+  - speed up low level disk emulation
+  - optimized rendering of superimposed modes (Video9000, laserdisc)
+  - several other performance improvements
+
+Build system, packaging, documentation:
+- Added build support for DragonFly BSD, thanks to John Marino
+
+And of course the usual various bug fixes.
+
+In "doc/manual/index.html" you can find a set of HTML manuals for openMSX.
+Make sure you read this if you haven't used openMSX before, but also to learn
+more about the new and changed features.
+
+CPU and graphics performance varies a lot, depending on the openMSX settings
+and the MSX hardware and software you're emulating. Some things run fine on a
+200 MHz machine, others are slow on a 2 GHz machine. For performance tuning
+tips, see the Setup Guide.
+
+openMSX is confirmed to run on the following operating systems: Linux, Windows,
+Mac OS X, FreeBSD, OpenBSD and NetBSD; on x86, x86-64, PPC, ARM, MIPS and Sparc
+CPU's. Running on other operating systems (wherever SDL runs) or CPU's should
+be possible, but may require some modifications to the build system. If you are
+compiling on a new platform, please share your experiences (see below for
+contact info), so we can make openMSX more portable.
+
+openMSX Home Page:
+  http://openmsx.sourceforge.net/
+Project page on SourceForge:
+  http://sourceforge.net/projects/openmsx/
+Contact options:
+- Talk to us on #openmsx on irc.freenode.net.
+- Use the forum on http://www.msx.org/forum/semi-msx-talk/openmsx
+- Send a message to the openmsx-user mailing list.
+  Go to the SourceForge project page and look under "Lists".
+
+Thanks to all contributors for their feedback, support, bug reports, testing,
+coding and other help!
+
+Have fun with your emulated MSX!
+                                        the openMSX developers

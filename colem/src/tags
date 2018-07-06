@@ -1,0 +1,2219 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+ADC_A	Z80.c	/^  ADC_B,ADC_C,ADC_D,ADC_E,ADC_H,ADC_L,ADC_xHL,ADC_A,$/;"	e	enum:Codes	file:
+ADC_B	Z80.c	/^  ADC_B,ADC_C,ADC_D,ADC_E,ADC_H,ADC_L,ADC_xHL,ADC_A,$/;"	e	enum:Codes	file:
+ADC_BYTE	Z80.c	/^  RET_Z,RET,JP_Z,PFX_CB,CALL_Z,CALL,ADC_BYTE,RST08,$/;"	e	enum:Codes	file:
+ADC_C	Z80.c	/^  ADC_B,ADC_C,ADC_D,ADC_E,ADC_H,ADC_L,ADC_xHL,ADC_A,$/;"	e	enum:Codes	file:
+ADC_D	Z80.c	/^  ADC_B,ADC_C,ADC_D,ADC_E,ADC_H,ADC_L,ADC_xHL,ADC_A,$/;"	e	enum:Codes	file:
+ADC_E	Z80.c	/^  ADC_B,ADC_C,ADC_D,ADC_E,ADC_H,ADC_L,ADC_xHL,ADC_A,$/;"	e	enum:Codes	file:
+ADC_H	Z80.c	/^  ADC_B,ADC_C,ADC_D,ADC_E,ADC_H,ADC_L,ADC_xHL,ADC_A,$/;"	e	enum:Codes	file:
+ADC_HL_BC	Z80.c	/^  IN_C_xC,OUT_xC_C,ADC_HL_BC,LD_BC_xWORDe,DB_4C,RETI,DB_,LD_R_A,$/;"	e	enum:CodesED	file:
+ADC_HL_DE	Z80.c	/^  IN_E_xC,OUT_xC_E,ADC_HL_DE,LD_DE_xWORDe,DB_5C,DB_5D,IM_2,LD_A_R,$/;"	e	enum:CodesED	file:
+ADC_HL_HL	Z80.c	/^  IN_L_xC,OUT_xC_L,ADC_HL_HL,LD_HL_xWORDe,DB_6C,DB_6D,DB_6E,RLD,$/;"	e	enum:CodesED	file:
+ADC_HL_SP	Z80.c	/^  IN_A_xC,OUT_xC_A,ADC_HL_SP,LD_SP_xWORDe,DB_7C,DB_7D,DB_7E,DB_7F,$/;"	e	enum:CodesED	file:
+ADC_L	Z80.c	/^  ADC_B,ADC_C,ADC_D,ADC_E,ADC_H,ADC_L,ADC_xHL,ADC_A,$/;"	e	enum:Codes	file:
+ADC_xHL	Z80.c	/^  ADC_B,ADC_C,ADC_D,ADC_E,ADC_H,ADC_L,ADC_xHL,ADC_A,$/;"	e	enum:Codes	file:
+ADD_A	Z80.c	/^  ADD_B,ADD_C,ADD_D,ADD_E,ADD_H,ADD_L,ADD_xHL,ADD_A,$/;"	e	enum:Codes	file:
+ADD_B	Z80.c	/^  ADD_B,ADD_C,ADD_D,ADD_E,ADD_H,ADD_L,ADD_xHL,ADD_A,$/;"	e	enum:Codes	file:
+ADD_BYTE	Z80.c	/^  RET_NZ,POP_BC,JP_NZ,JP,CALL_NZ,PUSH_BC,ADD_BYTE,RST00,$/;"	e	enum:Codes	file:
+ADD_C	Z80.c	/^  ADD_B,ADD_C,ADD_D,ADD_E,ADD_H,ADD_L,ADD_xHL,ADD_A,$/;"	e	enum:Codes	file:
+ADD_D	Z80.c	/^  ADD_B,ADD_C,ADD_D,ADD_E,ADD_H,ADD_L,ADD_xHL,ADD_A,$/;"	e	enum:Codes	file:
+ADD_E	Z80.c	/^  ADD_B,ADD_C,ADD_D,ADD_E,ADD_H,ADD_L,ADD_xHL,ADD_A,$/;"	e	enum:Codes	file:
+ADD_H	Z80.c	/^  ADD_B,ADD_C,ADD_D,ADD_E,ADD_H,ADD_L,ADD_xHL,ADD_A,$/;"	e	enum:Codes	file:
+ADD_HL_BC	Z80.c	/^  EX_AF_AF,ADD_HL_BC,LD_A_xBC,DEC_BC,INC_C,DEC_C,LD_C_BYTE,RRCA,$/;"	e	enum:Codes	file:
+ADD_HL_DE	Z80.c	/^  JR,ADD_HL_DE,LD_A_xDE,DEC_DE,INC_E,DEC_E,LD_E_BYTE,RRA,$/;"	e	enum:Codes	file:
+ADD_HL_HL	Z80.c	/^  JR_Z,ADD_HL_HL,LD_HL_xWORD,DEC_HL,INC_L,DEC_L,LD_L_BYTE,CPL,$/;"	e	enum:Codes	file:
+ADD_HL_SP	Z80.c	/^  JR_C,ADD_HL_SP,LD_A_xWORD,DEC_SP,INC_A,DEC_A,LD_A_BYTE,CCF,$/;"	e	enum:Codes	file:
+ADD_L	Z80.c	/^  ADD_B,ADD_C,ADD_D,ADD_E,ADD_H,ADD_L,ADD_xHL,ADD_A,$/;"	e	enum:Codes	file:
+ADD_xHL	Z80.c	/^  ADD_B,ADD_C,ADD_D,ADD_E,ADD_H,ADD_L,ADD_xHL,ADD_A,$/;"	e	enum:Codes	file:
+AF	CodesXX.h	/^case POP_AF:   M_POP(AF);break;$/;"	v
+AF	CodesXX.h	/^case PUSH_AF:  M_PUSH(AF);break;$/;"	v
+AF	Z80.h	/^  pair AF,BC,DE,HL,IX,IY,PC,SP;       \/* Main registers      *\/$/;"	m	struct:__anon10
+AF1	Z80.h	/^  pair AF1,BC1,DE1,HL1;               \/* Shadow registers    *\/$/;"	m	struct:__anon10
+ALLOC	unzip.c	47;"	d	file:
+AND_A	Z80.c	/^  AND_B,AND_C,AND_D,AND_E,AND_H,AND_L,AND_xHL,AND_A,$/;"	e	enum:Codes	file:
+AND_B	Z80.c	/^  AND_B,AND_C,AND_D,AND_E,AND_H,AND_L,AND_xHL,AND_A,$/;"	e	enum:Codes	file:
+AND_BYTE	Z80.c	/^  RET_PO,POP_HL,JP_PO,EX_HL_xSP,CALL_PO,PUSH_HL,AND_BYTE,RST20,$/;"	e	enum:Codes	file:
+AND_C	Z80.c	/^  AND_B,AND_C,AND_D,AND_E,AND_H,AND_L,AND_xHL,AND_A,$/;"	e	enum:Codes	file:
+AND_D	Z80.c	/^  AND_B,AND_C,AND_D,AND_E,AND_H,AND_L,AND_xHL,AND_A,$/;"	e	enum:Codes	file:
+AND_E	Z80.c	/^  AND_B,AND_C,AND_D,AND_E,AND_H,AND_L,AND_xHL,AND_A,$/;"	e	enum:Codes	file:
+AND_H	Z80.c	/^  AND_B,AND_C,AND_D,AND_E,AND_H,AND_L,AND_xHL,AND_A,$/;"	e	enum:Codes	file:
+AND_L	Z80.c	/^  AND_B,AND_C,AND_D,AND_E,AND_H,AND_L,AND_xHL,AND_A,$/;"	e	enum:Codes	file:
+AND_xHL	Z80.c	/^  AND_B,AND_C,AND_D,AND_E,AND_H,AND_L,AND_xHL,AND_A,$/;"	e	enum:Codes	file:
+Adam	Coleco.c	/^byte Adam   = 0;       \/* 1: Emulate Coleco Adam        *\/$/;"	v
+AddTimer	LibPsp.c	/^int AddTimer(int Freq,void (*Handler)(void))$/;"	f
+AllocHi	LibPsp.c	/^static int AllocHi   = 1;$/;"	v	file:
+AllocLo	LibPsp.c	/^static int AllocLo   = 0;$/;"	v	file:
+B	Coleco.c	/^struct { byte R,G,B; } Palette[16] =$/;"	m	struct:__anon1	file:
+B	Z80.h	/^  struct { byte l,h; } B;$/;"	m	union:__anon8	typeref:struct:__anon8::__anon9
+BC	CodesED.h	/^case ADC_HL_BC: M_ADCW(BC);break;$/;"	v
+BC	CodesED.h	/^case SBC_HL_BC: M_SBCW(BC);break;$/;"	v
+BC	CodesXX.h	/^case LD_BC_WORD: M_LDWORD(BC);break;$/;"	v
+BC	CodesXX.h	/^case POP_BC:   M_POP(BC);break;$/;"	v
+BC	CodesXX.h	/^case PUSH_BC:  M_PUSH(BC);break;$/;"	v
+BC	Z80.h	/^  pair AF,BC,DE,HL,IX,IY,PC,SP;       \/* Main registers      *\/$/;"	m	struct:__anon10
+BC1	Z80.h	/^  pair AF1,BC1,DE1,HL1;               \/* Shadow registers    *\/$/;"	m	struct:__anon10
+BGColor	Coleco.c	/^byte BGColor;          \/* Colors                        *\/$/;"	v
+BGColor	Coleco.h	/^  byte BGColor;          \/* Colors                        *\/$/;"	m	struct:colem_save_t
+BIT0_A	Z80.c	/^  BIT0_B,BIT0_C,BIT0_D,BIT0_E,BIT0_H,BIT0_L,BIT0_xHL,BIT0_A,$/;"	e	enum:CodesCB	file:
+BIT0_B	Z80.c	/^  BIT0_B,BIT0_C,BIT0_D,BIT0_E,BIT0_H,BIT0_L,BIT0_xHL,BIT0_A,$/;"	e	enum:CodesCB	file:
+BIT0_C	Z80.c	/^  BIT0_B,BIT0_C,BIT0_D,BIT0_E,BIT0_H,BIT0_L,BIT0_xHL,BIT0_A,$/;"	e	enum:CodesCB	file:
+BIT0_D	Z80.c	/^  BIT0_B,BIT0_C,BIT0_D,BIT0_E,BIT0_H,BIT0_L,BIT0_xHL,BIT0_A,$/;"	e	enum:CodesCB	file:
+BIT0_E	Z80.c	/^  BIT0_B,BIT0_C,BIT0_D,BIT0_E,BIT0_H,BIT0_L,BIT0_xHL,BIT0_A,$/;"	e	enum:CodesCB	file:
+BIT0_H	Z80.c	/^  BIT0_B,BIT0_C,BIT0_D,BIT0_E,BIT0_H,BIT0_L,BIT0_xHL,BIT0_A,$/;"	e	enum:CodesCB	file:
+BIT0_L	Z80.c	/^  BIT0_B,BIT0_C,BIT0_D,BIT0_E,BIT0_H,BIT0_L,BIT0_xHL,BIT0_A,$/;"	e	enum:CodesCB	file:
+BIT0_xHL	Z80.c	/^  BIT0_B,BIT0_C,BIT0_D,BIT0_E,BIT0_H,BIT0_L,BIT0_xHL,BIT0_A,$/;"	e	enum:CodesCB	file:
+BIT1_A	Z80.c	/^  BIT1_B,BIT1_C,BIT1_D,BIT1_E,BIT1_H,BIT1_L,BIT1_xHL,BIT1_A,$/;"	e	enum:CodesCB	file:
+BIT1_B	Z80.c	/^  BIT1_B,BIT1_C,BIT1_D,BIT1_E,BIT1_H,BIT1_L,BIT1_xHL,BIT1_A,$/;"	e	enum:CodesCB	file:
+BIT1_C	Z80.c	/^  BIT1_B,BIT1_C,BIT1_D,BIT1_E,BIT1_H,BIT1_L,BIT1_xHL,BIT1_A,$/;"	e	enum:CodesCB	file:
+BIT1_D	Z80.c	/^  BIT1_B,BIT1_C,BIT1_D,BIT1_E,BIT1_H,BIT1_L,BIT1_xHL,BIT1_A,$/;"	e	enum:CodesCB	file:
+BIT1_E	Z80.c	/^  BIT1_B,BIT1_C,BIT1_D,BIT1_E,BIT1_H,BIT1_L,BIT1_xHL,BIT1_A,$/;"	e	enum:CodesCB	file:
+BIT1_H	Z80.c	/^  BIT1_B,BIT1_C,BIT1_D,BIT1_E,BIT1_H,BIT1_L,BIT1_xHL,BIT1_A,$/;"	e	enum:CodesCB	file:
+BIT1_L	Z80.c	/^  BIT1_B,BIT1_C,BIT1_D,BIT1_E,BIT1_H,BIT1_L,BIT1_xHL,BIT1_A,$/;"	e	enum:CodesCB	file:
+BIT1_xHL	Z80.c	/^  BIT1_B,BIT1_C,BIT1_D,BIT1_E,BIT1_H,BIT1_L,BIT1_xHL,BIT1_A,$/;"	e	enum:CodesCB	file:
+BIT2_A	Z80.c	/^  BIT2_B,BIT2_C,BIT2_D,BIT2_E,BIT2_H,BIT2_L,BIT2_xHL,BIT2_A,$/;"	e	enum:CodesCB	file:
+BIT2_B	Z80.c	/^  BIT2_B,BIT2_C,BIT2_D,BIT2_E,BIT2_H,BIT2_L,BIT2_xHL,BIT2_A,$/;"	e	enum:CodesCB	file:
+BIT2_C	Z80.c	/^  BIT2_B,BIT2_C,BIT2_D,BIT2_E,BIT2_H,BIT2_L,BIT2_xHL,BIT2_A,$/;"	e	enum:CodesCB	file:
+BIT2_D	Z80.c	/^  BIT2_B,BIT2_C,BIT2_D,BIT2_E,BIT2_H,BIT2_L,BIT2_xHL,BIT2_A,$/;"	e	enum:CodesCB	file:
+BIT2_E	Z80.c	/^  BIT2_B,BIT2_C,BIT2_D,BIT2_E,BIT2_H,BIT2_L,BIT2_xHL,BIT2_A,$/;"	e	enum:CodesCB	file:
+BIT2_H	Z80.c	/^  BIT2_B,BIT2_C,BIT2_D,BIT2_E,BIT2_H,BIT2_L,BIT2_xHL,BIT2_A,$/;"	e	enum:CodesCB	file:
+BIT2_L	Z80.c	/^  BIT2_B,BIT2_C,BIT2_D,BIT2_E,BIT2_H,BIT2_L,BIT2_xHL,BIT2_A,$/;"	e	enum:CodesCB	file:
+BIT2_xHL	Z80.c	/^  BIT2_B,BIT2_C,BIT2_D,BIT2_E,BIT2_H,BIT2_L,BIT2_xHL,BIT2_A,$/;"	e	enum:CodesCB	file:
+BIT3_A	Z80.c	/^  BIT3_B,BIT3_C,BIT3_D,BIT3_E,BIT3_H,BIT3_L,BIT3_xHL,BIT3_A,$/;"	e	enum:CodesCB	file:
+BIT3_B	Z80.c	/^  BIT3_B,BIT3_C,BIT3_D,BIT3_E,BIT3_H,BIT3_L,BIT3_xHL,BIT3_A,$/;"	e	enum:CodesCB	file:
+BIT3_C	Z80.c	/^  BIT3_B,BIT3_C,BIT3_D,BIT3_E,BIT3_H,BIT3_L,BIT3_xHL,BIT3_A,$/;"	e	enum:CodesCB	file:
+BIT3_D	Z80.c	/^  BIT3_B,BIT3_C,BIT3_D,BIT3_E,BIT3_H,BIT3_L,BIT3_xHL,BIT3_A,$/;"	e	enum:CodesCB	file:
+BIT3_E	Z80.c	/^  BIT3_B,BIT3_C,BIT3_D,BIT3_E,BIT3_H,BIT3_L,BIT3_xHL,BIT3_A,$/;"	e	enum:CodesCB	file:
+BIT3_H	Z80.c	/^  BIT3_B,BIT3_C,BIT3_D,BIT3_E,BIT3_H,BIT3_L,BIT3_xHL,BIT3_A,$/;"	e	enum:CodesCB	file:
+BIT3_L	Z80.c	/^  BIT3_B,BIT3_C,BIT3_D,BIT3_E,BIT3_H,BIT3_L,BIT3_xHL,BIT3_A,$/;"	e	enum:CodesCB	file:
+BIT3_xHL	Z80.c	/^  BIT3_B,BIT3_C,BIT3_D,BIT3_E,BIT3_H,BIT3_L,BIT3_xHL,BIT3_A,$/;"	e	enum:CodesCB	file:
+BIT4_A	Z80.c	/^  BIT4_B,BIT4_C,BIT4_D,BIT4_E,BIT4_H,BIT4_L,BIT4_xHL,BIT4_A,$/;"	e	enum:CodesCB	file:
+BIT4_B	Z80.c	/^  BIT4_B,BIT4_C,BIT4_D,BIT4_E,BIT4_H,BIT4_L,BIT4_xHL,BIT4_A,$/;"	e	enum:CodesCB	file:
+BIT4_C	Z80.c	/^  BIT4_B,BIT4_C,BIT4_D,BIT4_E,BIT4_H,BIT4_L,BIT4_xHL,BIT4_A,$/;"	e	enum:CodesCB	file:
+BIT4_D	Z80.c	/^  BIT4_B,BIT4_C,BIT4_D,BIT4_E,BIT4_H,BIT4_L,BIT4_xHL,BIT4_A,$/;"	e	enum:CodesCB	file:
+BIT4_E	Z80.c	/^  BIT4_B,BIT4_C,BIT4_D,BIT4_E,BIT4_H,BIT4_L,BIT4_xHL,BIT4_A,$/;"	e	enum:CodesCB	file:
+BIT4_H	Z80.c	/^  BIT4_B,BIT4_C,BIT4_D,BIT4_E,BIT4_H,BIT4_L,BIT4_xHL,BIT4_A,$/;"	e	enum:CodesCB	file:
+BIT4_L	Z80.c	/^  BIT4_B,BIT4_C,BIT4_D,BIT4_E,BIT4_H,BIT4_L,BIT4_xHL,BIT4_A,$/;"	e	enum:CodesCB	file:
+BIT4_xHL	Z80.c	/^  BIT4_B,BIT4_C,BIT4_D,BIT4_E,BIT4_H,BIT4_L,BIT4_xHL,BIT4_A,$/;"	e	enum:CodesCB	file:
+BIT5_A	Z80.c	/^  BIT5_B,BIT5_C,BIT5_D,BIT5_E,BIT5_H,BIT5_L,BIT5_xHL,BIT5_A,$/;"	e	enum:CodesCB	file:
+BIT5_B	Z80.c	/^  BIT5_B,BIT5_C,BIT5_D,BIT5_E,BIT5_H,BIT5_L,BIT5_xHL,BIT5_A,$/;"	e	enum:CodesCB	file:
+BIT5_C	Z80.c	/^  BIT5_B,BIT5_C,BIT5_D,BIT5_E,BIT5_H,BIT5_L,BIT5_xHL,BIT5_A,$/;"	e	enum:CodesCB	file:
+BIT5_D	Z80.c	/^  BIT5_B,BIT5_C,BIT5_D,BIT5_E,BIT5_H,BIT5_L,BIT5_xHL,BIT5_A,$/;"	e	enum:CodesCB	file:
+BIT5_E	Z80.c	/^  BIT5_B,BIT5_C,BIT5_D,BIT5_E,BIT5_H,BIT5_L,BIT5_xHL,BIT5_A,$/;"	e	enum:CodesCB	file:
+BIT5_H	Z80.c	/^  BIT5_B,BIT5_C,BIT5_D,BIT5_E,BIT5_H,BIT5_L,BIT5_xHL,BIT5_A,$/;"	e	enum:CodesCB	file:
+BIT5_L	Z80.c	/^  BIT5_B,BIT5_C,BIT5_D,BIT5_E,BIT5_H,BIT5_L,BIT5_xHL,BIT5_A,$/;"	e	enum:CodesCB	file:
+BIT5_xHL	Z80.c	/^  BIT5_B,BIT5_C,BIT5_D,BIT5_E,BIT5_H,BIT5_L,BIT5_xHL,BIT5_A,$/;"	e	enum:CodesCB	file:
+BIT6_A	Z80.c	/^  BIT6_B,BIT6_C,BIT6_D,BIT6_E,BIT6_H,BIT6_L,BIT6_xHL,BIT6_A,$/;"	e	enum:CodesCB	file:
+BIT6_B	Z80.c	/^  BIT6_B,BIT6_C,BIT6_D,BIT6_E,BIT6_H,BIT6_L,BIT6_xHL,BIT6_A,$/;"	e	enum:CodesCB	file:
+BIT6_C	Z80.c	/^  BIT6_B,BIT6_C,BIT6_D,BIT6_E,BIT6_H,BIT6_L,BIT6_xHL,BIT6_A,$/;"	e	enum:CodesCB	file:
+BIT6_D	Z80.c	/^  BIT6_B,BIT6_C,BIT6_D,BIT6_E,BIT6_H,BIT6_L,BIT6_xHL,BIT6_A,$/;"	e	enum:CodesCB	file:
+BIT6_E	Z80.c	/^  BIT6_B,BIT6_C,BIT6_D,BIT6_E,BIT6_H,BIT6_L,BIT6_xHL,BIT6_A,$/;"	e	enum:CodesCB	file:
+BIT6_H	Z80.c	/^  BIT6_B,BIT6_C,BIT6_D,BIT6_E,BIT6_H,BIT6_L,BIT6_xHL,BIT6_A,$/;"	e	enum:CodesCB	file:
+BIT6_L	Z80.c	/^  BIT6_B,BIT6_C,BIT6_D,BIT6_E,BIT6_H,BIT6_L,BIT6_xHL,BIT6_A,$/;"	e	enum:CodesCB	file:
+BIT6_xHL	Z80.c	/^  BIT6_B,BIT6_C,BIT6_D,BIT6_E,BIT6_H,BIT6_L,BIT6_xHL,BIT6_A,$/;"	e	enum:CodesCB	file:
+BIT7_A	Z80.c	/^  BIT7_B,BIT7_C,BIT7_D,BIT7_E,BIT7_H,BIT7_L,BIT7_xHL,BIT7_A,$/;"	e	enum:CodesCB	file:
+BIT7_B	Z80.c	/^  BIT7_B,BIT7_C,BIT7_D,BIT7_E,BIT7_H,BIT7_L,BIT7_xHL,BIT7_A,$/;"	e	enum:CodesCB	file:
+BIT7_C	Z80.c	/^  BIT7_B,BIT7_C,BIT7_D,BIT7_E,BIT7_H,BIT7_L,BIT7_xHL,BIT7_A,$/;"	e	enum:CodesCB	file:
+BIT7_D	Z80.c	/^  BIT7_B,BIT7_C,BIT7_D,BIT7_E,BIT7_H,BIT7_L,BIT7_xHL,BIT7_A,$/;"	e	enum:CodesCB	file:
+BIT7_E	Z80.c	/^  BIT7_B,BIT7_C,BIT7_D,BIT7_E,BIT7_H,BIT7_L,BIT7_xHL,BIT7_A,$/;"	e	enum:CodesCB	file:
+BIT7_H	Z80.c	/^  BIT7_B,BIT7_C,BIT7_D,BIT7_E,BIT7_H,BIT7_L,BIT7_xHL,BIT7_A,$/;"	e	enum:CodesCB	file:
+BIT7_L	Z80.c	/^  BIT7_B,BIT7_C,BIT7_D,BIT7_E,BIT7_H,BIT7_L,BIT7_xHL,BIT7_A,$/;"	e	enum:CodesCB	file:
+BIT7_xHL	Z80.c	/^  BIT7_B,BIT7_C,BIT7_D,BIT7_E,BIT7_H,BIT7_L,BIT7_xHL,BIT7_A,$/;"	e	enum:CodesCB	file:
+BUFREADCOMMENT	unzip.c	270;"	d	file:
+BigSprites	Coleco.h	36;"	d
+Black	LibPsp.c	/^static unsigned long Black;$/;"	v	file:
+Buf	SN76489.h	/^  unsigned char NoiseMode,Buf,Changed;$/;"	m	struct:__anon5
+Buttons	gp2x_psp.h	/^  int    Buttons;$/;"	m	struct:gp2xCtrlData
+CALL	Z80.c	/^  RET_Z,RET,JP_Z,PFX_CB,CALL_Z,CALL,ADC_BYTE,RST08,$/;"	e	enum:Codes	file:
+CALL_C	Z80.c	/^  RET_C,EXX,JP_C,INA,CALL_C,PFX_DD,SBC_BYTE,RST18,$/;"	e	enum:Codes	file:
+CALL_M	Z80.c	/^  RET_M,LD_SP_HL,JP_M,EI,CALL_M,PFX_FD,CP_BYTE,RST38$/;"	e	enum:Codes	file:
+CALL_NC	Z80.c	/^  RET_NC,POP_DE,JP_NC,OUTA,CALL_NC,PUSH_DE,SUB_BYTE,RST10,$/;"	e	enum:Codes	file:
+CALL_NZ	Z80.c	/^  RET_NZ,POP_BC,JP_NZ,JP,CALL_NZ,PUSH_BC,ADD_BYTE,RST00,$/;"	e	enum:Codes	file:
+CALL_P	Z80.c	/^  RET_P,POP_AF,JP_P,DI,CALL_P,PUSH_AF,OR_BYTE,RST30,$/;"	e	enum:Codes	file:
+CALL_PE	Z80.c	/^  RET_PE,LD_PC_HL,JP_PE,EX_DE_HL,CALL_PE,PFX_ED,XOR_BYTE,RST28,$/;"	e	enum:Codes	file:
+CALL_PO	Z80.c	/^  RET_PO,POP_HL,JP_PO,EX_HL_xSP,CALL_PO,PUSH_HL,AND_BYTE,RST20,$/;"	e	enum:Codes	file:
+CALL_Z	Z80.c	/^  RET_Z,RET,JP_Z,PFX_CB,CALL_Z,CALL,ADC_BYTE,RST08,$/;"	e	enum:Codes	file:
+CASESENSITIVITY	miniunz.c	29;"	d	file:
+CASESENSITIVITYDEFAULTVALUE	unzip.c	238;"	d	file:
+CASESENSITIVITYDEFAULTVALUE	unzip.c	240;"	d	file:
+CASESENSITIVITYDEFAULT_NO	unzip.c	34;"	d	file:
+CCF	Z80.c	/^  JR_C,ADD_HL_SP,LD_A_xWORD,DEC_SP,INC_A,DEC_A,LD_A_BYTE,CCF,$/;"	e	enum:Codes	file:
+CHEAT_CHAR_BY_LINE	psp_menu_list.c	42;"	d	file:
+CHEAT_LINE_BY_PAGE	psp_menu_list.c	41;"	d	file:
+CLK_TCK	global.h	18;"	d
+COLECO_H	Coleco.h	15;"	d
+COLOR_BLACK	psp_editor.h	56;"	d
+COLOR_BLUE	psp_editor.h	67;"	d
+COLOR_BRIGHT_BLUE	psp_editor.h	66;"	d
+COLOR_BRIGHT_GRAY	psp_editor.h	70;"	d
+COLOR_BRIGHT_GREEN	psp_editor.h	64;"	d
+COLOR_BROWN	psp_editor.h	60;"	d
+COLOR_CYAN	psp_editor.h	65;"	d
+COLOR_DARK_BLUE	psp_editor.h	57;"	d
+COLOR_GRAY	psp_editor.h	69;"	d
+COLOR_GREEN	psp_editor.h	58;"	d
+COLOR_IMAGE	psp_editor.h	71;"	d
+COLOR_MAGENTA	psp_editor.h	61;"	d
+COLOR_ORANGE	psp_editor.h	62;"	d
+COLOR_PINK	psp_editor.h	68;"	d
+COLOR_RED	psp_editor.h	59;"	d
+COLOR_WHITE	psp_editor.h	55;"	d
+COLOR_YELLOW	psp_editor.h	63;"	d
+CPD	Z80.c	/^  LDD,CPD,IND,OUTD,DB_AC,DB_AD,DB_AE,DB_AF,$/;"	e	enum:CodesED	file:
+CPDR	Z80.c	/^  LDDR,CPDR,INDR,OTDR,DB_BC,DB_BD,DB_BE,DB_BF,$/;"	e	enum:CodesED	file:
+CPI	Z80.c	/^  LDI,CPI,INI,OUTI,DB_A4,DB_A5,DB_A6,DB_A7,$/;"	e	enum:CodesED	file:
+CPIR	Z80.c	/^  LDIR,CPIR,INIR,OTIR,DB_B4,DB_B5,DB_B6,DB_B7,$/;"	e	enum:CodesED	file:
+CPL	Z80.c	/^  JR_Z,ADD_HL_HL,LD_HL_xWORD,DEC_HL,INC_L,DEC_L,LD_L_BYTE,CPL,$/;"	e	enum:Codes	file:
+CPU	Coleco.c	/^Z80 CPU;               \/* Z80 CPU registers and state   *\/$/;"	v
+CPU	Coleco.h	/^  Z80 CPU;               \/* Z80 CPU registers and state   *\/$/;"	m	struct:colem_save_t
+CP_A	Z80.c	/^  CP_B,CP_C,CP_D,CP_E,CP_H,CP_L,CP_xHL,CP_A,$/;"	e	enum:Codes	file:
+CP_B	Z80.c	/^  CP_B,CP_C,CP_D,CP_E,CP_H,CP_L,CP_xHL,CP_A,$/;"	e	enum:Codes	file:
+CP_BYTE	Z80.c	/^  RET_M,LD_SP_HL,JP_M,EI,CALL_M,PFX_FD,CP_BYTE,RST38$/;"	e	enum:Codes	file:
+CP_C	Z80.c	/^  CP_B,CP_C,CP_D,CP_E,CP_H,CP_L,CP_xHL,CP_A,$/;"	e	enum:Codes	file:
+CP_D	Z80.c	/^  CP_B,CP_C,CP_D,CP_E,CP_H,CP_L,CP_xHL,CP_A,$/;"	e	enum:Codes	file:
+CP_E	Z80.c	/^  CP_B,CP_C,CP_D,CP_E,CP_H,CP_L,CP_xHL,CP_A,$/;"	e	enum:Codes	file:
+CP_H	Z80.c	/^  CP_B,CP_C,CP_D,CP_E,CP_H,CP_L,CP_xHL,CP_A,$/;"	e	enum:Codes	file:
+CP_L	Z80.c	/^  CP_B,CP_C,CP_D,CP_E,CP_H,CP_L,CP_xHL,CP_A,$/;"	e	enum:Codes	file:
+CP_xHL	Z80.c	/^  CP_B,CP_C,CP_D,CP_E,CP_H,CP_L,CP_xHL,CP_A,$/;"	e	enum:Codes	file:
+CV	Coleco.c	/^  ColecoVision_t CV;$/;"	v
+CVC_AUTOFIRE	psp_kbd.h	/^    CVC_AUTOFIRE,$/;"	e	enum:cv_keys_emum
+CVC_DECFIRE	psp_kbd.h	/^    CVC_DECFIRE,$/;"	e	enum:cv_keys_emum
+CVC_FPS	psp_kbd.h	/^    CVC_FPS,$/;"	e	enum:cv_keys_emum
+CVC_INCFIRE	psp_kbd.h	/^    CVC_INCFIRE,$/;"	e	enum:cv_keys_emum
+CVC_JOY	psp_kbd.h	/^    CVC_JOY,$/;"	e	enum:cv_keys_emum
+CVC_LOAD	psp_kbd.h	/^    CVC_LOAD,$/;"	e	enum:cv_keys_emum
+CVC_RENDER	psp_kbd.h	/^    CVC_RENDER,$/;"	e	enum:cv_keys_emum
+CVC_RESET	psp_kbd.h	/^    CVC_RESET,$/;"	e	enum:cv_keys_emum
+CVC_SAVE	psp_kbd.h	/^    CVC_SAVE,$/;"	e	enum:cv_keys_emum
+CVC_SCREEN	psp_kbd.h	/^    CVC_SCREEN,$/;"	e	enum:cv_keys_emum
+CV_0	psp_kbd.h	/^    CV_0           ,$/;"	e	enum:cv_keys_emum
+CV_1	psp_kbd.h	/^    CV_1           ,$/;"	e	enum:cv_keys_emum
+CV_2	psp_kbd.h	/^    CV_2           ,$/;"	e	enum:cv_keys_emum
+CV_3	psp_kbd.h	/^    CV_3           ,$/;"	e	enum:cv_keys_emum
+CV_4	psp_kbd.h	/^    CV_4           ,$/;"	e	enum:cv_keys_emum
+CV_5	psp_kbd.h	/^    CV_5           ,$/;"	e	enum:cv_keys_emum
+CV_6	psp_kbd.h	/^    CV_6           ,$/;"	e	enum:cv_keys_emum
+CV_7	psp_kbd.h	/^    CV_7           ,$/;"	e	enum:cv_keys_emum
+CV_8	psp_kbd.h	/^    CV_8           ,$/;"	e	enum:cv_keys_emum
+CV_9	psp_kbd.h	/^    CV_9           ,$/;"	e	enum:cv_keys_emum
+CV_ASTERISK	psp_kbd.h	/^    CV_ASTERISK    ,$/;"	e	enum:cv_keys_emum
+CV_CHEAT_COMMENT_SIZE	Coleco.h	76;"	d
+CV_CHEAT_DISABLE	Coleco.h	74;"	d
+CV_CHEAT_ENABLE	Coleco.h	73;"	d
+CV_CHEAT_NONE	Coleco.h	72;"	d
+CV_CHEAT_RAM_SIZE	Coleco.h	77;"	d
+CV_HEIGHT	Coleco.h	67;"	d
+CV_JOY_DOWN	psp_kbd.h	/^    CV_JOY_DOWN    ,$/;"	e	enum:cv_keys_emum
+CV_JOY_FIRE1	psp_kbd.h	/^    CV_JOY_FIRE1   ,$/;"	e	enum:cv_keys_emum
+CV_JOY_FIRE2	psp_kbd.h	/^    CV_JOY_FIRE2   ,$/;"	e	enum:cv_keys_emum
+CV_JOY_LEFT	psp_kbd.h	/^    CV_JOY_LEFT    ,$/;"	e	enum:cv_keys_emum
+CV_JOY_RIGHT	psp_kbd.h	/^    CV_JOY_RIGHT   ,$/;"	e	enum:cv_keys_emum
+CV_JOY_UP	psp_kbd.h	/^    CV_JOY_UP      ,$/;"	e	enum:cv_keys_emum
+CV_LAST_RENDER	Coleco.h	60;"	d
+CV_MAX_CHEAT	Coleco.h	64;"	d
+CV_MAX_KEY	psp_kbd.h	/^    CV_MAX_KEY      $/;"	e	enum:cv_keys_emum
+CV_MAX_SAVE_STATE	Coleco.h	63;"	d
+CV_POUND	psp_kbd.h	/^    CV_POUND       ,$/;"	e	enum:cv_keys_emum
+CV_RENDER_FIT	Coleco.h	59;"	d
+CV_RENDER_NORMAL	Coleco.h	58;"	d
+CV_RESET	psp_kbd.h	/^    CV_RESET       ,$/;"	e	enum:cv_keys_emum
+CV_USER1	psp_kbd.h	/^    CV_USER1       ,$/;"	e	enum:cv_keys_emum
+CV_USER2	psp_kbd.h	/^    CV_USER2       ,$/;"	e	enum:cv_keys_emum
+CV_WIDTH	Coleco.h	66;"	d
+CV_cheat_t	Coleco.h	/^  typedef struct CV_cheat_t {$/;"	s
+CV_cheat_t	Coleco.h	/^  } CV_cheat_t;$/;"	t	typeref:struct:CV_cheat_t
+CV_save_t	Coleco.h	/^  typedef struct CV_save_t {$/;"	s
+CV_save_t	Coleco.h	/^  } CV_save_t;$/;"	t	typeref:struct:CV_save_t
+C_FLAG	CodesXX.h	/^case SCF:  S(C_FLAG);R(N_FLAG|H_FLAG);break;$/;"	v
+C_FLAG	Z80.h	34;"	d
+Changed	SN76489.h	/^  unsigned char NoiseMode,Buf,Changed;$/;"	m	struct:__anon5
+Channel	SN76489.h	/^  int Channel,Freq[4],Volume[4],Sync;$/;"	m	struct:__anon5
+Channel	psp_sound.c	/^} Channel;$/;"	t	typeref:struct:__anon4	file:
+CheckSprites	Coleco.c	/^void CheckSprites(void)$/;"	f
+ChrGen	Coleco.c	/^byte *ChrGen;$/;"	v
+ChrGen_idx	Coleco.h	/^  long  ChrGen_idx;$/;"	m	struct:colem_save_t
+ChrTab	Coleco.c	/^byte *ChrTab;$/;"	v
+ChrTab_idx	Coleco.h	/^  long  ChrTab_idx;$/;"	m	struct:colem_save_t
+Codes	Z80.c	/^enum Codes$/;"	g	file:
+CodesCB	Z80.c	/^enum CodesCB$/;"	g	file:
+CodesCB	Z80.c	/^static void CodesCB()$/;"	f	file:
+CodesDD	Z80.c	/^static void CodesDD()$/;"	f	file:
+CodesDDCB	Z80.c	/^static void CodesDDCB()$/;"	f	file:
+CodesED	Z80.c	/^enum CodesED$/;"	g	file:
+CodesED	Z80.c	/^static void CodesED()$/;"	f	file:
+CodesFD	Z80.c	/^static void CodesFD()$/;"	f	file:
+CodesFDCB	Z80.c	/^static void CodesFDCB()$/;"	f	file:
+ColTab	Coleco.c	/^byte *ColTab;                  \/* VDP tables (screens)          *\/$/;"	v
+ColTab_idx	Coleco.h	/^  long  ColTab_idx;$/;"	m	struct:colem_save_t
+ColecoVision_t	Coleco.h	/^  typedef struct ColecoVision_t {$/;"	s
+ColecoVision_t	Coleco.h	/^  } ColecoVision_t;$/;"	t	typeref:struct:ColecoVision_t
+ColorCount	LibPsp.c	/^static int ColorCount[MAXALLOC];$/;"	v	file:
+ColorPen	LibPsp.c	/^static unsigned long ColorPen[MAXALLOC];$/;"	v	file:
+ColorQueue	LibPsp.c	/^static int ColorQueue[MAXALLOC];$/;"	v	file:
+ColorValue	LibPsp.c	/^static int ColorValue[MAXALLOC];$/;"	v	file:
+CurLine	Coleco.c	/^byte CurLine;                  \/* Current scanline              *\/$/;"	v
+CurLine	Coleco.h	/^  byte CurLine;                  \/* Current scanline              *\/$/;"	m	struct:colem_save_t
+Cycles	Tables.h	/^static const byte Cycles[256] =$/;"	v
+CyclesCB	Tables.h	/^static const byte CyclesCB[256] =$/;"	v
+CyclesED	Tables.h	/^static const byte CyclesED[256] =$/;"	v
+CyclesXX	Tables.h	/^static const byte CyclesXX[256] =$/;"	v
+CyclesXXCB	Tables.h	/^static const byte CyclesXXCB[256] =$/;"	v
+DAA	Z80.c	/^  JR_NZ,LD_HL_WORD,LD_xWORD_HL,INC_HL,INC_H,DEC_H,LD_H_BYTE,DAA,$/;"	e	enum:Codes	file:
+DAATable	Tables.h	/^static const word DAATable[2048] =$/;"	v
+DANZEFF_BREAK	psp_danzeff.h	26;"	d
+DANZEFF_CAPSLOCK	psp_danzeff.h	27;"	d
+DANZEFF_CLR	psp_danzeff.h	28;"	d
+DANZEFF_CONTROL	psp_danzeff.h	14;"	d
+DANZEFF_COPY	psp_danzeff.h	15;"	d
+DANZEFF_DEL	psp_danzeff.h	20;"	d
+DANZEFF_ENDBL	psp_danzeff.h	16;"	d
+DANZEFF_ENDLN	psp_danzeff.h	18;"	d
+DANZEFF_ENTER	psp_danzeff.h	21;"	d
+DANZEFF_ESC	psp_danzeff.h	22;"	d
+DANZEFF_HOME	psp_danzeff.h	29;"	d
+DANZEFF_HOMEBL	psp_danzeff.h	19;"	d
+DANZEFF_HOMELN	psp_danzeff.h	17;"	d
+DANZEFF_RETURN	psp_danzeff.h	24;"	d
+DANZEFF_SDL	psp_danzeff.h	8;"	d
+DANZEFF_SELECT	psp_danzeff.h	11;"	d
+DANZEFF_SHIFT	psp_danzeff.h	23;"	d
+DANZEFF_START	psp_danzeff.h	12;"	d
+DANZEFF_TAB	psp_danzeff.h	25;"	d
+DAsm	Debug.c	/^static int DAsm(char *S,word A)$/;"	f	file:
+DB_	Z80.c	/^  IN_C_xC,OUT_xC_C,ADC_HL_BC,LD_BC_xWORDe,DB_4C,RETI,DB_,LD_R_A,$/;"	e	enum:CodesED	file:
+DB_00	Z80.c	/^  DB_00,DB_01,DB_02,DB_03,DB_04,DB_05,DB_06,DB_07,$/;"	e	enum:CodesED	file:
+DB_01	Z80.c	/^  DB_00,DB_01,DB_02,DB_03,DB_04,DB_05,DB_06,DB_07,$/;"	e	enum:CodesED	file:
+DB_02	Z80.c	/^  DB_00,DB_01,DB_02,DB_03,DB_04,DB_05,DB_06,DB_07,$/;"	e	enum:CodesED	file:
+DB_03	Z80.c	/^  DB_00,DB_01,DB_02,DB_03,DB_04,DB_05,DB_06,DB_07,$/;"	e	enum:CodesED	file:
+DB_04	Z80.c	/^  DB_00,DB_01,DB_02,DB_03,DB_04,DB_05,DB_06,DB_07,$/;"	e	enum:CodesED	file:
+DB_05	Z80.c	/^  DB_00,DB_01,DB_02,DB_03,DB_04,DB_05,DB_06,DB_07,$/;"	e	enum:CodesED	file:
+DB_06	Z80.c	/^  DB_00,DB_01,DB_02,DB_03,DB_04,DB_05,DB_06,DB_07,$/;"	e	enum:CodesED	file:
+DB_07	Z80.c	/^  DB_00,DB_01,DB_02,DB_03,DB_04,DB_05,DB_06,DB_07,$/;"	e	enum:CodesED	file:
+DB_08	Z80.c	/^  DB_08,DB_09,DB_0A,DB_0B,DB_0C,DB_0D,DB_0E,DB_0F,$/;"	e	enum:CodesED	file:
+DB_09	Z80.c	/^  DB_08,DB_09,DB_0A,DB_0B,DB_0C,DB_0D,DB_0E,DB_0F,$/;"	e	enum:CodesED	file:
+DB_0A	Z80.c	/^  DB_08,DB_09,DB_0A,DB_0B,DB_0C,DB_0D,DB_0E,DB_0F,$/;"	e	enum:CodesED	file:
+DB_0B	Z80.c	/^  DB_08,DB_09,DB_0A,DB_0B,DB_0C,DB_0D,DB_0E,DB_0F,$/;"	e	enum:CodesED	file:
+DB_0C	Z80.c	/^  DB_08,DB_09,DB_0A,DB_0B,DB_0C,DB_0D,DB_0E,DB_0F,$/;"	e	enum:CodesED	file:
+DB_0D	Z80.c	/^  DB_08,DB_09,DB_0A,DB_0B,DB_0C,DB_0D,DB_0E,DB_0F,$/;"	e	enum:CodesED	file:
+DB_0E	Z80.c	/^  DB_08,DB_09,DB_0A,DB_0B,DB_0C,DB_0D,DB_0E,DB_0F,$/;"	e	enum:CodesED	file:
+DB_0F	Z80.c	/^  DB_08,DB_09,DB_0A,DB_0B,DB_0C,DB_0D,DB_0E,DB_0F,$/;"	e	enum:CodesED	file:
+DB_10	Z80.c	/^  DB_10,DB_11,DB_12,DB_13,DB_14,DB_15,DB_16,DB_17,$/;"	e	enum:CodesED	file:
+DB_11	Z80.c	/^  DB_10,DB_11,DB_12,DB_13,DB_14,DB_15,DB_16,DB_17,$/;"	e	enum:CodesED	file:
+DB_12	Z80.c	/^  DB_10,DB_11,DB_12,DB_13,DB_14,DB_15,DB_16,DB_17,$/;"	e	enum:CodesED	file:
+DB_13	Z80.c	/^  DB_10,DB_11,DB_12,DB_13,DB_14,DB_15,DB_16,DB_17,$/;"	e	enum:CodesED	file:
+DB_14	Z80.c	/^  DB_10,DB_11,DB_12,DB_13,DB_14,DB_15,DB_16,DB_17,$/;"	e	enum:CodesED	file:
+DB_15	Z80.c	/^  DB_10,DB_11,DB_12,DB_13,DB_14,DB_15,DB_16,DB_17,$/;"	e	enum:CodesED	file:
+DB_16	Z80.c	/^  DB_10,DB_11,DB_12,DB_13,DB_14,DB_15,DB_16,DB_17,$/;"	e	enum:CodesED	file:
+DB_17	Z80.c	/^  DB_10,DB_11,DB_12,DB_13,DB_14,DB_15,DB_16,DB_17,$/;"	e	enum:CodesED	file:
+DB_18	Z80.c	/^  DB_18,DB_19,DB_1A,DB_1B,DB_1C,DB_1D,DB_1E,DB_1F,$/;"	e	enum:CodesED	file:
+DB_19	Z80.c	/^  DB_18,DB_19,DB_1A,DB_1B,DB_1C,DB_1D,DB_1E,DB_1F,$/;"	e	enum:CodesED	file:
+DB_1A	Z80.c	/^  DB_18,DB_19,DB_1A,DB_1B,DB_1C,DB_1D,DB_1E,DB_1F,$/;"	e	enum:CodesED	file:
+DB_1B	Z80.c	/^  DB_18,DB_19,DB_1A,DB_1B,DB_1C,DB_1D,DB_1E,DB_1F,$/;"	e	enum:CodesED	file:
+DB_1C	Z80.c	/^  DB_18,DB_19,DB_1A,DB_1B,DB_1C,DB_1D,DB_1E,DB_1F,$/;"	e	enum:CodesED	file:
+DB_1D	Z80.c	/^  DB_18,DB_19,DB_1A,DB_1B,DB_1C,DB_1D,DB_1E,DB_1F,$/;"	e	enum:CodesED	file:
+DB_1E	Z80.c	/^  DB_18,DB_19,DB_1A,DB_1B,DB_1C,DB_1D,DB_1E,DB_1F,$/;"	e	enum:CodesED	file:
+DB_1F	Z80.c	/^  DB_18,DB_19,DB_1A,DB_1B,DB_1C,DB_1D,DB_1E,DB_1F,$/;"	e	enum:CodesED	file:
+DB_20	Z80.c	/^  DB_20,DB_21,DB_22,DB_23,DB_24,DB_25,DB_26,DB_27,$/;"	e	enum:CodesED	file:
+DB_21	Z80.c	/^  DB_20,DB_21,DB_22,DB_23,DB_24,DB_25,DB_26,DB_27,$/;"	e	enum:CodesED	file:
+DB_22	Z80.c	/^  DB_20,DB_21,DB_22,DB_23,DB_24,DB_25,DB_26,DB_27,$/;"	e	enum:CodesED	file:
+DB_23	Z80.c	/^  DB_20,DB_21,DB_22,DB_23,DB_24,DB_25,DB_26,DB_27,$/;"	e	enum:CodesED	file:
+DB_24	Z80.c	/^  DB_20,DB_21,DB_22,DB_23,DB_24,DB_25,DB_26,DB_27,$/;"	e	enum:CodesED	file:
+DB_25	Z80.c	/^  DB_20,DB_21,DB_22,DB_23,DB_24,DB_25,DB_26,DB_27,$/;"	e	enum:CodesED	file:
+DB_26	Z80.c	/^  DB_20,DB_21,DB_22,DB_23,DB_24,DB_25,DB_26,DB_27,$/;"	e	enum:CodesED	file:
+DB_27	Z80.c	/^  DB_20,DB_21,DB_22,DB_23,DB_24,DB_25,DB_26,DB_27,$/;"	e	enum:CodesED	file:
+DB_28	Z80.c	/^  DB_28,DB_29,DB_2A,DB_2B,DB_2C,DB_2D,DB_2E,DB_2F,$/;"	e	enum:CodesED	file:
+DB_29	Z80.c	/^  DB_28,DB_29,DB_2A,DB_2B,DB_2C,DB_2D,DB_2E,DB_2F,$/;"	e	enum:CodesED	file:
+DB_2A	Z80.c	/^  DB_28,DB_29,DB_2A,DB_2B,DB_2C,DB_2D,DB_2E,DB_2F,$/;"	e	enum:CodesED	file:
+DB_2B	Z80.c	/^  DB_28,DB_29,DB_2A,DB_2B,DB_2C,DB_2D,DB_2E,DB_2F,$/;"	e	enum:CodesED	file:
+DB_2C	Z80.c	/^  DB_28,DB_29,DB_2A,DB_2B,DB_2C,DB_2D,DB_2E,DB_2F,$/;"	e	enum:CodesED	file:
+DB_2D	Z80.c	/^  DB_28,DB_29,DB_2A,DB_2B,DB_2C,DB_2D,DB_2E,DB_2F,$/;"	e	enum:CodesED	file:
+DB_2E	Z80.c	/^  DB_28,DB_29,DB_2A,DB_2B,DB_2C,DB_2D,DB_2E,DB_2F,$/;"	e	enum:CodesED	file:
+DB_2F	Z80.c	/^  DB_28,DB_29,DB_2A,DB_2B,DB_2C,DB_2D,DB_2E,DB_2F,$/;"	e	enum:CodesED	file:
+DB_30	Z80.c	/^  DB_30,DB_31,DB_32,DB_33,DB_34,DB_35,DB_36,DB_37,$/;"	e	enum:CodesED	file:
+DB_31	Z80.c	/^  DB_30,DB_31,DB_32,DB_33,DB_34,DB_35,DB_36,DB_37,$/;"	e	enum:CodesED	file:
+DB_32	Z80.c	/^  DB_30,DB_31,DB_32,DB_33,DB_34,DB_35,DB_36,DB_37,$/;"	e	enum:CodesED	file:
+DB_33	Z80.c	/^  DB_30,DB_31,DB_32,DB_33,DB_34,DB_35,DB_36,DB_37,$/;"	e	enum:CodesED	file:
+DB_34	Z80.c	/^  DB_30,DB_31,DB_32,DB_33,DB_34,DB_35,DB_36,DB_37,$/;"	e	enum:CodesED	file:
+DB_35	Z80.c	/^  DB_30,DB_31,DB_32,DB_33,DB_34,DB_35,DB_36,DB_37,$/;"	e	enum:CodesED	file:
+DB_36	Z80.c	/^  DB_30,DB_31,DB_32,DB_33,DB_34,DB_35,DB_36,DB_37,$/;"	e	enum:CodesED	file:
+DB_37	Z80.c	/^  DB_30,DB_31,DB_32,DB_33,DB_34,DB_35,DB_36,DB_37,$/;"	e	enum:CodesED	file:
+DB_38	Z80.c	/^  DB_38,DB_39,DB_3A,DB_3B,DB_3C,DB_3D,DB_3E,DB_3F,$/;"	e	enum:CodesED	file:
+DB_39	Z80.c	/^  DB_38,DB_39,DB_3A,DB_3B,DB_3C,DB_3D,DB_3E,DB_3F,$/;"	e	enum:CodesED	file:
+DB_3A	Z80.c	/^  DB_38,DB_39,DB_3A,DB_3B,DB_3C,DB_3D,DB_3E,DB_3F,$/;"	e	enum:CodesED	file:
+DB_3B	Z80.c	/^  DB_38,DB_39,DB_3A,DB_3B,DB_3C,DB_3D,DB_3E,DB_3F,$/;"	e	enum:CodesED	file:
+DB_3C	Z80.c	/^  DB_38,DB_39,DB_3A,DB_3B,DB_3C,DB_3D,DB_3E,DB_3F,$/;"	e	enum:CodesED	file:
+DB_3D	Z80.c	/^  DB_38,DB_39,DB_3A,DB_3B,DB_3C,DB_3D,DB_3E,DB_3F,$/;"	e	enum:CodesED	file:
+DB_3E	Z80.c	/^  DB_38,DB_39,DB_3A,DB_3B,DB_3C,DB_3D,DB_3E,DB_3F,$/;"	e	enum:CodesED	file:
+DB_3F	Z80.c	/^  DB_38,DB_39,DB_3A,DB_3B,DB_3C,DB_3D,DB_3E,DB_3F,$/;"	e	enum:CodesED	file:
+DB_4C	Z80.c	/^  IN_C_xC,OUT_xC_C,ADC_HL_BC,LD_BC_xWORDe,DB_4C,RETI,DB_,LD_R_A,$/;"	e	enum:CodesED	file:
+DB_54	Z80.c	/^  IN_D_xC,OUT_xC_D,SBC_HL_DE,LD_xWORDe_DE,DB_54,DB_55,IM_1,LD_A_I,$/;"	e	enum:CodesED	file:
+DB_55	Z80.c	/^  IN_D_xC,OUT_xC_D,SBC_HL_DE,LD_xWORDe_DE,DB_54,DB_55,IM_1,LD_A_I,$/;"	e	enum:CodesED	file:
+DB_5C	Z80.c	/^  IN_E_xC,OUT_xC_E,ADC_HL_DE,LD_DE_xWORDe,DB_5C,DB_5D,IM_2,LD_A_R,$/;"	e	enum:CodesED	file:
+DB_5D	Z80.c	/^  IN_E_xC,OUT_xC_E,ADC_HL_DE,LD_DE_xWORDe,DB_5C,DB_5D,IM_2,LD_A_R,$/;"	e	enum:CodesED	file:
+DB_64	Z80.c	/^  IN_H_xC,OUT_xC_H,SBC_HL_HL,LD_xWORDe_HL,DB_64,DB_65,DB_66,RRD,$/;"	e	enum:CodesED	file:
+DB_65	Z80.c	/^  IN_H_xC,OUT_xC_H,SBC_HL_HL,LD_xWORDe_HL,DB_64,DB_65,DB_66,RRD,$/;"	e	enum:CodesED	file:
+DB_66	Z80.c	/^  IN_H_xC,OUT_xC_H,SBC_HL_HL,LD_xWORDe_HL,DB_64,DB_65,DB_66,RRD,$/;"	e	enum:CodesED	file:
+DB_6C	Z80.c	/^  IN_L_xC,OUT_xC_L,ADC_HL_HL,LD_HL_xWORDe,DB_6C,DB_6D,DB_6E,RLD,$/;"	e	enum:CodesED	file:
+DB_6D	Z80.c	/^  IN_L_xC,OUT_xC_L,ADC_HL_HL,LD_HL_xWORDe,DB_6C,DB_6D,DB_6E,RLD,$/;"	e	enum:CodesED	file:
+DB_6E	Z80.c	/^  IN_L_xC,OUT_xC_L,ADC_HL_HL,LD_HL_xWORDe,DB_6C,DB_6D,DB_6E,RLD,$/;"	e	enum:CodesED	file:
+DB_71	Z80.c	/^  IN_F_xC,DB_71,SBC_HL_SP,LD_xWORDe_SP,DB_74,DB_75,DB_76,DB_77,$/;"	e	enum:CodesED	file:
+DB_74	Z80.c	/^  IN_F_xC,DB_71,SBC_HL_SP,LD_xWORDe_SP,DB_74,DB_75,DB_76,DB_77,$/;"	e	enum:CodesED	file:
+DB_75	Z80.c	/^  IN_F_xC,DB_71,SBC_HL_SP,LD_xWORDe_SP,DB_74,DB_75,DB_76,DB_77,$/;"	e	enum:CodesED	file:
+DB_76	Z80.c	/^  IN_F_xC,DB_71,SBC_HL_SP,LD_xWORDe_SP,DB_74,DB_75,DB_76,DB_77,$/;"	e	enum:CodesED	file:
+DB_77	Z80.c	/^  IN_F_xC,DB_71,SBC_HL_SP,LD_xWORDe_SP,DB_74,DB_75,DB_76,DB_77,$/;"	e	enum:CodesED	file:
+DB_7C	Z80.c	/^  IN_A_xC,OUT_xC_A,ADC_HL_SP,LD_SP_xWORDe,DB_7C,DB_7D,DB_7E,DB_7F,$/;"	e	enum:CodesED	file:
+DB_7D	Z80.c	/^  IN_A_xC,OUT_xC_A,ADC_HL_SP,LD_SP_xWORDe,DB_7C,DB_7D,DB_7E,DB_7F,$/;"	e	enum:CodesED	file:
+DB_7E	Z80.c	/^  IN_A_xC,OUT_xC_A,ADC_HL_SP,LD_SP_xWORDe,DB_7C,DB_7D,DB_7E,DB_7F,$/;"	e	enum:CodesED	file:
+DB_7F	Z80.c	/^  IN_A_xC,OUT_xC_A,ADC_HL_SP,LD_SP_xWORDe,DB_7C,DB_7D,DB_7E,DB_7F,$/;"	e	enum:CodesED	file:
+DB_80	Z80.c	/^  DB_80,DB_81,DB_82,DB_83,DB_84,DB_85,DB_86,DB_87,$/;"	e	enum:CodesED	file:
+DB_81	Z80.c	/^  DB_80,DB_81,DB_82,DB_83,DB_84,DB_85,DB_86,DB_87,$/;"	e	enum:CodesED	file:
+DB_82	Z80.c	/^  DB_80,DB_81,DB_82,DB_83,DB_84,DB_85,DB_86,DB_87,$/;"	e	enum:CodesED	file:
+DB_83	Z80.c	/^  DB_80,DB_81,DB_82,DB_83,DB_84,DB_85,DB_86,DB_87,$/;"	e	enum:CodesED	file:
+DB_84	Z80.c	/^  DB_80,DB_81,DB_82,DB_83,DB_84,DB_85,DB_86,DB_87,$/;"	e	enum:CodesED	file:
+DB_85	Z80.c	/^  DB_80,DB_81,DB_82,DB_83,DB_84,DB_85,DB_86,DB_87,$/;"	e	enum:CodesED	file:
+DB_86	Z80.c	/^  DB_80,DB_81,DB_82,DB_83,DB_84,DB_85,DB_86,DB_87,$/;"	e	enum:CodesED	file:
+DB_87	Z80.c	/^  DB_80,DB_81,DB_82,DB_83,DB_84,DB_85,DB_86,DB_87,$/;"	e	enum:CodesED	file:
+DB_88	Z80.c	/^  DB_88,DB_89,DB_8A,DB_8B,DB_8C,DB_8D,DB_8E,DB_8F,$/;"	e	enum:CodesED	file:
+DB_89	Z80.c	/^  DB_88,DB_89,DB_8A,DB_8B,DB_8C,DB_8D,DB_8E,DB_8F,$/;"	e	enum:CodesED	file:
+DB_8A	Z80.c	/^  DB_88,DB_89,DB_8A,DB_8B,DB_8C,DB_8D,DB_8E,DB_8F,$/;"	e	enum:CodesED	file:
+DB_8B	Z80.c	/^  DB_88,DB_89,DB_8A,DB_8B,DB_8C,DB_8D,DB_8E,DB_8F,$/;"	e	enum:CodesED	file:
+DB_8C	Z80.c	/^  DB_88,DB_89,DB_8A,DB_8B,DB_8C,DB_8D,DB_8E,DB_8F,$/;"	e	enum:CodesED	file:
+DB_8D	Z80.c	/^  DB_88,DB_89,DB_8A,DB_8B,DB_8C,DB_8D,DB_8E,DB_8F,$/;"	e	enum:CodesED	file:
+DB_8E	Z80.c	/^  DB_88,DB_89,DB_8A,DB_8B,DB_8C,DB_8D,DB_8E,DB_8F,$/;"	e	enum:CodesED	file:
+DB_8F	Z80.c	/^  DB_88,DB_89,DB_8A,DB_8B,DB_8C,DB_8D,DB_8E,DB_8F,$/;"	e	enum:CodesED	file:
+DB_90	Z80.c	/^  DB_90,DB_91,DB_92,DB_93,DB_94,DB_95,DB_96,DB_97,$/;"	e	enum:CodesED	file:
+DB_91	Z80.c	/^  DB_90,DB_91,DB_92,DB_93,DB_94,DB_95,DB_96,DB_97,$/;"	e	enum:CodesED	file:
+DB_92	Z80.c	/^  DB_90,DB_91,DB_92,DB_93,DB_94,DB_95,DB_96,DB_97,$/;"	e	enum:CodesED	file:
+DB_93	Z80.c	/^  DB_90,DB_91,DB_92,DB_93,DB_94,DB_95,DB_96,DB_97,$/;"	e	enum:CodesED	file:
+DB_94	Z80.c	/^  DB_90,DB_91,DB_92,DB_93,DB_94,DB_95,DB_96,DB_97,$/;"	e	enum:CodesED	file:
+DB_95	Z80.c	/^  DB_90,DB_91,DB_92,DB_93,DB_94,DB_95,DB_96,DB_97,$/;"	e	enum:CodesED	file:
+DB_96	Z80.c	/^  DB_90,DB_91,DB_92,DB_93,DB_94,DB_95,DB_96,DB_97,$/;"	e	enum:CodesED	file:
+DB_97	Z80.c	/^  DB_90,DB_91,DB_92,DB_93,DB_94,DB_95,DB_96,DB_97,$/;"	e	enum:CodesED	file:
+DB_98	Z80.c	/^  DB_98,DB_99,DB_9A,DB_9B,DB_9C,DB_9D,DB_9E,DB_9F,$/;"	e	enum:CodesED	file:
+DB_99	Z80.c	/^  DB_98,DB_99,DB_9A,DB_9B,DB_9C,DB_9D,DB_9E,DB_9F,$/;"	e	enum:CodesED	file:
+DB_9A	Z80.c	/^  DB_98,DB_99,DB_9A,DB_9B,DB_9C,DB_9D,DB_9E,DB_9F,$/;"	e	enum:CodesED	file:
+DB_9B	Z80.c	/^  DB_98,DB_99,DB_9A,DB_9B,DB_9C,DB_9D,DB_9E,DB_9F,$/;"	e	enum:CodesED	file:
+DB_9C	Z80.c	/^  DB_98,DB_99,DB_9A,DB_9B,DB_9C,DB_9D,DB_9E,DB_9F,$/;"	e	enum:CodesED	file:
+DB_9D	Z80.c	/^  DB_98,DB_99,DB_9A,DB_9B,DB_9C,DB_9D,DB_9E,DB_9F,$/;"	e	enum:CodesED	file:
+DB_9E	Z80.c	/^  DB_98,DB_99,DB_9A,DB_9B,DB_9C,DB_9D,DB_9E,DB_9F,$/;"	e	enum:CodesED	file:
+DB_9F	Z80.c	/^  DB_98,DB_99,DB_9A,DB_9B,DB_9C,DB_9D,DB_9E,DB_9F,$/;"	e	enum:CodesED	file:
+DB_A4	Z80.c	/^  LDI,CPI,INI,OUTI,DB_A4,DB_A5,DB_A6,DB_A7,$/;"	e	enum:CodesED	file:
+DB_A5	Z80.c	/^  LDI,CPI,INI,OUTI,DB_A4,DB_A5,DB_A6,DB_A7,$/;"	e	enum:CodesED	file:
+DB_A6	Z80.c	/^  LDI,CPI,INI,OUTI,DB_A4,DB_A5,DB_A6,DB_A7,$/;"	e	enum:CodesED	file:
+DB_A7	Z80.c	/^  LDI,CPI,INI,OUTI,DB_A4,DB_A5,DB_A6,DB_A7,$/;"	e	enum:CodesED	file:
+DB_AC	Z80.c	/^  LDD,CPD,IND,OUTD,DB_AC,DB_AD,DB_AE,DB_AF,$/;"	e	enum:CodesED	file:
+DB_AD	Z80.c	/^  LDD,CPD,IND,OUTD,DB_AC,DB_AD,DB_AE,DB_AF,$/;"	e	enum:CodesED	file:
+DB_AE	Z80.c	/^  LDD,CPD,IND,OUTD,DB_AC,DB_AD,DB_AE,DB_AF,$/;"	e	enum:CodesED	file:
+DB_AF	Z80.c	/^  LDD,CPD,IND,OUTD,DB_AC,DB_AD,DB_AE,DB_AF,$/;"	e	enum:CodesED	file:
+DB_B4	Z80.c	/^  LDIR,CPIR,INIR,OTIR,DB_B4,DB_B5,DB_B6,DB_B7,$/;"	e	enum:CodesED	file:
+DB_B5	Z80.c	/^  LDIR,CPIR,INIR,OTIR,DB_B4,DB_B5,DB_B6,DB_B7,$/;"	e	enum:CodesED	file:
+DB_B6	Z80.c	/^  LDIR,CPIR,INIR,OTIR,DB_B4,DB_B5,DB_B6,DB_B7,$/;"	e	enum:CodesED	file:
+DB_B7	Z80.c	/^  LDIR,CPIR,INIR,OTIR,DB_B4,DB_B5,DB_B6,DB_B7,$/;"	e	enum:CodesED	file:
+DB_BC	Z80.c	/^  LDDR,CPDR,INDR,OTDR,DB_BC,DB_BD,DB_BE,DB_BF,$/;"	e	enum:CodesED	file:
+DB_BD	Z80.c	/^  LDDR,CPDR,INDR,OTDR,DB_BC,DB_BD,DB_BE,DB_BF,$/;"	e	enum:CodesED	file:
+DB_BE	Z80.c	/^  LDDR,CPDR,INDR,OTDR,DB_BC,DB_BD,DB_BE,DB_BF,$/;"	e	enum:CodesED	file:
+DB_BF	Z80.c	/^  LDDR,CPDR,INDR,OTDR,DB_BC,DB_BD,DB_BE,DB_BF,$/;"	e	enum:CodesED	file:
+DB_C0	Z80.c	/^  DB_C0,DB_C1,DB_C2,DB_C3,DB_C4,DB_C5,DB_C6,DB_C7,$/;"	e	enum:CodesED	file:
+DB_C1	Z80.c	/^  DB_C0,DB_C1,DB_C2,DB_C3,DB_C4,DB_C5,DB_C6,DB_C7,$/;"	e	enum:CodesED	file:
+DB_C2	Z80.c	/^  DB_C0,DB_C1,DB_C2,DB_C3,DB_C4,DB_C5,DB_C6,DB_C7,$/;"	e	enum:CodesED	file:
+DB_C3	Z80.c	/^  DB_C0,DB_C1,DB_C2,DB_C3,DB_C4,DB_C5,DB_C6,DB_C7,$/;"	e	enum:CodesED	file:
+DB_C4	Z80.c	/^  DB_C0,DB_C1,DB_C2,DB_C3,DB_C4,DB_C5,DB_C6,DB_C7,$/;"	e	enum:CodesED	file:
+DB_C5	Z80.c	/^  DB_C0,DB_C1,DB_C2,DB_C3,DB_C4,DB_C5,DB_C6,DB_C7,$/;"	e	enum:CodesED	file:
+DB_C6	Z80.c	/^  DB_C0,DB_C1,DB_C2,DB_C3,DB_C4,DB_C5,DB_C6,DB_C7,$/;"	e	enum:CodesED	file:
+DB_C7	Z80.c	/^  DB_C0,DB_C1,DB_C2,DB_C3,DB_C4,DB_C5,DB_C6,DB_C7,$/;"	e	enum:CodesED	file:
+DB_C8	Z80.c	/^  DB_C8,DB_C9,DB_CA,DB_CB,DB_CC,DB_CD,DB_CE,DB_CF,$/;"	e	enum:CodesED	file:
+DB_C9	Z80.c	/^  DB_C8,DB_C9,DB_CA,DB_CB,DB_CC,DB_CD,DB_CE,DB_CF,$/;"	e	enum:CodesED	file:
+DB_CA	Z80.c	/^  DB_C8,DB_C9,DB_CA,DB_CB,DB_CC,DB_CD,DB_CE,DB_CF,$/;"	e	enum:CodesED	file:
+DB_CB	Z80.c	/^  DB_C8,DB_C9,DB_CA,DB_CB,DB_CC,DB_CD,DB_CE,DB_CF,$/;"	e	enum:CodesED	file:
+DB_CC	Z80.c	/^  DB_C8,DB_C9,DB_CA,DB_CB,DB_CC,DB_CD,DB_CE,DB_CF,$/;"	e	enum:CodesED	file:
+DB_CD	Z80.c	/^  DB_C8,DB_C9,DB_CA,DB_CB,DB_CC,DB_CD,DB_CE,DB_CF,$/;"	e	enum:CodesED	file:
+DB_CE	Z80.c	/^  DB_C8,DB_C9,DB_CA,DB_CB,DB_CC,DB_CD,DB_CE,DB_CF,$/;"	e	enum:CodesED	file:
+DB_CF	Z80.c	/^  DB_C8,DB_C9,DB_CA,DB_CB,DB_CC,DB_CD,DB_CE,DB_CF,$/;"	e	enum:CodesED	file:
+DB_D0	Z80.c	/^  DB_D0,DB_D1,DB_D2,DB_D3,DB_D4,DB_D5,DB_D6,DB_D7,$/;"	e	enum:CodesED	file:
+DB_D1	Z80.c	/^  DB_D0,DB_D1,DB_D2,DB_D3,DB_D4,DB_D5,DB_D6,DB_D7,$/;"	e	enum:CodesED	file:
+DB_D2	Z80.c	/^  DB_D0,DB_D1,DB_D2,DB_D3,DB_D4,DB_D5,DB_D6,DB_D7,$/;"	e	enum:CodesED	file:
+DB_D3	Z80.c	/^  DB_D0,DB_D1,DB_D2,DB_D3,DB_D4,DB_D5,DB_D6,DB_D7,$/;"	e	enum:CodesED	file:
+DB_D4	Z80.c	/^  DB_D0,DB_D1,DB_D2,DB_D3,DB_D4,DB_D5,DB_D6,DB_D7,$/;"	e	enum:CodesED	file:
+DB_D5	Z80.c	/^  DB_D0,DB_D1,DB_D2,DB_D3,DB_D4,DB_D5,DB_D6,DB_D7,$/;"	e	enum:CodesED	file:
+DB_D6	Z80.c	/^  DB_D0,DB_D1,DB_D2,DB_D3,DB_D4,DB_D5,DB_D6,DB_D7,$/;"	e	enum:CodesED	file:
+DB_D7	Z80.c	/^  DB_D0,DB_D1,DB_D2,DB_D3,DB_D4,DB_D5,DB_D6,DB_D7,$/;"	e	enum:CodesED	file:
+DB_D8	Z80.c	/^  DB_D8,DB_D9,DB_DA,DB_DB,DB_DC,DB_DD,DB_DE,DB_DF,$/;"	e	enum:CodesED	file:
+DB_D9	Z80.c	/^  DB_D8,DB_D9,DB_DA,DB_DB,DB_DC,DB_DD,DB_DE,DB_DF,$/;"	e	enum:CodesED	file:
+DB_DA	Z80.c	/^  DB_D8,DB_D9,DB_DA,DB_DB,DB_DC,DB_DD,DB_DE,DB_DF,$/;"	e	enum:CodesED	file:
+DB_DB	Z80.c	/^  DB_D8,DB_D9,DB_DA,DB_DB,DB_DC,DB_DD,DB_DE,DB_DF,$/;"	e	enum:CodesED	file:
+DB_DC	Z80.c	/^  DB_D8,DB_D9,DB_DA,DB_DB,DB_DC,DB_DD,DB_DE,DB_DF,$/;"	e	enum:CodesED	file:
+DB_DD	Z80.c	/^  DB_D8,DB_D9,DB_DA,DB_DB,DB_DC,DB_DD,DB_DE,DB_DF,$/;"	e	enum:CodesED	file:
+DB_DE	Z80.c	/^  DB_D8,DB_D9,DB_DA,DB_DB,DB_DC,DB_DD,DB_DE,DB_DF,$/;"	e	enum:CodesED	file:
+DB_DF	Z80.c	/^  DB_D8,DB_D9,DB_DA,DB_DB,DB_DC,DB_DD,DB_DE,DB_DF,$/;"	e	enum:CodesED	file:
+DB_E0	Z80.c	/^  DB_E0,DB_E1,DB_E2,DB_E3,DB_E4,DB_E5,DB_E6,DB_E7,$/;"	e	enum:CodesED	file:
+DB_E1	Z80.c	/^  DB_E0,DB_E1,DB_E2,DB_E3,DB_E4,DB_E5,DB_E6,DB_E7,$/;"	e	enum:CodesED	file:
+DB_E2	Z80.c	/^  DB_E0,DB_E1,DB_E2,DB_E3,DB_E4,DB_E5,DB_E6,DB_E7,$/;"	e	enum:CodesED	file:
+DB_E3	Z80.c	/^  DB_E0,DB_E1,DB_E2,DB_E3,DB_E4,DB_E5,DB_E6,DB_E7,$/;"	e	enum:CodesED	file:
+DB_E4	Z80.c	/^  DB_E0,DB_E1,DB_E2,DB_E3,DB_E4,DB_E5,DB_E6,DB_E7,$/;"	e	enum:CodesED	file:
+DB_E5	Z80.c	/^  DB_E0,DB_E1,DB_E2,DB_E3,DB_E4,DB_E5,DB_E6,DB_E7,$/;"	e	enum:CodesED	file:
+DB_E6	Z80.c	/^  DB_E0,DB_E1,DB_E2,DB_E3,DB_E4,DB_E5,DB_E6,DB_E7,$/;"	e	enum:CodesED	file:
+DB_E7	Z80.c	/^  DB_E0,DB_E1,DB_E2,DB_E3,DB_E4,DB_E5,DB_E6,DB_E7,$/;"	e	enum:CodesED	file:
+DB_E8	Z80.c	/^  DB_E8,DB_E9,DB_EA,DB_EB,DB_EC,DB_ED,DB_EE,DB_EF,$/;"	e	enum:CodesED	file:
+DB_E9	Z80.c	/^  DB_E8,DB_E9,DB_EA,DB_EB,DB_EC,DB_ED,DB_EE,DB_EF,$/;"	e	enum:CodesED	file:
+DB_EA	Z80.c	/^  DB_E8,DB_E9,DB_EA,DB_EB,DB_EC,DB_ED,DB_EE,DB_EF,$/;"	e	enum:CodesED	file:
+DB_EB	Z80.c	/^  DB_E8,DB_E9,DB_EA,DB_EB,DB_EC,DB_ED,DB_EE,DB_EF,$/;"	e	enum:CodesED	file:
+DB_EC	Z80.c	/^  DB_E8,DB_E9,DB_EA,DB_EB,DB_EC,DB_ED,DB_EE,DB_EF,$/;"	e	enum:CodesED	file:
+DB_ED	Z80.c	/^  DB_E8,DB_E9,DB_EA,DB_EB,DB_EC,DB_ED,DB_EE,DB_EF,$/;"	e	enum:CodesED	file:
+DB_EE	Z80.c	/^  DB_E8,DB_E9,DB_EA,DB_EB,DB_EC,DB_ED,DB_EE,DB_EF,$/;"	e	enum:CodesED	file:
+DB_EF	Z80.c	/^  DB_E8,DB_E9,DB_EA,DB_EB,DB_EC,DB_ED,DB_EE,DB_EF,$/;"	e	enum:CodesED	file:
+DB_F0	Z80.c	/^  DB_F0,DB_F1,DB_F2,DB_F3,DB_F4,DB_F5,DB_F6,DB_F7,$/;"	e	enum:CodesED	file:
+DB_F1	Z80.c	/^  DB_F0,DB_F1,DB_F2,DB_F3,DB_F4,DB_F5,DB_F6,DB_F7,$/;"	e	enum:CodesED	file:
+DB_F2	Z80.c	/^  DB_F0,DB_F1,DB_F2,DB_F3,DB_F4,DB_F5,DB_F6,DB_F7,$/;"	e	enum:CodesED	file:
+DB_F3	Z80.c	/^  DB_F0,DB_F1,DB_F2,DB_F3,DB_F4,DB_F5,DB_F6,DB_F7,$/;"	e	enum:CodesED	file:
+DB_F4	Z80.c	/^  DB_F0,DB_F1,DB_F2,DB_F3,DB_F4,DB_F5,DB_F6,DB_F7,$/;"	e	enum:CodesED	file:
+DB_F5	Z80.c	/^  DB_F0,DB_F1,DB_F2,DB_F3,DB_F4,DB_F5,DB_F6,DB_F7,$/;"	e	enum:CodesED	file:
+DB_F6	Z80.c	/^  DB_F0,DB_F1,DB_F2,DB_F3,DB_F4,DB_F5,DB_F6,DB_F7,$/;"	e	enum:CodesED	file:
+DB_F7	Z80.c	/^  DB_F0,DB_F1,DB_F2,DB_F3,DB_F4,DB_F5,DB_F6,DB_F7,$/;"	e	enum:CodesED	file:
+DB_F8	Z80.c	/^  DB_F8,DB_F9,DB_FA,DB_FB,DB_FC,DB_FD,DB_FE,DB_FF$/;"	e	enum:CodesED	file:
+DB_F9	Z80.c	/^  DB_F8,DB_F9,DB_FA,DB_FB,DB_FC,DB_FD,DB_FE,DB_FF$/;"	e	enum:CodesED	file:
+DB_FA	Z80.c	/^  DB_F8,DB_F9,DB_FA,DB_FB,DB_FC,DB_FD,DB_FE,DB_FF$/;"	e	enum:CodesED	file:
+DB_FB	Z80.c	/^  DB_F8,DB_F9,DB_FA,DB_FB,DB_FC,DB_FD,DB_FE,DB_FF$/;"	e	enum:CodesED	file:
+DB_FC	Z80.c	/^  DB_F8,DB_F9,DB_FA,DB_FB,DB_FC,DB_FD,DB_FE,DB_FF$/;"	e	enum:CodesED	file:
+DB_FD	Z80.c	/^  DB_F8,DB_F9,DB_FA,DB_FB,DB_FC,DB_FD,DB_FE,DB_FF$/;"	e	enum:CodesED	file:
+DB_FE	Z80.c	/^  DB_F8,DB_F9,DB_FA,DB_FB,DB_FC,DB_FD,DB_FE,DB_FF$/;"	e	enum:CodesED	file:
+DB_FF	Z80.c	/^  DB_F8,DB_F9,DB_FA,DB_FB,DB_FC,DB_FD,DB_FE,DB_FF$/;"	e	enum:CodesED	file:
+DE	CodesED.h	/^case ADC_HL_DE: M_ADCW(DE);break;$/;"	v
+DE	CodesED.h	/^case SBC_HL_DE: M_SBCW(DE);break;$/;"	v
+DE	CodesXX.h	/^case LD_DE_WORD: M_LDWORD(DE);break;$/;"	v
+DE	CodesXX.h	/^case POP_DE:   M_POP(DE);break;$/;"	v
+DE	CodesXX.h	/^case PUSH_DE:  M_PUSH(DE);break;$/;"	v
+DE	Z80.h	/^  pair AF,BC,DE,HL,IX,IY,PC,SP;       \/* Main registers      *\/$/;"	m	struct:__anon10
+DE1	Z80.h	/^  pair AF1,BC1,DE1,HL1;               \/* Shadow registers    *\/$/;"	m	struct:__anon10
+DEC_A	Z80.c	/^  JR_C,ADD_HL_SP,LD_A_xWORD,DEC_SP,INC_A,DEC_A,LD_A_BYTE,CCF,$/;"	e	enum:Codes	file:
+DEC_B	Z80.c	/^  NOP,LD_BC_WORD,LD_xBC_A,INC_BC,INC_B,DEC_B,LD_B_BYTE,RLCA,$/;"	e	enum:Codes	file:
+DEC_BC	Z80.c	/^  EX_AF_AF,ADD_HL_BC,LD_A_xBC,DEC_BC,INC_C,DEC_C,LD_C_BYTE,RRCA,$/;"	e	enum:Codes	file:
+DEC_C	Z80.c	/^  EX_AF_AF,ADD_HL_BC,LD_A_xBC,DEC_BC,INC_C,DEC_C,LD_C_BYTE,RRCA,$/;"	e	enum:Codes	file:
+DEC_D	Z80.c	/^  DJNZ,LD_DE_WORD,LD_xDE_A,INC_DE,INC_D,DEC_D,LD_D_BYTE,RLA,$/;"	e	enum:Codes	file:
+DEC_DE	Z80.c	/^  JR,ADD_HL_DE,LD_A_xDE,DEC_DE,INC_E,DEC_E,LD_E_BYTE,RRA,$/;"	e	enum:Codes	file:
+DEC_E	Z80.c	/^  JR,ADD_HL_DE,LD_A_xDE,DEC_DE,INC_E,DEC_E,LD_E_BYTE,RRA,$/;"	e	enum:Codes	file:
+DEC_H	Z80.c	/^  JR_NZ,LD_HL_WORD,LD_xWORD_HL,INC_HL,INC_H,DEC_H,LD_H_BYTE,DAA,$/;"	e	enum:Codes	file:
+DEC_HL	Z80.c	/^  JR_Z,ADD_HL_HL,LD_HL_xWORD,DEC_HL,INC_L,DEC_L,LD_L_BYTE,CPL,$/;"	e	enum:Codes	file:
+DEC_L	Z80.c	/^  JR_Z,ADD_HL_HL,LD_HL_xWORD,DEC_HL,INC_L,DEC_L,LD_L_BYTE,CPL,$/;"	e	enum:Codes	file:
+DEC_SP	Z80.c	/^  JR_C,ADD_HL_SP,LD_A_xWORD,DEC_SP,INC_A,DEC_A,LD_A_BYTE,CCF,$/;"	e	enum:Codes	file:
+DEC_xHL	Z80.c	/^  JR_NC,LD_SP_WORD,LD_xWORD_A,INC_SP,INC_xHL,DEC_xHL,LD_xHL_BYTE,SCF,$/;"	e	enum:Codes	file:
+DELAY_KEY_FIRST	gp2x_psp.h	121;"	d
+DELAY_KEY_REPEAT	gp2x_psp.h	122;"	d
+DI	Z80.c	/^  RET_P,POP_AF,JP_P,DI,CALL_P,PUSH_AF,OR_BYTE,RST30,$/;"	e	enum:Codes	file:
+DJNZ	Z80.c	/^  DJNZ,LD_DE_WORD,LD_xDE_A,INC_DE,INC_D,DEC_D,LD_D_BYTE,RLA,$/;"	e	enum:Codes	file:
+DUALCTRL940	cpugp2x.c	/^  unsigned short SYSCLKENREG,SYSCSETREG,FPLLVSETREG,DUALINT920,DUALINT940,DUALCTRL940;$/;"	m	struct:__anon3	file:
+DUALINT920	cpugp2x.c	/^  unsigned short SYSCLKENREG,SYSCSETREG,FPLLVSETREG,DUALINT920,DUALINT940,DUALCTRL940;$/;"	m	struct:__anon3	file:
+DUALINT940	cpugp2x.c	/^  unsigned short SYSCLKENREG,SYSCSETREG,FPLLVSETREG,DUALINT920,DUALINT940,DUALCTRL940;$/;"	m	struct:__anon3	file:
+DebugZ80	Debug.c	/^byte DebugZ80(Z80 *R)$/;"	f
+DelTimer	LibPsp.c	/^void DelTimer(void (*Handler)(void))$/;"	f
+Disable_940	cpugp2x.c	/^void Disable_940()$/;"	f
+Disable_Int_940	cpugp2x.c	/^unsigned short Disable_Int_940()$/;"	f
+EDITOR_MAX_COLOR	psp_editor.h	72;"	d
+EDITOR_MAX_LINES	psp_editor.c	38;"	d	file:
+EDITOR_MAX_WIDTH	psp_editor.c	39;"	d	file:
+EDITOR_MAX_WRAP_WIDTH	psp_editor.h	76;"	d
+EDITOR_NEOL_MASK	psp_editor.c	45;"	d	file:
+EDITOR_SCREEN_MIN_HEIGHT	psp_editor.h	75;"	d
+EDITOR_SCREEN_MIN_WIDTH	psp_editor.h	74;"	d
+EI	Z80.c	/^  RET_M,LD_SP_HL,JP_M,EI,CALL_M,PFX_FD,CP_BYTE,RST38$/;"	e	enum:Codes	file:
+EXX	Z80.c	/^  RET_C,EXX,JP_C,INA,CALL_C,PFX_DD,SBC_BYTE,RST18,$/;"	e	enum:Codes	file:
+EX_AF_AF	Z80.c	/^  EX_AF_AF,ADD_HL_BC,LD_A_xBC,DEC_BC,INC_C,DEC_C,LD_C_BYTE,RRCA,$/;"	e	enum:Codes	file:
+EX_DE_HL	Z80.c	/^  RET_PE,LD_PC_HL,JP_PE,EX_DE_HL,CALL_PE,PFX_ED,XOR_BYTE,RST28,$/;"	e	enum:Codes	file:
+EX_HL_xSP	Z80.c	/^  RET_PO,POP_HL,JP_PO,EX_HL_xSP,CALL_PO,PUSH_HL,AND_BYTE,RST20,$/;"	e	enum:Codes	file:
+ExitNow	Coleco.c	/^byte ExitNow;          \/* 1: Exit the emulator          *\/$/;"	v
+FGColor	Coleco.c	/^byte FGColor;$/;"	v
+FGColor	Coleco.h	/^  byte FGColor;$/;"	m	struct:colem_save_t
+FLAGS	Z80.c	54;"	d	file:
+FMGR_FORMAT_CHT	psp_fmgr.h	34;"	d
+FMGR_FORMAT_JOY	psp_fmgr.h	33;"	d
+FMGR_FORMAT_KBD	psp_fmgr.h	32;"	d
+FMGR_FORMAT_ROM	psp_fmgr.h	30;"	d
+FMGR_FORMAT_SET	psp_fmgr.h	36;"	d
+FMGR_FORMAT_STATE	psp_fmgr.h	31;"	d
+FMGR_FORMAT_ZIP	psp_fmgr.h	35;"	d
+FPLLVSETREG	cpugp2x.c	/^  unsigned short SYSCLKENREG,SYSCSETREG,FPLLVSETREG,DUALINT920,DUALINT940,DUALCTRL940;$/;"	m	struct:__anon3	file:
+FirstTimer	LibPsp.c	/^struct Timer *FirstTimer = NULL;$/;"	v	typeref:struct:Timer
+Freq	LibPsp.c	/^  int Freq;$/;"	m	struct:Timer	file:
+Freq	SN76489.h	/^  int Channel,Freq[4],Volume[4],Sync;$/;"	m	struct:__anon5
+G	Coleco.c	/^struct { byte R,G,B; } Palette[16] =$/;"	m	struct:__anon1	file:
+GP2X_A	gp2x_psp.h	104;"	d
+GP2X_A	gp2x_psp.h	71;"	d
+GP2X_ALL_BUTTON_MASK	psp_kbd.h	27;"	d
+GP2X_B	gp2x_psp.h	105;"	d
+GP2X_B	gp2x_psp.h	72;"	d
+GP2X_CTRL_A	gp2x_psp.h	36;"	d
+GP2X_CTRL_B	gp2x_psp.h	37;"	d
+GP2X_CTRL_CIRCLE	gp2x_psp.h	24;"	d
+GP2X_CTRL_CROSS	gp2x_psp.h	25;"	d
+GP2X_CTRL_DOWN	gp2x_psp.h	21;"	d
+GP2X_CTRL_DOWNLEFT	gp2x_psp.c	19;"	d	file:
+GP2X_CTRL_DOWNRIGHT	gp2x_psp.c	18;"	d	file:
+GP2X_CTRL_FIRE	gp2x_psp.h	31;"	d
+GP2X_CTRL_LEFT	gp2x_psp.h	22;"	d
+GP2X_CTRL_LTRIGGER	gp2x_psp.h	29;"	d
+GP2X_CTRL_MASK	gp2x_psp.h	34;"	d
+GP2X_CTRL_RIGHT	gp2x_psp.h	20;"	d
+GP2X_CTRL_RTRIGGER	gp2x_psp.h	30;"	d
+GP2X_CTRL_SELECT	gp2x_psp.h	27;"	d
+GP2X_CTRL_SQUARE	gp2x_psp.h	26;"	d
+GP2X_CTRL_START	gp2x_psp.h	28;"	d
+GP2X_CTRL_TRIANGLE	gp2x_psp.h	23;"	d
+GP2X_CTRL_UP	gp2x_psp.h	19;"	d
+GP2X_CTRL_UPLEFT	gp2x_psp.c	17;"	d	file:
+GP2X_CTRL_UPRIGHT	gp2x_psp.c	16;"	d	file:
+GP2X_CTRL_VOLDOWN	gp2x_psp.h	33;"	d
+GP2X_CTRL_VOLUP	gp2x_psp.h	32;"	d
+GP2X_CTRL_X	gp2x_psp.h	39;"	d
+GP2X_CTRL_Y	gp2x_psp.h	38;"	d
+GP2X_DEF_CLOCK	cpugp2x.h	27;"	d
+GP2X_DEF_CLOCK	cpuno.h	25;"	d
+GP2X_DEF_CLOCK	cpuwiz.h	25;"	d
+GP2X_DOWN	gp2x_psp.h	63;"	d
+GP2X_DOWN	gp2x_psp.h	95;"	d
+GP2X_DOWNLEFT	gp2x_psp.h	68;"	d
+GP2X_DOWNLEFT	gp2x_psp.h	94;"	d
+GP2X_DOWNRIGHT	gp2x_psp.h	69;"	d
+GP2X_DOWNRIGHT	gp2x_psp.h	96;"	d
+GP2X_FIRE	gp2x_psp.h	111;"	d
+GP2X_FIRE	gp2x_psp.h	77;"	d
+GP2X_FMGR_MAX_ENTRY	psp_fmgr.h	28;"	d
+GP2X_FMGR_MAX_NAME	psp_fmgr.h	27;"	d
+GP2X_FMGR_MAX_PATH	psp_fmgr.h	26;"	d
+GP2X_FMGR_MIN_TIME	psp_fmgr.c	49;"	d	file:
+GP2X_KBD_MAX_SKIN	psp_danzeff.c	12;"	d	file:
+GP2X_L	gp2x_psp.h	109;"	d
+GP2X_L	gp2x_psp.h	75;"	d
+GP2X_LEFT	gp2x_psp.h	64;"	d
+GP2X_LEFT	gp2x_psp.h	91;"	d
+GP2X_MAX_CLOCK	cpugp2x.h	29;"	d
+GP2X_MAX_CLOCK	cpuno.h	27;"	d
+GP2X_MAX_CLOCK	cpuwiz.h	27;"	d
+GP2X_MIN_CLOCK	cpugp2x.h	28;"	d
+GP2X_MIN_CLOCK	cpuno.h	26;"	d
+GP2X_MIN_CLOCK	cpuwiz.h	26;"	d
+GP2X_MIN_TIME_REPEAT	gp2x_psp.c	35;"	d	file:
+GP2X_MIN_TIME_VOLUME	gp2x_psp.c	34;"	d	file:
+GP2X_NOEVENT	gp2x_psp.h	119;"	d
+GP2X_R	gp2x_psp.h	110;"	d
+GP2X_R	gp2x_psp.h	76;"	d
+GP2X_RIGHT	gp2x_psp.h	65;"	d
+GP2X_RIGHT	gp2x_psp.h	92;"	d
+GP2X_SELECT	gp2x_psp.h	113;"	d
+GP2X_SELECT	gp2x_psp.h	79;"	d
+GP2X_START	gp2x_psp.h	112;"	d
+GP2X_START	gp2x_psp.h	78;"	d
+GP2X_UP	gp2x_psp.h	62;"	d
+GP2X_UP	gp2x_psp.h	88;"	d
+GP2X_UPLEFT	gp2x_psp.h	66;"	d
+GP2X_UPLEFT	gp2x_psp.h	87;"	d
+GP2X_UPRIGHT	gp2x_psp.h	67;"	d
+GP2X_UPRIGHT	gp2x_psp.h	89;"	d
+GP2X_VOLDOWN	gp2x_psp.h	115;"	d
+GP2X_VOLDOWN	gp2x_psp.h	81;"	d
+GP2X_VOLUP	gp2x_psp.h	114;"	d
+GP2X_VOLUP	gp2x_psp.h	80;"	d
+GP2X_X	gp2x_psp.h	106;"	d
+GP2X_X	gp2x_psp.h	73;"	d
+GP2X_Y	gp2x_psp.h	107;"	d
+GP2X_Y	gp2x_psp.h	74;"	d
+HALT	Z80.c	/^  LD_xHL_B,LD_xHL_C,LD_xHL_D,LD_xHL_E,LD_xHL_H,LD_xHL_L,HALT,LD_xHL_A,$/;"	e	enum:Codes	file:
+HELP_CHAR_BY_LINE	psp_menu_help.c	41;"	d	file:
+HELP_LINE_BY_PAGE	psp_menu_help.c	40;"	d	file:
+HL	CodesED.h	/^case ADC_HL_HL: M_ADCW(HL);break;$/;"	v
+HL	CodesED.h	/^case SBC_HL_HL: M_SBCW(HL);break;$/;"	v
+HL	Z80.h	/^  pair AF,BC,DE,HL,IX,IY,PC,SP;       \/* Main registers      *\/$/;"	m	struct:__anon10
+HL1	Z80.h	/^  pair AF1,BC1,DE1,HL1;               \/* Shadow registers    *\/$/;"	m	struct:__anon10
+HPeriod	Coleco.c	/^int  HPeriod = 233;$/;"	v
+H_FLAG	Z80.h	30;"	d
+Handler	LibPsp.c	/^  void (*Handler)(void);$/;"	m	struct:Timer	file:
+I	Codes.h	/^ADC_BYTE: I=RdZ80(R->PC.W++);M_ADC(I);goto z80_loop_end;$/;"	v
+I	Codes.h	/^ADC_xHL:  I=RdZ80(R->HL.W);M_ADC(I);goto z80_loop_end;$/;"	v
+I	Codes.h	/^ADD_BYTE: I=RdZ80(R->PC.W++);M_ADD(I);goto z80_loop_end;$/;"	v
+I	Codes.h	/^ADD_xHL:  I=RdZ80(R->HL.W);M_ADD(I);goto z80_loop_end;$/;"	v
+I	Codes.h	/^AND_BYTE: I=RdZ80(R->PC.W++);M_AND(I);goto z80_loop_end;$/;"	v
+I	Codes.h	/^AND_xHL:  I=RdZ80(R->HL.W);M_AND(I);goto z80_loop_end;$/;"	v
+I	Codes.h	/^CP_BYTE:  I=RdZ80(R->PC.W++);M_CP(I);goto z80_loop_end;$/;"	v
+I	Codes.h	/^CP_xHL:   I=RdZ80(R->HL.W);M_CP(I);goto z80_loop_end;$/;"	v
+I	Codes.h	/^DEC_xHL:  I=RdZ80(R->HL.W);M_DEC(I);WrZ80(R->HL.W,I);goto z80_loop_end;$/;"	v
+I	Codes.h	/^INC_xHL:  I=RdZ80(R->HL.W);M_INC(I);WrZ80(R->HL.W,I);goto z80_loop_end;$/;"	v
+I	Codes.h	/^OR_BYTE:  I=RdZ80(R->PC.W++);M_OR(I);goto z80_loop_end;$/;"	v
+I	Codes.h	/^OR_xHL:   I=RdZ80(R->HL.W);M_OR(I);goto z80_loop_end;$/;"	v
+I	Codes.h	/^SBC_BYTE: I=RdZ80(R->PC.W++);M_SBC(I);goto z80_loop_end;$/;"	v
+I	Codes.h	/^SBC_xHL:  I=RdZ80(R->HL.W);M_SBC(I);goto z80_loop_end;$/;"	v
+I	Codes.h	/^SUB_BYTE: I=RdZ80(R->PC.W++);M_SUB(I);goto z80_loop_end;$/;"	v
+I	Codes.h	/^SUB_xHL:  I=RdZ80(R->HL.W);M_SUB(I);goto z80_loop_end;$/;"	v
+I	Codes.h	/^XOR_BYTE: I=RdZ80(R->PC.W++);M_XOR(I);goto z80_loop_end;$/;"	v
+I	Codes.h	/^XOR_xHL:  I=RdZ80(R->HL.W);M_XOR(I);goto z80_loop_end;$/;"	v
+I	CodesCB.h	/^case RLC_xHL: I=RdZ80(R->HL.W);M_RLC(I);WrZ80(R->HL.W,I);break;$/;"	v
+I	CodesCB.h	/^case RL_xHL: I=RdZ80(R->HL.W);M_RL(I);WrZ80(R->HL.W,I);break;$/;"	v
+I	CodesCB.h	/^case RRC_xHL: I=RdZ80(R->HL.W);M_RRC(I);WrZ80(R->HL.W,I);break;$/;"	v
+I	CodesCB.h	/^case RR_xHL: I=RdZ80(R->HL.W);M_RR(I);WrZ80(R->HL.W,I);break;$/;"	v
+I	CodesCB.h	/^case SLA_xHL: I=RdZ80(R->HL.W);M_SLA(I);WrZ80(R->HL.W,I);break;$/;"	v
+I	CodesCB.h	/^case SLL_xHL: I=RdZ80(R->HL.W);M_SLL(I);WrZ80(R->HL.W,I);break;$/;"	v
+I	CodesCB.h	/^case SRA_xHL: I=RdZ80(R->HL.W);M_SRA(I);WrZ80(R->HL.W,I);break;$/;"	v
+I	CodesCB.h	/^case SRL_xHL: I=RdZ80(R->HL.W);M_SRL(I);WrZ80(R->HL.W,I);break;$/;"	v
+I	CodesED.h	/^case NEG:      I=CPU.AF.B.h;CPU.AF.B.h=0;M_SUB(I);break;$/;"	v
+I	CodesXCB.h	/^case RLC_xHL: I=RdZ80(J.W);M_RLC(I);WrZ80(J.W,I);break;$/;"	v
+I	CodesXCB.h	/^case RL_xHL:  I=RdZ80(J.W);M_RL(I);WrZ80(J.W,I);break;$/;"	v
+I	CodesXCB.h	/^case RRC_xHL: I=RdZ80(J.W);M_RRC(I);WrZ80(J.W,I);break;$/;"	v
+I	CodesXCB.h	/^case RR_xHL:  I=RdZ80(J.W);M_RR(I);WrZ80(J.W,I);break;$/;"	v
+I	CodesXCB.h	/^case SLA_xHL: I=RdZ80(J.W);M_SLA(I);WrZ80(J.W,I);break;$/;"	v
+I	CodesXCB.h	/^case SLL_xHL: I=RdZ80(J.W);M_SLL(I);WrZ80(J.W,I);break;$/;"	v
+I	CodesXCB.h	/^case SRA_xHL: I=RdZ80(J.W);M_SRA(I);WrZ80(J.W,I);break;$/;"	v
+I	CodesXCB.h	/^case SRL_xHL: I=RdZ80(J.W);M_SRL(I);WrZ80(J.W,I);break;$/;"	v
+I	CodesXX.h	/^               M_ADC(I);break;$/;"	v
+I	CodesXX.h	/^               M_ADD(I);break;$/;"	v
+I	CodesXX.h	/^               M_AND(I);break;$/;"	v
+I	CodesXX.h	/^               M_CP(I);break;$/;"	v
+I	CodesXX.h	/^               M_OR(I);break;$/;"	v
+I	CodesXX.h	/^               M_SBC(I);break;$/;"	v
+I	CodesXX.h	/^               M_SUB(I);break;$/;"	v
+I	CodesXX.h	/^               M_XOR(I);break;$/;"	v
+I	CodesXX.h	/^case ADC_BYTE: I=RdZ80(CPU.PC.W++);M_ADC(I);break;$/;"	v
+I	CodesXX.h	/^case ADD_BYTE: I=RdZ80(CPU.PC.W++);M_ADD(I);break;$/;"	v
+I	CodesXX.h	/^case AND_BYTE: I=RdZ80(CPU.PC.W++);M_AND(I);break;$/;"	v
+I	CodesXX.h	/^case CP_BYTE:  I=RdZ80(CPU.PC.W++);M_CP(I);break;$/;"	v
+I	CodesXX.h	/^case DEC_xHL:  I=RdZ80(CPU.XX.W+(offset)RdZ80(CPU.PC.W));M_DEC(I);$/;"	v
+I	CodesXX.h	/^case INC_xHL:  I=RdZ80(CPU.XX.W+(offset)RdZ80(CPU.PC.W));M_INC(I);$/;"	v
+I	CodesXX.h	/^case OR_BYTE:  I=RdZ80(CPU.PC.W++);M_OR(I);break;$/;"	v
+I	CodesXX.h	/^case SBC_BYTE: I=RdZ80(CPU.PC.W++);M_SBC(I);break;$/;"	v
+I	CodesXX.h	/^case SUB_BYTE: I=RdZ80(CPU.PC.W++);M_SUB(I);break;$/;"	v
+I	CodesXX.h	/^case XOR_BYTE: I=RdZ80(CPU.PC.W++);M_XOR(I);break;$/;"	v
+I	Z80.h	/^  byte IFF,I;                         \/* Interrupt registers *\/$/;"	m	struct:__anon10
+IAutoReset	Z80.h	/^  byte IAutoReset;    \/* Set to 1 to autom. reset IRequest   *\/$/;"	m	struct:__anon10
+IBackup	Z80.h	/^  int IBackup;        \/* Private, don't touch                *\/$/;"	m	struct:__anon10
+ICount	Z80.h	/^  int IPeriod,ICount; \/* Set IPeriod to number of CPU cycles *\/$/;"	m	struct:__anon10
+IFF	Z80.h	/^  byte IFF,I;                         \/* Interrupt registers *\/$/;"	m	struct:__anon10
+IM_0	Z80.c	/^  IN_B_xC,OUT_xC_B,SBC_HL_BC,LD_xWORDe_BC,NEG,RETN,IM_0,LD_I_A,$/;"	e	enum:CodesED	file:
+IM_1	Z80.c	/^  IN_D_xC,OUT_xC_D,SBC_HL_DE,LD_xWORDe_DE,DB_54,DB_55,IM_1,LD_A_I,$/;"	e	enum:CodesED	file:
+IM_2	Z80.c	/^  IN_E_xC,OUT_xC_E,ADC_HL_DE,LD_DE_xWORDe,DB_5C,DB_5D,IM_2,LD_A_R,$/;"	e	enum:CodesED	file:
+INA	Z80.c	/^  RET_C,EXX,JP_C,INA,CALL_C,PFX_DD,SBC_BYTE,RST18,$/;"	e	enum:Codes	file:
+INCLUDED_KEYBOARDS_DANZEFF_H	psp_danzeff.h	2;"	d
+INC_A	Z80.c	/^  JR_C,ADD_HL_SP,LD_A_xWORD,DEC_SP,INC_A,DEC_A,LD_A_BYTE,CCF,$/;"	e	enum:Codes	file:
+INC_B	Z80.c	/^  NOP,LD_BC_WORD,LD_xBC_A,INC_BC,INC_B,DEC_B,LD_B_BYTE,RLCA,$/;"	e	enum:Codes	file:
+INC_BC	Z80.c	/^  NOP,LD_BC_WORD,LD_xBC_A,INC_BC,INC_B,DEC_B,LD_B_BYTE,RLCA,$/;"	e	enum:Codes	file:
+INC_C	Z80.c	/^  EX_AF_AF,ADD_HL_BC,LD_A_xBC,DEC_BC,INC_C,DEC_C,LD_C_BYTE,RRCA,$/;"	e	enum:Codes	file:
+INC_D	Z80.c	/^  DJNZ,LD_DE_WORD,LD_xDE_A,INC_DE,INC_D,DEC_D,LD_D_BYTE,RLA,$/;"	e	enum:Codes	file:
+INC_DE	Z80.c	/^  DJNZ,LD_DE_WORD,LD_xDE_A,INC_DE,INC_D,DEC_D,LD_D_BYTE,RLA,$/;"	e	enum:Codes	file:
+INC_E	Z80.c	/^  JR,ADD_HL_DE,LD_A_xDE,DEC_DE,INC_E,DEC_E,LD_E_BYTE,RRA,$/;"	e	enum:Codes	file:
+INC_H	Z80.c	/^  JR_NZ,LD_HL_WORD,LD_xWORD_HL,INC_HL,INC_H,DEC_H,LD_H_BYTE,DAA,$/;"	e	enum:Codes	file:
+INC_HL	Z80.c	/^  JR_NZ,LD_HL_WORD,LD_xWORD_HL,INC_HL,INC_H,DEC_H,LD_H_BYTE,DAA,$/;"	e	enum:Codes	file:
+INC_L	Z80.c	/^  JR_Z,ADD_HL_HL,LD_HL_xWORD,DEC_HL,INC_L,DEC_L,LD_L_BYTE,CPL,$/;"	e	enum:Codes	file:
+INC_SP	Z80.c	/^  JR_NC,LD_SP_WORD,LD_xWORD_A,INC_SP,INC_xHL,DEC_xHL,LD_xHL_BYTE,SCF,$/;"	e	enum:Codes	file:
+INC_xHL	Z80.c	/^  JR_NC,LD_SP_WORD,LD_xWORD_A,INC_SP,INC_xHL,DEC_xHL,LD_xHL_BYTE,SCF,$/;"	e	enum:Codes	file:
+IND	Z80.c	/^  LDD,CPD,IND,OUTD,DB_AC,DB_AD,DB_AE,DB_AF,$/;"	e	enum:CodesED	file:
+INDR	Z80.c	/^  LDDR,CPDR,INDR,OTDR,DB_BC,DB_BD,DB_BE,DB_BF,$/;"	e	enum:CodesED	file:
+INI	Z80.c	/^  LDI,CPI,INI,OUTI,DB_A4,DB_A5,DB_A6,DB_A7,$/;"	e	enum:CodesED	file:
+INIR	Z80.c	/^  LDIR,CPIR,INIR,OTIR,DB_B4,DB_B5,DB_B6,DB_B7,$/;"	e	enum:CodesED	file:
+INLINE	Z80.c	25;"	d	file:
+INLINE	Z80.c	27;"	d	file:
+INT_IRQ	Z80.h	22;"	d
+INT_NMI	Z80.h	23;"	d
+INT_NONE	Z80.h	24;"	d
+INT_QUIT	Z80.h	25;"	d
+IN_A_xC	Z80.c	/^  IN_A_xC,OUT_xC_A,ADC_HL_SP,LD_SP_xWORDe,DB_7C,DB_7D,DB_7E,DB_7F,$/;"	e	enum:CodesED	file:
+IN_B_xC	Z80.c	/^  IN_B_xC,OUT_xC_B,SBC_HL_BC,LD_xWORDe_BC,NEG,RETN,IM_0,LD_I_A,$/;"	e	enum:CodesED	file:
+IN_C_xC	Z80.c	/^  IN_C_xC,OUT_xC_C,ADC_HL_BC,LD_BC_xWORDe,DB_4C,RETI,DB_,LD_R_A,$/;"	e	enum:CodesED	file:
+IN_D_xC	Z80.c	/^  IN_D_xC,OUT_xC_D,SBC_HL_DE,LD_xWORDe_DE,DB_54,DB_55,IM_1,LD_A_I,$/;"	e	enum:CodesED	file:
+IN_E_xC	Z80.c	/^  IN_E_xC,OUT_xC_E,ADC_HL_DE,LD_DE_xWORDe,DB_5C,DB_5D,IM_2,LD_A_R,$/;"	e	enum:CodesED	file:
+IN_F_xC	Z80.c	/^  IN_F_xC,DB_71,SBC_HL_SP,LD_xWORDe_SP,DB_74,DB_75,DB_76,DB_77,$/;"	e	enum:CodesED	file:
+IN_H_xC	Z80.c	/^  IN_H_xC,OUT_xC_H,SBC_HL_HL,LD_xWORDe_HL,DB_64,DB_65,DB_66,RRD,$/;"	e	enum:CodesED	file:
+IN_L_xC	Z80.c	/^  IN_L_xC,OUT_xC_L,ADC_HL_HL,LD_HL_xWORDe,DB_6C,DB_6D,DB_6E,RLD,$/;"	e	enum:CodesED	file:
+IPeriod	Z80.h	/^  int IPeriod,ICount; \/* Set IPeriod to number of CPU cycles *\/$/;"	m	struct:__anon10
+IRequest	Z80.h	/^  word IRequest;      \/* Set to address of pending IRQ       *\/$/;"	m	struct:__anon10
+IX	Z80.h	/^  pair AF,BC,DE,HL,IX,IY,PC,SP;       \/* Main registers      *\/$/;"	m	struct:__anon10
+IY	Z80.h	/^  pair AF,BC,DE,HL,IX,IY,PC,SP;       \/* Main registers      *\/$/;"	m	struct:__anon10
+InZ80	Coleco.c	/^byte InZ80(register word Port)$/;"	f
+InitLibUnix	LibPsp.c	/^int InitLibUnix()$/;"	f
+InitMachine	Unix.c	/^int InitMachine(void)$/;"	f
+IntZ80	Z80.c	/^void IntZ80(word Vector)$/;"	f
+JOY_ALL_BUTTONS	psp_joy.h	42;"	d
+JOY_DOWN	psp_joy.h	31;"	d
+JOY_FIRE	psp_joy.h	34;"	d
+JOY_LEFT	psp_joy.h	32;"	d
+JOY_MAX_TYPE	psp_joy.h	28;"	d
+JOY_PADDLE1F	psp_joy.h	37;"	d
+JOY_PADDLE1M	psp_joy.h	36;"	d
+JOY_PADDLE1P	psp_joy.h	35;"	d
+JOY_PADDLE2F	psp_joy.h	40;"	d
+JOY_PADDLE2M	psp_joy.h	39;"	d
+JOY_PADDLE2P	psp_joy.h	38;"	d
+JOY_RIGHT	psp_joy.h	33;"	d
+JOY_TYPE_DUAL_PADDLE	psp_joy.h	27;"	d
+JOY_TYPE_JOYSTICK	psp_joy.h	25;"	d
+JOY_TYPE_NONE	psp_joy.h	24;"	d
+JOY_TYPE_PADDLE	psp_joy.h	26;"	d
+JOY_UP	psp_joy.h	30;"	d
+JP	Z80.c	/^  RET_NZ,POP_BC,JP_NZ,JP,CALL_NZ,PUSH_BC,ADD_BYTE,RST00,$/;"	e	enum:Codes	file:
+JP_C	Z80.c	/^  RET_C,EXX,JP_C,INA,CALL_C,PFX_DD,SBC_BYTE,RST18,$/;"	e	enum:Codes	file:
+JP_M	Z80.c	/^  RET_M,LD_SP_HL,JP_M,EI,CALL_M,PFX_FD,CP_BYTE,RST38$/;"	e	enum:Codes	file:
+JP_NC	Z80.c	/^  RET_NC,POP_DE,JP_NC,OUTA,CALL_NC,PUSH_DE,SUB_BYTE,RST10,$/;"	e	enum:Codes	file:
+JP_NZ	Z80.c	/^  RET_NZ,POP_BC,JP_NZ,JP,CALL_NZ,PUSH_BC,ADD_BYTE,RST00,$/;"	e	enum:Codes	file:
+JP_P	Z80.c	/^  RET_P,POP_AF,JP_P,DI,CALL_P,PUSH_AF,OR_BYTE,RST30,$/;"	e	enum:Codes	file:
+JP_PE	Z80.c	/^  RET_PE,LD_PC_HL,JP_PE,EX_DE_HL,CALL_PE,PFX_ED,XOR_BYTE,RST28,$/;"	e	enum:Codes	file:
+JP_PO	Z80.c	/^  RET_PO,POP_HL,JP_PO,EX_HL_xSP,CALL_PO,PUSH_HL,AND_BYTE,RST20,$/;"	e	enum:Codes	file:
+JP_Z	Z80.c	/^  RET_Z,RET,JP_Z,PFX_CB,CALL_Z,CALL,ADC_BYTE,RST08,$/;"	e	enum:Codes	file:
+JR	Z80.c	/^  JR,ADD_HL_DE,LD_A_xDE,DEC_DE,INC_E,DEC_E,LD_E_BYTE,RRA,$/;"	e	enum:Codes	file:
+JR_C	Z80.c	/^  JR_C,ADD_HL_SP,LD_A_xWORD,DEC_SP,INC_A,DEC_A,LD_A_BYTE,CCF,$/;"	e	enum:Codes	file:
+JR_NC	Z80.c	/^  JR_NC,LD_SP_WORD,LD_xWORD_A,INC_SP,INC_xHL,DEC_xHL,LD_xHL_BYTE,SCF,$/;"	e	enum:Codes	file:
+JR_NZ	Z80.c	/^  JR_NZ,LD_HL_WORD,LD_xWORD_HL,INC_HL,INC_H,DEC_H,LD_H_BYTE,DAA,$/;"	e	enum:Codes	file:
+JR_Z	Z80.c	/^  JR_Z,ADD_HL_HL,LD_HL_xWORD,DEC_HL,INC_L,DEC_L,LD_L_BYTE,CPL,$/;"	e	enum:Codes	file:
+JoyMode	Coleco.c	/^byte JoyMode;          \/* Joystick controller mode      *\/$/;"	v
+JoyMode	Coleco.h	/^  byte JoyMode;          \/* Joystick controller mode      *\/$/;"	m	struct:colem_save_t
+JoyState	Coleco.c	/^word JoyState[2];      \/* Joystick states               *\/$/;"	v
+JoyState	Coleco.h	/^  word JoyState[2];      \/* Joystick states               *\/$/;"	m	struct:colem_save_t
+Joysticks	Unix.c	/^Joysticks(void)$/;"	f
+KBD_ALL_BUTTONS	psp_kbd.h	86;"	d
+KBD_CIRCLE	psp_kbd.h	70;"	d
+KBD_CROSS	psp_kbd.h	71;"	d
+KBD_DOWN	psp_kbd.h	67;"	d
+KBD_FIRE	psp_kbd.h	77;"	d
+KBD_JOY_DOWN	psp_kbd.h	83;"	d
+KBD_JOY_LEFT	psp_kbd.h	84;"	d
+KBD_JOY_RIGHT	psp_kbd.h	82;"	d
+KBD_JOY_UP	psp_kbd.h	81;"	d
+KBD_LEFT	psp_kbd.h	68;"	d
+KBD_LTRIGGER	psp_kbd.h	75;"	d
+KBD_LTRIGGER_MAPPING	psp_kbd.h	90;"	d
+KBD_MAX_BUTTONS	psp_kbd.h	79;"	d
+KBD_MAX_ENTRIES	psp_kbd.c	237;"	d	file:
+KBD_MAX_EVENT_TIME	psp_kbd.c	39;"	d	file:
+KBD_MIN_ANALOG_TIME	psp_kbd.c	37;"	d	file:
+KBD_MIN_AUTOFIRE_TIME	psp_kbd.c	45;"	d	file:
+KBD_MIN_BATTCHECK_TIME	psp_kbd.c	44;"	d	file:
+KBD_MIN_COMMAND_TIME	psp_kbd.c	43;"	d	file:
+KBD_MIN_DANZEFF_TIME	psp_kbd.c	42;"	d	file:
+KBD_MIN_HOTKEY_TIME	psp_kbd.c	41;"	d	file:
+KBD_MIN_PENDING_TIME	psp_kbd.c	40;"	d	file:
+KBD_MIN_START_TIME	psp_kbd.c	38;"	d	file:
+KBD_NORMAL_MAPPING	psp_kbd.h	92;"	d
+KBD_RIGHT	psp_kbd.h	66;"	d
+KBD_RTRIGGER	psp_kbd.h	76;"	d
+KBD_RTRIGGER_MAPPING	psp_kbd.h	91;"	d
+KBD_SELECT	psp_kbd.h	73;"	d
+KBD_SQUARE	psp_kbd.h	72;"	d
+KBD_START	psp_kbd.h	74;"	d
+KBD_TRIANGLE	psp_kbd.h	69;"	d
+KBD_UNASSIGNED	psp_kbd.h	88;"	d
+KBD_UP	psp_kbd.h	65;"	d
+LDD	Z80.c	/^  LDD,CPD,IND,OUTD,DB_AC,DB_AD,DB_AE,DB_AF,$/;"	e	enum:CodesED	file:
+LDDR	Z80.c	/^  LDDR,CPDR,INDR,OTDR,DB_BC,DB_BD,DB_BE,DB_BF,$/;"	e	enum:CodesED	file:
+LDI	Z80.c	/^  LDI,CPI,INI,OUTI,DB_A4,DB_A5,DB_A6,DB_A7,$/;"	e	enum:CodesED	file:
+LDIR	Z80.c	/^  LDIR,CPIR,INIR,OTIR,DB_B4,DB_B5,DB_B6,DB_B7,$/;"	e	enum:CodesED	file:
+LD_A_A	Z80.c	/^  LD_A_B,LD_A_C,LD_A_D,LD_A_E,LD_A_H,LD_A_L,LD_A_xHL,LD_A_A,$/;"	e	enum:Codes	file:
+LD_A_B	Z80.c	/^  LD_A_B,LD_A_C,LD_A_D,LD_A_E,LD_A_H,LD_A_L,LD_A_xHL,LD_A_A,$/;"	e	enum:Codes	file:
+LD_A_BYTE	Z80.c	/^  JR_C,ADD_HL_SP,LD_A_xWORD,DEC_SP,INC_A,DEC_A,LD_A_BYTE,CCF,$/;"	e	enum:Codes	file:
+LD_A_C	Z80.c	/^  LD_A_B,LD_A_C,LD_A_D,LD_A_E,LD_A_H,LD_A_L,LD_A_xHL,LD_A_A,$/;"	e	enum:Codes	file:
+LD_A_D	Z80.c	/^  LD_A_B,LD_A_C,LD_A_D,LD_A_E,LD_A_H,LD_A_L,LD_A_xHL,LD_A_A,$/;"	e	enum:Codes	file:
+LD_A_E	Z80.c	/^  LD_A_B,LD_A_C,LD_A_D,LD_A_E,LD_A_H,LD_A_L,LD_A_xHL,LD_A_A,$/;"	e	enum:Codes	file:
+LD_A_H	Z80.c	/^  LD_A_B,LD_A_C,LD_A_D,LD_A_E,LD_A_H,LD_A_L,LD_A_xHL,LD_A_A,$/;"	e	enum:Codes	file:
+LD_A_I	Z80.c	/^  IN_D_xC,OUT_xC_D,SBC_HL_DE,LD_xWORDe_DE,DB_54,DB_55,IM_1,LD_A_I,$/;"	e	enum:CodesED	file:
+LD_A_L	Z80.c	/^  LD_A_B,LD_A_C,LD_A_D,LD_A_E,LD_A_H,LD_A_L,LD_A_xHL,LD_A_A,$/;"	e	enum:Codes	file:
+LD_A_R	Z80.c	/^  IN_E_xC,OUT_xC_E,ADC_HL_DE,LD_DE_xWORDe,DB_5C,DB_5D,IM_2,LD_A_R,$/;"	e	enum:CodesED	file:
+LD_A_xBC	Z80.c	/^  EX_AF_AF,ADD_HL_BC,LD_A_xBC,DEC_BC,INC_C,DEC_C,LD_C_BYTE,RRCA,$/;"	e	enum:Codes	file:
+LD_A_xDE	Z80.c	/^  JR,ADD_HL_DE,LD_A_xDE,DEC_DE,INC_E,DEC_E,LD_E_BYTE,RRA,$/;"	e	enum:Codes	file:
+LD_A_xHL	Z80.c	/^  LD_A_B,LD_A_C,LD_A_D,LD_A_E,LD_A_H,LD_A_L,LD_A_xHL,LD_A_A,$/;"	e	enum:Codes	file:
+LD_A_xWORD	Z80.c	/^  JR_C,ADD_HL_SP,LD_A_xWORD,DEC_SP,INC_A,DEC_A,LD_A_BYTE,CCF,$/;"	e	enum:Codes	file:
+LD_BC_WORD	Z80.c	/^  NOP,LD_BC_WORD,LD_xBC_A,INC_BC,INC_B,DEC_B,LD_B_BYTE,RLCA,$/;"	e	enum:Codes	file:
+LD_BC_xWORDe	Z80.c	/^  IN_C_xC,OUT_xC_C,ADC_HL_BC,LD_BC_xWORDe,DB_4C,RETI,DB_,LD_R_A,$/;"	e	enum:CodesED	file:
+LD_B_A	Z80.c	/^  LD_B_B,LD_B_C,LD_B_D,LD_B_E,LD_B_H,LD_B_L,LD_B_xHL,LD_B_A,$/;"	e	enum:Codes	file:
+LD_B_B	Z80.c	/^  LD_B_B,LD_B_C,LD_B_D,LD_B_E,LD_B_H,LD_B_L,LD_B_xHL,LD_B_A,$/;"	e	enum:Codes	file:
+LD_B_BYTE	Z80.c	/^  NOP,LD_BC_WORD,LD_xBC_A,INC_BC,INC_B,DEC_B,LD_B_BYTE,RLCA,$/;"	e	enum:Codes	file:
+LD_B_C	Z80.c	/^  LD_B_B,LD_B_C,LD_B_D,LD_B_E,LD_B_H,LD_B_L,LD_B_xHL,LD_B_A,$/;"	e	enum:Codes	file:
+LD_B_D	Z80.c	/^  LD_B_B,LD_B_C,LD_B_D,LD_B_E,LD_B_H,LD_B_L,LD_B_xHL,LD_B_A,$/;"	e	enum:Codes	file:
+LD_B_E	Z80.c	/^  LD_B_B,LD_B_C,LD_B_D,LD_B_E,LD_B_H,LD_B_L,LD_B_xHL,LD_B_A,$/;"	e	enum:Codes	file:
+LD_B_H	Z80.c	/^  LD_B_B,LD_B_C,LD_B_D,LD_B_E,LD_B_H,LD_B_L,LD_B_xHL,LD_B_A,$/;"	e	enum:Codes	file:
+LD_B_L	Z80.c	/^  LD_B_B,LD_B_C,LD_B_D,LD_B_E,LD_B_H,LD_B_L,LD_B_xHL,LD_B_A,$/;"	e	enum:Codes	file:
+LD_B_xHL	Z80.c	/^  LD_B_B,LD_B_C,LD_B_D,LD_B_E,LD_B_H,LD_B_L,LD_B_xHL,LD_B_A,$/;"	e	enum:Codes	file:
+LD_C_A	Z80.c	/^  LD_C_B,LD_C_C,LD_C_D,LD_C_E,LD_C_H,LD_C_L,LD_C_xHL,LD_C_A,$/;"	e	enum:Codes	file:
+LD_C_B	Z80.c	/^  LD_C_B,LD_C_C,LD_C_D,LD_C_E,LD_C_H,LD_C_L,LD_C_xHL,LD_C_A,$/;"	e	enum:Codes	file:
+LD_C_BYTE	Z80.c	/^  EX_AF_AF,ADD_HL_BC,LD_A_xBC,DEC_BC,INC_C,DEC_C,LD_C_BYTE,RRCA,$/;"	e	enum:Codes	file:
+LD_C_C	Z80.c	/^  LD_C_B,LD_C_C,LD_C_D,LD_C_E,LD_C_H,LD_C_L,LD_C_xHL,LD_C_A,$/;"	e	enum:Codes	file:
+LD_C_D	Z80.c	/^  LD_C_B,LD_C_C,LD_C_D,LD_C_E,LD_C_H,LD_C_L,LD_C_xHL,LD_C_A,$/;"	e	enum:Codes	file:
+LD_C_E	Z80.c	/^  LD_C_B,LD_C_C,LD_C_D,LD_C_E,LD_C_H,LD_C_L,LD_C_xHL,LD_C_A,$/;"	e	enum:Codes	file:
+LD_C_H	Z80.c	/^  LD_C_B,LD_C_C,LD_C_D,LD_C_E,LD_C_H,LD_C_L,LD_C_xHL,LD_C_A,$/;"	e	enum:Codes	file:
+LD_C_L	Z80.c	/^  LD_C_B,LD_C_C,LD_C_D,LD_C_E,LD_C_H,LD_C_L,LD_C_xHL,LD_C_A,$/;"	e	enum:Codes	file:
+LD_C_xHL	Z80.c	/^  LD_C_B,LD_C_C,LD_C_D,LD_C_E,LD_C_H,LD_C_L,LD_C_xHL,LD_C_A,$/;"	e	enum:Codes	file:
+LD_DE_WORD	Z80.c	/^  DJNZ,LD_DE_WORD,LD_xDE_A,INC_DE,INC_D,DEC_D,LD_D_BYTE,RLA,$/;"	e	enum:Codes	file:
+LD_DE_xWORDe	Z80.c	/^  IN_E_xC,OUT_xC_E,ADC_HL_DE,LD_DE_xWORDe,DB_5C,DB_5D,IM_2,LD_A_R,$/;"	e	enum:CodesED	file:
+LD_D_A	Z80.c	/^  LD_D_B,LD_D_C,LD_D_D,LD_D_E,LD_D_H,LD_D_L,LD_D_xHL,LD_D_A,$/;"	e	enum:Codes	file:
+LD_D_B	Z80.c	/^  LD_D_B,LD_D_C,LD_D_D,LD_D_E,LD_D_H,LD_D_L,LD_D_xHL,LD_D_A,$/;"	e	enum:Codes	file:
+LD_D_BYTE	Z80.c	/^  DJNZ,LD_DE_WORD,LD_xDE_A,INC_DE,INC_D,DEC_D,LD_D_BYTE,RLA,$/;"	e	enum:Codes	file:
+LD_D_C	Z80.c	/^  LD_D_B,LD_D_C,LD_D_D,LD_D_E,LD_D_H,LD_D_L,LD_D_xHL,LD_D_A,$/;"	e	enum:Codes	file:
+LD_D_D	Z80.c	/^  LD_D_B,LD_D_C,LD_D_D,LD_D_E,LD_D_H,LD_D_L,LD_D_xHL,LD_D_A,$/;"	e	enum:Codes	file:
+LD_D_E	Z80.c	/^  LD_D_B,LD_D_C,LD_D_D,LD_D_E,LD_D_H,LD_D_L,LD_D_xHL,LD_D_A,$/;"	e	enum:Codes	file:
+LD_D_H	Z80.c	/^  LD_D_B,LD_D_C,LD_D_D,LD_D_E,LD_D_H,LD_D_L,LD_D_xHL,LD_D_A,$/;"	e	enum:Codes	file:
+LD_D_L	Z80.c	/^  LD_D_B,LD_D_C,LD_D_D,LD_D_E,LD_D_H,LD_D_L,LD_D_xHL,LD_D_A,$/;"	e	enum:Codes	file:
+LD_D_xHL	Z80.c	/^  LD_D_B,LD_D_C,LD_D_D,LD_D_E,LD_D_H,LD_D_L,LD_D_xHL,LD_D_A,$/;"	e	enum:Codes	file:
+LD_E_A	Z80.c	/^  LD_E_B,LD_E_C,LD_E_D,LD_E_E,LD_E_H,LD_E_L,LD_E_xHL,LD_E_A,$/;"	e	enum:Codes	file:
+LD_E_B	Z80.c	/^  LD_E_B,LD_E_C,LD_E_D,LD_E_E,LD_E_H,LD_E_L,LD_E_xHL,LD_E_A,$/;"	e	enum:Codes	file:
+LD_E_BYTE	Z80.c	/^  JR,ADD_HL_DE,LD_A_xDE,DEC_DE,INC_E,DEC_E,LD_E_BYTE,RRA,$/;"	e	enum:Codes	file:
+LD_E_C	Z80.c	/^  LD_E_B,LD_E_C,LD_E_D,LD_E_E,LD_E_H,LD_E_L,LD_E_xHL,LD_E_A,$/;"	e	enum:Codes	file:
+LD_E_D	Z80.c	/^  LD_E_B,LD_E_C,LD_E_D,LD_E_E,LD_E_H,LD_E_L,LD_E_xHL,LD_E_A,$/;"	e	enum:Codes	file:
+LD_E_E	Z80.c	/^  LD_E_B,LD_E_C,LD_E_D,LD_E_E,LD_E_H,LD_E_L,LD_E_xHL,LD_E_A,$/;"	e	enum:Codes	file:
+LD_E_H	Z80.c	/^  LD_E_B,LD_E_C,LD_E_D,LD_E_E,LD_E_H,LD_E_L,LD_E_xHL,LD_E_A,$/;"	e	enum:Codes	file:
+LD_E_L	Z80.c	/^  LD_E_B,LD_E_C,LD_E_D,LD_E_E,LD_E_H,LD_E_L,LD_E_xHL,LD_E_A,$/;"	e	enum:Codes	file:
+LD_E_xHL	Z80.c	/^  LD_E_B,LD_E_C,LD_E_D,LD_E_E,LD_E_H,LD_E_L,LD_E_xHL,LD_E_A,$/;"	e	enum:Codes	file:
+LD_HL_WORD	Z80.c	/^  JR_NZ,LD_HL_WORD,LD_xWORD_HL,INC_HL,INC_H,DEC_H,LD_H_BYTE,DAA,$/;"	e	enum:Codes	file:
+LD_HL_xWORD	Z80.c	/^  JR_Z,ADD_HL_HL,LD_HL_xWORD,DEC_HL,INC_L,DEC_L,LD_L_BYTE,CPL,$/;"	e	enum:Codes	file:
+LD_HL_xWORDe	Z80.c	/^  IN_L_xC,OUT_xC_L,ADC_HL_HL,LD_HL_xWORDe,DB_6C,DB_6D,DB_6E,RLD,$/;"	e	enum:CodesED	file:
+LD_H_A	Z80.c	/^  LD_H_B,LD_H_C,LD_H_D,LD_H_E,LD_H_H,LD_H_L,LD_H_xHL,LD_H_A,$/;"	e	enum:Codes	file:
+LD_H_B	Z80.c	/^  LD_H_B,LD_H_C,LD_H_D,LD_H_E,LD_H_H,LD_H_L,LD_H_xHL,LD_H_A,$/;"	e	enum:Codes	file:
+LD_H_BYTE	Z80.c	/^  JR_NZ,LD_HL_WORD,LD_xWORD_HL,INC_HL,INC_H,DEC_H,LD_H_BYTE,DAA,$/;"	e	enum:Codes	file:
+LD_H_C	Z80.c	/^  LD_H_B,LD_H_C,LD_H_D,LD_H_E,LD_H_H,LD_H_L,LD_H_xHL,LD_H_A,$/;"	e	enum:Codes	file:
+LD_H_D	Z80.c	/^  LD_H_B,LD_H_C,LD_H_D,LD_H_E,LD_H_H,LD_H_L,LD_H_xHL,LD_H_A,$/;"	e	enum:Codes	file:
+LD_H_E	Z80.c	/^  LD_H_B,LD_H_C,LD_H_D,LD_H_E,LD_H_H,LD_H_L,LD_H_xHL,LD_H_A,$/;"	e	enum:Codes	file:
+LD_H_H	Z80.c	/^  LD_H_B,LD_H_C,LD_H_D,LD_H_E,LD_H_H,LD_H_L,LD_H_xHL,LD_H_A,$/;"	e	enum:Codes	file:
+LD_H_L	Z80.c	/^  LD_H_B,LD_H_C,LD_H_D,LD_H_E,LD_H_H,LD_H_L,LD_H_xHL,LD_H_A,$/;"	e	enum:Codes	file:
+LD_H_xHL	Z80.c	/^  LD_H_B,LD_H_C,LD_H_D,LD_H_E,LD_H_H,LD_H_L,LD_H_xHL,LD_H_A,$/;"	e	enum:Codes	file:
+LD_I_A	Z80.c	/^  IN_B_xC,OUT_xC_B,SBC_HL_BC,LD_xWORDe_BC,NEG,RETN,IM_0,LD_I_A,$/;"	e	enum:CodesED	file:
+LD_L_A	Z80.c	/^  LD_L_B,LD_L_C,LD_L_D,LD_L_E,LD_L_H,LD_L_L,LD_L_xHL,LD_L_A,$/;"	e	enum:Codes	file:
+LD_L_B	Z80.c	/^  LD_L_B,LD_L_C,LD_L_D,LD_L_E,LD_L_H,LD_L_L,LD_L_xHL,LD_L_A,$/;"	e	enum:Codes	file:
+LD_L_BYTE	Z80.c	/^  JR_Z,ADD_HL_HL,LD_HL_xWORD,DEC_HL,INC_L,DEC_L,LD_L_BYTE,CPL,$/;"	e	enum:Codes	file:
+LD_L_C	Z80.c	/^  LD_L_B,LD_L_C,LD_L_D,LD_L_E,LD_L_H,LD_L_L,LD_L_xHL,LD_L_A,$/;"	e	enum:Codes	file:
+LD_L_D	Z80.c	/^  LD_L_B,LD_L_C,LD_L_D,LD_L_E,LD_L_H,LD_L_L,LD_L_xHL,LD_L_A,$/;"	e	enum:Codes	file:
+LD_L_E	Z80.c	/^  LD_L_B,LD_L_C,LD_L_D,LD_L_E,LD_L_H,LD_L_L,LD_L_xHL,LD_L_A,$/;"	e	enum:Codes	file:
+LD_L_H	Z80.c	/^  LD_L_B,LD_L_C,LD_L_D,LD_L_E,LD_L_H,LD_L_L,LD_L_xHL,LD_L_A,$/;"	e	enum:Codes	file:
+LD_L_L	Z80.c	/^  LD_L_B,LD_L_C,LD_L_D,LD_L_E,LD_L_H,LD_L_L,LD_L_xHL,LD_L_A,$/;"	e	enum:Codes	file:
+LD_L_xHL	Z80.c	/^  LD_L_B,LD_L_C,LD_L_D,LD_L_E,LD_L_H,LD_L_L,LD_L_xHL,LD_L_A,$/;"	e	enum:Codes	file:
+LD_PC_HL	Z80.c	/^  RET_PE,LD_PC_HL,JP_PE,EX_DE_HL,CALL_PE,PFX_ED,XOR_BYTE,RST28,$/;"	e	enum:Codes	file:
+LD_R_A	Z80.c	/^  IN_C_xC,OUT_xC_C,ADC_HL_BC,LD_BC_xWORDe,DB_4C,RETI,DB_,LD_R_A,$/;"	e	enum:CodesED	file:
+LD_SP_HL	Z80.c	/^  RET_M,LD_SP_HL,JP_M,EI,CALL_M,PFX_FD,CP_BYTE,RST38$/;"	e	enum:Codes	file:
+LD_SP_WORD	Z80.c	/^  JR_NC,LD_SP_WORD,LD_xWORD_A,INC_SP,INC_xHL,DEC_xHL,LD_xHL_BYTE,SCF,$/;"	e	enum:Codes	file:
+LD_SP_xWORDe	Z80.c	/^  IN_A_xC,OUT_xC_A,ADC_HL_SP,LD_SP_xWORDe,DB_7C,DB_7D,DB_7E,DB_7F,$/;"	e	enum:CodesED	file:
+LD_xBC_A	Z80.c	/^  NOP,LD_BC_WORD,LD_xBC_A,INC_BC,INC_B,DEC_B,LD_B_BYTE,RLCA,$/;"	e	enum:Codes	file:
+LD_xDE_A	Z80.c	/^  DJNZ,LD_DE_WORD,LD_xDE_A,INC_DE,INC_D,DEC_D,LD_D_BYTE,RLA,$/;"	e	enum:Codes	file:
+LD_xHL_A	Z80.c	/^  LD_xHL_B,LD_xHL_C,LD_xHL_D,LD_xHL_E,LD_xHL_H,LD_xHL_L,HALT,LD_xHL_A,$/;"	e	enum:Codes	file:
+LD_xHL_B	Z80.c	/^  LD_xHL_B,LD_xHL_C,LD_xHL_D,LD_xHL_E,LD_xHL_H,LD_xHL_L,HALT,LD_xHL_A,$/;"	e	enum:Codes	file:
+LD_xHL_BYTE	Z80.c	/^  JR_NC,LD_SP_WORD,LD_xWORD_A,INC_SP,INC_xHL,DEC_xHL,LD_xHL_BYTE,SCF,$/;"	e	enum:Codes	file:
+LD_xHL_C	Z80.c	/^  LD_xHL_B,LD_xHL_C,LD_xHL_D,LD_xHL_E,LD_xHL_H,LD_xHL_L,HALT,LD_xHL_A,$/;"	e	enum:Codes	file:
+LD_xHL_D	Z80.c	/^  LD_xHL_B,LD_xHL_C,LD_xHL_D,LD_xHL_E,LD_xHL_H,LD_xHL_L,HALT,LD_xHL_A,$/;"	e	enum:Codes	file:
+LD_xHL_E	Z80.c	/^  LD_xHL_B,LD_xHL_C,LD_xHL_D,LD_xHL_E,LD_xHL_H,LD_xHL_L,HALT,LD_xHL_A,$/;"	e	enum:Codes	file:
+LD_xHL_H	Z80.c	/^  LD_xHL_B,LD_xHL_C,LD_xHL_D,LD_xHL_E,LD_xHL_H,LD_xHL_L,HALT,LD_xHL_A,$/;"	e	enum:Codes	file:
+LD_xHL_L	Z80.c	/^  LD_xHL_B,LD_xHL_C,LD_xHL_D,LD_xHL_E,LD_xHL_H,LD_xHL_L,HALT,LD_xHL_A,$/;"	e	enum:Codes	file:
+LD_xWORD_A	Z80.c	/^  JR_NC,LD_SP_WORD,LD_xWORD_A,INC_SP,INC_xHL,DEC_xHL,LD_xHL_BYTE,SCF,$/;"	e	enum:Codes	file:
+LD_xWORD_HL	Z80.c	/^  JR_NZ,LD_HL_WORD,LD_xWORD_HL,INC_HL,INC_H,DEC_H,LD_H_BYTE,DAA,$/;"	e	enum:Codes	file:
+LD_xWORDe_BC	Z80.c	/^  IN_B_xC,OUT_xC_B,SBC_HL_BC,LD_xWORDe_BC,NEG,RETN,IM_0,LD_I_A,$/;"	e	enum:CodesED	file:
+LD_xWORDe_DE	Z80.c	/^  IN_D_xC,OUT_xC_D,SBC_HL_DE,LD_xWORDe_DE,DB_54,DB_55,IM_1,LD_A_I,$/;"	e	enum:CodesED	file:
+LD_xWORDe_HL	Z80.c	/^  IN_H_xC,OUT_xC_H,SBC_HL_HL,LD_xWORDe_HL,DB_64,DB_65,DB_66,RRD,$/;"	e	enum:CodesED	file:
+LD_xWORDe_SP	Z80.c	/^  IN_F_xC,DB_71,SBC_HL_SP,LD_xWORDe_SP,DB_74,DB_75,DB_76,DB_77,$/;"	e	enum:CodesED	file:
+LIBPSP_H	LibPsp.h	14;"	d
+LogSnd	Coleco.c	/^byte LogSnd = 0;       \/* 1: Log soundtrack into a file *\/$/;"	v
+LoopZ80	Coleco.c	/^word LoopZ80()$/;"	f
+MAXALLOC	LibPsp.h	35;"	d
+MAXFILENAME	miniunz.c	31;"	d	file:
+MAXSCREEN	Coleco.h	25;"	d
+MAXTIMERFREQ	LibPsp.h	38;"	d
+MAX_CHEAT_LINE	psp_menu_list.c	39;"	d	file:
+MAX_HELP_LINE	psp_menu_help.c	38;"	d	file:
+MAX_MENU_CHEAT_ITEM	psp_menu_cheat.c	68;"	d	file:
+MAX_MENU_ITEM	psp_menu.c	71;"	d	file:
+MAX_MENU_JOY_ITEM	psp_menu_joy.c	55;"	d	file:
+MAX_MENU_KBD_ITEM	psp_menu_kbd.c	66;"	d	file:
+MAX_MENU_SET_ITEM	psp_menu_set.c	58;"	d	file:
+MAX_PATH	Coleco.h	62;"	d
+MAX_SCAN_ADDR	psp_menu_cheat.c	93;"	d	file:
+MAX_VKEYBOARD	psp_danzeff.c	43;"	d	file:
+MEM_REG	cpugp2x.c	/^volatile unsigned short *MEM_REG;$/;"	v
+MENU_BACK	psp_menu.c	68;"	d	file:
+MENU_CHEATS	psp_menu.c	62;"	d	file:
+MENU_CHEAT_ADD	psp_menu_cheat.c	50;"	d	file:
+MENU_CHEAT_ALL	psp_menu_cheat.c	55;"	d	file:
+MENU_CHEAT_BACK	psp_menu_cheat.c	66;"	d	file:
+MENU_CHEAT_DEL	psp_menu_cheat.c	60;"	d	file:
+MENU_CHEAT_EDIT	psp_menu_cheat.c	58;"	d	file:
+MENU_CHEAT_ENABLE	psp_menu_cheat.c	54;"	d	file:
+MENU_CHEAT_IMPORT	psp_menu_cheat.c	57;"	d	file:
+MENU_CHEAT_LOAD	psp_menu_cheat.c	62;"	d	file:
+MENU_CHEAT_NEW_VAL	psp_menu_cheat.c	48;"	d	file:
+MENU_CHEAT_OLD_VAL	psp_menu_cheat.c	47;"	d	file:
+MENU_CHEAT_POKE	psp_menu_cheat.c	49;"	d	file:
+MENU_CHEAT_RAM	psp_menu_cheat.c	52;"	d	file:
+MENU_CHEAT_RESET	psp_menu_cheat.c	64;"	d	file:
+MENU_CHEAT_SAVE	psp_menu_cheat.c	63;"	d	file:
+MENU_CHEAT_VALUE	psp_menu_cheat.c	56;"	d	file:
+MENU_DEL_SLOT	psp_menu.c	54;"	d	file:
+MENU_EDITOR	psp_menu.c	61;"	d	file:
+MENU_EXIT	psp_menu.c	69;"	d	file:
+MENU_HELP	psp_menu.c	56;"	d	file:
+MENU_JOYSTICK	psp_menu.c	64;"	d	file:
+MENU_JOY_ANALOG	psp_menu_joy.c	46;"	d	file:
+MENU_JOY_AUTOFIRE_M	psp_menu_joy.c	48;"	d	file:
+MENU_JOY_AUTOFIRE_T	psp_menu_joy.c	47;"	d	file:
+MENU_JOY_BACK	psp_menu_joy.c	53;"	d	file:
+MENU_JOY_JOYSTICK	psp_menu_joy.c	45;"	d	file:
+MENU_JOY_LOAD	psp_menu_joy.c	50;"	d	file:
+MENU_JOY_RESET	psp_menu_joy.c	52;"	d	file:
+MENU_JOY_SAVE	psp_menu_joy.c	51;"	d	file:
+MENU_KBD_BACK	psp_menu_kbd.c	64;"	d	file:
+MENU_KBD_CIRCLE	psp_menu_kbd.c	50;"	d	file:
+MENU_KBD_CROSS	psp_menu_kbd.c	47;"	d	file:
+MENU_KBD_DOWN	psp_menu_kbd.c	44;"	d	file:
+MENU_KBD_FIRE	psp_menu_kbd.c	53;"	d	file:
+MENU_KBD_HOTKEYS	psp_menu_kbd.c	61;"	d	file:
+MENU_KBD_JOY_DOWN	psp_menu_kbd.c	55;"	d	file:
+MENU_KBD_JOY_LEFT	psp_menu_kbd.c	56;"	d	file:
+MENU_KBD_JOY_RIGHT	psp_menu_kbd.c	57;"	d	file:
+MENU_KBD_JOY_UP	psp_menu_kbd.c	54;"	d	file:
+MENU_KBD_KBD_SELECT	psp_menu_kbd.c	42;"	d	file:
+MENU_KBD_LEFT	psp_menu_kbd.c	45;"	d	file:
+MENU_KBD_LOAD	psp_menu_kbd.c	59;"	d	file:
+MENU_KBD_LTRIGGER	psp_menu_kbd.c	51;"	d	file:
+MENU_KBD_RESET	psp_menu_kbd.c	62;"	d	file:
+MENU_KBD_RIGHT	psp_menu_kbd.c	46;"	d	file:
+MENU_KBD_RTRIGGER	psp_menu_kbd.c	52;"	d	file:
+MENU_KBD_SAVE	psp_menu_kbd.c	60;"	d	file:
+MENU_KBD_SKIN	psp_menu_kbd.c	41;"	d	file:
+MENU_KBD_SQUARE	psp_menu_kbd.c	48;"	d	file:
+MENU_KBD_TRIANGLE	psp_menu_kbd.c	49;"	d	file:
+MENU_KBD_UP	psp_menu_kbd.c	43;"	d	file:
+MENU_KEYBOARD	psp_menu.c	63;"	d	file:
+MENU_LOAD_ROM	psp_menu.c	59;"	d	file:
+MENU_LOAD_SLOT	psp_menu.c	52;"	d	file:
+MENU_LOAD_STATE	psp_menu.c	58;"	d	file:
+MENU_RESET	psp_menu.c	67;"	d	file:
+MENU_SAVE_SLOT	psp_menu.c	53;"	d	file:
+MENU_SCREENSHOT	psp_menu.c	49;"	d	file:
+MENU_SETTINGS	psp_menu.c	65;"	d	file:
+MENU_SET_BACK	psp_menu_set.c	56;"	d	file:
+MENU_SET_CLOCK	psp_menu_set.c	51;"	d	file:
+MENU_SET_LOAD	psp_menu_set.c	53;"	d	file:
+MENU_SET_NTSC	psp_menu_set.c	49;"	d	file:
+MENU_SET_RENDER	psp_menu_set.c	48;"	d	file:
+MENU_SET_RESET	psp_menu_set.c	55;"	d	file:
+MENU_SET_SAVE	psp_menu_set.c	54;"	d	file:
+MENU_SET_SKIP_FPS	psp_menu_set.c	47;"	d	file:
+MENU_SET_SOUND	psp_menu_set.c	44;"	d	file:
+MENU_SET_SPEED_LIMIT	psp_menu_set.c	46;"	d	file:
+MENU_SET_VIEW_FPS	psp_menu_set.c	45;"	d	file:
+MENU_SET_VSYNC	psp_menu_set.c	50;"	d	file:
+MENU_VOLUME	psp_menu.c	50;"	d	file:
+MINIUNZ_H	miniunz.h	17;"	d
+MODE_COUNT	psp_danzeff.c	42;"	d	file:
+M_ADC	Z80.c	135;"	d	file:
+M_ADCW	Z80.c	183;"	d	file:
+M_ADD	Z80.c	119;"	d	file:
+M_ADDW	Z80.c	175;"	d	file:
+M_AND	Z80.c	158;"	d	file:
+M_BIT	Z80.c	93;"	d	file:
+M_CALL	Z80.c	104;"	d	file:
+M_CP	Z80.c	151;"	d	file:
+M_DEC	Z80.c	169;"	d	file:
+M_IN	Z80.c	161;"	d	file:
+M_INC	Z80.c	163;"	d	file:
+M_JP	Z80.c	109;"	d	file:
+M_JR	Z80.c	110;"	d	file:
+M_LDWORD	Z80.c	116;"	d	file:
+M_OR	Z80.c	159;"	d	file:
+M_POP	Z80.c	99;"	d	file:
+M_PUSH	Z80.c	101;"	d	file:
+M_RES	Z80.c	97;"	d	file:
+M_RET	Z80.c	111;"	d	file:
+M_RL	Z80.c	60;"	d	file:
+M_RLC	Z80.c	56;"	d	file:
+M_RR	Z80.c	71;"	d	file:
+M_RRC	Z80.c	58;"	d	file:
+M_RST	Z80.c	113;"	d	file:
+M_SBC	Z80.c	143;"	d	file:
+M_SBCW	Z80.c	192;"	d	file:
+M_SET	Z80.c	96;"	d	file:
+M_SLA	Z80.c	83;"	d	file:
+M_SLL	Z80.c	88;"	d	file:
+M_SRA	Z80.c	85;"	d	file:
+M_SRL	Z80.c	90;"	d	file:
+M_SUB	Z80.c	127;"	d	file:
+M_XOR	Z80.c	160;"	d	file:
+MasterTimer	LibPsp.c	/^static void MasterTimer(int Arg)$/;"	f	file:
+Mnemonics	Debug.c	/^static const char *Mnemonics[256] =$/;"	v	file:
+MnemonicsCB	Debug.c	/^static const char *MnemonicsCB[256] =$/;"	v	file:
+MnemonicsED	Debug.c	/^static const char *MnemonicsED[256] =$/;"	v	file:
+MnemonicsXCB	Debug.c	/^static const char *MnemonicsXCB[256] =$/;"	v	file:
+MnemonicsXX	Debug.c	/^static const char *MnemonicsXX[256] =$/;"	v	file:
+NEG	Z80.c	/^  IN_B_xC,OUT_xC_B,SBC_HL_BC,LD_xWORDe_BC,NEG,RETN,IM_0,LD_I_A,$/;"	e	enum:CodesED	file:
+NEXT	LibPsp.c	22;"	d	file:
+NOISEBSIZE	psp_sound.c	30;"	d	file:
+NOP	Z80.c	/^  NOP,LD_BC_WORD,LD_xBC_A,INC_BC,INC_B,DEC_B,LD_B_BYTE,RLCA,$/;"	e	enum:Codes	file:
+NORAM	Coleco.h	23;"	d
+N_FLAG	Z80.h	33;"	d
+Next	LibPsp.c	/^  struct Timer *Next;$/;"	m	struct:Timer	typeref:struct:Timer::Timer	file:
+NoiseGen	psp_sound.c	/^static int NoiseGen=1;$/;"	v	file:
+NoiseMode	SN76489.h	/^  unsigned char NoiseMode,Buf,Changed;$/;"	m	struct:__anon5
+OR_A	Z80.c	/^  OR_B,OR_C,OR_D,OR_E,OR_H,OR_L,OR_xHL,OR_A,$/;"	e	enum:Codes	file:
+OR_B	Z80.c	/^  OR_B,OR_C,OR_D,OR_E,OR_H,OR_L,OR_xHL,OR_A,$/;"	e	enum:Codes	file:
+OR_BYTE	Z80.c	/^  RET_P,POP_AF,JP_P,DI,CALL_P,PUSH_AF,OR_BYTE,RST30,$/;"	e	enum:Codes	file:
+OR_C	Z80.c	/^  OR_B,OR_C,OR_D,OR_E,OR_H,OR_L,OR_xHL,OR_A,$/;"	e	enum:Codes	file:
+OR_D	Z80.c	/^  OR_B,OR_C,OR_D,OR_E,OR_H,OR_L,OR_xHL,OR_A,$/;"	e	enum:Codes	file:
+OR_E	Z80.c	/^  OR_B,OR_C,OR_D,OR_E,OR_H,OR_L,OR_xHL,OR_A,$/;"	e	enum:Codes	file:
+OR_H	Z80.c	/^  OR_B,OR_C,OR_D,OR_E,OR_H,OR_L,OR_xHL,OR_A,$/;"	e	enum:Codes	file:
+OR_L	Z80.c	/^  OR_B,OR_C,OR_D,OR_E,OR_H,OR_L,OR_xHL,OR_A,$/;"	e	enum:Codes	file:
+OR_xHL	Z80.c	/^  OR_B,OR_C,OR_D,OR_E,OR_H,OR_L,OR_xHL,OR_A,$/;"	e	enum:Codes	file:
+OTDR	Z80.c	/^  LDDR,CPDR,INDR,OTDR,DB_BC,DB_BD,DB_BE,DB_BF,$/;"	e	enum:CodesED	file:
+OTIR	Z80.c	/^  LDIR,CPIR,INIR,OTIR,DB_B4,DB_B5,DB_B6,DB_B7,$/;"	e	enum:CodesED	file:
+OUTA	Z80.c	/^  RET_NC,POP_DE,JP_NC,OUTA,CALL_NC,PUSH_DE,SUB_BYTE,RST10,$/;"	e	enum:Codes	file:
+OUTD	Z80.c	/^  LDD,CPD,IND,OUTD,DB_AC,DB_AD,DB_AE,DB_AF,$/;"	e	enum:CodesED	file:
+OUTI	Z80.c	/^  LDI,CPI,INI,OUTI,DB_A4,DB_A5,DB_A6,DB_A7,$/;"	e	enum:CodesED	file:
+OUT_xC_A	Z80.c	/^  IN_A_xC,OUT_xC_A,ADC_HL_SP,LD_SP_xWORDe,DB_7C,DB_7D,DB_7E,DB_7F,$/;"	e	enum:CodesED	file:
+OUT_xC_B	Z80.c	/^  IN_B_xC,OUT_xC_B,SBC_HL_BC,LD_xWORDe_BC,NEG,RETN,IM_0,LD_I_A,$/;"	e	enum:CodesED	file:
+OUT_xC_C	Z80.c	/^  IN_C_xC,OUT_xC_C,ADC_HL_BC,LD_BC_xWORDe,DB_4C,RETI,DB_,LD_R_A,$/;"	e	enum:CodesED	file:
+OUT_xC_D	Z80.c	/^  IN_D_xC,OUT_xC_D,SBC_HL_DE,LD_xWORDe_DE,DB_54,DB_55,IM_1,LD_A_I,$/;"	e	enum:CodesED	file:
+OUT_xC_E	Z80.c	/^  IN_E_xC,OUT_xC_E,ADC_HL_DE,LD_DE_xWORDe,DB_5C,DB_5D,IM_2,LD_A_R,$/;"	e	enum:CodesED	file:
+OUT_xC_H	Z80.c	/^  IN_H_xC,OUT_xC_H,SBC_HL_HL,LD_xWORDe_HL,DB_64,DB_65,DB_66,RRD,$/;"	e	enum:CodesED	file:
+OUT_xC_L	Z80.c	/^  IN_L_xC,OUT_xC_L,ADC_HL_HL,LD_HL_xWORDe,DB_6C,DB_6D,DB_6E,RLD,$/;"	e	enum:CodesED	file:
+OnBreak	Unix.c	/^static void OnBreak(int Arg) { ExitNow=1;signal(Arg,OnBreak); }$/;"	f	file:
+OutZ80	Coleco.c	/^void OutZ80(register word Port,register byte Value)$/;"	f
+PC	Z80.h	/^  pair AF,BC,DE,HL,IX,IY,PC,SP;       \/* Main registers      *\/$/;"	m	struct:__anon10
+PFX_CB	Z80.c	/^  RET_Z,RET,JP_Z,PFX_CB,CALL_Z,CALL,ADC_BYTE,RST08,$/;"	e	enum:Codes	file:
+PFX_DD	Z80.c	/^  RET_C,EXX,JP_C,INA,CALL_C,PFX_DD,SBC_BYTE,RST18,$/;"	e	enum:Codes	file:
+PFX_ED	Z80.c	/^  RET_PE,LD_PC_HL,JP_PE,EX_DE_HL,CALL_PE,PFX_ED,XOR_BYTE,RST28,$/;"	e	enum:Codes	file:
+PFX_FD	Z80.c	/^  RET_M,LD_SP_HL,JP_M,EI,CALL_M,PFX_FD,CP_BYTE,RST38$/;"	e	enum:Codes	file:
+PICS_BASEDIR	psp_danzeff.c	31;"	d	file:
+POP_AF	Z80.c	/^  RET_P,POP_AF,JP_P,DI,CALL_P,PUSH_AF,OR_BYTE,RST30,$/;"	e	enum:Codes	file:
+POP_BC	Z80.c	/^  RET_NZ,POP_BC,JP_NZ,JP,CALL_NZ,PUSH_BC,ADD_BYTE,RST00,$/;"	e	enum:Codes	file:
+POP_DE	Z80.c	/^  RET_NC,POP_DE,JP_NC,OUTA,CALL_NC,PUSH_DE,SUB_BYTE,RST10,$/;"	e	enum:Codes	file:
+POP_HL	Z80.c	/^  RET_PO,POP_HL,JP_PO,EX_HL_xSP,CALL_PO,PUSH_HL,AND_BYTE,RST20,$/;"	e	enum:Codes	file:
+PSG	Coleco.c	/^SN76489 PSG;           \/* SN76489 PSG state             *\/$/;"	v
+PSG	Coleco.h	/^  SN76489 PSG;           \/* SN76489 PSG state             *\/$/;"	m	struct:colem_save_t
+PSG_ASYNC	SN76489.h	18;"	d
+PSG_BASE	SN76489.h	16;"	d
+PSG_FLUSH	SN76489.h	20;"	d
+PSG_SYNC	SN76489.h	19;"	d
+PSPWRITE	psp_editor.c	/^  PSPWRITE_t PSPWRITE;$/;"	v
+PSPWRITE_t	psp_editor.h	/^  typedef struct PSPWRITE_t {$/;"	s
+PSPWRITE_t	psp_editor.h	/^  } PSPWRITE_t;$/;"	t	typeref:struct:PSPWRITE_t
+PSP_ALL_BUTTON_MASK	psp_kbd.h	26;"	d
+PSP_CTRL_CIRCLE	gp2x_psp.h	46;"	d
+PSP_CTRL_CROSS	gp2x_psp.h	47;"	d
+PSP_CTRL_DOWN	gp2x_psp.h	43;"	d
+PSP_CTRL_FIRE	gp2x_psp.h	53;"	d
+PSP_CTRL_LEFT	gp2x_psp.h	44;"	d
+PSP_CTRL_LTRIGGER	gp2x_psp.h	51;"	d
+PSP_CTRL_MASK	gp2x_psp.h	56;"	d
+PSP_CTRL_RIGHT	gp2x_psp.h	42;"	d
+PSP_CTRL_RTRIGGER	gp2x_psp.h	52;"	d
+PSP_CTRL_SELECT	gp2x_psp.h	49;"	d
+PSP_CTRL_SQUARE	gp2x_psp.h	48;"	d
+PSP_CTRL_START	gp2x_psp.h	50;"	d
+PSP_CTRL_TRIANGLE	gp2x_psp.h	45;"	d
+PSP_CTRL_UP	gp2x_psp.h	41;"	d
+PSP_CTRL_VOLDOWN	gp2x_psp.h	55;"	d
+PSP_CTRL_VOLUP	gp2x_psp.h	54;"	d
+PSP_EDITOR_BLINK_TIME	psp_editor.c	1230;"	d	file:
+PSP_EDITOR_MIN_EDIT_TIME	psp_editor.c	1591;"	d	file:
+PSP_EDITOR_MIN_MOVE_TIME	psp_editor.c	1589;"	d	file:
+PSP_EDITOR_MIN_TIME	psp_editor.c	1592;"	d	file:
+PSP_EDITOR_REPEAT_TIME	psp_editor.c	1590;"	d	file:
+PSP_KBD_MAX_SKIN	psp_danzeff.h	41;"	d
+PSP_LINE_SIZE	psp_sdl.h	28;"	d
+PSP_MENU_AUTHOR_COLOR	psp_menu.h	31;"	d
+PSP_MENU_BACKGROUND_COLOR	psp_menu.h	29;"	d
+PSP_MENU_BLACK_COLOR	psp_menu.h	30;"	d
+PSP_MENU_BLUE_COLOR	psp_menu.h	32;"	d
+PSP_MENU_BORDER_COLOR	psp_menu.h	26;"	d
+PSP_MENU_GREEN_COLOR	psp_menu.h	33;"	d
+PSP_MENU_MIN_TIME	psp_menu.h	41;"	d
+PSP_MENU_NOTE_COLOR	psp_menu.h	28;"	d
+PSP_MENU_RED_COLOR	psp_menu.h	34;"	d
+PSP_MENU_SEL2_COLOR	psp_menu.h	39;"	d
+PSP_MENU_SEL_COLOR	psp_menu.h	38;"	d
+PSP_MENU_TEXT2_COLOR	psp_menu.h	37;"	d
+PSP_MENU_TEXT_COLOR	psp_menu.h	36;"	d
+PSP_MENU_WARNING_COLOR	psp_menu.h	27;"	d
+PSP_SDL_NOP	psp_sdl.h	25;"	d
+PSP_SDL_SCREEN_HEIGHT	psp_sdl.h	31;"	d
+PSP_SDL_SCREEN_WIDTH	psp_sdl.h	30;"	d
+PSP_SDL_XOR	psp_sdl.h	26;"	d
+PUSH_AF	Z80.c	/^  RET_P,POP_AF,JP_P,DI,CALL_P,PUSH_AF,OR_BYTE,RST30,$/;"	e	enum:Codes	file:
+PUSH_BC	Z80.c	/^  RET_NZ,POP_BC,JP_NZ,JP,CALL_NZ,PUSH_BC,ADD_BYTE,RST00,$/;"	e	enum:Codes	file:
+PUSH_DE	Z80.c	/^  RET_NC,POP_DE,JP_NC,OUTA,CALL_NC,PUSH_DE,SUB_BYTE,RST10,$/;"	e	enum:Codes	file:
+PUSH_HL	Z80.c	/^  RET_PO,POP_HL,JP_PO,EX_HL_xSP,CALL_PO,PUSH_HL,AND_BYTE,RST20,$/;"	e	enum:Codes	file:
+PZSTable	Tables.h	/^static const byte PZSTable[256] =$/;"	v
+P_FLAG	Z80.h	31;"	d
+Palette	Coleco.c	/^struct { byte R,G,B; } Palette[16] =$/;"	v	typeref:struct:__anon1
+Palette_rgb	Coleco.c	/^unsigned short Palette_rgb[16];$/;"	v
+PatchZ80	Coleco.c	/^void PatchZ80() {}$/;"	f
+Play	psp_sound.c	/^void Play(int C,int F,int V)$/;"	f
+PrnName	Coleco.c	/^char *PrnName = NULL;  \/* Printer redirection file      *\/$/;"	v
+PrnStream	Coleco.c	/^FILE *PrnStream;$/;"	v
+PutImage_blit	Unix.c	/^PutImage_blit(void)$/;"	f
+PutImage_fit	Unix.c	/^PutImage_fit()$/;"	f
+PutImage_normal	Unix.c	/^PutImage_normal(void)$/;"	f
+R	Coleco.c	/^struct { byte R,G,B; } Palette[16] =$/;"	m	struct:__anon1	file:
+R	Z80.c	53;"	d	file:
+R	Z80.h	/^  byte R;                             \/* Refresh register    *\/$/;"	m	struct:__anon10
+R2	Coleco.c	/^  byte R2,R3,R4,R5;$/;"	m	struct:__anon2	file:
+R3	Coleco.c	/^  byte R2,R3,R4,R5;$/;"	m	struct:__anon2	file:
+R4	Coleco.c	/^  byte R2,R3,R4,R5;$/;"	m	struct:__anon2	file:
+R5	Coleco.c	/^  byte R2,R3,R4,R5;$/;"	m	struct:__anon2	file:
+RAM	Coleco.c	/^byte *RAM;             \/* Main and Video RAMs           *\/$/;"	v
+RES0_A	Z80.c	/^  RES0_B,RES0_C,RES0_D,RES0_E,RES0_H,RES0_L,RES0_xHL,RES0_A,$/;"	e	enum:CodesCB	file:
+RES0_B	Z80.c	/^  RES0_B,RES0_C,RES0_D,RES0_E,RES0_H,RES0_L,RES0_xHL,RES0_A,$/;"	e	enum:CodesCB	file:
+RES0_C	Z80.c	/^  RES0_B,RES0_C,RES0_D,RES0_E,RES0_H,RES0_L,RES0_xHL,RES0_A,$/;"	e	enum:CodesCB	file:
+RES0_D	Z80.c	/^  RES0_B,RES0_C,RES0_D,RES0_E,RES0_H,RES0_L,RES0_xHL,RES0_A,$/;"	e	enum:CodesCB	file:
+RES0_E	Z80.c	/^  RES0_B,RES0_C,RES0_D,RES0_E,RES0_H,RES0_L,RES0_xHL,RES0_A,$/;"	e	enum:CodesCB	file:
+RES0_H	Z80.c	/^  RES0_B,RES0_C,RES0_D,RES0_E,RES0_H,RES0_L,RES0_xHL,RES0_A,$/;"	e	enum:CodesCB	file:
+RES0_L	Z80.c	/^  RES0_B,RES0_C,RES0_D,RES0_E,RES0_H,RES0_L,RES0_xHL,RES0_A,$/;"	e	enum:CodesCB	file:
+RES0_xHL	Z80.c	/^  RES0_B,RES0_C,RES0_D,RES0_E,RES0_H,RES0_L,RES0_xHL,RES0_A,$/;"	e	enum:CodesCB	file:
+RES1_A	Z80.c	/^  RES1_B,RES1_C,RES1_D,RES1_E,RES1_H,RES1_L,RES1_xHL,RES1_A,$/;"	e	enum:CodesCB	file:
+RES1_B	Z80.c	/^  RES1_B,RES1_C,RES1_D,RES1_E,RES1_H,RES1_L,RES1_xHL,RES1_A,$/;"	e	enum:CodesCB	file:
+RES1_C	Z80.c	/^  RES1_B,RES1_C,RES1_D,RES1_E,RES1_H,RES1_L,RES1_xHL,RES1_A,$/;"	e	enum:CodesCB	file:
+RES1_D	Z80.c	/^  RES1_B,RES1_C,RES1_D,RES1_E,RES1_H,RES1_L,RES1_xHL,RES1_A,$/;"	e	enum:CodesCB	file:
+RES1_E	Z80.c	/^  RES1_B,RES1_C,RES1_D,RES1_E,RES1_H,RES1_L,RES1_xHL,RES1_A,$/;"	e	enum:CodesCB	file:
+RES1_H	Z80.c	/^  RES1_B,RES1_C,RES1_D,RES1_E,RES1_H,RES1_L,RES1_xHL,RES1_A,$/;"	e	enum:CodesCB	file:
+RES1_L	Z80.c	/^  RES1_B,RES1_C,RES1_D,RES1_E,RES1_H,RES1_L,RES1_xHL,RES1_A,$/;"	e	enum:CodesCB	file:
+RES1_xHL	Z80.c	/^  RES1_B,RES1_C,RES1_D,RES1_E,RES1_H,RES1_L,RES1_xHL,RES1_A,$/;"	e	enum:CodesCB	file:
+RES2_A	Z80.c	/^  RES2_B,RES2_C,RES2_D,RES2_E,RES2_H,RES2_L,RES2_xHL,RES2_A,$/;"	e	enum:CodesCB	file:
+RES2_B	Z80.c	/^  RES2_B,RES2_C,RES2_D,RES2_E,RES2_H,RES2_L,RES2_xHL,RES2_A,$/;"	e	enum:CodesCB	file:
+RES2_C	Z80.c	/^  RES2_B,RES2_C,RES2_D,RES2_E,RES2_H,RES2_L,RES2_xHL,RES2_A,$/;"	e	enum:CodesCB	file:
+RES2_D	Z80.c	/^  RES2_B,RES2_C,RES2_D,RES2_E,RES2_H,RES2_L,RES2_xHL,RES2_A,$/;"	e	enum:CodesCB	file:
+RES2_E	Z80.c	/^  RES2_B,RES2_C,RES2_D,RES2_E,RES2_H,RES2_L,RES2_xHL,RES2_A,$/;"	e	enum:CodesCB	file:
+RES2_H	Z80.c	/^  RES2_B,RES2_C,RES2_D,RES2_E,RES2_H,RES2_L,RES2_xHL,RES2_A,$/;"	e	enum:CodesCB	file:
+RES2_L	Z80.c	/^  RES2_B,RES2_C,RES2_D,RES2_E,RES2_H,RES2_L,RES2_xHL,RES2_A,$/;"	e	enum:CodesCB	file:
+RES2_xHL	Z80.c	/^  RES2_B,RES2_C,RES2_D,RES2_E,RES2_H,RES2_L,RES2_xHL,RES2_A,$/;"	e	enum:CodesCB	file:
+RES3_A	Z80.c	/^  RES3_B,RES3_C,RES3_D,RES3_E,RES3_H,RES3_L,RES3_xHL,RES3_A,$/;"	e	enum:CodesCB	file:
+RES3_B	Z80.c	/^  RES3_B,RES3_C,RES3_D,RES3_E,RES3_H,RES3_L,RES3_xHL,RES3_A,$/;"	e	enum:CodesCB	file:
+RES3_C	Z80.c	/^  RES3_B,RES3_C,RES3_D,RES3_E,RES3_H,RES3_L,RES3_xHL,RES3_A,$/;"	e	enum:CodesCB	file:
+RES3_D	Z80.c	/^  RES3_B,RES3_C,RES3_D,RES3_E,RES3_H,RES3_L,RES3_xHL,RES3_A,$/;"	e	enum:CodesCB	file:
+RES3_E	Z80.c	/^  RES3_B,RES3_C,RES3_D,RES3_E,RES3_H,RES3_L,RES3_xHL,RES3_A,$/;"	e	enum:CodesCB	file:
+RES3_H	Z80.c	/^  RES3_B,RES3_C,RES3_D,RES3_E,RES3_H,RES3_L,RES3_xHL,RES3_A,$/;"	e	enum:CodesCB	file:
+RES3_L	Z80.c	/^  RES3_B,RES3_C,RES3_D,RES3_E,RES3_H,RES3_L,RES3_xHL,RES3_A,$/;"	e	enum:CodesCB	file:
+RES3_xHL	Z80.c	/^  RES3_B,RES3_C,RES3_D,RES3_E,RES3_H,RES3_L,RES3_xHL,RES3_A,$/;"	e	enum:CodesCB	file:
+RES4_A	Z80.c	/^  RES4_B,RES4_C,RES4_D,RES4_E,RES4_H,RES4_L,RES4_xHL,RES4_A,$/;"	e	enum:CodesCB	file:
+RES4_B	Z80.c	/^  RES4_B,RES4_C,RES4_D,RES4_E,RES4_H,RES4_L,RES4_xHL,RES4_A,$/;"	e	enum:CodesCB	file:
+RES4_C	Z80.c	/^  RES4_B,RES4_C,RES4_D,RES4_E,RES4_H,RES4_L,RES4_xHL,RES4_A,$/;"	e	enum:CodesCB	file:
+RES4_D	Z80.c	/^  RES4_B,RES4_C,RES4_D,RES4_E,RES4_H,RES4_L,RES4_xHL,RES4_A,$/;"	e	enum:CodesCB	file:
+RES4_E	Z80.c	/^  RES4_B,RES4_C,RES4_D,RES4_E,RES4_H,RES4_L,RES4_xHL,RES4_A,$/;"	e	enum:CodesCB	file:
+RES4_H	Z80.c	/^  RES4_B,RES4_C,RES4_D,RES4_E,RES4_H,RES4_L,RES4_xHL,RES4_A,$/;"	e	enum:CodesCB	file:
+RES4_L	Z80.c	/^  RES4_B,RES4_C,RES4_D,RES4_E,RES4_H,RES4_L,RES4_xHL,RES4_A,$/;"	e	enum:CodesCB	file:
+RES4_xHL	Z80.c	/^  RES4_B,RES4_C,RES4_D,RES4_E,RES4_H,RES4_L,RES4_xHL,RES4_A,$/;"	e	enum:CodesCB	file:
+RES5_A	Z80.c	/^  RES5_B,RES5_C,RES5_D,RES5_E,RES5_H,RES5_L,RES5_xHL,RES5_A,$/;"	e	enum:CodesCB	file:
+RES5_B	Z80.c	/^  RES5_B,RES5_C,RES5_D,RES5_E,RES5_H,RES5_L,RES5_xHL,RES5_A,$/;"	e	enum:CodesCB	file:
+RES5_C	Z80.c	/^  RES5_B,RES5_C,RES5_D,RES5_E,RES5_H,RES5_L,RES5_xHL,RES5_A,$/;"	e	enum:CodesCB	file:
+RES5_D	Z80.c	/^  RES5_B,RES5_C,RES5_D,RES5_E,RES5_H,RES5_L,RES5_xHL,RES5_A,$/;"	e	enum:CodesCB	file:
+RES5_E	Z80.c	/^  RES5_B,RES5_C,RES5_D,RES5_E,RES5_H,RES5_L,RES5_xHL,RES5_A,$/;"	e	enum:CodesCB	file:
+RES5_H	Z80.c	/^  RES5_B,RES5_C,RES5_D,RES5_E,RES5_H,RES5_L,RES5_xHL,RES5_A,$/;"	e	enum:CodesCB	file:
+RES5_L	Z80.c	/^  RES5_B,RES5_C,RES5_D,RES5_E,RES5_H,RES5_L,RES5_xHL,RES5_A,$/;"	e	enum:CodesCB	file:
+RES5_xHL	Z80.c	/^  RES5_B,RES5_C,RES5_D,RES5_E,RES5_H,RES5_L,RES5_xHL,RES5_A,$/;"	e	enum:CodesCB	file:
+RES6_A	Z80.c	/^  RES6_B,RES6_C,RES6_D,RES6_E,RES6_H,RES6_L,RES6_xHL,RES6_A,$/;"	e	enum:CodesCB	file:
+RES6_B	Z80.c	/^  RES6_B,RES6_C,RES6_D,RES6_E,RES6_H,RES6_L,RES6_xHL,RES6_A,$/;"	e	enum:CodesCB	file:
+RES6_C	Z80.c	/^  RES6_B,RES6_C,RES6_D,RES6_E,RES6_H,RES6_L,RES6_xHL,RES6_A,$/;"	e	enum:CodesCB	file:
+RES6_D	Z80.c	/^  RES6_B,RES6_C,RES6_D,RES6_E,RES6_H,RES6_L,RES6_xHL,RES6_A,$/;"	e	enum:CodesCB	file:
+RES6_E	Z80.c	/^  RES6_B,RES6_C,RES6_D,RES6_E,RES6_H,RES6_L,RES6_xHL,RES6_A,$/;"	e	enum:CodesCB	file:
+RES6_H	Z80.c	/^  RES6_B,RES6_C,RES6_D,RES6_E,RES6_H,RES6_L,RES6_xHL,RES6_A,$/;"	e	enum:CodesCB	file:
+RES6_L	Z80.c	/^  RES6_B,RES6_C,RES6_D,RES6_E,RES6_H,RES6_L,RES6_xHL,RES6_A,$/;"	e	enum:CodesCB	file:
+RES6_xHL	Z80.c	/^  RES6_B,RES6_C,RES6_D,RES6_E,RES6_H,RES6_L,RES6_xHL,RES6_A,$/;"	e	enum:CodesCB	file:
+RES7_A	Z80.c	/^  RES7_B,RES7_C,RES7_D,RES7_E,RES7_H,RES7_L,RES7_xHL,RES7_A,  $/;"	e	enum:CodesCB	file:
+RES7_B	Z80.c	/^  RES7_B,RES7_C,RES7_D,RES7_E,RES7_H,RES7_L,RES7_xHL,RES7_A,  $/;"	e	enum:CodesCB	file:
+RES7_C	Z80.c	/^  RES7_B,RES7_C,RES7_D,RES7_E,RES7_H,RES7_L,RES7_xHL,RES7_A,  $/;"	e	enum:CodesCB	file:
+RES7_D	Z80.c	/^  RES7_B,RES7_C,RES7_D,RES7_E,RES7_H,RES7_L,RES7_xHL,RES7_A,  $/;"	e	enum:CodesCB	file:
+RES7_E	Z80.c	/^  RES7_B,RES7_C,RES7_D,RES7_E,RES7_H,RES7_L,RES7_xHL,RES7_A,  $/;"	e	enum:CodesCB	file:
+RES7_H	Z80.c	/^  RES7_B,RES7_C,RES7_D,RES7_E,RES7_H,RES7_L,RES7_xHL,RES7_A,  $/;"	e	enum:CodesCB	file:
+RES7_L	Z80.c	/^  RES7_B,RES7_C,RES7_D,RES7_E,RES7_H,RES7_L,RES7_xHL,RES7_A,  $/;"	e	enum:CodesCB	file:
+RES7_xHL	Z80.c	/^  RES7_B,RES7_C,RES7_D,RES7_E,RES7_H,RES7_L,RES7_xHL,RES7_A,  $/;"	e	enum:CodesCB	file:
+RET	Z80.c	/^  RET_Z,RET,JP_Z,PFX_CB,CALL_Z,CALL,ADC_BYTE,RST08,$/;"	e	enum:Codes	file:
+RETI	Z80.c	/^  IN_C_xC,OUT_xC_C,ADC_HL_BC,LD_BC_xWORDe,DB_4C,RETI,DB_,LD_R_A,$/;"	e	enum:CodesED	file:
+RETN	Z80.c	/^  IN_B_xC,OUT_xC_B,SBC_HL_BC,LD_xWORDe_BC,NEG,RETN,IM_0,LD_I_A,$/;"	e	enum:CodesED	file:
+RET_C	Z80.c	/^  RET_C,EXX,JP_C,INA,CALL_C,PFX_DD,SBC_BYTE,RST18,$/;"	e	enum:Codes	file:
+RET_M	Z80.c	/^  RET_M,LD_SP_HL,JP_M,EI,CALL_M,PFX_FD,CP_BYTE,RST38$/;"	e	enum:Codes	file:
+RET_NC	Z80.c	/^  RET_NC,POP_DE,JP_NC,OUTA,CALL_NC,PUSH_DE,SUB_BYTE,RST10,$/;"	e	enum:Codes	file:
+RET_NZ	Z80.c	/^  RET_NZ,POP_BC,JP_NZ,JP,CALL_NZ,PUSH_BC,ADD_BYTE,RST00,$/;"	e	enum:Codes	file:
+RET_P	Z80.c	/^  RET_P,POP_AF,JP_P,DI,CALL_P,PUSH_AF,OR_BYTE,RST30,$/;"	e	enum:Codes	file:
+RET_PE	Z80.c	/^  RET_PE,LD_PC_HL,JP_PE,EX_DE_HL,CALL_PE,PFX_ED,XOR_BYTE,RST28,$/;"	e	enum:Codes	file:
+RET_PO	Z80.c	/^  RET_PO,POP_HL,JP_PO,EX_HL_xSP,CALL_PO,PUSH_HL,AND_BYTE,RST20,$/;"	e	enum:Codes	file:
+RET_Z	Z80.c	/^  RET_Z,RET,JP_Z,PFX_CB,CALL_Z,CALL,ADC_BYTE,RST08,$/;"	e	enum:Codes	file:
+RLA	Z80.c	/^  DJNZ,LD_DE_WORD,LD_xDE_A,INC_DE,INC_D,DEC_D,LD_D_BYTE,RLA,$/;"	e	enum:Codes	file:
+RLCA	Z80.c	/^  NOP,LD_BC_WORD,LD_xBC_A,INC_BC,INC_B,DEC_B,LD_B_BYTE,RLCA,$/;"	e	enum:Codes	file:
+RLC_A	Z80.c	/^  RLC_B,RLC_C,RLC_D,RLC_E,RLC_H,RLC_L,RLC_xHL,RLC_A,$/;"	e	enum:CodesCB	file:
+RLC_B	Z80.c	/^  RLC_B,RLC_C,RLC_D,RLC_E,RLC_H,RLC_L,RLC_xHL,RLC_A,$/;"	e	enum:CodesCB	file:
+RLC_C	Z80.c	/^  RLC_B,RLC_C,RLC_D,RLC_E,RLC_H,RLC_L,RLC_xHL,RLC_A,$/;"	e	enum:CodesCB	file:
+RLC_D	Z80.c	/^  RLC_B,RLC_C,RLC_D,RLC_E,RLC_H,RLC_L,RLC_xHL,RLC_A,$/;"	e	enum:CodesCB	file:
+RLC_E	Z80.c	/^  RLC_B,RLC_C,RLC_D,RLC_E,RLC_H,RLC_L,RLC_xHL,RLC_A,$/;"	e	enum:CodesCB	file:
+RLC_H	Z80.c	/^  RLC_B,RLC_C,RLC_D,RLC_E,RLC_H,RLC_L,RLC_xHL,RLC_A,$/;"	e	enum:CodesCB	file:
+RLC_L	Z80.c	/^  RLC_B,RLC_C,RLC_D,RLC_E,RLC_H,RLC_L,RLC_xHL,RLC_A,$/;"	e	enum:CodesCB	file:
+RLC_xHL	Z80.c	/^  RLC_B,RLC_C,RLC_D,RLC_E,RLC_H,RLC_L,RLC_xHL,RLC_A,$/;"	e	enum:CodesCB	file:
+RLD	Z80.c	/^  IN_L_xC,OUT_xC_L,ADC_HL_HL,LD_HL_xWORDe,DB_6C,DB_6D,DB_6E,RLD,$/;"	e	enum:CodesED	file:
+RL_A	Z80.c	/^  RL_B,RL_C,RL_D,RL_E,RL_H,RL_L,RL_xHL,RL_A,$/;"	e	enum:CodesCB	file:
+RL_B	Z80.c	/^  RL_B,RL_C,RL_D,RL_E,RL_H,RL_L,RL_xHL,RL_A,$/;"	e	enum:CodesCB	file:
+RL_C	Z80.c	/^  RL_B,RL_C,RL_D,RL_E,RL_H,RL_L,RL_xHL,RL_A,$/;"	e	enum:CodesCB	file:
+RL_D	Z80.c	/^  RL_B,RL_C,RL_D,RL_E,RL_H,RL_L,RL_xHL,RL_A,$/;"	e	enum:CodesCB	file:
+RL_E	Z80.c	/^  RL_B,RL_C,RL_D,RL_E,RL_H,RL_L,RL_xHL,RL_A,$/;"	e	enum:CodesCB	file:
+RL_H	Z80.c	/^  RL_B,RL_C,RL_D,RL_E,RL_H,RL_L,RL_xHL,RL_A,$/;"	e	enum:CodesCB	file:
+RL_L	Z80.c	/^  RL_B,RL_C,RL_D,RL_E,RL_H,RL_L,RL_xHL,RL_A,$/;"	e	enum:CodesCB	file:
+RL_xHL	Z80.c	/^  RL_B,RL_C,RL_D,RL_E,RL_H,RL_L,RL_xHL,RL_A,$/;"	e	enum:CodesCB	file:
+RRA	Z80.c	/^  JR,ADD_HL_DE,LD_A_xDE,DEC_DE,INC_E,DEC_E,LD_E_BYTE,RRA,$/;"	e	enum:Codes	file:
+RRCA	Z80.c	/^  EX_AF_AF,ADD_HL_BC,LD_A_xBC,DEC_BC,INC_C,DEC_C,LD_C_BYTE,RRCA,$/;"	e	enum:Codes	file:
+RRC_A	Z80.c	/^  RRC_B,RRC_C,RRC_D,RRC_E,RRC_H,RRC_L,RRC_xHL,RRC_A,$/;"	e	enum:CodesCB	file:
+RRC_B	Z80.c	/^  RRC_B,RRC_C,RRC_D,RRC_E,RRC_H,RRC_L,RRC_xHL,RRC_A,$/;"	e	enum:CodesCB	file:
+RRC_C	Z80.c	/^  RRC_B,RRC_C,RRC_D,RRC_E,RRC_H,RRC_L,RRC_xHL,RRC_A,$/;"	e	enum:CodesCB	file:
+RRC_D	Z80.c	/^  RRC_B,RRC_C,RRC_D,RRC_E,RRC_H,RRC_L,RRC_xHL,RRC_A,$/;"	e	enum:CodesCB	file:
+RRC_E	Z80.c	/^  RRC_B,RRC_C,RRC_D,RRC_E,RRC_H,RRC_L,RRC_xHL,RRC_A,$/;"	e	enum:CodesCB	file:
+RRC_H	Z80.c	/^  RRC_B,RRC_C,RRC_D,RRC_E,RRC_H,RRC_L,RRC_xHL,RRC_A,$/;"	e	enum:CodesCB	file:
+RRC_L	Z80.c	/^  RRC_B,RRC_C,RRC_D,RRC_E,RRC_H,RRC_L,RRC_xHL,RRC_A,$/;"	e	enum:CodesCB	file:
+RRC_xHL	Z80.c	/^  RRC_B,RRC_C,RRC_D,RRC_E,RRC_H,RRC_L,RRC_xHL,RRC_A,$/;"	e	enum:CodesCB	file:
+RRD	Z80.c	/^  IN_H_xC,OUT_xC_H,SBC_HL_HL,LD_xWORDe_HL,DB_64,DB_65,DB_66,RRD,$/;"	e	enum:CodesED	file:
+RR_A	Z80.c	/^  RR_B,RR_C,RR_D,RR_E,RR_H,RR_L,RR_xHL,RR_A,$/;"	e	enum:CodesCB	file:
+RR_B	Z80.c	/^  RR_B,RR_C,RR_D,RR_E,RR_H,RR_L,RR_xHL,RR_A,$/;"	e	enum:CodesCB	file:
+RR_C	Z80.c	/^  RR_B,RR_C,RR_D,RR_E,RR_H,RR_L,RR_xHL,RR_A,$/;"	e	enum:CodesCB	file:
+RR_D	Z80.c	/^  RR_B,RR_C,RR_D,RR_E,RR_H,RR_L,RR_xHL,RR_A,$/;"	e	enum:CodesCB	file:
+RR_E	Z80.c	/^  RR_B,RR_C,RR_D,RR_E,RR_H,RR_L,RR_xHL,RR_A,$/;"	e	enum:CodesCB	file:
+RR_H	Z80.c	/^  RR_B,RR_C,RR_D,RR_E,RR_H,RR_L,RR_xHL,RR_A,$/;"	e	enum:CodesCB	file:
+RR_L	Z80.c	/^  RR_B,RR_C,RR_D,RR_E,RR_H,RR_L,RR_xHL,RR_A,$/;"	e	enum:CodesCB	file:
+RR_xHL	Z80.c	/^  RR_B,RR_C,RR_D,RR_E,RR_H,RR_L,RR_xHL,RR_A,$/;"	e	enum:CodesCB	file:
+RST00	Z80.c	/^  RET_NZ,POP_BC,JP_NZ,JP,CALL_NZ,PUSH_BC,ADD_BYTE,RST00,$/;"	e	enum:Codes	file:
+RST08	Z80.c	/^  RET_Z,RET,JP_Z,PFX_CB,CALL_Z,CALL,ADC_BYTE,RST08,$/;"	e	enum:Codes	file:
+RST10	Z80.c	/^  RET_NC,POP_DE,JP_NC,OUTA,CALL_NC,PUSH_DE,SUB_BYTE,RST10,$/;"	e	enum:Codes	file:
+RST18	Z80.c	/^  RET_C,EXX,JP_C,INA,CALL_C,PFX_DD,SBC_BYTE,RST18,$/;"	e	enum:Codes	file:
+RST20	Z80.c	/^  RET_PO,POP_HL,JP_PO,EX_HL_xSP,CALL_PO,PUSH_HL,AND_BYTE,RST20,$/;"	e	enum:Codes	file:
+RST28	Z80.c	/^  RET_PE,LD_PC_HL,JP_PE,EX_DE_HL,CALL_PE,PFX_ED,XOR_BYTE,RST28,$/;"	e	enum:Codes	file:
+RST30	Z80.c	/^  RET_P,POP_AF,JP_P,DI,CALL_P,PUSH_AF,OR_BYTE,RST30,$/;"	e	enum:Codes	file:
+RST38	Z80.c	/^  RET_M,LD_SP_HL,JP_M,EI,CALL_M,PFX_FD,CP_BYTE,RST38$/;"	e	enum:Codes	file:
+RVAddr	Coleco.c	/^pair RVAddr;                   \/* Storage for VRAM addresses    *\/$/;"	v
+RVAddr	Coleco.h	/^  pair RVAddr;                   \/* Storage for VRAM addresses    *\/$/;"	m	struct:colem_save_t
+RdZ80	Coleco.c	/^byte RdZ80(register word A) { return(RAM[A]); }$/;"	f
+RdZ80	Z80.c	/^INLINE byte RdZ80(word A) { return(Page[A>>13][A&0x1FFF]); }$/;"	f
+RdZ80	Z80.c	/^INLINE byte RdZ80(word A) { return(RAM[A]); }$/;"	f
+RdZ80	Z80.c	/^INLINE byte RdZ80(word A)$/;"	f
+Refresh	Coleco.c	/^  void (*Refresh)(byte Y);$/;"	m	struct:__anon2	file:
+RefreshBorder	Unix.c	/^void RefreshBorder(register byte Y)$/;"	f
+RefreshLine0	Unix.c	/^void RefreshLine0(register byte Y)$/;"	f
+RefreshLine1	Unix.c	/^void RefreshLine1(register byte Y)$/;"	f
+RefreshLine2	Unix.c	/^void RefreshLine2(register byte Y)$/;"	f
+RefreshLine3	Unix.c	/^void RefreshLine3(register byte Y)$/;"	f
+RefreshScreen	Unix.c	/^RefreshScreen(void) $/;"	f
+RefreshSprites	Unix.c	/^void RefreshSprites(register byte Y)$/;"	f
+Reset76489	SN76489.c	/^void Reset76489(SN76489 *D,void (*Sound)(int,int,int))$/;"	f
+ResetZ80	Z80.c	/^void ResetZ80()$/;"	f
+RunZ80	Z80.c	/^RunZ80()$/;"	f
+S	Z80.c	52;"	d	file:
+SBC_A	Z80.c	/^  SBC_B,SBC_C,SBC_D,SBC_E,SBC_H,SBC_L,SBC_xHL,SBC_A,$/;"	e	enum:Codes	file:
+SBC_B	Z80.c	/^  SBC_B,SBC_C,SBC_D,SBC_E,SBC_H,SBC_L,SBC_xHL,SBC_A,$/;"	e	enum:Codes	file:
+SBC_BYTE	Z80.c	/^  RET_C,EXX,JP_C,INA,CALL_C,PFX_DD,SBC_BYTE,RST18,$/;"	e	enum:Codes	file:
+SBC_C	Z80.c	/^  SBC_B,SBC_C,SBC_D,SBC_E,SBC_H,SBC_L,SBC_xHL,SBC_A,$/;"	e	enum:Codes	file:
+SBC_D	Z80.c	/^  SBC_B,SBC_C,SBC_D,SBC_E,SBC_H,SBC_L,SBC_xHL,SBC_A,$/;"	e	enum:Codes	file:
+SBC_E	Z80.c	/^  SBC_B,SBC_C,SBC_D,SBC_E,SBC_H,SBC_L,SBC_xHL,SBC_A,$/;"	e	enum:Codes	file:
+SBC_H	Z80.c	/^  SBC_B,SBC_C,SBC_D,SBC_E,SBC_H,SBC_L,SBC_xHL,SBC_A,$/;"	e	enum:Codes	file:
+SBC_HL_BC	Z80.c	/^  IN_B_xC,OUT_xC_B,SBC_HL_BC,LD_xWORDe_BC,NEG,RETN,IM_0,LD_I_A,$/;"	e	enum:CodesED	file:
+SBC_HL_DE	Z80.c	/^  IN_D_xC,OUT_xC_D,SBC_HL_DE,LD_xWORDe_DE,DB_54,DB_55,IM_1,LD_A_I,$/;"	e	enum:CodesED	file:
+SBC_HL_HL	Z80.c	/^  IN_H_xC,OUT_xC_H,SBC_HL_HL,LD_xWORDe_HL,DB_64,DB_65,DB_66,RRD,$/;"	e	enum:CodesED	file:
+SBC_HL_SP	Z80.c	/^  IN_F_xC,DB_71,SBC_HL_SP,LD_xWORDe_SP,DB_74,DB_75,DB_76,DB_77,$/;"	e	enum:CodesED	file:
+SBC_L	Z80.c	/^  SBC_B,SBC_C,SBC_D,SBC_E,SBC_H,SBC_L,SBC_xHL,SBC_A,$/;"	e	enum:Codes	file:
+SBC_xHL	Z80.c	/^  SBC_B,SBC_C,SBC_D,SBC_E,SBC_H,SBC_L,SBC_xHL,SBC_A,$/;"	e	enum:Codes	file:
+SCF	Z80.c	/^  JR_NC,LD_SP_WORD,LD_xWORD_A,INC_SP,INC_xHL,DEC_xHL,LD_xHL_BYTE,SCF,$/;"	e	enum:Codes	file:
+SCR	Coleco.c	/^} SCR[MAXSCREEN+1] =$/;"	v	typeref:struct:__anon2
+SDL_main	ColEm.c	/^SDL_main(int argc,char *argv[])$/;"	f
+SEEK_CUR	unzip.c	60;"	d	file:
+SEEK_END	unzip.c	64;"	d	file:
+SEEK_SET	unzip.c	68;"	d	file:
+SET0_A	Z80.c	/^  SET0_B,SET0_C,SET0_D,SET0_E,SET0_H,SET0_L,SET0_xHL,SET0_A,$/;"	e	enum:CodesCB	file:
+SET0_B	Z80.c	/^  SET0_B,SET0_C,SET0_D,SET0_E,SET0_H,SET0_L,SET0_xHL,SET0_A,$/;"	e	enum:CodesCB	file:
+SET0_C	Z80.c	/^  SET0_B,SET0_C,SET0_D,SET0_E,SET0_H,SET0_L,SET0_xHL,SET0_A,$/;"	e	enum:CodesCB	file:
+SET0_D	Z80.c	/^  SET0_B,SET0_C,SET0_D,SET0_E,SET0_H,SET0_L,SET0_xHL,SET0_A,$/;"	e	enum:CodesCB	file:
+SET0_E	Z80.c	/^  SET0_B,SET0_C,SET0_D,SET0_E,SET0_H,SET0_L,SET0_xHL,SET0_A,$/;"	e	enum:CodesCB	file:
+SET0_H	Z80.c	/^  SET0_B,SET0_C,SET0_D,SET0_E,SET0_H,SET0_L,SET0_xHL,SET0_A,$/;"	e	enum:CodesCB	file:
+SET0_L	Z80.c	/^  SET0_B,SET0_C,SET0_D,SET0_E,SET0_H,SET0_L,SET0_xHL,SET0_A,$/;"	e	enum:CodesCB	file:
+SET0_xHL	Z80.c	/^  SET0_B,SET0_C,SET0_D,SET0_E,SET0_H,SET0_L,SET0_xHL,SET0_A,$/;"	e	enum:CodesCB	file:
+SET1_A	Z80.c	/^  SET1_B,SET1_C,SET1_D,SET1_E,SET1_H,SET1_L,SET1_xHL,SET1_A,$/;"	e	enum:CodesCB	file:
+SET1_B	Z80.c	/^  SET1_B,SET1_C,SET1_D,SET1_E,SET1_H,SET1_L,SET1_xHL,SET1_A,$/;"	e	enum:CodesCB	file:
+SET1_C	Z80.c	/^  SET1_B,SET1_C,SET1_D,SET1_E,SET1_H,SET1_L,SET1_xHL,SET1_A,$/;"	e	enum:CodesCB	file:
+SET1_D	Z80.c	/^  SET1_B,SET1_C,SET1_D,SET1_E,SET1_H,SET1_L,SET1_xHL,SET1_A,$/;"	e	enum:CodesCB	file:
+SET1_E	Z80.c	/^  SET1_B,SET1_C,SET1_D,SET1_E,SET1_H,SET1_L,SET1_xHL,SET1_A,$/;"	e	enum:CodesCB	file:
+SET1_H	Z80.c	/^  SET1_B,SET1_C,SET1_D,SET1_E,SET1_H,SET1_L,SET1_xHL,SET1_A,$/;"	e	enum:CodesCB	file:
+SET1_L	Z80.c	/^  SET1_B,SET1_C,SET1_D,SET1_E,SET1_H,SET1_L,SET1_xHL,SET1_A,$/;"	e	enum:CodesCB	file:
+SET1_xHL	Z80.c	/^  SET1_B,SET1_C,SET1_D,SET1_E,SET1_H,SET1_L,SET1_xHL,SET1_A,$/;"	e	enum:CodesCB	file:
+SET2_A	Z80.c	/^  SET2_B,SET2_C,SET2_D,SET2_E,SET2_H,SET2_L,SET2_xHL,SET2_A,$/;"	e	enum:CodesCB	file:
+SET2_B	Z80.c	/^  SET2_B,SET2_C,SET2_D,SET2_E,SET2_H,SET2_L,SET2_xHL,SET2_A,$/;"	e	enum:CodesCB	file:
+SET2_C	Z80.c	/^  SET2_B,SET2_C,SET2_D,SET2_E,SET2_H,SET2_L,SET2_xHL,SET2_A,$/;"	e	enum:CodesCB	file:
+SET2_D	Z80.c	/^  SET2_B,SET2_C,SET2_D,SET2_E,SET2_H,SET2_L,SET2_xHL,SET2_A,$/;"	e	enum:CodesCB	file:
+SET2_E	Z80.c	/^  SET2_B,SET2_C,SET2_D,SET2_E,SET2_H,SET2_L,SET2_xHL,SET2_A,$/;"	e	enum:CodesCB	file:
+SET2_H	Z80.c	/^  SET2_B,SET2_C,SET2_D,SET2_E,SET2_H,SET2_L,SET2_xHL,SET2_A,$/;"	e	enum:CodesCB	file:
+SET2_L	Z80.c	/^  SET2_B,SET2_C,SET2_D,SET2_E,SET2_H,SET2_L,SET2_xHL,SET2_A,$/;"	e	enum:CodesCB	file:
+SET2_xHL	Z80.c	/^  SET2_B,SET2_C,SET2_D,SET2_E,SET2_H,SET2_L,SET2_xHL,SET2_A,$/;"	e	enum:CodesCB	file:
+SET3_A	Z80.c	/^  SET3_B,SET3_C,SET3_D,SET3_E,SET3_H,SET3_L,SET3_xHL,SET3_A,$/;"	e	enum:CodesCB	file:
+SET3_B	Z80.c	/^  SET3_B,SET3_C,SET3_D,SET3_E,SET3_H,SET3_L,SET3_xHL,SET3_A,$/;"	e	enum:CodesCB	file:
+SET3_C	Z80.c	/^  SET3_B,SET3_C,SET3_D,SET3_E,SET3_H,SET3_L,SET3_xHL,SET3_A,$/;"	e	enum:CodesCB	file:
+SET3_D	Z80.c	/^  SET3_B,SET3_C,SET3_D,SET3_E,SET3_H,SET3_L,SET3_xHL,SET3_A,$/;"	e	enum:CodesCB	file:
+SET3_E	Z80.c	/^  SET3_B,SET3_C,SET3_D,SET3_E,SET3_H,SET3_L,SET3_xHL,SET3_A,$/;"	e	enum:CodesCB	file:
+SET3_H	Z80.c	/^  SET3_B,SET3_C,SET3_D,SET3_E,SET3_H,SET3_L,SET3_xHL,SET3_A,$/;"	e	enum:CodesCB	file:
+SET3_L	Z80.c	/^  SET3_B,SET3_C,SET3_D,SET3_E,SET3_H,SET3_L,SET3_xHL,SET3_A,$/;"	e	enum:CodesCB	file:
+SET3_xHL	Z80.c	/^  SET3_B,SET3_C,SET3_D,SET3_E,SET3_H,SET3_L,SET3_xHL,SET3_A,$/;"	e	enum:CodesCB	file:
+SET4_A	Z80.c	/^  SET4_B,SET4_C,SET4_D,SET4_E,SET4_H,SET4_L,SET4_xHL,SET4_A,$/;"	e	enum:CodesCB	file:
+SET4_B	Z80.c	/^  SET4_B,SET4_C,SET4_D,SET4_E,SET4_H,SET4_L,SET4_xHL,SET4_A,$/;"	e	enum:CodesCB	file:
+SET4_C	Z80.c	/^  SET4_B,SET4_C,SET4_D,SET4_E,SET4_H,SET4_L,SET4_xHL,SET4_A,$/;"	e	enum:CodesCB	file:
+SET4_D	Z80.c	/^  SET4_B,SET4_C,SET4_D,SET4_E,SET4_H,SET4_L,SET4_xHL,SET4_A,$/;"	e	enum:CodesCB	file:
+SET4_E	Z80.c	/^  SET4_B,SET4_C,SET4_D,SET4_E,SET4_H,SET4_L,SET4_xHL,SET4_A,$/;"	e	enum:CodesCB	file:
+SET4_H	Z80.c	/^  SET4_B,SET4_C,SET4_D,SET4_E,SET4_H,SET4_L,SET4_xHL,SET4_A,$/;"	e	enum:CodesCB	file:
+SET4_L	Z80.c	/^  SET4_B,SET4_C,SET4_D,SET4_E,SET4_H,SET4_L,SET4_xHL,SET4_A,$/;"	e	enum:CodesCB	file:
+SET4_xHL	Z80.c	/^  SET4_B,SET4_C,SET4_D,SET4_E,SET4_H,SET4_L,SET4_xHL,SET4_A,$/;"	e	enum:CodesCB	file:
+SET5_A	Z80.c	/^  SET5_B,SET5_C,SET5_D,SET5_E,SET5_H,SET5_L,SET5_xHL,SET5_A,$/;"	e	enum:CodesCB	file:
+SET5_B	Z80.c	/^  SET5_B,SET5_C,SET5_D,SET5_E,SET5_H,SET5_L,SET5_xHL,SET5_A,$/;"	e	enum:CodesCB	file:
+SET5_C	Z80.c	/^  SET5_B,SET5_C,SET5_D,SET5_E,SET5_H,SET5_L,SET5_xHL,SET5_A,$/;"	e	enum:CodesCB	file:
+SET5_D	Z80.c	/^  SET5_B,SET5_C,SET5_D,SET5_E,SET5_H,SET5_L,SET5_xHL,SET5_A,$/;"	e	enum:CodesCB	file:
+SET5_E	Z80.c	/^  SET5_B,SET5_C,SET5_D,SET5_E,SET5_H,SET5_L,SET5_xHL,SET5_A,$/;"	e	enum:CodesCB	file:
+SET5_H	Z80.c	/^  SET5_B,SET5_C,SET5_D,SET5_E,SET5_H,SET5_L,SET5_xHL,SET5_A,$/;"	e	enum:CodesCB	file:
+SET5_L	Z80.c	/^  SET5_B,SET5_C,SET5_D,SET5_E,SET5_H,SET5_L,SET5_xHL,SET5_A,$/;"	e	enum:CodesCB	file:
+SET5_xHL	Z80.c	/^  SET5_B,SET5_C,SET5_D,SET5_E,SET5_H,SET5_L,SET5_xHL,SET5_A,$/;"	e	enum:CodesCB	file:
+SET6_A	Z80.c	/^  SET6_B,SET6_C,SET6_D,SET6_E,SET6_H,SET6_L,SET6_xHL,SET6_A,$/;"	e	enum:CodesCB	file:
+SET6_B	Z80.c	/^  SET6_B,SET6_C,SET6_D,SET6_E,SET6_H,SET6_L,SET6_xHL,SET6_A,$/;"	e	enum:CodesCB	file:
+SET6_C	Z80.c	/^  SET6_B,SET6_C,SET6_D,SET6_E,SET6_H,SET6_L,SET6_xHL,SET6_A,$/;"	e	enum:CodesCB	file:
+SET6_D	Z80.c	/^  SET6_B,SET6_C,SET6_D,SET6_E,SET6_H,SET6_L,SET6_xHL,SET6_A,$/;"	e	enum:CodesCB	file:
+SET6_E	Z80.c	/^  SET6_B,SET6_C,SET6_D,SET6_E,SET6_H,SET6_L,SET6_xHL,SET6_A,$/;"	e	enum:CodesCB	file:
+SET6_H	Z80.c	/^  SET6_B,SET6_C,SET6_D,SET6_E,SET6_H,SET6_L,SET6_xHL,SET6_A,$/;"	e	enum:CodesCB	file:
+SET6_L	Z80.c	/^  SET6_B,SET6_C,SET6_D,SET6_E,SET6_H,SET6_L,SET6_xHL,SET6_A,$/;"	e	enum:CodesCB	file:
+SET6_xHL	Z80.c	/^  SET6_B,SET6_C,SET6_D,SET6_E,SET6_H,SET6_L,SET6_xHL,SET6_A,$/;"	e	enum:CodesCB	file:
+SET7_A	Z80.c	/^  SET7_B,SET7_C,SET7_D,SET7_E,SET7_H,SET7_L,SET7_xHL,SET7_A$/;"	e	enum:CodesCB	file:
+SET7_B	Z80.c	/^  SET7_B,SET7_C,SET7_D,SET7_E,SET7_H,SET7_L,SET7_xHL,SET7_A$/;"	e	enum:CodesCB	file:
+SET7_C	Z80.c	/^  SET7_B,SET7_C,SET7_D,SET7_E,SET7_H,SET7_L,SET7_xHL,SET7_A$/;"	e	enum:CodesCB	file:
+SET7_D	Z80.c	/^  SET7_B,SET7_C,SET7_D,SET7_E,SET7_H,SET7_L,SET7_xHL,SET7_A$/;"	e	enum:CodesCB	file:
+SET7_E	Z80.c	/^  SET7_B,SET7_C,SET7_D,SET7_E,SET7_H,SET7_L,SET7_xHL,SET7_A$/;"	e	enum:CodesCB	file:
+SET7_H	Z80.c	/^  SET7_B,SET7_C,SET7_D,SET7_E,SET7_H,SET7_L,SET7_xHL,SET7_A$/;"	e	enum:CodesCB	file:
+SET7_L	Z80.c	/^  SET7_B,SET7_C,SET7_D,SET7_E,SET7_H,SET7_L,SET7_xHL,SET7_A$/;"	e	enum:CodesCB	file:
+SET7_xHL	Z80.c	/^  SET7_B,SET7_C,SET7_D,SET7_E,SET7_H,SET7_L,SET7_xHL,SET7_A$/;"	e	enum:CodesCB	file:
+SIZECENTRALDIRITEM	unzip.c	53;"	d	file:
+SIZEZIPLOCALHEADER	unzip.c	54;"	d	file:
+SJISCopy	psp_fmgr.c	/^SJISCopy(struct dirent *a, char *file)$/;"	f	file:
+SLA_A	Z80.c	/^  SLA_B,SLA_C,SLA_D,SLA_E,SLA_H,SLA_L,SLA_xHL,SLA_A,$/;"	e	enum:CodesCB	file:
+SLA_B	Z80.c	/^  SLA_B,SLA_C,SLA_D,SLA_E,SLA_H,SLA_L,SLA_xHL,SLA_A,$/;"	e	enum:CodesCB	file:
+SLA_C	Z80.c	/^  SLA_B,SLA_C,SLA_D,SLA_E,SLA_H,SLA_L,SLA_xHL,SLA_A,$/;"	e	enum:CodesCB	file:
+SLA_D	Z80.c	/^  SLA_B,SLA_C,SLA_D,SLA_E,SLA_H,SLA_L,SLA_xHL,SLA_A,$/;"	e	enum:CodesCB	file:
+SLA_E	Z80.c	/^  SLA_B,SLA_C,SLA_D,SLA_E,SLA_H,SLA_L,SLA_xHL,SLA_A,$/;"	e	enum:CodesCB	file:
+SLA_H	Z80.c	/^  SLA_B,SLA_C,SLA_D,SLA_E,SLA_H,SLA_L,SLA_xHL,SLA_A,$/;"	e	enum:CodesCB	file:
+SLA_L	Z80.c	/^  SLA_B,SLA_C,SLA_D,SLA_E,SLA_H,SLA_L,SLA_xHL,SLA_A,$/;"	e	enum:CodesCB	file:
+SLA_xHL	Z80.c	/^  SLA_B,SLA_C,SLA_D,SLA_E,SLA_H,SLA_L,SLA_xHL,SLA_A,$/;"	e	enum:CodesCB	file:
+SLL_A	Z80.c	/^  SLL_B,SLL_C,SLL_D,SLL_E,SLL_H,SLL_L,SLL_xHL,SLL_A,$/;"	e	enum:CodesCB	file:
+SLL_B	Z80.c	/^  SLL_B,SLL_C,SLL_D,SLL_E,SLL_H,SLL_L,SLL_xHL,SLL_A,$/;"	e	enum:CodesCB	file:
+SLL_C	Z80.c	/^  SLL_B,SLL_C,SLL_D,SLL_E,SLL_H,SLL_L,SLL_xHL,SLL_A,$/;"	e	enum:CodesCB	file:
+SLL_D	Z80.c	/^  SLL_B,SLL_C,SLL_D,SLL_E,SLL_H,SLL_L,SLL_xHL,SLL_A,$/;"	e	enum:CodesCB	file:
+SLL_E	Z80.c	/^  SLL_B,SLL_C,SLL_D,SLL_E,SLL_H,SLL_L,SLL_xHL,SLL_A,$/;"	e	enum:CodesCB	file:
+SLL_H	Z80.c	/^  SLL_B,SLL_C,SLL_D,SLL_E,SLL_H,SLL_L,SLL_xHL,SLL_A,$/;"	e	enum:CodesCB	file:
+SLL_L	Z80.c	/^  SLL_B,SLL_C,SLL_D,SLL_E,SLL_H,SLL_L,SLL_xHL,SLL_A,$/;"	e	enum:CodesCB	file:
+SLL_xHL	Z80.c	/^  SLL_B,SLL_C,SLL_D,SLL_E,SLL_H,SLL_L,SLL_xHL,SLL_A,$/;"	e	enum:CodesCB	file:
+SN76489	SN76489.h	/^} SN76489;$/;"	t	typeref:struct:__anon5
+SN76489_H	SN76489.h	14;"	d
+SNAP_HEIGHT	Coleco.h	70;"	d
+SNAP_WIDTH	Coleco.h	69;"	d
+SP	CodesED.h	/^case ADC_HL_SP: M_ADCW(SP);break;$/;"	v
+SP	CodesED.h	/^case SBC_HL_SP: M_SBCW(SP);break;$/;"	v
+SP	CodesXX.h	/^case LD_SP_WORD: M_LDWORD(SP);break;$/;"	v
+SP	Z80.h	/^  pair AF,BC,DE,HL,IX,IY,PC,SP;       \/* Main registers      *\/$/;"	m	struct:__anon10
+SRA_A	Z80.c	/^  SRA_B,SRA_C,SRA_D,SRA_E,SRA_H,SRA_L,SRA_xHL,SRA_A,$/;"	e	enum:CodesCB	file:
+SRA_B	Z80.c	/^  SRA_B,SRA_C,SRA_D,SRA_E,SRA_H,SRA_L,SRA_xHL,SRA_A,$/;"	e	enum:CodesCB	file:
+SRA_C	Z80.c	/^  SRA_B,SRA_C,SRA_D,SRA_E,SRA_H,SRA_L,SRA_xHL,SRA_A,$/;"	e	enum:CodesCB	file:
+SRA_D	Z80.c	/^  SRA_B,SRA_C,SRA_D,SRA_E,SRA_H,SRA_L,SRA_xHL,SRA_A,$/;"	e	enum:CodesCB	file:
+SRA_E	Z80.c	/^  SRA_B,SRA_C,SRA_D,SRA_E,SRA_H,SRA_L,SRA_xHL,SRA_A,$/;"	e	enum:CodesCB	file:
+SRA_H	Z80.c	/^  SRA_B,SRA_C,SRA_D,SRA_E,SRA_H,SRA_L,SRA_xHL,SRA_A,$/;"	e	enum:CodesCB	file:
+SRA_L	Z80.c	/^  SRA_B,SRA_C,SRA_D,SRA_E,SRA_H,SRA_L,SRA_xHL,SRA_A,$/;"	e	enum:CodesCB	file:
+SRA_xHL	Z80.c	/^  SRA_B,SRA_C,SRA_D,SRA_E,SRA_H,SRA_L,SRA_xHL,SRA_A,$/;"	e	enum:CodesCB	file:
+SRL_A	Z80.c	/^  SRL_B,SRL_C,SRL_D,SRL_E,SRL_H,SRL_L,SRL_xHL,SRL_A,$/;"	e	enum:CodesCB	file:
+SRL_B	Z80.c	/^  SRL_B,SRL_C,SRL_D,SRL_E,SRL_H,SRL_L,SRL_xHL,SRL_A,$/;"	e	enum:CodesCB	file:
+SRL_C	Z80.c	/^  SRL_B,SRL_C,SRL_D,SRL_E,SRL_H,SRL_L,SRL_xHL,SRL_A,$/;"	e	enum:CodesCB	file:
+SRL_D	Z80.c	/^  SRL_B,SRL_C,SRL_D,SRL_E,SRL_H,SRL_L,SRL_xHL,SRL_A,$/;"	e	enum:CodesCB	file:
+SRL_E	Z80.c	/^  SRL_B,SRL_C,SRL_D,SRL_E,SRL_H,SRL_L,SRL_xHL,SRL_A,$/;"	e	enum:CodesCB	file:
+SRL_H	Z80.c	/^  SRL_B,SRL_C,SRL_D,SRL_E,SRL_H,SRL_L,SRL_xHL,SRL_A,$/;"	e	enum:CodesCB	file:
+SRL_L	Z80.c	/^  SRL_B,SRL_C,SRL_D,SRL_E,SRL_H,SRL_L,SRL_xHL,SRL_A,$/;"	e	enum:CodesCB	file:
+SRL_xHL	Z80.c	/^  SRL_B,SRL_C,SRL_D,SRL_E,SRL_H,SRL_L,SRL_xHL,SRL_A,$/;"	e	enum:CodesCB	file:
+STDERR_FILE	psp_main.c	17;"	d	file:
+STDOUT_FILE	psp_main.c	16;"	d	file:
+STRCMPCASENOSENTIVEFUNCTION	unzip.c	244;"	d	file:
+SUB_A	Z80.c	/^  SUB_B,SUB_C,SUB_D,SUB_E,SUB_H,SUB_L,SUB_xHL,SUB_A,$/;"	e	enum:Codes	file:
+SUB_B	Z80.c	/^  SUB_B,SUB_C,SUB_D,SUB_E,SUB_H,SUB_L,SUB_xHL,SUB_A,$/;"	e	enum:Codes	file:
+SUB_BYTE	Z80.c	/^  RET_NC,POP_DE,JP_NC,OUTA,CALL_NC,PUSH_DE,SUB_BYTE,RST10,$/;"	e	enum:Codes	file:
+SUB_C	Z80.c	/^  SUB_B,SUB_C,SUB_D,SUB_E,SUB_H,SUB_L,SUB_xHL,SUB_A,$/;"	e	enum:Codes	file:
+SUB_D	Z80.c	/^  SUB_B,SUB_C,SUB_D,SUB_E,SUB_H,SUB_L,SUB_xHL,SUB_A,$/;"	e	enum:Codes	file:
+SUB_E	Z80.c	/^  SUB_B,SUB_C,SUB_D,SUB_E,SUB_H,SUB_L,SUB_xHL,SUB_A,$/;"	e	enum:Codes	file:
+SUB_H	Z80.c	/^  SUB_B,SUB_C,SUB_D,SUB_E,SUB_H,SUB_L,SUB_xHL,SUB_A,$/;"	e	enum:Codes	file:
+SUB_L	Z80.c	/^  SUB_B,SUB_C,SUB_D,SUB_E,SUB_H,SUB_L,SUB_xHL,SUB_A,$/;"	e	enum:Codes	file:
+SUB_xHL	Z80.c	/^  SUB_B,SUB_C,SUB_D,SUB_E,SUB_H,SUB_L,SUB_xHL,SUB_A,$/;"	e	enum:Codes	file:
+SYSCLKENREG	cpugp2x.c	/^  unsigned short SYSCLKENREG,SYSCSETREG,FPLLVSETREG,DUALINT920,DUALINT940,DUALCTRL940;$/;"	m	struct:__anon3	file:
+SYSCSETREG	cpugp2x.c	/^  unsigned short SYSCLKENREG,SYSCSETREG,FPLLVSETREG,DUALINT920,DUALINT940,DUALCTRL940;$/;"	m	struct:__anon3	file:
+SYS_CLK_FREQ	cpugp2x.c	33;"	d	file:
+SYS_CLK_FREQ	cpugp2x.h	75;"	d
+SYS_CLK_FREQ	cpuwiz.c	140;"	d	file:
+S_FLAG	Z80.h	28;"	d
+SaveCPU	Unix.c	/^int SaveCPU  = 1;               \/* 1 = freeze when focus out *\/$/;"	v
+SceCtrlData	gp2x_psp.h	/^typedef struct gp2xCtrlData SceCtrlData;$/;"	t	typeref:struct:gp2xCtrlData
+ScrMode	Coleco.c	/^byte ScrMode;                  \/* Current screen mode           *\/$/;"	v
+ScrMode	Coleco.h	/^  byte ScrMode;                  \/* Current screen mode           *\/$/;"	m	struct:colem_save_t
+ScreenON	Coleco.h	38;"	d
+SndSwitch	Unix.c	/^static int SndSwitch = 0x0F;$/;"	v	file:
+SndVolume	Unix.c	/^static int SndVolume = 192;$/;"	v	file:
+Sound	SN76489.h	/^  void (*Sound)(int,int,int);$/;"	m	struct:__anon5
+Sound_Init	psp_sound.c	/^Sound_Init(void)$/;"	f
+SprGen	Coleco.c	/^byte *SprGen;$/;"	v
+SprGen_idx	Coleco.h	/^  long  SprGen_idx;$/;"	m	struct:colem_save_t
+SprTab	Coleco.c	/^byte *SprTab;                  \/* VDP tables (sprites)          *\/$/;"	v
+SprTab_idx	Coleco.h	/^  long  SprTab_idx;                  \/* VDP tables (sprites)          *\/$/;"	m	struct:colem_save_t
+Sprites16x16	Coleco.h	37;"	d
+StartColeco	Coleco.c	/^StartColeco()$/;"	f
+Sync	SN76489.h	/^  int Channel,Freq[4],Volume[4],Sync;$/;"	m	struct:__anon5
+Sync76489	SN76489.c	/^void Sync76489(SN76489 *D,unsigned char Sync)$/;"	f
+TRYFREE	unzip.c	50;"	d	file:
+TagunzFile__	unzip.h	/^typedef struct TagunzFile__ { int unused; } unzFile__; $/;"	s
+TimeStamp	gp2x_psp.h	/^  u32    TimeStamp;$/;"	m	struct:gp2xCtrlData
+Timer	LibPsp.c	/^struct Timer$/;"	s	file:
+TimerLock	LibPsp.c	/^static int TimerLock     = 0;$/;"	v	file:
+TimerSignal	LibPsp.c	/^int TimerSignal(int Freq,void (*Handler)(int))$/;"	f
+Trace	Z80.h	/^  byte Trace;         \/* Set Trace=1 to start tracing        *\/$/;"	m	struct:__anon10
+Trap	Z80.h	/^  word Trap;          \/* Set Trap to address to trace from   *\/$/;"	m	struct:__anon10
+TrapBadOps	Z80.h	/^  byte TrapBadOps;    \/* Set to 1 to warn of illegal opcodes *\/$/;"	m	struct:__anon10
+TrashColeco	Coleco.c	/^void TrashColeco(void)$/;"	f
+TrashMachine	Unix.c	/^TrashMachine(void)$/;"	f
+UNZ_BADZIPFILE	unzip.h	67;"	d
+UNZ_BUFSIZE	unzip.c	39;"	d	file:
+UNZ_CRCERROR	unzip.h	69;"	d
+UNZ_END_OF_LIST_OF_FILE	unzip.h	63;"	d
+UNZ_EOF	unzip.h	65;"	d
+UNZ_ERRNO	unzip.h	64;"	d
+UNZ_INTERNALERROR	unzip.h	68;"	d
+UNZ_MAXFILENAMEINZIP	unzip.c	43;"	d	file:
+UNZ_OK	unzip.h	62;"	d
+UNZ_PARAMERROR	unzip.h	66;"	d
+UPeriod	Coleco.c	/^byte UPeriod = 1;$/;"	v
+UseSHM	Unix.c	/^int UseSHM   = 1;               \/* 1 = use MITSHM            *\/$/;"	v
+UseSound	Unix.c	/^int UseSound = 0;               \/* 1 = use sound             *\/$/;"	v
+User	Z80.h	/^  void *User;         \/* Arbitrary user data (ID,RAM*,etc.)  *\/$/;"	m	struct:__anon10
+VDP	Coleco.c	/^byte VDP[8];$/;"	v
+VDP	Coleco.h	/^  byte VDP[8];$/;"	m	struct:colem_save_t
+VDPInit	Coleco.c	/^static byte VDPInit[8] = { 0x00,0x10,0x00,0x00,0x00,0x00,0x00,0x00 };$/;"	v	file:
+VDPOut	Coleco.c	/^void VDPOut(register byte R,register byte V)$/;"	f
+VDPStatus	Coleco.c	/^byte VDPStatus;         \/* VDP registers                 *\/$/;"	v
+VDPStatus	Coleco.h	/^  byte VDPStatus;         \/* VDP registers                 *\/$/;"	m	struct:colem_save_t
+VKey	Coleco.c	/^byte VKey;                     \/* VDP address latch key         *\/$/;"	v
+VKey	Coleco.h	/^  byte VKey;                     \/* VDP address latch key         *\/$/;"	m	struct:colem_save_t
+VPeriod	Coleco.c	/^int  VPeriod = 59666;$/;"	v
+VRAM	Coleco.c	/^byte *VRAM;$/;"	v
+V_FLAG	Z80.h	32;"	d
+Volume	SN76489.h	/^  int Channel,Freq[4],Volume[4],Sync;$/;"	m	struct:__anon5
+W	Z80.h	/^  word W;$/;"	m	union:__anon8
+WRITEBUFFERSIZE	miniunz.c	30;"	d	file:
+WVAddr	Coleco.c	/^pair WVAddr;$/;"	v
+WVAddr	Coleco.h	/^  pair WVAddr;$/;"	m	struct:colem_save_t
+WrZ80	Coleco.c	/^void WrZ80(register word A,register byte V)$/;"	f
+Write76489	SN76489.c	/^void Write76489(SN76489 *D,unsigned char V)$/;"	f
+XBuf	Unix.c	/^static byte *XBuf;$/;"	v	file:
+XOR_A	Z80.c	/^  XOR_B,XOR_C,XOR_D,XOR_E,XOR_H,XOR_L,XOR_xHL,XOR_A,$/;"	e	enum:Codes	file:
+XOR_B	Z80.c	/^  XOR_B,XOR_C,XOR_D,XOR_E,XOR_H,XOR_L,XOR_xHL,XOR_A,$/;"	e	enum:Codes	file:
+XOR_BYTE	Z80.c	/^  RET_PE,LD_PC_HL,JP_PE,EX_DE_HL,CALL_PE,PFX_ED,XOR_BYTE,RST28,$/;"	e	enum:Codes	file:
+XOR_C	Z80.c	/^  XOR_B,XOR_C,XOR_D,XOR_E,XOR_H,XOR_L,XOR_xHL,XOR_A,$/;"	e	enum:Codes	file:
+XOR_D	Z80.c	/^  XOR_B,XOR_C,XOR_D,XOR_E,XOR_H,XOR_L,XOR_xHL,XOR_A,$/;"	e	enum:Codes	file:
+XOR_E	Z80.c	/^  XOR_B,XOR_C,XOR_D,XOR_E,XOR_H,XOR_L,XOR_xHL,XOR_A,$/;"	e	enum:Codes	file:
+XOR_H	Z80.c	/^  XOR_B,XOR_C,XOR_D,XOR_E,XOR_H,XOR_L,XOR_xHL,XOR_A,$/;"	e	enum:Codes	file:
+XOR_L	Z80.c	/^  XOR_B,XOR_C,XOR_D,XOR_E,XOR_H,XOR_L,XOR_xHL,XOR_A,$/;"	e	enum:Codes	file:
+XOR_xHL	Z80.c	/^  XOR_B,XOR_C,XOR_D,XOR_E,XOR_H,XOR_L,XOR_xHL,XOR_A,$/;"	e	enum:Codes	file:
+XPal	Unix.c	/^static byte XPal[16];$/;"	v	file:
+XPal0	Unix.c	/^static byte XPal0;$/;"	v	file:
+XX	CodesXX.h	/^case LD_HL_WORD: M_LDWORD(XX);break;$/;"	v
+XX	CodesXX.h	/^case POP_HL:   M_POP(XX);break;$/;"	v
+XX	CodesXX.h	/^case PUSH_HL:  M_PUSH(XX);break;$/;"	v
+XX	Z80.c	1232;"	d	file:
+XX	Z80.c	1622;"	d	file:
+XX	Z80.c	1698;"	d	file:
+XX	Z80.c	2088;"	d	file:
+XX	Z80.c	586;"	d	file:
+XX	Z80.c	593;"	d	file:
+XX	Z80.c	601;"	d	file:
+XX	Z80.c	609;"	d	file:
+Z80	Z80.h	/^} Z80;$/;"	t	typeref:struct:__anon10
+Z80_H	Z80.h	14;"	d
+ZSTable	Tables.h	/^static const byte ZSTable[256] =$/;"	v
+Z_FLAG	Z80.h	29;"	d
+_GLOBAL_H_	global.h	2;"	d
+_GP2X_FMGR_H_	psp_fmgr.h	20;"	d
+_KBD_H_	psp_kbd.h	20;"	d
+_PSP_EDITOR_H_	psp_editor.h	20;"	d
+_PSP_JOY_H_	psp_joy.h	18;"	d
+_PSP_MENU_CHEAT_H_	psp_menu_cheat.h	20;"	d
+_PSP_MENU_CHEAT_LIST_H_	psp_menu_list.h	20;"	d
+_PSP_MENU_HELP_H_	psp_menu_help.h	20;"	d
+_PSP_MENU_H_	psp_menu.h	20;"	d
+_PSP_MENU_IRDA_H_	psp_menu_joy.h	20;"	d
+_PSP_MENU_KBD_H_	psp_menu_kbd.h	20;"	d
+_PSP_MENU_SET_H_	psp_menu_set.h	20;"	d
+_PSP_SDL_H_	psp_sdl.h	18;"	d
+_PSP_SOUND_H_	psp_sound.h	18;"	d
+__CPUGP2X_H__	cpugp2x.h	25;"	d
+__CPUNO_H__	cpuno.h	19;"	d
+__CPUWIZ_H__	cpuwiz.h	19;"	d
+__SDL_JOY_H__	gp2x_psp.h	2;"	d
+_unz_H	unzip.h	42;"	d
+addr	Coleco.h	/^    unsigned short addr;$/;"	m	struct:CV_cheat_t
+ask_overwrite	psp_editor.h	/^    int  ask_overwrite;$/;"	m	struct:PSPWRITE_t
+audio_align_samples	psp_sound.c	/^audio_align_samples(int given)$/;"	f
+audio_pause	psp_sound.c	/^audio_pause(void)$/;"	f
+audio_resume	psp_sound.c	/^audio_resume(void)$/;"	f
+audio_shutdown	psp_sound.c	/^audio_shutdown(void)$/;"	f
+back2_surface	psp_sdl.c	/^  SDL_Surface *back2_surface;$/;"	v
+back_surface	psp_sdl.c	/^  SDL_Surface *back_surface;$/;"	v
+background_surface	psp_sdl.c	/^  SDL_Surface *background_surface = NULL;$/;"	v
+bg_color	psp_editor.h	/^    int  bg_color;$/;"	m	struct:PSPWRITE_t
+blit_surface	psp_sdl.c	/^  SDL_Surface *blit_surface;$/;"	v
+byte	Z80.h	/^typedef unsigned char byte;$/;"	t
+byte_before_the_zipfile	unzip.c	/^	uLong byte_before_the_zipfile;\/* byte before the zipfile, (>0 for sfx)*\/$/;"	m	struct:__anon6	file:
+byte_before_the_zipfile	unzip.c	/^	uLong byte_before_the_zipfile;\/* byte before the zipfile, (>0 for sfx)*\/$/;"	m	struct:__anon7	file:
+central_pos	unzip.c	/^	uLong central_pos;          \/* position of the beginning of the central dir*\/$/;"	m	struct:__anon7	file:
+chan	psp_sound.c	/^static Channel chan[4] = {$/;"	v	file:
+cleanup_output	psp_main.c	/^static void cleanup_output(void)$/;"	f	file:
+clip_t	psp_editor.c	/^  typedef struct clip_t {$/;"	s	file:
+clip_t	psp_editor.c	/^  } clip_t;$/;"	t	typeref:struct:clip_t	file:
+cmpFile	psp_fmgr.c	/^cmpFile(struct dirent *a, struct dirent *b)$/;"	f	file:
+colem_save_t	Coleco.h	/^  typedef struct colem_save_t {$/;"	s
+colem_save_t	Coleco.h	/^} colem_save_t;$/;"	t	typeref:struct:colem_save_t
+comment	Coleco.h	/^    char           comment[CV_CHEAT_COMMENT_SIZE];$/;"	m	struct:CV_cheat_t
+comment_list	Coleco.c	/^typedef struct comment_list {$/;"	s	file:
+comment_list	Coleco.c	/^} comment_list;$/;"	t	typeref:struct:comment_list	file:
+comment_present	Coleco.h	/^    int  comment_present;$/;"	m	struct:ColecoVision_t
+compressed_size	unzip.h	/^    uLong compressed_size;      \/* compressed size                 4 bytes *\/ $/;"	m	struct:unz_file_info_s
+compression_method	unzip.c	/^	uLong compression_method;   \/* compression method (0==store) *\/$/;"	m	struct:__anon6	file:
+compression_method	unzip.h	/^    uLong compression_method;   \/* compression method              2 bytes *\/$/;"	m	struct:unz_file_info_s
+cpu_deinit	cpugp2x.c	/^int cpu_deinit(void)$/;"	f
+cpu_deinit	cpuno.h	30;"	d
+cpu_deinit	cpuwiz.c	/^cpu_deinit()$/;"	f
+cpu_get_clock	cpugp2x.c	/^cpu_get_clock()$/;"	f
+cpu_get_clock	cpuno.h	32;"	d
+cpu_get_clock	cpuwiz.c	/^cpu_get_clock()$/;"	f
+cpu_init	cpugp2x.c	/^void cpu_init()$/;"	f
+cpu_init	cpuno.h	29;"	d
+cpu_init	cpuwiz.c	/^cpu_init()$/;"	f
+cpu_set_clock	cpugp2x.c	/^void cpu_set_clock(int clock_in_mhz)$/;"	f
+cpu_set_clock	cpuno.h	33;"	d
+cpu_set_clock	cpuwiz.c	/^cpu_set_clock(unsigned int clock_in_mhz)$/;"	f
+crc	unzip.h	/^    uLong crc;                  \/* crc-32                          4 bytes *\/$/;"	m	struct:unz_file_info_s
+crc32	unzip.c	/^	uLong crc32;                \/* crc32 of all data uncompressed *\/$/;"	m	struct:__anon6	file:
+crc32_wait	unzip.c	/^	uLong crc32_wait;           \/* crc32 we must obtain after decompress all *\/$/;"	m	struct:__anon6	file:
+cur_cheat	psp_menu_cheat.c	/^  static int cur_cheat      = 0;$/;"	v	file:
+cur_file_info	unzip.c	/^	unz_file_info cur_file_info; \/* public info about the current file in zip*\/$/;"	m	struct:__anon7	file:
+cur_file_info_internal	unzip.c	/^	unz_file_info_internal cur_file_info_internal; \/* private info about it*\/$/;"	m	struct:__anon7	file:
+cur_menu_id	psp_menu.c	/^  static int cur_menu_id = MENU_LOAD_ROM;$/;"	v	file:
+cur_menu_id	psp_menu_cheat.c	/^  static int cur_menu_id    = MENU_CHEAT_LOAD;$/;"	v	file:
+cur_menu_id	psp_menu_joy.c	/^  static int cur_menu_id = MENU_JOY_LOAD;$/;"	v	file:
+cur_menu_id	psp_menu_kbd.c	/^  static int cur_menu_id = MENU_KBD_LOAD;$/;"	v	file:
+cur_menu_id	psp_menu_set.c	/^  static int cur_menu_id = MENU_SET_LOAD;$/;"	v	file:
+cur_slot	psp_menu.c	/^  static int cur_slot    = 0;$/;"	v	file:
+curr_col	psp_editor.c	/^    int       curr_col;$/;"	m	struct:text_t	file:
+curr_line	psp_editor.c	/^    int       curr_line;$/;"	m	struct:text_t	file:
+current_file_ok	unzip.c	/^	uLong current_file_ok;      \/* flag about the usability of the current file*\/$/;"	m	struct:__anon7	file:
+cursor_blink	psp_editor.c	/^    char      cursor_blink;$/;"	m	struct:text_t	file:
+cursor_end	psp_editor.c	/^    char      cursor_end;$/;"	m	struct:text_t	file:
+cursor_moving	psp_editor.c	/^    char      cursor_moving;$/;"	m	struct:text_t	file:
+cv_apply_cheats	Coleco.c	/^cv_apply_cheats()$/;"	f
+cv_auto_fire	Coleco.h	/^    int  cv_auto_fire;$/;"	m	struct:ColecoVision_t
+cv_auto_fire_mode	psp_menu_joy.c	/^  static int cv_auto_fire_mode   = 0;$/;"	v	file:
+cv_auto_fire_period	Coleco.h	/^    int  cv_auto_fire_period;$/;"	m	struct:ColecoVision_t
+cv_auto_fire_period	psp_menu_joy.c	/^  static int cv_auto_fire_period = 0;$/;"	v	file:
+cv_auto_fire_pressed	Coleco.h	/^    int  cv_auto_fire_pressed;$/;"	m	struct:ColecoVision_t
+cv_cheat	Coleco.h	/^    CV_cheat_t cv_cheat[CV_MAX_CHEAT];$/;"	m	struct:ColecoVision_t
+cv_current_clock	Coleco.h	/^    int  cv_current_clock;$/;"	m	struct:ColecoVision_t
+cv_current_fps	Coleco.h	/^    int  cv_current_fps;$/;"	m	struct:ColecoVision_t
+cv_decode_key	psp_kbd.c	/^cv_decode_key(int psp_b, int button_pressed)$/;"	f
+cv_default_settings	Coleco.c	/^cv_default_settings()$/;"	f
+cv_get_key_from_ascii	psp_kbd.c	/^cv_get_key_from_ascii(int key_ascii)$/;"	f
+cv_home_dir	Coleco.h	/^    char cv_home_dir[MAX_PATH];$/;"	m	struct:ColecoVision_t
+cv_joy_load	Coleco.c	/^cv_joy_load(void)$/;"	f
+cv_joy_save	Coleco.c	/^cv_joy_save(void)$/;"	f
+cv_kbd_load	Coleco.c	/^cv_kbd_load(void)$/;"	f
+cv_kbd_reset	psp_kbd.c	/^cv_kbd_reset()$/;"	f
+cv_kbd_save	Coleco.c	/^cv_kbd_save(void)$/;"	f
+cv_key_event	psp_kbd.c	/^cv_key_event(int cv_idx, int press)$/;"	f
+cv_key_trans	psp_kbd.h	/^ struct cv_key_trans {$/;"	s
+cv_keys_emum	psp_kbd.h	/^ enum cv_keys_emum {$/;"	g
+cv_load_cheat	Coleco.c	/^cv_load_cheat()$/;"	f
+cv_load_file_cheat	Coleco.c	/^cv_load_file_cheat(char *FileName)$/;"	f
+cv_load_file_settings	Coleco.c	/^cv_load_file_settings(char *FileName)$/;"	f
+cv_load_rom	Coleco.c	/^cv_load_rom(char *FileName, int zip_format)$/;"	f
+cv_load_settings	Coleco.c	/^cv_load_settings()$/;"	f
+cv_load_state	Coleco.c	/^cv_load_state(char *FileName)$/;"	f
+cv_ntsc	Coleco.h	/^    int  cv_ntsc;$/;"	m	struct:ColecoVision_t
+cv_ntsc	psp_menu_set.c	/^  static int cv_ntsc              = 1;$/;"	v	file:
+cv_render_mode	Coleco.h	/^    int  cv_render_mode;$/;"	m	struct:ColecoVision_t
+cv_render_mode	psp_menu_set.c	/^  static int cv_render_mode       = 0;$/;"	v	file:
+cv_save_cheat	Coleco.c	/^cv_save_cheat(void)$/;"	f
+cv_save_name	Coleco.h	/^    char cv_save_name[MAX_PATH];$/;"	m	struct:ColecoVision_t
+cv_save_settings	Coleco.c	/^cv_save_settings(void)$/;"	f
+cv_save_state	Coleco.c	/^cv_save_state(char *FileName)$/;"	f	file:
+cv_save_state	Coleco.h	/^    CV_save_t cv_save_state[CV_MAX_SAVE_STATE];$/;"	m	struct:ColecoVision_t
+cv_save_state_sta	Coleco.c	/^cv_save_state_sta(char *filename)$/;"	f	file:
+cv_save_state_stz	Coleco.c	/^cv_save_state_stz(char *filename)$/;"	f	file:
+cv_set_video_mode	Coleco.c	/^cv_set_video_mode( int ntsc )$/;"	f
+cv_skip_fps	psp_menu_set.c	/^  static int cv_skip_fps          = 0;$/;"	v	file:
+cv_snapshot_del_slot	Coleco.c	/^cv_snapshot_del_slot(int save_id)$/;"	f
+cv_snapshot_load_slot	Coleco.c	/^cv_snapshot_load_slot(int load_id)$/;"	f
+cv_snapshot_save_slot	Coleco.c	/^cv_snapshot_save_slot(int save_id)$/;"	f
+cv_snd_enable	Coleco.h	/^    int  cv_snd_enable;$/;"	m	struct:ColecoVision_t
+cv_snd_enable	psp_menu_set.c	/^  static int cv_snd_enable        = 0;$/;"	v	file:
+cv_speed_limiter	Coleco.h	/^    int  cv_speed_limiter;$/;"	m	struct:ColecoVision_t
+cv_speed_limiter	psp_menu_set.c	/^  static int cv_speed_limiter     = 60;$/;"	v	file:
+cv_synchronize	Unix.c	/^cv_synchronize(void)$/;"	f
+cv_treat_command_key	Coleco.c	/^cv_treat_command_key(int cv_idx)$/;"	f
+cv_update_save_name	Coleco.c	/^cv_update_save_name(char *Name)$/;"	f
+cv_view_fps	Coleco.h	/^    int  cv_view_fps;$/;"	m	struct:ColecoVision_t
+cv_view_fps	psp_menu_set.c	/^  static int cv_view_fps            = 0;$/;"	v	file:
+cv_vsync	Coleco.h	/^    int  cv_vsync;$/;"	m	struct:ColecoVision_t
+cv_vsync	psp_menu_set.c	/^  static int cv_vsync             = 0;$/;"	v	file:
+danzeff_change_skin	psp_danzeff.c	/^danzeff_change_skin()$/;"	f
+danzeff_cv_key	psp_kbd.c	/^ static int danzeff_cv_key     = 0;$/;"	v	file:
+danzeff_cv_pending	psp_kbd.c	/^ static int danzeff_cv_pending = 0;$/;"	v	file:
+danzeff_dirty	psp_danzeff.c	/^danzeff_dirty()$/;"	f
+danzeff_free	psp_danzeff.c	/^danzeff_free()$/;"	f
+danzeff_init_skin	psp_danzeff.c	/^danzeff_init_skin()$/;"	f
+danzeff_isinitialized	psp_danzeff.c	/^danzeff_isinitialized()$/;"	f
+danzeff_load	psp_danzeff.c	/^danzeff_load()$/;"	f
+danzeff_mode	psp_kbd.c	/^ static int danzeff_mode        = 0;$/;"	v	file:
+danzeff_moveTo	psp_danzeff.c	/^danzeff_moveTo(const int newX, const int newY)$/;"	f
+danzeff_readInput	psp_danzeff.c	/^danzeff_readInput(gp2xCtrlData pspctrl)$/;"	f
+danzeff_render	psp_danzeff.c	/^danzeff_render()$/;"	f
+danzeff_screen	psp_danzeff.c	/^static SDL_Surface* danzeff_screen;$/;"	v	file:
+danzeff_screen_rect	psp_danzeff.c	/^static SDL_Rect danzeff_screen_rect;$/;"	v	file:
+danzeff_set_screen	psp_danzeff.c	/^danzeff_set_screen(SDL_Surface* screen)$/;"	f
+date	Coleco.h	/^    time_t          date;$/;"	m	struct:CV_save_t
+dirty	psp_danzeff.c	/^static \/*bool*\/ int dirty = true;        \/\/keyboard needs redrawing$/;"	v	file:
+disk_num_start	unzip.h	/^    uLong disk_num_start;       \/* disk number start               2 bytes *\/$/;"	m	struct:unz_file_info_s
+do_extract_currentfile_in_memory	miniunz.c	/^do_extract_currentfile_in_memory (unzFile uf, size_t * unzipped_size)$/;"	f	file:
+do_extract_onefile_in_memory	miniunz.c	/^do_extract_onefile_in_memory (unzFile uf, const char *filename,$/;"	f	file:
+dosDate	unzip.h	/^    uLong dosDate;              \/* last mod file date in Dos fmt   4 bytes *\/$/;"	m	struct:unz_file_info_s
+dos_mode	psp_editor.h	/^    int  dos_mode;$/;"	m	struct:PSPWRITE_t
+edit_filename	psp_editor.h	/^    char edit_filename[MAX_PATH];$/;"	m	struct:PSPWRITE_t
+editor_colors	psp_editor.c	/^  int editor_colors[EDITOR_MAX_COLOR];$/;"	v
+editor_colors_name	psp_editor.c	/^  char* editor_colors_name[EDITOR_MAX_COLOR] = {$/;"	v
+emulator_reset	Coleco.c	/^emulator_reset(void)$/;"	f
+expand_tab	psp_editor.h	/^    int  expand_tab;$/;"	m	struct:PSPWRITE_t
+external_fa	unzip.h	/^    uLong external_fa;          \/* external file attributes        4 bytes *\/$/;"	m	struct:unz_file_info_s
+extract_file_in_memory	miniunz.c	/^extract_file_in_memory (char *zipfilename, char *archivedfile, size_t * unzipped_size)$/;"	f
+false	psp_danzeff.c	9;"	d	file:
+fg_color	psp_editor.h	/^    int  fg_color;$/;"	m	struct:PSPWRITE_t
+file	unzip.c	/^	FILE* file;                 \/* io structore of the zipfile *\/$/;"	m	struct:__anon6	file:
+file	unzip.c	/^	FILE* file;                 \/* io structore of the zipfile *\/$/;"	m	struct:__anon7	file:
+file_in_zip_read_info_s	unzip.c	/^} file_in_zip_read_info_s;$/;"	t	typeref:struct:__anon6	file:
+filename	Coleco.c	/^  char              *filename;$/;"	m	struct:comment_list	file:
+files	psp_fmgr.c	/^static struct dirent files[GP2X_FMGR_MAX_ENTRY];$/;"	v	typeref:struct:dirent	file:
+find_possible_filename_in_zip	miniunz.c	/^find_possible_filename_in_zip (char *zipfilename, const char* ext)$/;"	f
+first_time_auto_stamp	psp_kbd.c	/^ static long           first_time_auto_stamp = -1;$/;"	v	file:
+first_time_stamp	psp_kbd.c	/^ static long           first_time_stamp = -1;$/;"	v	file:
+flag	unzip.h	/^    uLong flag;                 \/* general purpose bit flag        2 bytes *\/$/;"	m	struct:unz_file_info_s
+flags	psp_editor.c	/^    u8    flags;$/;"	m	struct:line_t	file:
+g_clip	psp_editor.c	/^  static clip_t* g_clip;$/;"	v	file:
+g_text	psp_editor.c	/^  static text_t* g_text;$/;"	v	file:
+getDir	psp_fmgr.c	/^getDir(const char *path) $/;"	f	file:
+get_920_Div	cpugp2x.c	/^unsigned short get_920_Div()$/;"	f
+get_display_clock_div	cpugp2x.c	/^unsigned get_display_clock_div()$/;"	f
+get_freq_920_CLK	cpugp2x.c	/^unsigned get_freq_920_CLK()$/;"	f
+get_speed_clock	cpugp2x.c	/^unsigned get_speed_clock(void)$/;"	f
+get_status_ACLK	cpugp2x.c	/^unsigned get_status_ACLK()$/;"	f
+get_status_UCLK	cpugp2x.c	/^unsigned get_status_UCLK()$/;"	f
+gi	unzip.c	/^	unz_global_info gi;       \/* public global information *\/$/;"	m	struct:__anon7	file:
+gp2xConvertMaskToButtons	gp2x_psp.c	/^gp2xConvertMaskToButtons(int Mask)$/;"	f	file:
+gp2xCtrlData	gp2x_psp.h	/^typedef struct gp2xCtrlData {$/;"	s
+gp2xCtrlData	gp2x_psp.h	/^} gp2xCtrlData;$/;"	t	typeref:struct:gp2xCtrlData
+gp2xCtrlPeekBufferPositive	gp2x_psp.c	/^gp2xCtrlPeekBufferPositive(gp2xCtrlData* c, int v)$/;"	f
+gp2xCtrlReadBufferPositive	gp2x_psp.c	/^gp2xCtrlReadBufferPositive(gp2xCtrlData* c, int v)$/;"	f
+gp2xDecreaseVolume	gp2x_psp.c	/^gp2xDecreaseVolume()$/;"	f
+gp2xGetSoundVolume	gp2x_psp.c	/^gp2xGetSoundVolume()$/;"	f
+gp2xIncreaseVolume	gp2x_psp.c	/^gp2xIncreaseVolume()$/;"	f
+gp2xInsmodMMUhack	gp2x_psp.c	/^gp2xInsmodMMUhack(void)$/;"	f
+gp2xPowerSetClockFrequency	gp2x_psp.c	/^gp2xPowerSetClockFrequency(int freq)$/;"	f
+gp2xRmmodMMUhack	gp2x_psp.c	/^gp2xRmmodMMUhack(void)$/;"	f
+gp2xTreatVolume	gp2x_psp.c	/^gp2xTreatVolume(gp2xCtrlData* c)$/;"	f
+gp2x_dev	cpuwiz.c	/^static          unsigned int    gp2x_dev = 0;$/;"	v	file:
+gp2x_memregl	cpuwiz.c	/^static volatile unsigned long  *gp2x_memregl;$/;"	v	file:
+gp2x_memregs	cpuwiz.c	/^static volatile unsigned short *gp2x_memregs;$/;"	v	file:
+guiStrings	psp_danzeff.c	/^static char *guiStrings[] = $/;"	v	file:
+guiStringsSize	psp_danzeff.c	30;"	d	file:
+h	Z80.h	/^  struct { byte l,h; } B;$/;"	m	struct:__anon8::__anon9
+head_list	psp_editor.c	/^    line_list_t*  head_list;$/;"	m	struct:clip_t	file:
+help_surface	psp_sdl.c	/^  SDL_Surface *help_surface;$/;"	v
+holding	psp_danzeff.c	/^static \/*bool*\/ int holding = false;     \/\/user is holding a button$/;"	v	file:
+initialized	psp_danzeff.c	/^static \/*bool*\/ int initialized = false; \/\/keyboard is initialized$/;"	v	file:
+internal_fa	unzip.h	/^    uLong internal_fa;          \/* internal file attributes        2 bytes *\/$/;"	m	struct:unz_file_info_s
+is_modified	psp_editor.h	/^    int  is_modified;$/;"	m	struct:PSPWRITE_t
+kbd_change_auto_fire	psp_kbd.c	/^kbd_change_auto_fire(int auto_fire)$/;"	f
+kbd_layout	psp_kbd.c	/^  int kbd_layout[KBD_MAX_ENTRIES][2] = {$/;"	v
+kbd_ltrigger_mapping_active	psp_kbd.c	/^ int kbd_ltrigger_mapping_active;$/;"	v
+kbd_reset_button_status	psp_kbd.c	/^kbd_reset_button_status(void)$/;"	f	file:
+kbd_rtrigger_mapping_active	psp_kbd.c	/^ int kbd_rtrigger_mapping_active;$/;"	v
+kbd_scan_keyboard	psp_kbd.c	/^kbd_scan_keyboard(void)$/;"	f
+kbd_wait_start	psp_kbd.c	/^kbd_wait_start(void)$/;"	f
+key	psp_kbd.h	/^   int  key;$/;"	m	struct:cv_key_trans
+keyBits	psp_danzeff.c	/^static SDL_Surface* keyBits[guiStringsSize];$/;"	v	file:
+l	Z80.h	/^  struct { byte l,h; } B;$/;"	m	struct:__anon8::__anon9
+last_blink	psp_editor.c	/^    u32       last_blink;$/;"	m	struct:text_t	file:
+last_col	psp_editor.c	/^    int       last_col;$/;"	m	struct:text_t	file:
+last_list	psp_editor.c	/^    line_list_t*  last_list;$/;"	m	struct:clip_t	file:
+left_col	psp_editor.c	/^    int       left_col;$/;"	m	struct:text_t	file:
+line	psp_editor.c	/^    line_t*             line;$/;"	m	struct:line_list_t	file:
+line_list_t	psp_editor.c	/^  typedef struct line_list_t {$/;"	s	file:
+line_list_t	psp_editor.c	/^  } line_list_t;$/;"	t	typeref:struct:line_list_t	file:
+line_t	psp_editor.c	/^  typedef struct line_t {$/;"	s	file:
+line_t	psp_editor.c	/^  } line_t;$/;"	t	typeref:struct:line_t	file:
+lines	psp_editor.c	/^    line_t*   lines[EDITOR_MAX_LINES];$/;"	m	struct:text_t	file:
+load_comment_if_exists	Coleco.c	/^load_comment_if_exists(char *Name)$/;"	f
+load_comment_list	Coleco.c	/^load_comment_list()$/;"	f
+load_system_regs	cpugp2x.c	/^void load_system_regs()$/;"	f
+load_thumb_if_exists	Coleco.c	/^load_thumb_if_exists(char *Name)$/;"	f
+load_thumb_list	Coleco.c	/^load_thumb_list()$/;"	f
+loc_Buffer	psp_editor.c	/^static char loc_Buffer[EDITOR_MAX_WIDTH];$/;"	v	file:
+loc_CurrEventButtons	gp2x_psp.c	/^static int    loc_CurrEventButtons = 0;$/;"	v	file:
+loc_CurrEventMask	gp2x_psp.c	/^static int    loc_CurrEventMask    = 0;$/;"	v	file:
+loc_CurrTimeStamp	gp2x_psp.c	/^static u32    loc_CurrTimeStamp    = 0;$/;"	v	file:
+loc_LastEventMask	gp2x_psp.c	/^static int    loc_LastEventMask    = 0;$/;"	v	file:
+loc_LastTimeStamp	gp2x_psp.c	/^static u32    loc_LastTimeStamp    = 0;$/;"	v	file:
+loc_LastVolumeTimeStamp	gp2x_psp.c	/^static u32    loc_LastVolumeTimeStamp = 0;$/;"	v	file:
+loc_Line	psp_editor.c	/^static char loc_Line[EDITOR_MAX_WIDTH + 32];$/;"	v	file:
+loc_Volume	gp2x_psp.c	/^static int    loc_Volume = 50;$/;"	v	file:
+loc_VolumeButtons	gp2x_psp.c	/^static int    loc_VolumeButtons = 0;$/;"	v	file:
+loc_VolumePress	gp2x_psp.c	/^static int    loc_VolumePress   = 0;$/;"	v	file:
+loc_add_comment_list	Coleco.c	/^loc_add_comment_list(char* filename)$/;"	f	file:
+loc_add_thumb_list	Coleco.c	/^loc_add_thumb_list(char* filename)$/;"	f	file:
+loc_button_data	psp_kbd.c	/^ static gp2xCtrlData    loc_button_data;$/;"	v	file:
+loc_button_mask	psp_kbd.c	/^ static unsigned int   loc_button_mask[ KBD_MAX_BUTTONS ] =$/;"	v	file:
+loc_button_name	psp_kbd.c	/^ static char loc_button_name[ KBD_ALL_BUTTONS ][20] =$/;"	v	file:
+loc_button_name_L	psp_kbd.c	/^ static char loc_button_name_L[ KBD_ALL_BUTTONS ][20] =$/;"	v	file:
+loc_button_name_R	psp_kbd.c	/^  static char loc_button_name_R[ KBD_ALL_BUTTONS ][20] =$/;"	v	file:
+loc_button_press	psp_kbd.c	/^ static char           loc_button_press[ KBD_MAX_BUTTONS ]; $/;"	v	file:
+loc_button_release	psp_kbd.c	/^ static char           loc_button_release[ KBD_MAX_BUTTONS ]; $/;"	v	file:
+loc_clock_in_mhz	cpugp2x.c	/^static int loc_clock_in_mhz = 60;$/;"	v	file:
+loc_clock_in_mhz	cpuwiz.c	/^static unsigned int loc_clock_in_mhz = GP2X_DEF_CLOCK;$/;"	v	file:
+loc_cv_load_cheat	Coleco.c	/^loc_cv_load_cheat(char *chFileName)$/;"	f	file:
+loc_cv_load_settings	Coleco.c	/^loc_cv_load_settings(char *chFileName)$/;"	f	file:
+loc_cv_save_cheat	Coleco.c	/^loc_cv_save_cheat(char *chFileName)$/;"	f	file:
+loc_cv_save_settings	Coleco.c	/^loc_cv_save_settings(char *chFileName)$/;"	f
+loc_default_mapping	psp_kbd.c	/^ static int loc_default_mapping[ KBD_ALL_BUTTONS ] = {$/;"	v	file:
+loc_default_mapping_L	psp_kbd.c	/^ static int loc_default_mapping_L[ KBD_ALL_BUTTONS ] = {$/;"	v	file:
+loc_default_mapping_R	psp_kbd.c	/^ static int loc_default_mapping_R[ KBD_ALL_BUTTONS ] = {$/;"	v	file:
+loc_del_comment_list	Coleco.c	/^loc_del_comment_list()$/;"	f	file:
+loc_del_thumb_list	Coleco.c	/^loc_del_thumb_list()$/;"	f	file:
+loc_head_comment	Coleco.c	/^static comment_list* loc_head_comment = 0;$/;"	v	file:
+loc_head_thumb	Coleco.c	/^static thumb_list* loc_head_thumb = 0;$/;"	v	file:
+loc_kbd_mapping	psp_menu_kbd.c	/^  static int loc_kbd_mapping[ KBD_ALL_BUTTONS ];$/;"	v	file:
+loc_kbd_mapping_L	psp_menu_kbd.c	/^  static int loc_kbd_mapping_L[ KBD_ALL_BUTTONS ];$/;"	v	file:
+loc_kbd_mapping_R	psp_menu_kbd.c	/^  static int loc_kbd_mapping_R[ KBD_ALL_BUTTONS ];$/;"	v	file:
+loc_last_event_time	psp_kbd.c	/^ static unsigned int   loc_last_event_time = 0;$/;"	v	file:
+loc_last_hotkey_time	psp_kbd.c	/^ static unsigned int   loc_last_hotkey_time = 0;$/;"	v	file:
+loc_load_rom	Coleco.c	/^loc_load_rom(char *TmpName)$/;"	f	file:
+loc_load_rom_buffer	Coleco.c	/^loc_load_rom_buffer(char *rom_buffer, int rom_size )$/;"	f	file:
+loc_load_state	Coleco.c	/^loc_load_state(char *FileName)$/;"	f	file:
+loc_load_state_sta	Coleco.c	/^loc_load_state_sta(char *filename)$/;"	f	file:
+loc_load_state_stz	Coleco.c	/^loc_load_state_stz(char *filename)$/;"	f	file:
+loc_psp_debug	psp_sdl.c	/^loc_psp_debug(char *file, int line, char *message)$/;"	f
+loc_set_FCLK	cpuwiz.c	/^loc_set_FCLK(unsigned int clock_in_mhz)$/;"	f	file:
+loc_split_dst_rect	Unix.c	/^loc_split_dst_rect( SDL_Rect* r )$/;"	f	file:
+loc_split_src_rect	Unix.c	/^loc_split_src_rect( SDL_Rect* r )$/;"	f	file:
+local	unzip.c	26;"	d	file:
+main	psp_main.c	/^main(int argc, char *argv[])$/;"	f
+max_lines	psp_editor.c	/^    int       max_lines;$/;"	m	struct:text_t	file:
+max_width	psp_editor.c	/^    int       max_width;$/;"	m	struct:text_t	file:
+max_width	psp_editor.c	/^    u16   max_width;$/;"	m	struct:line_t	file:
+menu_item_t	psp_menu.h	/^  typedef struct menu_item_t {$/;"	s
+menu_item_t	psp_menu.h	/^  } menu_item_t;$/;"	t	typeref:struct:menu_item_t
+menu_kbd_selected	psp_menu_kbd.c	/^  int menu_kbd_selected = -1;$/;"	v
+menu_list	psp_menu.c	/^  static menu_item_t menu_list[] =$/;"	v	file:
+menu_list	psp_menu_cheat.c	/^  static menu_item_t menu_list[] =$/;"	v	file:
+menu_list	psp_menu_joy.c	/^  static menu_item_t menu_list[] =$/;"	v	file:
+menu_list	psp_menu_kbd.c	/^  static menu_item_t menu_list[] =$/;"	v	file:
+menu_list	psp_menu_set.c	/^  static menu_item_t menu_list[] =$/;"	v	file:
+mode	psp_danzeff.c	/^static int mode = 0;             \/\/charset selected. (0 - letters or 1 - numbers)$/;"	v	file:
+modeChar	psp_danzeff.c	/^static int modeChar[MAX_VKEYBOARD][3][3][5] = $/;"	v	file:
+move_on_text	psp_editor.h	/^    int  move_on_text;$/;"	m	struct:PSPWRITE_t
+moved_x	psp_danzeff.c	/^static int moved_x = 0, moved_y = 0; \/\/ location that we are moved to$/;"	v	file:
+moved_y	psp_danzeff.c	/^static int moved_x = 0, moved_y = 0; \/\/ location that we are moved to$/;"	v	file:
+myPowerSetClockFrequency	Coleco.c	/^myPowerSetClockFrequency(int cpu_clock)$/;"	f
+my_isspace	psp_editor.c	/^my_isspace(char c)$/;"	f	file:
+my_sort	psp_fmgr.c	/^my_sort(struct dirent **a, int left, int right) $/;"	f	file:
+name	Coleco.c	/^  char              *name;$/;"	m	struct:comment_list	file:
+name	Coleco.c	/^  char              *name;$/;"	m	struct:thumb_list	file:
+name	psp_kbd.h	/^   char name[32];$/;"	m	struct:cv_key_trans
+next	Coleco.c	/^  struct comment_list *next;$/;"	m	struct:comment_list	typeref:struct:comment_list::comment_list	file:
+next	Coleco.c	/^  struct thumb_list *next;$/;"	m	struct:thumb_list	typeref:struct:thumb_list::thumb_list	file:
+next	psp_editor.c	/^    struct line_list_t* next;$/;"	m	struct:line_list_t	typeref:struct:line_list_t::line_list_t	file:
+nfiles	psp_fmgr.c	/^static int nfiles;$/;"	v	file:
+noise	psp_sound.c	/^static short noise[NOISEBSIZE];$/;"	v	file:
+num_file	unzip.c	/^	uLong num_file;             \/* number of the current file in the zipfile*\/$/;"	m	struct:__anon7	file:
+num_lines	psp_editor.c	/^    int       num_lines;$/;"	m	struct:text_t	file:
+number_entry	unzip.h	/^	uLong number_entry;         \/* total number of entries in$/;"	m	struct:unz_global_info_s
+number_lines	psp_editor.c	/^    int           number_lines;$/;"	m	struct:clip_t	file:
+offset	Z80.h	/^typedef signed char offset;$/;"	t
+offset_central_dir	unzip.c	/^	uLong offset_central_dir;   \/* offset of start of central directory with$/;"	m	struct:__anon7	file:
+offset_curfile	unzip.c	/^    uLong offset_curfile;\/* relative offset of local header 4 bytes *\/$/;"	m	struct:unz_file_info_internal_s	file:
+offset_local_extrafield	unzip.c	/^	uLong offset_local_extrafield;\/* offset of the local extra field *\/$/;"	m	struct:__anon6	file:
+pair	Z80.h	/^} pair;$/;"	t	typeref:union:__anon8
+pfile_in_zip_read	unzip.c	/^    file_in_zip_read_info_s* pfile_in_zip_read; \/* structure about the current$/;"	m	struct:__anon7	file:
+pixel	LibPsp.h	/^typedef unsigned char pixel;$/;"	t
+pixel	LibPsp.h	/^typedef unsigned int pixel;$/;"	t
+pixel	LibPsp.h	/^typedef unsigned short pixel;$/;"	t
+pollux_dpc_set	cpuwiz.c	/^pollux_dpc_set(volatile unsigned short *memregs, const char *str)$/;"	f	file:
+pos_in_central_dir	unzip.c	/^	uLong pos_in_central_dir;   \/* pos of the current file in the central dir*\/$/;"	m	struct:__anon7	file:
+pos_in_zipfile	unzip.c	/^	uLong pos_in_zipfile;       \/* position in byte on the zipfile, for fseek*\/$/;"	m	struct:__anon6	file:
+pos_local_extrafield	unzip.c	/^	uLong pos_local_extrafield;   \/* position in the local extra field in read*\/$/;"	m	struct:__anon6	file:
+possible_filename_in_zip	miniunz.c	/^static char possible_filename_in_zip[MAX_PATH];$/;"	v	file:
+psp_active_joystick	Coleco.h	/^    int  psp_active_joystick;$/;"	m	struct:ColecoVision_t
+psp_active_joystick	psp_menu_joy.c	/^  static int psp_active_joystick   = 0;$/;"	v	file:
+psp_apply_current_cheat_list	psp_menu_list.c	/^psp_apply_current_cheat_list(int cheat_id)$/;"	f	file:
+psp_cheat	psp_menu_list.c	/^  static char* psp_cheat[MAX_CHEAT_LINE];$/;"	v	file:
+psp_cheat_current	psp_menu_list.c	/^  static int   psp_cheat_current = 0;$/;"	v	file:
+psp_cheat_menu	psp_menu_cheat.c	/^psp_cheat_menu(void)$/;"	f
+psp_cheat_menu_add_cheat	psp_menu_cheat.c	/^psp_cheat_menu_add_cheat()$/;"	f	file:
+psp_cheat_menu_cheat_list	psp_menu_cheat.c	/^psp_cheat_menu_cheat_list()$/;"	f	file:
+psp_cheat_menu_cur_cheat	psp_menu_cheat.c	/^psp_cheat_menu_cur_cheat(int step)$/;"	f	file:
+psp_cheat_menu_del_cheat	psp_menu_cheat.c	/^psp_cheat_menu_del_cheat()$/;"	f	file:
+psp_cheat_menu_edit_list	psp_menu_cheat.c	/^psp_cheat_menu_edit_list()$/;"	f	file:
+psp_cheat_menu_enable_all_cheat	psp_menu_cheat.c	/^psp_cheat_menu_enable_all_cheat()$/;"	f	file:
+psp_cheat_menu_enable_cheat	psp_menu_cheat.c	/^psp_cheat_menu_enable_cheat()$/;"	f	file:
+psp_cheat_menu_init	psp_menu_cheat.c	/^psp_cheat_menu_init()$/;"	f	file:
+psp_cheat_menu_load	psp_menu_cheat.c	/^psp_cheat_menu_load(int format)$/;"	f	file:
+psp_cheat_menu_new_val	psp_menu_cheat.c	/^psp_cheat_menu_new_val(int step)$/;"	f	file:
+psp_cheat_menu_old_val	psp_menu_cheat.c	/^psp_cheat_menu_old_val(int step)$/;"	f	file:
+psp_cheat_menu_poke_val	psp_menu_cheat.c	/^psp_cheat_menu_poke_val(int step)$/;"	f	file:
+psp_cheat_menu_reset_cheat	psp_menu_cheat.c	/^psp_cheat_menu_reset_cheat()$/;"	f	file:
+psp_cheat_menu_save	psp_menu_cheat.c	/^psp_cheat_menu_save()$/;"	f	file:
+psp_cheat_menu_save_ram	psp_menu_cheat.c	/^psp_cheat_menu_save_ram()$/;"	f	file:
+psp_cheat_menu_value_cheat	psp_menu_cheat.c	/^psp_cheat_menu_value_cheat(int step)$/;"	f	file:
+psp_cheat_size	psp_menu_list.c	/^  static int   psp_cheat_size    = -1;$/;"	v	file:
+psp_cheat_top	psp_menu_list.c	/^  static int   psp_cheat_top     = 0;$/;"	v	file:
+psp_cheat_update_match	psp_menu_cheat.c	/^psp_cheat_update_match()$/;"	f	file:
+psp_convert_utf8_to_iso_8859_1	psp_sdl.c	/^psp_convert_utf8_to_iso_8859_1(unsigned char c1, unsigned char c2)$/;"	f
+psp_cpu_clock	Coleco.h	/^    int  psp_cpu_clock;$/;"	m	struct:ColecoVision_t
+psp_cpu_clock	psp_editor.h	/^    int  psp_cpu_clock;$/;"	m	struct:PSPWRITE_t
+psp_cpu_clock	psp_menu_set.c	/^  static int psp_cpu_clock        = GP2X_DEF_CLOCK;$/;"	v	file:
+psp_cv_key_to_name	psp_kbd.c	/^  struct cv_key_trans psp_cv_key_to_name[CV_MAX_KEY]=$/;"	v	typeref:struct:cv_key_trans
+psp_cv_wait_vsync	Unix.c	/^psp_cv_wait_vsync()$/;"	f
+psp_debug	psp_sdl.h	23;"	d
+psp_dev	cpugp2x.c	/^ unsigned long   psp_dev[8]={0,0,0,0,0,0,0,0};$/;"	v
+psp_display_cursor	psp_editor.c	/^psp_display_cursor()$/;"	f
+psp_display_editor	psp_editor.c	/^psp_display_editor()$/;"	f
+psp_display_lr	Coleco.h	/^    int  psp_display_lr;$/;"	m	struct:ColecoVision_t
+psp_display_screen_cheat_list	psp_menu_list.c	/^psp_display_screen_cheat_list(void)$/;"	f	file:
+psp_display_screen_cheat_menu	psp_menu_cheat.c	/^psp_display_screen_cheat_menu(void)$/;"	f	file:
+psp_display_screen_fmgr	psp_fmgr.c	/^psp_display_screen_fmgr(char* comment)$/;"	f	file:
+psp_display_screen_help	psp_menu_help.c	/^psp_display_screen_help(void)$/;"	f	file:
+psp_display_screen_joystick_menu	psp_menu_joy.c	/^psp_display_screen_joystick_menu(void)$/;"	f	file:
+psp_display_screen_kbd_menu	psp_menu_kbd.c	/^psp_display_screen_kbd_menu(void)$/;"	f	file:
+psp_display_screen_menu	psp_menu.c	/^psp_display_screen_menu(void)$/;"	f
+psp_display_screen_settings_menu	psp_menu_set.c	/^psp_display_screen_settings_menu(void)$/;"	f	file:
+psp_editor_add_line	psp_editor.c	/^psp_editor_add_line(int line_id, char *buffer)$/;"	f
+psp_editor_alloc_line	psp_editor.c	/^psp_editor_alloc_line()$/;"	f
+psp_editor_append_clipboard	psp_editor.c	/^psp_editor_append_clipboard(line_t* a_line, int col_from, int col_to)$/;"	f
+psp_editor_clear_clipboard	psp_editor.c	/^psp_editor_clear_clipboard()$/;"	f
+psp_editor_clear_curr_line	psp_editor.c	/^psp_editor_clear_curr_line()$/;"	f
+psp_editor_clear_neol	psp_editor.c	49;"	d	file:
+psp_editor_copy	psp_editor.c	/^psp_editor_copy()$/;"	f
+psp_editor_cut	psp_editor.c	/^psp_editor_cut()$/;"	f
+psp_editor_default	psp_editor.c	/^psp_editor_default()$/;"	f
+psp_editor_del_col_from_to	psp_editor.c	/^psp_editor_del_col_from_to(line_t* a_line, int col_from, int col_to)$/;"	f
+psp_editor_del_line_from	psp_editor.c	/^psp_editor_del_line_from(int line_id, int num_lines)$/;"	f
+psp_editor_delete_char	psp_editor.c	/^psp_editor_delete_char(int col_id)$/;"	f
+psp_editor_delete_curr_char	psp_editor.c	/^psp_editor_delete_curr_char()$/;"	f
+psp_editor_delete_line	psp_editor.c	/^psp_editor_delete_line(int line_id)$/;"	f
+psp_editor_goto_col_begin	psp_editor.c	/^psp_editor_goto_col_begin()$/;"	f
+psp_editor_goto_col_end	psp_editor.c	/^psp_editor_goto_col_end()$/;"	f
+psp_editor_goto_col_left	psp_editor.c	/^psp_editor_goto_col_left()$/;"	f
+psp_editor_goto_col_right	psp_editor.c	/^psp_editor_goto_col_right()$/;"	f
+psp_editor_goto_first_line	psp_editor.c	/^psp_editor_goto_first_line()$/;"	f
+psp_editor_goto_last_line	psp_editor.c	/^psp_editor_goto_last_line()$/;"	f
+psp_editor_goto_line_down	psp_editor.c	/^psp_editor_goto_line_down()$/;"	f
+psp_editor_goto_line_up	psp_editor.c	/^psp_editor_goto_line_up()$/;"	f
+psp_editor_goto_page_down	psp_editor.c	/^psp_editor_goto_page_down()$/;"	f
+psp_editor_goto_page_up	psp_editor.c	/^psp_editor_goto_page_up()$/;"	f
+psp_editor_goto_word_left	psp_editor.c	/^psp_editor_goto_word_left()$/;"	f
+psp_editor_goto_word_right	psp_editor.c	/^psp_editor_goto_word_right()$/;"	f
+psp_editor_init	psp_editor.c	/^psp_editor_init()$/;"	f
+psp_editor_insert_char	psp_editor.c	/^psp_editor_insert_char(int line_id, int col_id, int c)$/;"	f
+psp_editor_insert_curr_char	psp_editor.c	/^psp_editor_insert_curr_char(int c)$/;"	f
+psp_editor_insert_line	psp_editor.c	/^psp_editor_insert_line(int line_id, char* text)$/;"	f
+psp_editor_is_neol	psp_editor.c	47;"	d	file:
+psp_editor_is_sel_region	psp_editor.c	/^psp_editor_is_sel_region(int line_id, int col_id)$/;"	f	file:
+psp_editor_is_valid_sel	psp_editor.c	/^psp_editor_is_valid_sel()$/;"	f
+psp_editor_join_prev_line	psp_editor.c	/^psp_editor_join_prev_line(int a_line_id)$/;"	f
+psp_editor_load	psp_editor.c	/^psp_editor_load(char *edit_filename)$/;"	f
+psp_editor_menu	psp_editor.c	/^psp_editor_menu(char* filename)$/;"	f
+psp_editor_new	psp_editor.c	/^psp_editor_new(const char* filename)$/;"	f
+psp_editor_paste	psp_editor.c	/^psp_editor_paste()$/;"	f
+psp_editor_reset_text	psp_editor.c	/^psp_editor_reset_text()$/;"	f
+psp_editor_resize_line	psp_editor.c	/^psp_editor_resize_line(line_t* a_line, int new_width)$/;"	f
+psp_editor_rewrap_buffer_line	psp_editor.c	/^psp_editor_rewrap_buffer_line(int from_line_id, int abs_curr_pos)$/;"	f
+psp_editor_rewrap_curr_line	psp_editor.c	/^psp_editor_rewrap_curr_line()$/;"	f
+psp_editor_rewrap_if_needed	psp_editor.c	/^psp_editor_rewrap_if_needed()$/;"	f
+psp_editor_rewrap_line	psp_editor.c	/^psp_editor_rewrap_line(int rewrap_line_id)$/;"	f
+psp_editor_save	psp_editor.c	/^psp_editor_save( char* filename )$/;"	f
+psp_editor_sel_mode	psp_editor.c	/^psp_editor_sel_mode()$/;"	f
+psp_editor_set_neol	psp_editor.c	48;"	d	file:
+psp_editor_split_curr_line	psp_editor.c	/^psp_editor_split_curr_line()$/;"	f
+psp_editor_split_line	psp_editor.c	/^psp_editor_split_line(int line_id, int col_id)$/;"	f
+psp_editor_suppr_char	psp_editor.c	/^psp_editor_suppr_char(int col_id)$/;"	f
+psp_editor_suppr_curr_char	psp_editor.c	/^psp_editor_suppr_curr_char()$/;"	f
+psp_editor_update_column	psp_editor.c	/^psp_editor_update_column(int update_last)$/;"	f
+psp_editor_update_line	psp_editor.c	/^psp_editor_update_line()$/;"	f
+psp_editor_update_sel	psp_editor.c	/^psp_editor_update_sel()$/;"	f
+psp_file_find_first	psp_fmgr.c	/^psp_file_find_first(char first_char, int check_last)$/;"	f
+psp_file_request	psp_fmgr.c	/^psp_file_request(char *out, char *pszStartPath)$/;"	f
+psp_fmgr_ask_confirm	psp_fmgr.c	/^psp_fmgr_ask_confirm(void)$/;"	f	file:
+psp_fmgr_getExtId	psp_fmgr.c	/^psp_fmgr_getExtId(const char *szFilePath) $/;"	f
+psp_fmgr_get_dir_list	psp_fmgr.c	/^psp_fmgr_get_dir_list(char *basedir, int dirmax, char **dirname)$/;"	f
+psp_fmgr_menu	psp_fmgr.c	/^psp_fmgr_menu(int format)$/;"	f
+psp_font	psp_sdl.c	/^  unsigned char *psp_font;$/;"	v
+psp_font_6x10	psp_font.c	/^unsigned char psp_font_6x10[] = {$/;"	v
+psp_font_8x8	psp_font.c	/^unsigned char psp_font_8x8[]={$/;"	v
+psp_font_height	psp_editor.c	41;"	d	file:
+psp_font_height	psp_sdl.c	/^  int            psp_font_height = 8; $/;"	v
+psp_font_size	psp_editor.h	/^    int  psp_font_size;$/;"	m	struct:PSPWRITE_t
+psp_font_width	psp_editor.c	42;"	d	file:
+psp_font_width	psp_sdl.c	/^  int            psp_font_width  = 8; $/;"	v
+psp_help	psp_menu_help.c	/^  static char* psp_help[MAX_HELP_LINE];$/;"	v	file:
+psp_help_current	psp_menu_help.c	/^  static int   psp_help_current = 0;$/;"	v	file:
+psp_help_menu	psp_menu_help.c	/^psp_help_menu()$/;"	f
+psp_help_size	psp_menu_help.c	/^  static int   psp_help_size    = -1;$/;"	v	file:
+psp_homedir	psp_editor.h	/^    char psp_homedir[MAX_PATH];$/;"	m	struct:PSPWRITE_t
+psp_init_keyboard	psp_kbd.c	/^psp_init_keyboard(void)$/;"	f
+psp_initialize_cheat_list	psp_menu_list.c	/^psp_initialize_cheat_list(void)$/;"	f	file:
+psp_initialize_help	psp_menu_help.c	/^psp_initialize_help(void)$/;"	f	file:
+psp_joy_default_settings	psp_joy.c	/^psp_joy_default_settings()$/;"	f
+psp_joy_load_settings	psp_joy.c	/^psp_joy_load_settings(char *joy_filename)$/;"	f
+psp_joy_load_settings_file	psp_joy.c	/^psp_joy_load_settings_file(FILE *JoyFile)$/;"	f
+psp_joy_save_settings	psp_joy.c	/^psp_joy_save_settings(char *joy_filename)$/;"	f
+psp_joystick_menu	psp_menu_joy.c	/^psp_joystick_menu(void)$/;"	f
+psp_joystick_menu_autofire	psp_menu_joy.c	/^psp_joystick_menu_autofire(int step)$/;"	f	file:
+psp_joystick_menu_init	psp_menu_joy.c	/^psp_joystick_menu_init(void)$/;"	f	file:
+psp_joystick_menu_load	psp_menu_joy.c	/^psp_joystick_menu_load(int format)$/;"	f	file:
+psp_joystick_menu_reset	psp_menu_joy.c	/^psp_joystick_menu_reset(void)$/;"	f	file:
+psp_joystick_menu_save	psp_menu_joy.c	/^psp_joystick_menu_save()$/;"	f	file:
+psp_joystick_menu_save_config	psp_menu_joy.c	/^psp_joystick_menu_save_config()$/;"	f	file:
+psp_joystick_menu_validate	psp_menu_joy.c	/^psp_joystick_menu_validate(void)$/;"	f	file:
+psp_kbd_default_settings	psp_kbd.c	/^psp_kbd_default_settings()$/;"	f
+psp_kbd_enter_danzeff	psp_kbd.c	/^psp_kbd_enter_danzeff()$/;"	f
+psp_kbd_is_danzeff_mode	psp_kbd.c	/^psp_kbd_is_danzeff_mode()$/;"	f
+psp_kbd_last_skin	psp_danzeff.c	/^  int    psp_kbd_last_skin  = 0;$/;"	v
+psp_kbd_load_mapping	psp_kbd.c	/^psp_kbd_load_mapping(char *kbd_filename)$/;"	f
+psp_kbd_load_mapping_file	psp_kbd.c	/^psp_kbd_load_mapping_file(FILE *KbdFile)$/;"	f
+psp_kbd_mapping	psp_kbd.c	/^        int psp_kbd_mapping[ KBD_ALL_BUTTONS ];$/;"	v
+psp_kbd_mapping	psp_kbd.c	/^ int psp_kbd_mapping[ KBD_ALL_BUTTONS ];$/;"	v
+psp_kbd_mapping_L	psp_kbd.c	/^ int psp_kbd_mapping_L[ KBD_ALL_BUTTONS ];$/;"	v
+psp_kbd_mapping_R	psp_kbd.c	/^ int psp_kbd_mapping_R[ KBD_ALL_BUTTONS ];$/;"	v
+psp_kbd_menu_id_to_key_id	psp_menu_kbd.c	/^psp_kbd_menu_id_to_key_id(int menu_id)$/;"	f	file:
+psp_kbd_presses	psp_kbd.c	/^ int psp_kbd_presses[ KBD_ALL_BUTTONS ];$/;"	v
+psp_kbd_reset_hotkeys	psp_kbd.c	/^psp_kbd_reset_hotkeys(void)$/;"	f
+psp_kbd_save_mapping	psp_kbd.c	/^psp_kbd_save_mapping(char *kbd_filename)$/;"	f
+psp_kbd_skin	psp_danzeff.c	/^  int    psp_kbd_skin       = -1;$/;"	v
+psp_kbd_skin_dir	psp_danzeff.c	/^  char  *psp_kbd_skin_dir[GP2X_KBD_MAX_SKIN];$/;"	v
+psp_kbd_skin_first	psp_danzeff.c	/^  int    psp_kbd_skin_first = 1;$/;"	v
+psp_kbd_wait_button	psp_kbd.c	/^psp_kbd_wait_button(void)$/;"	f
+psp_kbd_wait_no_button	psp_kbd.c	/^psp_kbd_wait_no_button(void)$/;"	f
+psp_keyboard_menu	psp_menu_kbd.c	/^psp_keyboard_menu(void)$/;"	f
+psp_keyboard_menu_hotkeys	psp_menu_kbd.c	/^psp_keyboard_menu_hotkeys(void)$/;"	f	file:
+psp_keyboard_menu_load	psp_menu_kbd.c	/^psp_keyboard_menu_load()$/;"	f	file:
+psp_keyboard_menu_mapping	psp_menu_kbd.c	/^psp_keyboard_menu_mapping(int kbd_id, int step)$/;"	f	file:
+psp_keyboard_menu_reset_kbd	psp_menu_kbd.c	/^psp_keyboard_menu_reset_kbd(void)$/;"	f	file:
+psp_keyboard_menu_save	psp_menu_kbd.c	/^psp_keyboard_menu_save()$/;"	f	file:
+psp_keyboard_menu_skin	psp_menu_kbd.c	/^psp_keyboard_menu_skin(int step)$/;"	f	file:
+psp_keyboard_menu_update_lr	psp_menu_kbd.c	/^psp_keyboard_menu_update_lr(void)$/;"	f	file:
+psp_keyboard_select_change	psp_menu_kbd.c	/^psp_keyboard_select_change(int step)$/;"	f	file:
+psp_main_menu	psp_menu.c	/^psp_main_menu(void)$/;"	f
+psp_main_menu_cheat_applied	psp_menu_list.c	/^psp_main_menu_cheat_applied()$/;"	f	file:
+psp_main_menu_cur_slot	psp_menu.c	/^psp_main_menu_cur_slot(int step)$/;"	f	file:
+psp_main_menu_del_slot	psp_menu.c	/^psp_main_menu_del_slot()$/;"	f	file:
+psp_main_menu_editor	psp_menu.c	/^psp_main_menu_editor()$/;"	f
+psp_main_menu_exit	psp_menu.c	/^psp_main_menu_exit(void)$/;"	f
+psp_main_menu_load	psp_menu.c	/^psp_main_menu_load(int format)$/;"	f	file:
+psp_main_menu_load_current	psp_menu.c	/^psp_main_menu_load_current()$/;"	f
+psp_main_menu_load_slot	psp_menu.c	/^psp_main_menu_load_slot()$/;"	f	file:
+psp_main_menu_reset	psp_menu.c	/^psp_main_menu_reset(void)$/;"	f	file:
+psp_main_menu_save_current	psp_menu.c	/^psp_main_menu_save_current()$/;"	f
+psp_main_menu_save_slot	psp_menu.c	/^psp_main_menu_save_slot()$/;"	f	file:
+psp_main_menu_screenshot	psp_menu.c	/^psp_main_menu_screenshot(void)$/;"	f	file:
+psp_main_menu_volume	psp_menu.c	/^psp_main_menu_volume(int step)$/;"	f	file:
+psp_memregl	cpugp2x.c	/^ volatile unsigned long  *psp_memregl;$/;"	v
+psp_memregs	cpugp2x.c	/^ volatile unsigned short *psp_memregs;$/;"	v
+psp_menu_cheat_list	psp_menu_list.c	/^psp_menu_cheat_list(int cheat_id)$/;"	f
+psp_menu_display_save_name	psp_menu.c	/^psp_menu_display_save_name()$/;"	f
+psp_reverse_analog	Coleco.h	/^    int  psp_reverse_analog;$/;"	m	struct:ColecoVision_t
+psp_reverse_analog	psp_menu_joy.c	/^  static int psp_reverse_analog    = 0;$/;"	v	file:
+psp_screenshot_id	Coleco.h	/^    int  psp_screenshot_id;$/;"	m	struct:ColecoVision_t
+psp_screenshot_mode	Unix.c	/^int psp_screenshot_mode = 0;$/;"	v
+psp_sdl_back2_print	psp_sdl.c	/^psp_sdl_back2_print(int x,int y,const char *str, int color)$/;"	f
+psp_sdl_back2_put_char	psp_sdl.c	/^psp_sdl_back2_put_char(int x, int y, int color, uchar c)$/;"	f
+psp_sdl_back2_rectangle	psp_sdl.c	/^psp_sdl_back2_rectangle(int x, int y, int w, int h)$/;"	f
+psp_sdl_black_screen	psp_sdl.c	/^psp_sdl_black_screen()$/;"	f
+psp_sdl_blit_background	psp_sdl.c	/^psp_sdl_blit_background()$/;"	f
+psp_sdl_blit_help	psp_sdl.c	/^psp_sdl_blit_help()$/;"	f
+psp_sdl_blit_splash	psp_sdl.c	/^psp_sdl_blit_splash()$/;"	f
+psp_sdl_blit_thumb	psp_sdl.c	/^psp_sdl_blit_thumb(int dst_x, int dst_y, SDL_Surface* thumb_surface)$/;"	f
+psp_sdl_clear_blit	psp_sdl.c	/^psp_sdl_clear_blit(int color)$/;"	f
+psp_sdl_clear_screen	psp_sdl.c	/^psp_sdl_clear_screen(int color)$/;"	f
+psp_sdl_display_splash	psp_sdl.c	/^psp_sdl_display_splash()$/;"	f
+psp_sdl_draw_rectangle	psp_sdl.c	/^psp_sdl_draw_rectangle(int x, int y, int w, int h, int border, int mode) $/;"	f
+psp_sdl_exit	psp_sdl.c	/^psp_sdl_exit(int status)$/;"	f
+psp_sdl_fill_print	psp_sdl.c	/^psp_sdl_fill_print(int x,int y,const char *str, int color, int bgcolor)$/;"	f
+psp_sdl_fill_rectangle	psp_sdl.c	/^psp_sdl_fill_rectangle(int x, int y, int w, int h, int color, int mode)$/;"	f
+psp_sdl_flip	psp_sdl.c	/^psp_sdl_flip(void)$/;"	f
+psp_sdl_get_back2_color	psp_sdl.c	/^psp_sdl_get_back2_color(int x, int y)$/;"	f	file:
+psp_sdl_get_vram_addr	psp_sdl.c	/^psp_sdl_get_vram_addr(uint x, uint y)$/;"	f
+psp_sdl_init	psp_sdl.c	/^psp_sdl_init(void)$/;"	f
+psp_sdl_init_sound	psp_sound.c	/^psp_sdl_init_sound()$/;"	f
+psp_sdl_load_background	psp_sdl.c	/^psp_sdl_load_background()$/;"	f
+psp_sdl_load_png	psp_sdl.c	/^psp_sdl_load_png(SDL_Surface* my_surface, char* filename)$/;"	f
+psp_sdl_load_thumb_png	psp_sdl.c	/^psp_sdl_load_thumb_png(SDL_Surface* my_surface, char* filename)$/;"	f
+psp_sdl_lock	psp_sdl.c	/^psp_sdl_lock(void)$/;"	f
+psp_sdl_print	psp_sdl.c	/^psp_sdl_print(int x,int y, char *str, int color)$/;"	f
+psp_sdl_put_char	psp_sdl.c	/^psp_sdl_put_char(int x, int y, int color, int bgcolor, uchar c, int drawfg, int drawbg)$/;"	f
+psp_sdl_rgb	psp_sdl.c	/^psp_sdl_rgb(uchar R, uchar G, uchar B)$/;"	f
+psp_sdl_save_png	psp_sdl.c	/^psp_sdl_save_png(SDL_Surface* my_surface, char* filename)$/;"	f
+psp_sdl_save_screenshot	psp_sdl.c	/^psp_sdl_save_screenshot(void)$/;"	f
+psp_sdl_save_screenshot_png	psp_sdl.c	/^psp_sdl_save_screenshot_png(char *filename)$/;"	f
+psp_sdl_save_thumb_png	psp_sdl.c	/^psp_sdl_save_thumb_png(SDL_Surface* my_surface, char* filename)$/;"	f
+psp_sdl_select_font_6x10	psp_sdl.c	/^psp_sdl_select_font_6x10()$/;"	f
+psp_sdl_select_font_8x8	psp_sdl.c	/^psp_sdl_select_font_8x8()$/;"	f
+psp_sdl_unlock	psp_sdl.c	/^psp_sdl_unlock(void)$/;"	f
+psp_settings_menu	psp_menu_set.c	/^psp_settings_menu(void)$/;"	f
+psp_settings_menu_clock	psp_menu_set.c	/^psp_settings_menu_clock(int step)$/;"	f	file:
+psp_settings_menu_exit	psp_menu_set.c	/^psp_settings_menu_exit(void)$/;"	f
+psp_settings_menu_init	psp_menu_set.c	/^psp_settings_menu_init(void)$/;"	f	file:
+psp_settings_menu_limiter	psp_menu_set.c	/^psp_settings_menu_limiter(int step)$/;"	f	file:
+psp_settings_menu_load	psp_menu_set.c	/^psp_settings_menu_load(int format)$/;"	f	file:
+psp_settings_menu_ntsc	psp_menu_set.c	/^psp_settings_menu_ntsc(int step)$/;"	f	file:
+psp_settings_menu_render	psp_menu_set.c	/^psp_settings_menu_render(int step)$/;"	f	file:
+psp_settings_menu_reset	psp_menu_set.c	/^psp_settings_menu_reset(void)$/;"	f
+psp_settings_menu_save	psp_menu_set.c	/^psp_settings_menu_save()$/;"	f	file:
+psp_settings_menu_skip_fps	psp_menu_set.c	/^psp_settings_menu_skip_fps(int step)$/;"	f	file:
+psp_settings_menu_validate	psp_menu_set.c	/^psp_settings_menu_validate(void)$/;"	f	file:
+psp_skip_cur_frame	Coleco.h	/^    int  psp_skip_cur_frame;$/;"	m	struct:ColecoVision_t
+psp_skip_max_frame	Coleco.h	/^    int  psp_skip_max_frame;$/;"	m	struct:ColecoVision_t
+psp_update_keys	psp_kbd.c	/^psp_update_keys(void)$/;"	f
+read_buffer	unzip.c	/^	char  *read_buffer;         \/* internal buffer for compressed data *\/$/;"	m	struct:__anon6	file:
+reset_save_name	Coleco.c	/^reset_save_name()$/;"	f
+rest_read_compressed	unzip.c	/^	uLong rest_read_compressed; \/* number of byte to be decompressed *\/$/;"	m	struct:__anon6	file:
+rest_read_uncompressed	unzip.c	/^	uLong rest_read_uncompressed;\/*number of byte to be obtained after decomp*\/$/;"	m	struct:__anon6	file:
+save_surface	psp_sdl.c	/^  SDL_Surface *save_surface;$/;"	v
+save_system_regs	cpugp2x.c	/^void save_system_regs()$/;"	f
+scan_addr	psp_menu_cheat.c	/^  static int    scan_addr[MAX_SCAN_ADDR];$/;"	v	file:
+scan_addr_found	psp_menu_cheat.c	/^  static int    scan_addr_found = 0;$/;"	v	file:
+scan_new_value	psp_menu_cheat.c	/^  static uchar  scan_new_value  = 3;$/;"	v	file:
+scan_old_value	psp_menu_cheat.c	/^  static uchar  scan_old_value  = 3;$/;"	v	file:
+scan_poke_value	psp_menu_cheat.c	/^  static uchar  scan_poke_value = 3;$/;"	v	file:
+scan_prev_ram	psp_menu_cheat.c	/^  static uchar *scan_prev_ram   = 0;$/;"	v	file:
+scePowerSetClockFrequency	gp2x_psp.h	128;"	d
+screen_h	psp_editor.h	/^    int  screen_h;$/;"	m	struct:PSPWRITE_t
+screen_w	psp_editor.h	/^    int  screen_w;$/;"	m	struct:PSPWRITE_t
+sdl_sound_buffer	psp_sound.c	/^static short* sdl_sound_buffer = NULL;$/;"	v	file:
+sel_from_col	psp_editor.c	/^    int       sel_from_col;$/;"	m	struct:text_t	file:
+sel_from_line	psp_editor.c	/^    int       sel_from_line;$/;"	m	struct:text_t	file:
+sel_mode	psp_editor.c	/^    int       sel_mode;$/;"	m	struct:text_t	file:
+sel_to_col	psp_editor.c	/^    int       sel_to_col;$/;"	m	struct:text_t	file:
+sel_to_line	psp_editor.c	/^    int       sel_to_line;$/;"	m	struct:text_t	file:
+selected_x	psp_danzeff.c	/^static int selected_x = 1;$/;"	v	file:
+selected_y	psp_danzeff.c	/^static int selected_y = 1;$/;"	v	file:
+set_920_Div	cpugp2x.c	/^void set_920_Div(unsigned short div)$/;"	f
+set_DCLK_Div	cpugp2x.c	/^void set_DCLK_Div( unsigned short div )$/;"	f
+set_FCLK	cpugp2x.c	/^void set_FCLK(unsigned MHZ)$/;"	f
+set_display	cpugp2x.c	/^void set_display(int mode) \/\/ 1- display on 0-display off$/;"	f
+set_display_clock_div	cpugp2x.c	/^void set_display_clock_div(unsigned div)$/;"	f
+set_status_ACLK	cpugp2x.c	/^void set_status_ACLK(unsigned s)$/;"	f
+set_status_UCLK	cpugp2x.c	/^void set_status_UCLK(unsigned s)$/;"	f
+shifted	psp_danzeff.c	/^static \/*bool*\/ int shifted = false;     \/\/user is holding shift$/;"	v	file:
+sinc	psp_sound.c	/^  unsigned int sinc;$/;"	m	struct:__anon4	file:
+size_central_dir	unzip.c	/^	uLong size_central_dir;     \/* size of the central directory  *\/$/;"	m	struct:__anon7	file:
+size_comment	unzip.h	/^	uLong size_comment;         \/* size of the global comment of the zipfile *\/$/;"	m	struct:unz_global_info_s
+size_file_comment	unzip.h	/^    uLong size_file_comment;    \/* file comment length             2 bytes *\/$/;"	m	struct:unz_file_info_s
+size_file_extra	unzip.h	/^    uLong size_file_extra;      \/* extra field length              2 bytes *\/$/;"	m	struct:unz_file_info_s
+size_filename	unzip.h	/^    uLong size_filename;        \/* filename length                 2 bytes *\/$/;"	m	struct:unz_file_info_s
+size_local_extrafield	unzip.c	/^	uInt  size_local_extrafield;\/* size of the local extra field *\/$/;"	m	struct:__anon6	file:
+snd_Mixer	psp_sound.c	/^snd_Mixer(void *udata, short *stream, int len)$/;"	f	file:
+snd_Sound	psp_sound.c	/^snd_Sound(int C, int F, int V)$/;"	f
+sort	psp_fmgr.c	/^sort(struct dirent **a, int left, int right) $/;"	f	file:
+sortfiles	psp_fmgr.c	/^static struct dirent *sortfiles[GP2X_FMGR_MAX_ENTRY];$/;"	v	typeref:struct:dirent	file:
+splash_surface	psp_sdl.c	/^  SDL_Surface *splash_surface;$/;"	v
+spos	psp_sound.c	/^  unsigned int spos;$/;"	m	struct:__anon4	file:
+square	psp_sound.c	/^static short square[]={$/;"	v	file:
+strcasestr	miniunz.c	/^strcasestr (const char *s1, const char *s2)$/;"	f
+strcmpcasenosensitive_internal	unzip.c	/^local int strcmpcasenosensitive_internal (fileName1,fileName2)$/;"	f
+stream	unzip.c	/^	z_stream stream;            \/* zLib stream structure for inflate *\/$/;"	m	struct:__anon6	file:
+stream_initialised	unzip.c	/^	uLong stream_initialised;   \/* flag set if stream structure is initialised*\/$/;"	m	struct:__anon6	file:
+string_fill_with_space	psp_menu.c	/^string_fill_with_space(char *buffer, int size)$/;"	f
+surface	Coleco.h	/^    SDL_Surface    *surface;$/;"	m	struct:CV_save_t
+surface_draw	psp_danzeff.c	/^surface_draw(SDL_Surface* pixels)$/;"	f
+surface_draw_offset	psp_danzeff.c	/^surface_draw_offset(SDL_Surface* pixels, int screenX, int screenY, int offsetX, int offsetY, int intWidth, int intHeight)$/;"	f
+systemBlueMask	psp_sdl.c	431;"	d	file:
+systemBlueShift	psp_sdl.c	428;"	d	file:
+systemGreenMask	psp_sdl.c	430;"	d	file:
+systemGreenShift	psp_sdl.c	427;"	d	file:
+systemRedMask	psp_sdl.c	429;"	d	file:
+systemRedShift	psp_sdl.c	426;"	d	file:
+system_reg	cpugp2x.c	/^system_reg;$/;"	v	typeref:struct:__anon3	file:
+tab_stop	psp_editor.h	/^    int  tab_stop;$/;"	m	struct:PSPWRITE_t
+text	psp_editor.c	/^    char* text;$/;"	m	struct:line_t	file:
+text_t	psp_editor.c	/^  typedef struct text_t {$/;"	s	file:
+text_t	psp_editor.c	/^  } text_t;$/;"	t	typeref:struct:text_t	file:
+thumb	Coleco.c	/^  char              *thumb;$/;"	m	struct:thumb_list	file:
+thumb	Coleco.h	/^    char            thumb;$/;"	m	struct:CV_save_t
+thumb_list	Coleco.c	/^typedef struct thumb_list {$/;"	s	file:
+thumb_list	Coleco.c	/^} thumb_list;$/;"	t	typeref:struct:thumb_list	file:
+thumb_surface	psp_sdl.c	/^  SDL_Surface *thumb_surface;$/;"	v
+title	psp_menu.h	/^    char *title;$/;"	m	struct:menu_item_t
+tm_hour	unzip.h	/^	uInt tm_hour;           \/* hours since midnight - [0,23] *\/$/;"	m	struct:tm_unz_s
+tm_mday	unzip.h	/^	uInt tm_mday;           \/* day of the month - [1,31] *\/$/;"	m	struct:tm_unz_s
+tm_min	unzip.h	/^	uInt tm_min;            \/* minutes after the hour - [0,59] *\/$/;"	m	struct:tm_unz_s
+tm_mon	unzip.h	/^	uInt tm_mon;            \/* months since January - [0,11] *\/$/;"	m	struct:tm_unz_s
+tm_sec	unzip.h	/^	uInt tm_sec;            \/* seconds after the minute - [0,59] *\/$/;"	m	struct:tm_unz_s
+tm_unz	unzip.h	/^} tm_unz;$/;"	t	typeref:struct:tm_unz_s
+tm_unz_s	unzip.h	/^typedef struct tm_unz_s $/;"	s
+tm_year	unzip.h	/^	uInt tm_year;           \/* years - [1980..2044] *\/$/;"	m	struct:tm_unz_s
+tmu_date	unzip.h	/^    tm_unz tmu_date;$/;"	m	struct:unz_file_info_s
+top_line	psp_editor.c	/^    int       top_line;$/;"	m	struct:text_t	file:
+true	psp_danzeff.c	10;"	d	file:
+type	Coleco.h	/^    unsigned char  type;$/;"	m	struct:CV_cheat_t
+u16	global.h	/^typedef unsigned short u16;$/;"	t
+u32	global.h	/^typedef unsigned int   u32;$/;"	t
+u8	global.h	/^typedef unsigned char u8;$/;"	t
+uchar	psp_sdl.h	/^  typedef unsigned char   uchar;$/;"	t
+uint	psp_sdl.h	/^  typedef unsigned int    uint;$/;"	t
+uncompressed_size	unzip.h	/^    uLong uncompressed_size;    \/* uncompressed size               4 bytes *\/ $/;"	m	struct:unz_file_info_s
+unused	unzip.h	/^typedef struct TagunzFile__ { int unused; } unzFile__; $/;"	m	struct:TagunzFile__
+unzClose	unzip.c	/^extern int ZEXPORT unzClose (file)$/;"	f
+unzCloseCurrentFile	unzip.c	/^extern int ZEXPORT unzCloseCurrentFile (file)$/;"	f
+unzFile	unzip.h	/^typedef unzFile__ *unzFile;$/;"	t
+unzFile	unzip.h	/^typedef voidp unzFile;$/;"	t
+unzFile__	unzip.h	/^typedef struct TagunzFile__ { int unused; } unzFile__; $/;"	t	typeref:struct:TagunzFile__
+unzGetCurrentFileInfo	unzip.c	/^extern int ZEXPORT unzGetCurrentFileInfo (file,$/;"	f
+unzGetGlobalComment	unzip.c	/^extern int ZEXPORT unzGetGlobalComment (file, szComment, uSizeBuf)$/;"	f
+unzGetGlobalInfo	unzip.c	/^extern int ZEXPORT unzGetGlobalInfo (file,pglobal_info)$/;"	f
+unzGetLocalExtrafield	unzip.c	/^extern int ZEXPORT unzGetLocalExtrafield (file,buf,len)$/;"	f
+unzGoToFirstFile	unzip.c	/^extern int ZEXPORT unzGoToFirstFile (file)$/;"	f
+unzGoToNextFile	unzip.c	/^extern int ZEXPORT unzGoToNextFile (file)$/;"	f
+unzLocateFile	unzip.c	/^extern int ZEXPORT unzLocateFile (file, szFileName, iCaseSensitivity)$/;"	f
+unzOpen	unzip.c	/^extern unzFile ZEXPORT unzOpen (path)$/;"	f
+unzOpenCurrentFile	unzip.c	/^extern int ZEXPORT unzOpenCurrentFile (file)$/;"	f
+unzReadCurrentFile	unzip.c	/^extern int ZEXPORT unzReadCurrentFile  (file, buf, len)$/;"	f
+unzStringFileNameCompare	unzip.c	/^extern int ZEXPORT unzStringFileNameCompare (fileName1,fileName2,iCaseSensitivity)$/;"	f
+unz_copyright	unzip.c	/^const char unz_copyright[] =$/;"	v
+unz_file_info	unzip.h	/^} unz_file_info;$/;"	t	typeref:struct:unz_file_info_s
+unz_file_info_internal	unzip.c	/^} unz_file_info_internal;$/;"	t	typeref:struct:unz_file_info_internal_s	file:
+unz_file_info_internal_s	unzip.c	/^typedef struct unz_file_info_internal_s$/;"	s	file:
+unz_file_info_s	unzip.h	/^typedef struct unz_file_info_s$/;"	s
+unz_global_info	unzip.h	/^} unz_global_info;$/;"	t	typeref:struct:unz_global_info_s
+unz_global_info_s	unzip.h	/^typedef struct unz_global_info_s$/;"	s
+unz_s	unzip.c	/^} unz_s;$/;"	t	typeref:struct:__anon7	file:
+unzeof	unzip.c	/^extern int ZEXPORT unzeof (file)$/;"	f
+unzlocal_CheckCurrentFileCoherencyHeader	unzip.c	/^local int unzlocal_CheckCurrentFileCoherencyHeader (s,piSizeVar,$/;"	f
+unzlocal_DosDateToTmuDate	unzip.c	/^local void unzlocal_DosDateToTmuDate (ulDosDate, ptm)$/;"	f
+unzlocal_GetCurrentFileInfoInternal	unzip.c	/^local int unzlocal_GetCurrentFileInfoInternal (file,$/;"	f
+unzlocal_SearchCentralDir	unzip.c	/^local uLong unzlocal_SearchCentralDir(fin)$/;"	f
+unzlocal_getByte	unzip.c	/^local int unzlocal_getByte(fin,pi)$/;"	f
+unzlocal_getLong	unzip.c	/^local int unzlocal_getLong (fin,pX)$/;"	f
+unzlocal_getShort	unzip.c	/^local int unzlocal_getShort (fin,pX)$/;"	f
+unztell	unzip.c	/^extern z_off_t ZEXPORT unztell (file)$/;"	f
+used	Coleco.h	/^    char            used;$/;"	m	struct:CV_save_t
+user_file_format	psp_fmgr.c	/^static int user_file_format = 0;$/;"	v	file:
+user_filedir_cht	psp_fmgr.c	/^static char user_filedir_cht[GP2X_FMGR_MAX_NAME];$/;"	v	file:
+user_filedir_joy	psp_fmgr.c	/^static char user_filedir_joy[GP2X_FMGR_MAX_NAME];$/;"	v	file:
+user_filedir_kbd	psp_fmgr.c	/^static char user_filedir_kbd[GP2X_FMGR_MAX_NAME];$/;"	v	file:
+user_filedir_rom	psp_fmgr.c	/^static char user_filedir_rom[GP2X_FMGR_MAX_NAME];$/;"	v	file:
+user_filedir_save	psp_fmgr.c	/^static char user_filedir_save[GP2X_FMGR_MAX_NAME];$/;"	v	file:
+user_filedir_set	psp_fmgr.c	/^static char user_filedir_set[GP2X_FMGR_MAX_NAME];$/;"	v	file:
+ushort	psp_sdl.h	/^  typedef unsigned short  ushort;$/;"	t
+value	Coleco.h	/^    unsigned char  value;$/;"	m	struct:CV_cheat_t
+version	unzip.h	/^    uLong version;              \/* version made by                 2 bytes *\/$/;"	m	struct:unz_file_info_s
+version_needed	unzip.h	/^    uLong version_needed;       \/* version needed to extract       2 bytes *\/$/;"	m	struct:unz_file_info_s
+vol	psp_sound.c	/^  unsigned int vol;$/;"	m	struct:__anon4	file:
+wanted	psp_sound.c	/^SDL_AudioSpec wanted;$/;"	v
+width	psp_editor.c	/^    u16   width; $/;"	m	struct:line_t	file:
+word	Z80.h	/^typedef unsigned short word;$/;"	t
+wrap_buffer	psp_editor.c	/^    char*     wrap_buffer;$/;"	m	struct:text_t	file:
+wrap_buffer_size	psp_editor.c	/^    int       wrap_buffer_size;$/;"	m	struct:text_t	file:
+wrap_mode	psp_editor.h	/^    int  wrap_mode;$/;"	m	struct:PSPWRITE_t
+wrap_w	psp_editor.h	/^    int  wrap_w;$/;"	m	struct:PSPWRITE_t

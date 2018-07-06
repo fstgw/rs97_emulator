@@ -1,0 +1,2 @@
+1. edit build/packages.mk, build/library.mk for toolchain
+2. make staticbindist OPENMSX_TARGET_CPU=mipsel OPENMSX_TARGET_OS=dingux OPENMSX_FLAVOUR=opt

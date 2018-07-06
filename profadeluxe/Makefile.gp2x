@@ -1,0 +1,121 @@
+# Project: Profanation
+# Makefile created by Dev-C++ 4.9.9.2
+
+CROSS_COMPILE = F:/devkitGP2X/bin/arm-linux-
+BIN_BASE = F:/devkitGP2X/bin/arm-linux-
+CC = $(CROSS_COMPILE)gcc
+CPP = $(CROSS_COMPILE)g++
+STRIP = $(CROSS_COMPILE)strip
+LDFLAGS = -static
+OBJ     = object.gp2x/tesc_seleccion_idioma.o object.gp2x/profanation.o object.gp2x/TSprVerticalFlip.o object.gp2x/TSprFlecha.o object.gp2x/TSprGota.o object.gp2x/TSprHorizontal.o object.gp2x/TSprHorizontalConFlip.o object.gp2x/TSprJohny.o object.gp2x/TSprPelotaBota.o object.gp2x/TSprRoca.o object.gp2x/TSprSeleccion.o object.gp2x/TSprTesoro.o object.gp2x/TSprVertical.o object.gp2x/ma_core.o object.gp2x/tmabitmap.o object.gp2x/tmafont.o object.gp2x/tmagame.o object.gp2x/tmaimagebank.o object.gp2x/tmaogg.o object.gp2x/tmasound.o object.gp2x/tmasprite.o object.gp2x/tmafilereader.o object.gp2x/tmamessage.o object.gp2x/tmarandom.o object.gp2x/tmarectangle.o object.gp2x/tmastring.o object.gp2x/tmavector.o object.gp2x/mapas.o object.gp2x/tesc_juego.o object.gp2x/TSpriteEnemigo.o object.gp2x/tmainputcontroller.o 
+LINKOBJ = "object.gp2x/tesc_seleccion_idioma.o" "object.gp2x/profanation.o" "object.gp2x/TSprVerticalFlip.o" "object.gp2x/TSprFlecha.o" "object.gp2x/TSprGota.o" "object.gp2x/TSprHorizontal.o" "object.gp2x/TSprHorizontalConFlip.o" "object.gp2x/TSprJohny.o" "object.gp2x/TSprPelotaBota.o" "object.gp2x/TSprRoca.o" "object.gp2x/TSprSeleccion.o" "object.gp2x/TSprTesoro.o" "object.gp2x/TSprVertical.o" "object.gp2x/ma_core.o" "object.gp2x/tmabitmap.o" "object.gp2x/tmafont.o" "object.gp2x/tmagame.o" "object.gp2x/tmaimagebank.o" "object.gp2x/tmaogg.o" "object.gp2x/tmasound.o" "object.gp2x/tmasprite.o" "object.gp2x/tmafilereader.o" "object.gp2x/tmamessage.o" "object.gp2x/tmarandom.o" "object.gp2x/tmarectangle.o" "object.gp2x/tmastring.o" "object.gp2x/tmavector.o" "object.gp2x/mapas.o" "object.gp2x/tesc_juego.o" "object.gp2x/TSpriteEnemigo.o" "object.gp2x/tmainputcontroller.o" 
+LIBS = -L"F:/devkitGP2X/lib" -lSDL -lSDL_Image -ljpeg -lpng12 -lz -lSDL_gfx -lSDL_mixer -lvorbisidec -lmikmod -lmad -lpthread
+
+BIN  = Profanation.gpe
+CXXFLAGS = -I"F:/devkitGP2X/include" -DSMALL_GAME -DTARGET_GP2X -O2 -Wall
+CFLAGS = -I"F:/devkitGP2X/include" -DSMALL_GAME -DTARGET_GP2X -O2 -Wall
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before Profanation.gpe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LDFLAGS) $(LINKOBJ) -o "Profanation.gpe" $(LIBS)
+
+object.gp2x/tesc_seleccion_idioma.o: $(GLOBALDEPS) src/escenas/tesc_seleccion_idioma.cpp src/escenas/escenarios.h src/main/profanation.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/maps/mapas.h src/ma-sdl/ma_classes.h src/ma-sdl/utils/utils.h src/sprites/sprites.h src/ma-sdl/ma_classes.h src/ma-sdl/maps/mapas.h
+	$(CPP) -c src/escenas/tesc_seleccion_idioma.cpp -o object.gp2x/tesc_seleccion_idioma.o $(CXXFLAGS)
+
+object.gp2x/profanation.o: $(GLOBALDEPS) src/main/profanation.cpp src/main/profanation.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/maps/mapas.h src/ma-sdl/ma_classes.h src/ma-sdl/utils/utils.h src/escenas/escenarios.h src/main/profanation.h src/sprites/sprites.h src/ma-sdl/ma_classes.h src/ma-sdl/maps/mapas.h
+	$(CPP) -c src/main/profanation.cpp -o object.gp2x/profanation.o $(CXXFLAGS)
+
+object.gp2x/TSprVerticalFlip.o: $(GLOBALDEPS) src/sprites/TSprVerticalFlip.cpp src/sprites/sprites.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/maps/mapas.h src/ma-sdl/ma_classes.h src/ma-sdl/utils/utils.h src/escenas/escenarios.h src/main/profanation.h src/ma-sdl/ma_classes.h src/ma-sdl/maps/mapas.h src/sprites/sprites.h
+	$(CPP) -c src/sprites/TSprVerticalFlip.cpp -o object.gp2x/TSprVerticalFlip.o $(CXXFLAGS)
+
+object.gp2x/TSprFlecha.o: $(GLOBALDEPS) src/sprites/TSprFlecha.cpp src/sprites/sprites.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/maps/mapas.h src/ma-sdl/ma_classes.h src/ma-sdl/utils/utils.h src/escenas/escenarios.h src/main/profanation.h src/ma-sdl/ma_classes.h src/ma-sdl/maps/mapas.h src/sprites/sprites.h
+	$(CPP) -c src/sprites/TSprFlecha.cpp -o object.gp2x/TSprFlecha.o $(CXXFLAGS)
+
+object.gp2x/TSprGota.o: $(GLOBALDEPS) src/sprites/TSprGota.cpp src/sprites/sprites.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/maps/mapas.h src/ma-sdl/ma_classes.h src/ma-sdl/utils/utils.h src/escenas/escenarios.h src/main/profanation.h src/ma-sdl/ma_classes.h src/ma-sdl/maps/mapas.h src/sprites/sprites.h
+	$(CPP) -c src/sprites/TSprGota.cpp -o object.gp2x/TSprGota.o $(CXXFLAGS)
+
+object.gp2x/TSprHorizontal.o: $(GLOBALDEPS) src/sprites/TSprHorizontal.cpp src/sprites/sprites.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/maps/mapas.h src/ma-sdl/ma_classes.h src/ma-sdl/utils/utils.h src/escenas/escenarios.h src/main/profanation.h src/ma-sdl/ma_classes.h src/ma-sdl/maps/mapas.h src/sprites/sprites.h
+	$(CPP) -c src/sprites/TSprHorizontal.cpp -o object.gp2x/TSprHorizontal.o $(CXXFLAGS)
+
+object.gp2x/TSprHorizontalConFlip.o: $(GLOBALDEPS) src/sprites/TSprHorizontalConFlip.cpp src/sprites/sprites.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/maps/mapas.h src/ma-sdl/ma_classes.h src/ma-sdl/utils/utils.h src/escenas/escenarios.h src/main/profanation.h src/ma-sdl/ma_classes.h src/ma-sdl/maps/mapas.h src/sprites/sprites.h
+	$(CPP) -c src/sprites/TSprHorizontalConFlip.cpp -o object.gp2x/TSprHorizontalConFlip.o $(CXXFLAGS)
+
+object.gp2x/TSprJohny.o: $(GLOBALDEPS) src/sprites/TSprJohny.cpp src/sprites/sprites.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/maps/mapas.h src/ma-sdl/ma_classes.h src/ma-sdl/utils/utils.h src/escenas/escenarios.h src/main/profanation.h src/ma-sdl/ma_classes.h src/ma-sdl/maps/mapas.h src/sprites/sprites.h
+	$(CPP) -c src/sprites/TSprJohny.cpp -o object.gp2x/TSprJohny.o $(CXXFLAGS)
+
+object.gp2x/TSprPelotaBota.o: $(GLOBALDEPS) src/sprites/TSprPelotaBota.cpp src/sprites/sprites.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/maps/mapas.h src/ma-sdl/ma_classes.h src/ma-sdl/utils/utils.h src/escenas/escenarios.h src/main/profanation.h src/ma-sdl/ma_classes.h src/ma-sdl/maps/mapas.h src/sprites/sprites.h
+	$(CPP) -c src/sprites/TSprPelotaBota.cpp -o object.gp2x/TSprPelotaBota.o $(CXXFLAGS)
+
+object.gp2x/TSprRoca.o: $(GLOBALDEPS) src/sprites/TSprRoca.cpp src/sprites/sprites.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/maps/mapas.h src/ma-sdl/ma_classes.h src/ma-sdl/utils/utils.h src/escenas/escenarios.h src/main/profanation.h src/ma-sdl/ma_classes.h src/ma-sdl/maps/mapas.h src/sprites/sprites.h
+	$(CPP) -c src/sprites/TSprRoca.cpp -o object.gp2x/TSprRoca.o $(CXXFLAGS)
+
+object.gp2x/TSprSeleccion.o: $(GLOBALDEPS) src/sprites/TSprSeleccion.cpp src/sprites/sprites.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/maps/mapas.h src/ma-sdl/ma_classes.h src/ma-sdl/utils/utils.h src/escenas/escenarios.h src/main/profanation.h src/ma-sdl/ma_classes.h src/ma-sdl/maps/mapas.h src/sprites/sprites.h
+	$(CPP) -c src/sprites/TSprSeleccion.cpp -o object.gp2x/TSprSeleccion.o $(CXXFLAGS)
+
+object.gp2x/TSprTesoro.o: $(GLOBALDEPS) src/sprites/TSprTesoro.cpp src/sprites/sprites.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/maps/mapas.h src/ma-sdl/ma_classes.h src/ma-sdl/utils/utils.h src/escenas/escenarios.h src/main/profanation.h src/ma-sdl/ma_classes.h src/ma-sdl/maps/mapas.h src/sprites/sprites.h
+	$(CPP) -c src/sprites/TSprTesoro.cpp -o object.gp2x/TSprTesoro.o $(CXXFLAGS)
+
+object.gp2x/TSprVertical.o: $(GLOBALDEPS) src/sprites/TSprVertical.cpp src/sprites/sprites.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/maps/mapas.h src/ma-sdl/ma_classes.h src/ma-sdl/utils/utils.h src/escenas/escenarios.h src/main/profanation.h src/ma-sdl/ma_classes.h src/ma-sdl/maps/mapas.h src/sprites/sprites.h
+	$(CPP) -c src/sprites/TSprVertical.cpp -o object.gp2x/TSprVertical.o $(CXXFLAGS)
+
+object.gp2x/ma_core.o: $(GLOBALDEPS) src/ma-sdl/ma_core.cpp src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h
+	$(CPP) -c src/ma-sdl/ma_core.cpp -o object.gp2x/ma_core.o $(CXXFLAGS)
+
+object.gp2x/tmabitmap.o: $(GLOBALDEPS) src/ma-sdl/tmabitmap.cpp src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h
+	$(CPP) -c src/ma-sdl/tmabitmap.cpp -o object.gp2x/tmabitmap.o $(CXXFLAGS)
+
+object.gp2x/tmafont.o: $(GLOBALDEPS) src/ma-sdl/tmafont.cpp src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h
+	$(CPP) -c src/ma-sdl/tmafont.cpp -o object.gp2x/tmafont.o $(CXXFLAGS)
+
+object.gp2x/tmagame.o: $(GLOBALDEPS) src/ma-sdl/tmagame.cpp src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h
+	$(CPP) -c src/ma-sdl/tmagame.cpp -o object.gp2x/tmagame.o $(CXXFLAGS)
+
+object.gp2x/tmaimagebank.o: $(GLOBALDEPS) src/ma-sdl/tmaimagebank.cpp src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h
+	$(CPP) -c src/ma-sdl/tmaimagebank.cpp -o object.gp2x/tmaimagebank.o $(CXXFLAGS)
+
+object.gp2x/tmaogg.o: $(GLOBALDEPS) src/ma-sdl/tmaogg.cpp src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h
+	$(CPP) -c src/ma-sdl/tmaogg.cpp -o object.gp2x/tmaogg.o $(CXXFLAGS)
+
+object.gp2x/tmasound.o: $(GLOBALDEPS) src/ma-sdl/tmasound.cpp src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h
+	$(CPP) -c src/ma-sdl/tmasound.cpp -o object.gp2x/tmasound.o $(CXXFLAGS)
+
+object.gp2x/tmasprite.o: $(GLOBALDEPS) src/ma-sdl/tmasprite.cpp src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h
+	$(CPP) -c src/ma-sdl/tmasprite.cpp -o object.gp2x/tmasprite.o $(CXXFLAGS)
+
+object.gp2x/tmafilereader.o: $(GLOBALDEPS) src/ma-sdl/utils/tmafilereader.cpp src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h
+	$(CPP) -c src/ma-sdl/utils/tmafilereader.cpp -o object.gp2x/tmafilereader.o $(CXXFLAGS)
+
+object.gp2x/tmamessage.o: $(GLOBALDEPS) src/ma-sdl/utils/tmamessage.cpp src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h
+	$(CPP) -c src/ma-sdl/utils/tmamessage.cpp -o object.gp2x/tmamessage.o $(CXXFLAGS)
+
+object.gp2x/tmarandom.o: $(GLOBALDEPS) src/ma-sdl/utils/tmarandom.cpp src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h
+	$(CPP) -c src/ma-sdl/utils/tmarandom.cpp -o object.gp2x/tmarandom.o $(CXXFLAGS)
+
+object.gp2x/tmarectangle.o: $(GLOBALDEPS) src/ma-sdl/utils/tmarectangle.cpp src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h
+	$(CPP) -c src/ma-sdl/utils/tmarectangle.cpp -o object.gp2x/tmarectangle.o $(CXXFLAGS)
+
+object.gp2x/tmastring.o: $(GLOBALDEPS) src/ma-sdl/utils/tmastring.cpp src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h
+	$(CPP) -c src/ma-sdl/utils/tmastring.cpp -o object.gp2x/tmastring.o $(CXXFLAGS)
+
+object.gp2x/tmavector.o: $(GLOBALDEPS) src/ma-sdl/utils/tmavector.cpp src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h
+	$(CPP) -c src/ma-sdl/utils/tmavector.cpp -o object.gp2x/tmavector.o $(CXXFLAGS)
+
+object.gp2x/mapas.o: $(GLOBALDEPS) src/ma-sdl/maps/mapas.cpp src/ma-sdl/maps/mapas.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h
+	$(CPP) -c src/ma-sdl/maps/mapas.cpp -o object.gp2x/mapas.o $(CXXFLAGS)
+
+object.gp2x/tesc_juego.o: $(GLOBALDEPS) src/escenas/tesc_juego.cpp src/escenas/escenarios.h src/main/profanation.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/maps/mapas.h src/ma-sdl/ma_classes.h src/ma-sdl/utils/utils.h src/sprites/sprites.h src/ma-sdl/ma_classes.h src/ma-sdl/maps/mapas.h src/escenas/idioma.h src/escenas/enemigos.h
+	$(CPP) -c src/escenas/tesc_juego.cpp -o object.gp2x/tesc_juego.o $(CXXFLAGS)
+
+object.gp2x/TSpriteEnemigo.o: $(GLOBALDEPS) src/sprites/TSpriteEnemigo.cpp src/sprites/sprites.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/maps/mapas.h src/ma-sdl/ma_classes.h src/ma-sdl/utils/utils.h src/escenas/escenarios.h src/main/profanation.h src/ma-sdl/ma_classes.h src/ma-sdl/maps/mapas.h src/sprites/sprites.h
+	$(CPP) -c src/sprites/TSpriteEnemigo.cpp -o object.gp2x/TSpriteEnemigo.o $(CXXFLAGS)
+
+object.gp2x/tmainputcontroller.o: $(GLOBALDEPS) src/ma-sdl/tmainputcontroller.cpp src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h
+	$(CPP) -c src/ma-sdl/tmainputcontroller.cpp -o object.gp2x/tmainputcontroller.o $(CXXFLAGS)

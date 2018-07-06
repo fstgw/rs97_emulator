@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<!-- $Id: hardwareconfig.xml 10642 2009-10-06 11:22:34Z m9710797 $ -->
+<!DOCTYPE msxconfig SYSTEM 'msxconfig2.dtd'>
+<msxconfig>
+  <info>
+    <name>FM Stereo PAK</name>
+    <manufacturer>Checkmark</manufacturer>
+    <code/>
+    <release_year>1990</release_year>
+    <description>FMPAC clone (Yamaha OPLL), with home-made program.</description>
+    <type>sound expansion</type>
+  </info>
+  <devices>
+    <primary slot="any">
+      <secondary slot="any">
+        <MSX-MUSIC id="Checkmark FM Stereo PAK">
+          <io base="0x7C" num="2" type="O"/>
+          <mem base="0x0000" size="0x10000"/>
+          <sound>
+            <volume>13000</volume>
+            <!-- melody channels left, rhythm channels right -->
+            <balance channel="1-9">-100</balance>
+            <balance channel="10-14">100</balance>
+          </sound>
+          <rom>
+            <sha1>19bf90b8d2e695ffad61fff6f47f7fcda2f24a1d</sha1>
+            <filename>roms/fmpak.rom</filename>
+          </rom>
+        </MSX-MUSIC>
+      </secondary>
+    </primary>
+  </devices>
+</msxconfig>

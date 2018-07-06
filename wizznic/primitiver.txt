@@ -1,0 +1,50 @@
+
+Board på 10x7 brikker af 32x32 px.
+
+Styring:
+Spilleren styrer en cursor med piletasterne, når cursoren er over en brik kan han trykker a eller b for at skubbe brikken hhv. til højre eller venstre.
+Det er ikke muligt at flytte en brik i fri luft.
+
+Spillerens opgave:
+  Spilleren bliver presenteret for en spilleplade med et antal brikker og forhindringer,
+  opgaven er at placere brikkerne ved siden af hinanden, hvorved de forsvinder og der gives point.
+  Det er imidlertid kun muligt at rykke brikkerne til højre/venstre, skubbes en brik ud over kanten falder den ned, mens den falder er det ikke muligt at skubbe til den.
+
+Mainloop:
+  Reager på indput / Flyt Cursor / Skub brikker
+
+  Spillefelt køres, brikker i fri luft falder ned, bevægelige baneelementer bevæges.
+
+  Herefter køres spille reglerne, brikker som ikke er i bevægelse, og som har mindst een nabo af samme type forsvinder og der gives points
+  (hvis der er flere brikke af samme type der rører hinanden så forsvinder de alle, spilleren får bonus)
+
+  Spillefeltet tegnes
+  Cursoren tegnes.
+
+Regler:
+  Når to eller flere brikker ligger ved siden af eller ovenpå hinanden, forsvinder de alle, og der gives point, scoren udregnes ved
+  s = a*a*b hvor s=score,a=antal-brikker-der-forsvinder, b=basis score (100 points).
+  Når en brik er faldende kan den ikke flyttes, og den bliver ikke vurderet nabo.
+
+  Der findes 3 slags bane-elementer: 1. Brikker, 2. Forhindringer/Solid, 3. Platforme.
+  Platforme kan enten bevæge sig op/ned eller til siderne.
+  Platforme kan transportere brikker op/ned og sidevejs, alt efter deres bevægelsesretning.
+
+Funktioner:
+  spilleFelt:
+    opdater // Flytter faldende brikker/bevægelige platforme
+    flyt // Flytter brik til Højre/Venstre
+
+  SpilLogik:
+    sim // udfør regler, find brikker der er ens og reager
+    check // check om banen er gennemført
+
+  Styring:
+    input //Flyt cursor, kald brik-flyt funktioner
+
+  Grafik:
+    Baggrund
+    UI
+    Felt
+    Effekter
+    Cursor

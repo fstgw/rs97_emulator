@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!-- $Id: hardwareconfig.xml 11485 2010-06-05 16:27:00Z manuelbi $ -->
+<!DOCTYPE msxconfig SYSTEM 'msxconfig2.dtd'>
+<msxconfig>
+  <info>
+    <name>Generic MSX RS-232</name>
+    <manufacturer/>
+    <code/>
+    <release_year/>
+    <description>Generic MSX RS-232 cartridge.</description>
+    <type>RS-232 cartridge</type>
+  </info>
+  <devices>
+    <primary slot="any">
+      <secondary slot="any">
+        <MSX-RS232 id="Generic MSX RS-232">
+          <io base="0x80" num="8"/>
+          <mem base="0x4000" size="0x4000"/>
+          <rom>
+                  <sha1>47c78981b5ffbb9e8d9c2145f9c2e642ff0e8193</sha1> <!-- v1.01 -->
+                  <sha1>92a433e877626461a6481ca75c252e643752f0c4</sha1> <!-- v1.00 -->
+            <filename>roms/rs232.rom</filename>
+          </rom>
+        </MSX-RS232>
+      </secondary>
+    </primary>
+  </devices>
+</msxconfig>

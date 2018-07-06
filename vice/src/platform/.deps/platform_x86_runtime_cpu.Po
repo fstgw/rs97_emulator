@@ -1,0 +1,8 @@
+platform_x86_runtime_cpu.o: platform_x86_runtime_cpu.c ../../src/vice.h \
+ ../../src/config.h platform_x86_runtime_cpu.h
+
+../../src/vice.h:
+
+../../src/config.h:
+
+platform_x86_runtime_cpu.h:

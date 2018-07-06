@@ -1,0 +1,5 @@
+platform_macosx.o: platform_macosx.c ../../src/vice.h ../../src/config.h
+
+../../src/vice.h:
+
+../../src/config.h:

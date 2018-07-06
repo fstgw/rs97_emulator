@@ -1,0 +1,815 @@
+// $Id: MB89352.cc 12528 2012-05-17 17:36:10Z m9710797 $
+/* Ported from:
+** Source: /cvsroot/bluemsx/blueMSX/Src/IoDevice/MB89352.c,v
+** Revision: 1.9
+** Date: 2007/03/28 17:35:35
+**
+** More info: http://www.bluemsx.com
+**
+** Copyright (C) 2003-2007 Daniel Vik, white cat
+*/
+/*
+ * Notes:
+ *  Not suppport padding transfer and interrupt signal. (Not used MEGA-SCSI)
+ *  Message system might be imperfect. (Not used in MEGA-SCSI usually)
+ */
+#include "MB89352.hh"
+#include "SCSIDevice.hh"
+#include "DummySCSIDevice.hh"
+#include "SCSIHD.hh"
+#include "SCSILS120.hh"
+#include "DeviceConfig.hh"
+#include "XMLElement.hh"
+#include "MSXException.hh"
+#include "StringOp.hh"
+#include "serialize.hh"
+#include <cassert>
+#include <string>
+#include <cstring>
+
+using std::string;
+
+namespace openmsx {
+
+static const byte REG_BDID =  0;   // Bus Device ID        (r/w)
+static const byte REG_SCTL =  1;   // Spc Control          (r/w)
+static const byte REG_SCMD =  2;   // Command              (r/w)
+static const byte REG_OPEN =  3;   //                      (open)
+static const byte REG_INTS =  4;   // Interrupt Sense      (r/w)
+static const byte REG_PSNS =  5;   // Phase Sense          (r)
+static const byte REG_SDGC =  5;   // SPC Diag. Control    (w)
+static const byte REG_SSTS =  6;   // SPC SCSI::STATUS           (r)
+static const byte REG_SERR =  7;   // SPC Error SCSI::STATUS     (r/w?)
+static const byte REG_PCTL =  8;   // Phase Control        (r/w)
+static const byte REG_MBC  =  9;   // Modified Byte Counter(r)
+static const byte REG_DREG = 10;   // Data Register        (r/w)
+static const byte REG_TEMP = 11;   // Temporary Register   (r/w)
+                                   // Another value is maintained respec-
+                                   // tively for writing and for reading
+static const byte REG_TCH  = 12;   // Transfer Counter High(r/w)
+static const byte REG_TCM  = 13;   // Transfer Counter Mid (r/w)
+static const byte REG_TCL  = 14;   // Transfer Counter Low (r/w)
+
+static const byte REG_TEMPWR = 13; // (TEMP register preservation place for writing)
+static const byte FIX_PCTL   = 14; // (REG_PCTL & 7)
+
+static const byte PSNS_IO  = 0x01;
+static const byte PSNS_CD  = 0x02;
+static const byte PSNS_MSG = 0x04;
+static const byte PSNS_BSY = 0x08;
+static const byte PSNS_SEL = 0x10;
+static const byte PSNS_ATN = 0x20;
+static const byte PSNS_ACK = 0x40;
+static const byte PSNS_REQ = 0x80;
+
+static const byte PSNS_SELECTION = PSNS_SEL;
+static const byte PSNS_COMMAND   = PSNS_CD;
+static const byte PSNS_DATAIN    = PSNS_IO;
+static const byte PSNS_DATAOUT   = 0;
+static const byte PSNS_STATUS    = PSNS_CD  | PSNS_IO;
+static const byte PSNS_MSGIN     = PSNS_MSG | PSNS_CD | PSNS_IO;
+static const byte PSNS_MSGOUT    = PSNS_MSG | PSNS_CD;
+
+static const byte INTS_ResetCondition  = 0x01;
+static const byte INTS_SPC_HardError   = 0x02;
+static const byte INTS_TimeOut         = 0x04;
+static const byte INTS_ServiceRequited = 0x08;
+static const byte INTS_CommandComplete = 0x10;
+static const byte INTS_Disconnected    = 0x20;
+static const byte INTS_ReSelected      = 0x40;
+static const byte INTS_Selected        = 0x80;
+
+static const byte CMD_BusRelease    = 0x00;
+static const byte CMD_Select        = 0x20;
+static const byte CMD_ResetATN      = 0x40;
+static const byte CMD_SetATN        = 0x60;
+static const byte CMD_Transfer      = 0x80;
+static const byte CMD_TransferPause = 0xA0;
+static const byte CMD_Reset_ACK_REQ = 0xC0;
+static const byte CMD_Set_ACK_REQ   = 0xE0;
+static const byte CMD_MASK          = 0xE0;
+
+static const unsigned MAX_DEV = 8;
+
+MB89352::MB89352(const DeviceConfig& config)
+	: buffer(SCSIDevice::BUFFER_SIZE)
+{
+	PRT_DEBUG("spc create");
+	// TODO: devBusy = false;
+
+	// ALMOST COPY PASTED FROM WD33C93:
+
+	XMLElement::Children targets;
+	config.getXML()->getChildren("target", targets);
+	for (XMLElement::Children::const_iterator it = targets.begin();
+	     it != targets.end(); ++it) {
+		const XMLElement& target = **it;
+		unsigned id = target.getAttributeAsInt("id");
+		if (id >= MAX_DEV) {
+			throw MSXException(StringOp::Builder() <<
+				"Invalid SCSI id: " << id <<
+				" (should be 0.." + MAX_DEV - 1 << ')');
+		}
+		if (dev[id].get()) {
+			throw MSXException(StringOp::Builder() <<
+				"Duplicate SCSI id: " << id);
+		}
+		DeviceConfig conf(config, target);
+		const XMLElement& typeElem = target.getChild("type");
+		const string& type = typeElem.getData();
+		if (type == "SCSIHD") {
+			dev[id].reset(new SCSIHD(conf, buffer.data(),
+			        SCSIDevice::MODE_SCSI2 | SCSIDevice::MODE_MEGASCSI));
+		} else if (type == "SCSILS120") {
+			dev[id].reset(new SCSILS120(conf, buffer.data(),
+			        SCSIDevice::MODE_SCSI2 | SCSIDevice::MODE_MEGASCSI));
+		} else {
+			throw MSXException("Unknown SCSI device: " + type);
+		}
+	}
+	// fill remaining targets with dummy SCSI devices to prevent crashes
+	for (unsigned i = 0; i < MAX_DEV; ++i) {
+		if (dev[i].get() == NULL) {
+			dev[i].reset(new DummySCSIDevice());
+		}
+	}
+	reset(false);
+
+	// avoid UMR on savestate
+	memset(buffer.data(), 0, SCSIDevice::BUFFER_SIZE);
+	msgin = 0;
+	blockCounter = 0;
+	nextPhase = SCSI::UNDEFINED;
+	targetId = 0;
+}
+
+MB89352::~MB89352()
+{
+}
+
+void MB89352::disconnect()
+{
+	if (phase != SCSI::BUS_FREE) {
+		assert(targetId < MAX_DEV);
+		dev[targetId]->disconnect();
+		regs[REG_INTS] |= INTS_Disconnected;
+		phase      = SCSI::BUS_FREE;
+		nextPhase  = SCSI::UNDEFINED;
+	}
+
+	regs[REG_PSNS] = 0;
+	isBusy         = false;
+	isTransfer     = false;
+	counter        = 0;
+	tc             = 0;
+	atn            = 0;
+}
+
+void MB89352::softReset()
+{
+	isEnabled = false;
+
+	for (int i = 2; i < 15; ++i) {
+		regs[i] = 0;
+	}
+	regs[15] = 0xFF;               // un mapped
+	memset(cdb, 0, sizeof(cdb));
+
+	cdbIdx = 0;
+	bufIdx = 0;
+	phase  = SCSI::BUS_FREE;
+	disconnect();
+}
+
+void MB89352::reset(bool scsireset)
+{
+	//PRT_DEBUG("MB89352 reset");
+	regs[REG_BDID] = 0x80;     // Initial value
+	regs[REG_SCTL] = 0x80;
+	rst  = false;
+	atn  = 0;
+	myId = 7;
+
+	softReset();
+
+	if (scsireset) {
+		for (byte i = 0; i < MAX_DEV; ++i) {
+			dev[i]->reset();
+		}
+	}
+}
+
+void MB89352::setACKREQ(byte& value)
+{
+	// REQ check
+	if ((regs[REG_PSNS] & (PSNS_REQ | PSNS_BSY)) != (PSNS_REQ | PSNS_BSY)) {
+		PRT_DEBUG("set ACK/REQ: REQ/BSY check error");
+		if (regs[REG_PSNS] & PSNS_IO) { // SCSI -> SPC
+			value = 0xFF;
+		}
+		return;
+	}
+
+	// phase check
+	if (regs[FIX_PCTL] != (regs[REG_PSNS] & 7)) {
+		PRT_DEBUG("set ACK/REQ: phase check error");
+		if (regs[REG_PSNS] & PSNS_IO) { // SCSI -> SPC
+			value = 0xFF;
+		}
+		if (isTransfer) {
+			regs[REG_INTS] |= INTS_ServiceRequited;
+		}
+		return;
+	}
+
+	switch (phase) {
+	case SCSI::DATA_IN: // Transfer phase (data in)
+		value = buffer[bufIdx];
+		++bufIdx;
+		regs[REG_PSNS] = PSNS_ACK | PSNS_BSY | PSNS_DATAIN;
+		break;
+
+	case SCSI::DATA_OUT: // Transfer phase (data out)
+		buffer[bufIdx] = value;
+		++bufIdx;
+		regs[REG_PSNS] = PSNS_ACK | PSNS_BSY | PSNS_DATAOUT;
+		break;
+
+	case SCSI::COMMAND: // Command phase
+		if (counter < 0) {
+			// Initialize command routine
+			cdbIdx  = 0;
+			counter = (value < 0x20) ? 6 : ((value < 0xA0) ? 10 : 12);
+		}
+		cdb[cdbIdx] = value;
+		++cdbIdx;
+		regs[REG_PSNS] = PSNS_ACK | PSNS_BSY | PSNS_COMMAND;
+		break;
+
+	case SCSI::STATUS: // SCSI::STATUS phase
+		value = dev[targetId]->getStatusCode();
+		regs[REG_PSNS] = PSNS_ACK | PSNS_BSY | PSNS_STATUS;
+		break;
+
+	case SCSI::MSG_IN: // Message In phase
+		value = dev[targetId]->msgIn();
+		regs[REG_PSNS] = PSNS_ACK | PSNS_BSY | PSNS_MSGIN;
+		break;
+
+	case SCSI::MSG_OUT: // Message Out phase
+		msgin |= dev[targetId]->msgOut(value);
+		regs[REG_PSNS] = PSNS_ACK | PSNS_BSY | PSNS_MSGOUT;
+		break;
+
+	default:
+		PRT_DEBUG("set ACK/REQ code error");
+		break;
+	}
+}
+
+void MB89352::resetACKREQ()
+{
+	// ACK check
+	if ((regs[REG_PSNS] & (PSNS_ACK | PSNS_BSY)) != (PSNS_ACK | PSNS_BSY)) {
+		PRT_DEBUG("reset ACK/REQ: ACK/BSY check error");
+		return;
+	}
+
+	// phase check
+	if (regs[FIX_PCTL] != (regs[REG_PSNS] & 7)) {
+		PRT_DEBUG("reset ACK/REQ: phase check error");
+		if (isTransfer) {
+			regs[REG_INTS] |= INTS_ServiceRequited;
+		}
+		return;
+	}
+
+	switch (phase) {
+	case SCSI::DATA_IN: // Transfer phase (data in)
+		if (--counter > 0) {
+			regs[REG_PSNS] = PSNS_REQ | PSNS_BSY | PSNS_DATAIN;
+		} else {
+			if (blockCounter > 0) {
+				counter = dev[targetId]->dataIn(blockCounter);
+				if (counter) {
+					regs[REG_PSNS] = PSNS_REQ | PSNS_BSY | PSNS_DATAIN;
+					bufIdx = 0;
+					break;
+				}
+			}
+			regs[REG_PSNS] = PSNS_REQ | PSNS_BSY | PSNS_STATUS;
+			phase = SCSI::STATUS;
+		}
+		break;
+
+	case SCSI::DATA_OUT: // Transfer phase (data out)
+		if (--counter > 0) {
+			regs[REG_PSNS] = PSNS_REQ | PSNS_BSY | PSNS_DATAOUT;
+		} else {
+			counter = dev[targetId]->dataOut(blockCounter);
+			if (counter) {
+				regs[REG_PSNS] = PSNS_REQ | PSNS_BSY | PSNS_DATAOUT;
+				bufIdx = 0;
+				break;
+			}
+			regs[REG_PSNS] = PSNS_REQ | PSNS_BSY | PSNS_STATUS;
+			phase = SCSI::STATUS;
+		}
+		break;
+
+	case SCSI::COMMAND: // Command phase
+		if (--counter > 0) {
+			regs[REG_PSNS] = PSNS_REQ | PSNS_BSY | PSNS_COMMAND;
+		} else {
+			bufIdx = 0; // reset buffer index
+			// TODO: devBusy = true;
+			counter = dev[targetId]->executeCmd(cdb, phase, blockCounter);
+			switch (phase) {
+			case SCSI::DATA_IN:
+				regs[REG_PSNS] = PSNS_REQ | PSNS_BSY | PSNS_DATAIN;
+				break;
+			case SCSI::DATA_OUT:
+				regs[REG_PSNS] = PSNS_REQ | PSNS_BSY | PSNS_DATAOUT;
+				break;
+			case SCSI::STATUS:
+				regs[REG_PSNS] = PSNS_REQ | PSNS_BSY | PSNS_STATUS;
+				break;
+			case SCSI::EXECUTE:
+				regs[REG_PSNS] = PSNS_BSY;
+				return; // note: return iso break
+			default:
+				PRT_DEBUG("phase error");
+				break;
+			}
+			// TODO: devBusy = false;
+		}
+		break;
+
+	case SCSI::STATUS: // SCSI::STATUS phase
+		regs[REG_PSNS] = PSNS_REQ | PSNS_BSY | PSNS_MSGIN;
+		phase = SCSI::MSG_IN;
+		break;
+
+	case SCSI::MSG_IN: // Message In phase
+		if (msgin <= 0) {
+			disconnect();
+			break;
+		}
+		msgin = 0;
+		// throw to SCSI::MSG_OUT...
+
+	case SCSI::MSG_OUT: // Message Out phase
+		if (msgin == -1) {
+			disconnect();
+			return;
+		}
+
+		if (atn) {
+			if (msgin & 2) {
+				disconnect();
+				return;
+			}
+			regs[REG_PSNS] = PSNS_REQ | PSNS_BSY | PSNS_MSGOUT;
+			return;
+		}
+
+		if (msgin & 1) {
+			phase = SCSI::MSG_IN;
+		} else {
+			if (msgin & 4) {
+				phase = SCSI::STATUS;
+				nextPhase = SCSI::UNDEFINED;
+			} else {
+				phase = nextPhase;
+				nextPhase = SCSI::UNDEFINED;
+			}
+		}
+
+		msgin = 0;
+
+		switch (phase) {
+		case SCSI::COMMAND:
+			regs[REG_PSNS] = PSNS_REQ | PSNS_BSY | PSNS_COMMAND;
+			break;
+		case SCSI::DATA_IN:
+			regs[REG_PSNS] = PSNS_REQ | PSNS_BSY | PSNS_DATAIN;
+			break;
+		case SCSI::DATA_OUT:
+			regs[REG_PSNS] = PSNS_REQ | PSNS_BSY | PSNS_DATAOUT;
+			break;
+		case SCSI::STATUS:
+			regs[REG_PSNS] = PSNS_REQ | PSNS_BSY | PSNS_STATUS;
+			break;
+		case SCSI::MSG_IN:
+			regs[REG_PSNS] = PSNS_REQ | PSNS_BSY | PSNS_MSGIN;
+			break;
+		default:
+			PRT_DEBUG("MsgOut code error");
+			break;
+		}
+		return;
+
+	default:
+		//UNREACHABLE;
+		PRT_DEBUG("reset ACK/REQ code error");
+		break;
+	}
+
+	if (atn) {
+		nextPhase = phase;
+		phase = SCSI::MSG_OUT;
+		regs[REG_PSNS] = PSNS_REQ | PSNS_BSY | PSNS_MSGOUT;
+	}
+}
+
+byte MB89352::readDREG()
+{
+	if (isTransfer && (tc > 0)) {
+		setACKREQ(regs[REG_DREG]);
+		resetACKREQ();
+		//PRT_DEBUG("DREG read: " << tc << ' ' << std::hex << (int)regs[REG_DREG]);
+
+		--tc;
+		if (tc == 0) {
+			isTransfer = false;
+			regs[REG_INTS] |= INTS_CommandComplete;
+		}
+		regs[REG_MBC] = (regs[REG_MBC] - 1) & 0x0F;
+		return regs[REG_DREG];
+	} else {
+		return 0xFF;
+	}
+}
+
+void MB89352::writeDREG(byte value)
+{
+	if (isTransfer && (tc > 0)) {
+		//PRT_DEBUG("DREG write: " << tc << ' ' << std::hex << (int)value);
+
+		setACKREQ(value);
+		resetACKREQ();
+
+		--tc;
+		if (tc == 0) {
+			isTransfer = false;
+			regs[REG_INTS] |= INTS_CommandComplete;
+		}
+		regs[REG_MBC] = (regs[REG_MBC] - 1) & 0x0F;
+	}
+}
+
+void MB89352::writeRegister(byte reg, byte value)
+{
+	//PRT_DEBUG("SPC write register: " << std::hex << (int)reg << ' ' << std::hex << (int)value);
+	switch (reg) {
+	case REG_DREG: // write data Register
+		writeDREG(value);
+		break;
+
+	case REG_SCMD: {
+		if (!isEnabled) {
+			break;
+		}
+
+		// bus reset
+		if (value & 0x10) {
+			if (((regs[REG_SCMD] & 0x10) == 0) & (regs[REG_SCTL] == 0)) {
+				PRT_DEBUG("SPC: bus reset");
+				rst = true;
+				regs[REG_INTS] |= INTS_ResetCondition;
+				for (byte i = 0; i < MAX_DEV; ++i) {
+					dev[i]->busReset();
+				}
+				disconnect();  // alternative routine
+			}
+		} else {
+			rst = false;
+		}
+
+		regs[REG_SCMD] = value;
+
+		// execute spc command
+		switch (value & CMD_MASK) {
+		case CMD_Set_ACK_REQ:
+			switch (phase) {
+			case SCSI::DATA_IN:
+			case SCSI::STATUS:
+			case SCSI::MSG_IN:
+				setACKREQ(regs[REG_TEMP]);
+				break;
+			default:
+				setACKREQ(regs[REG_TEMPWR]);
+			}
+			break;
+
+		case CMD_Reset_ACK_REQ:
+			resetACKREQ();
+			break;
+
+		case CMD_Select: {
+			if (rst) {
+				regs[REG_INTS] |= INTS_TimeOut;
+				break;
+			}
+
+			if (regs[REG_PCTL] & 1) {
+				PRT_DEBUG("reselection error " << std::hex << int(regs[REG_TEMPWR]));
+				regs[REG_INTS] |= INTS_TimeOut;
+				disconnect();
+				break;
+			}
+			bool err = false;
+			int x = regs[REG_BDID] & regs[REG_TEMPWR];
+			if (phase == SCSI::BUS_FREE && x && x != regs[REG_TEMPWR]) {
+				x = regs[REG_TEMPWR] & ~regs[REG_BDID];
+
+				// the targetID is calculated.
+				// It is given priority that the number is large.
+				for (targetId = 0; targetId < MAX_DEV; ++targetId) {
+					x >>= 1;
+					if (x == 0) {
+						break;
+					}
+				}
+
+				if (/*!TODO: devBusy &&*/ dev[targetId]->isSelected()) {
+					PRT_DEBUG("selection OK of target " << int(targetId));
+					regs[REG_INTS] |= INTS_CommandComplete;
+					isBusy  = true;
+					msgin   =  0;
+					counter = -1;
+					err     =  false;
+					if (atn) {
+						phase          = SCSI::MSG_OUT;
+						nextPhase      = SCSI::COMMAND;
+						regs[REG_PSNS] = PSNS_REQ | PSNS_BSY | PSNS_MSGOUT;
+					} else {
+						phase          = SCSI::COMMAND;
+						nextPhase      = SCSI::UNDEFINED;
+						regs[REG_PSNS] = PSNS_REQ | PSNS_BSY | PSNS_COMMAND;
+					}
+				} else {
+					err = true;
+				}
+			} else {
+				err = true;
+			}
+
+			if (err) {
+				PRT_DEBUG("selection error on target " << int(targetId));
+				regs[REG_INTS] |= INTS_TimeOut;
+				disconnect();
+			}
+			break;
+		}
+		// hardware transfer
+		case CMD_Transfer:
+			PRT_DEBUG("CMD_Transfer " << tc << " ( " << (tc/512) << ')');
+			if ((regs[FIX_PCTL] == (regs[REG_PSNS] & 7)) &&
+			    (regs[REG_PSNS] & (PSNS_REQ | PSNS_BSY))) {
+				isTransfer = true; // set Xfer in Progress
+			} else {
+				regs[REG_INTS] |= INTS_ServiceRequited;
+				PRT_DEBUG("phase error");
+			}
+			break;
+
+		case CMD_BusRelease:
+			PRT_DEBUG("CMD_BusRelease");
+			disconnect();
+			break;
+
+		case CMD_SetATN:
+			PRT_DEBUG("CMD_SetATN");
+			atn = PSNS_ATN;
+			break;
+
+		case CMD_ResetATN:
+			PRT_DEBUG("CMD_ResetATN");
+			atn = 0;
+			break;
+
+		case CMD_TransferPause:
+			// nothing is done in the initiator.
+			PRT_DEBUG("CMD_TransferPause");
+			break;
+		}
+		break;  // end of REG_SCMD
+	}
+	case REG_INTS: // Reset Interrupts
+		regs[REG_INTS] &= ~value;
+		if (rst) {
+			regs[REG_INTS] |= INTS_ResetCondition;
+		}
+		//PRT_DEBUG2("INTS reset: %x %x\n", value, regs[REG_INTS]);
+		break;
+
+	case REG_TEMP:
+		regs[REG_TEMPWR] = value;
+		break;
+
+	case REG_TCL:
+		tc = (tc & 0xFFFF00) + (value <<  0);
+		//PRT_DEBUG1("set tcl: %d\n", tc);
+		break;
+
+	case REG_TCM:
+		tc = (tc & 0xFF00FF) + (value <<  8);
+		//PRT_DEBUG1("set tcm: %d\n", tc);
+		break;
+
+	case REG_TCH:
+		tc = (tc & 0x00FFFF) + (value << 16);
+		//PRT_DEBUG1("set tch: %d\n", tc);
+		break;
+
+	case REG_PCTL:
+		regs[REG_PCTL] = value;
+		regs[FIX_PCTL] = value & 7;
+		break;
+
+	case REG_BDID:
+		// set Bus Device ID
+		value &= 7;
+		myId = value;
+		regs[REG_BDID] = 1 << value;
+		break;
+
+		// Nothing
+	case REG_SDGC:
+	case REG_SSTS:
+	case REG_SERR:
+	case REG_MBC:
+	case 15:
+		break;
+
+	case REG_SCTL: {
+		bool flag = !(value & 0xE0);
+		if (flag != isEnabled) {
+			isEnabled = flag;
+			if (!flag) {
+				softReset();
+			}
+		}
+		// throw to default
+	}
+	default:
+		regs[reg] = value;
+	}
+}
+
+byte MB89352::getSSTS() const
+{
+	byte result = 1; // set fifo empty
+	if (isTransfer) {
+		if (regs[REG_PSNS] & PSNS_IO) { // SCSI -> SPC transfer
+			if (tc >= 8) {
+				result = 2; // set fifo full
+			} else {
+				if (tc != 0) {
+					result = 0; // set fifo 1..7 bytes
+				}
+			}
+		}
+	}
+	if (phase != SCSI::BUS_FREE) {
+		result |= 0x80; // set iniciator
+	}
+	if (isBusy) {
+		result |= 0x20; // set SPC_BSY
+	}
+	if ((phase >= SCSI::COMMAND) || isTransfer) {
+		result |= 0x10; // set Xfer in Progress
+	}
+	if (rst) {
+		result |= 0x08; // set SCSI RST
+	}
+	if (tc == 0) {
+		result |= 0x04; // set tc = 0
+	}
+	return result;
+}
+
+byte MB89352::readRegister(byte reg)
+{
+	//PRT_DEBUG("MB89352: Read register " << (int)reg);
+	byte result;
+	switch (reg) {
+	case REG_DREG:
+		result = readDREG();
+		break;
+
+	case REG_PSNS:
+		if (phase == SCSI::EXECUTE) {
+			counter = dev[targetId]->executingCmd(phase, blockCounter);
+			if (atn && phase != SCSI::EXECUTE) {
+				nextPhase = phase;
+				phase = SCSI::MSG_OUT;
+				regs[REG_PSNS] = PSNS_REQ | PSNS_BSY | PSNS_MSGOUT;
+			} else {
+				switch (phase) {
+				case SCSI::DATA_IN:
+					regs[REG_PSNS] = PSNS_REQ | PSNS_BSY | PSNS_DATAIN;
+					break;
+				case SCSI::DATA_OUT:
+					regs[REG_PSNS] = PSNS_REQ | PSNS_BSY | PSNS_DATAOUT;
+					break;
+				case SCSI::STATUS:
+					regs[REG_PSNS] = PSNS_REQ | PSNS_BSY | PSNS_STATUS;
+					break;
+				case SCSI::EXECUTE:
+					regs[REG_PSNS] = PSNS_BSY;
+					break;
+				default:
+					PRT_DEBUG("phase error");
+					break;
+				}
+			}
+		}
+		result = regs[REG_PSNS] | atn;
+		break;
+	default:
+		result = peekRegister(reg);
+	}
+	//PRT_DEBUG2("SPC reg read: %x %x\n", reg, result);
+	return result;
+}
+
+byte MB89352::peekDREG() const
+{
+	if (isTransfer && (tc > 0)) {
+		return regs[REG_DREG];
+	} else {
+		return 0xFF;
+	}
+}
+
+byte MB89352::peekRegister(byte reg) const
+{
+	switch (reg) {
+	case REG_DREG:
+		return peekDREG();
+	case REG_PSNS:
+		return regs[REG_PSNS] | atn;
+	case REG_SSTS:
+		return getSSTS();
+	case REG_TCH:
+		return (tc >> 16) & 0xFF;
+	case REG_TCM:
+		return (tc >>  8) & 0xFF;
+	case REG_TCL:
+		return (tc >>  0) & 0xFF;
+	default:
+		return regs[reg];
+	}
+}
+
+
+// TODO duplicated in WD33C93.cc
+static enum_string<SCSI::Phase> phaseInfo[] = {
+	{ "UNDEFINED",   SCSI::UNDEFINED   },
+	{ "BUS_FREE",    SCSI::BUS_FREE    },
+	{ "ARBITRATION", SCSI::ARBITRATION },
+	{ "SELECTION",   SCSI::SELECTION   },
+	{ "RESELECTION", SCSI::RESELECTION },
+	{ "COMMAND",     SCSI::COMMAND     },
+	{ "EXECUTE",     SCSI::EXECUTE     },
+	{ "DATA_IN",     SCSI::DATA_IN     },
+	{ "DATA_OUT",    SCSI::DATA_OUT    },
+	{ "STATUS",      SCSI::STATUS      },
+	{ "MSG_OUT",     SCSI::MSG_OUT     },
+	{ "MSG_IN",      SCSI::MSG_IN      }
+};
+SERIALIZE_ENUM(SCSI::Phase, phaseInfo);
+
+template<typename Archive>
+void MB89352::serialize(Archive& ar, unsigned /*version*/)
+{
+	ar.serialize_blob("buffer", buffer.data(), buffer.size());
+	char tag[8] = { 'd', 'e', 'v', 'i', 'c', 'e', 'X', 0 };
+	for (unsigned i = 0; i < MAX_DEV; ++i) {
+		tag[6] = char('0' + i);
+		ar.serializePolymorphic(tag, *dev[i]);
+	}
+	ar.serialize("bufIdx", bufIdx);
+	ar.serialize("msgin", msgin);
+	ar.serialize("counter", counter);
+	ar.serialize("blockCounter", blockCounter);
+	ar.serialize("tc", tc);
+	ar.serialize("phase", phase);
+	ar.serialize("nextPhase", nextPhase);
+	ar.serialize("myId", myId);
+	ar.serialize("targetId", targetId);
+	ar.serialize_blob("registers", regs, sizeof(regs));
+	ar.serialize("rst", rst);
+	ar.serialize("atn", atn);
+	ar.serialize("isEnabled", isEnabled);
+	ar.serialize("isBusy", isBusy);
+	ar.serialize("isTransfer", isTransfer);
+	ar.serialize("cdbIdx", cdbIdx);
+	ar.serialize_blob("cdb", cdb, sizeof(cdb));
+}
+INSTANTIATE_SERIALIZE_METHODS(MB89352);
+
+} // namespace openmsx
+

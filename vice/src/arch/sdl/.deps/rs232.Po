@@ -1,0 +1,8 @@
+rs232.o: rs232.c ../../../src/vice.h ../../../src/config.h \
+ ../unix/rs232.c
+
+../../../src/vice.h:
+
+../../../src/config.h:
+
+../unix/rs232.c:

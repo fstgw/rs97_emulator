@@ -1,0 +1,13 @@
+prefix=/home/steward/Downloads/openmsx-0.9.1/derived/mipsel-dingux-opt-3rd/3rdparty/install
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+modules=0
+
+Name: libXML
+Version: 2.8.0
+Description: libXML library version2.
+Requires:
+Libs: -L${libdir} -lxml2
+Libs.private:    -lm  
+Cflags: -I${includedir}/libxml2 

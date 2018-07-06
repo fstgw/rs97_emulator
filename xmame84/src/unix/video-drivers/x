@@ -1,0 +1,52 @@
+void sdl_update_16_to_16bpp_rot0_1_2(struct mame_bitmap *bitmap);
+void sdl_update_16_to_16bpp_horzscale_1_2(struct mame_bitmap *bitmap);
+
+
+
+    /* Check for 1:2 ratio games.
+     * ie 640x240 which are just double horizontal resolution
+     * Note: no 2:1 ratio games exist so not checking for VIDEO_PIXEL_ASPECT_RATIO_2_1
+     */
+    if (Machine->drv->video_attributes & VIDEO_PIXEL_ASPECT_RATIO_1_2)
+    {
+	Display_centering_scaled_width = visual_width/2;
+	Display_centering_scaled_height = visual_height;
+	heightscale=1;// reset back to 1
+
+	// If the game's width fits (when horizontal resolution is halved)
+	// use a standard blitter (but skip every other SRC pixel)
+	if (Display_width < (visual_width/2))
+	{
+	    update_function = &sdl_update_16_to_16bpp_horzscale_1_2;
+	    printf("BLIT: sdl_update_16_to_16bpp_horzscale_1_2\n");
+	}
+	else
+	{
+	    // Use one of the other bltters
+	    // Only supporting the ones that are needed for 1:2 ratio games
+	    // 1:1 ratio games have a much fuller library of required blits
+	    if (blit_swapxy && blit_flipx)
+	    {
+		Display_centering_scaled_height = visual_height/2;
+		Display_centering_scaled_width = (visual_width * Display_height + (visual_height/2) - 1) / (visual_height/2);
+		iAddY = Display_height;
+		iModuloY = visual_height/2;
+		iAddX = iAddY;
+		iModuloX = iModuloY;
+		update_function = &sdl_update_16_to_16bpp_fitscale_rot90_1_2;
+		printf("BLIT: sdl_update_16_to_16bpp_fitscale_rot90_1_2\n");
+	    }
+	    else if (blit_flipx && blit_flipy)
+	    {
+		update_function = &sdl_update_16_to_16bpp_rot180_1_2;
+		printf("BLIT: sdl_update_16_to_16bpp_rot180_1_2\n");
+	    }
+	    else
+	    {
+		update_function = &sdl_update_16_to_16bpp_rot0_1_2;
+		printf("BLIT: sdl_update_16_to_16bpp_rot0_1_2\n");
+	    }
+	}
+    }
+    else
+    {

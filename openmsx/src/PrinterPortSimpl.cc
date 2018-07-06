@@ -1,0 +1,83 @@
+// $Id: PrinterPortSimpl.cc 12631 2012-06-14 20:18:24Z m9710797 $
+
+#include "PrinterPortSimpl.hh"
+#include "DACSound8U.hh"
+#include "DeviceConfig.hh"
+#include "XMLElement.hh"
+#include "serialize.hh"
+
+using std::auto_ptr;
+
+namespace openmsx {
+
+PrinterPortSimpl::PrinterPortSimpl(const HardwareConfig& hwConf_)
+	: hwConf(hwConf_)
+{
+}
+
+bool PrinterPortSimpl::getStatus(EmuTime::param /*time*/)
+{
+	return true; // TODO check
+}
+
+void PrinterPortSimpl::setStrobe(bool /*strobe*/, EmuTime::param /*time*/)
+{
+	// ignore strobe // TODO check
+}
+
+void PrinterPortSimpl::writeData(byte data, EmuTime::param time)
+{
+	dac->writeDAC(data, time);
+}
+
+static XMLElement createXML()
+{
+	XMLElement xml("simpl");
+	auto_ptr<XMLElement> sound(new XMLElement("sound"));
+	sound->addChild(auto_ptr<XMLElement>(new XMLElement("volume", "12000")));
+	xml.addChild(sound);
+	return xml;
+}
+
+void PrinterPortSimpl::createDAC()
+{
+	static XMLElement xml = createXML();
+	dac.reset(new DACSound8U("simpl", getDescription(),
+	                         DeviceConfig(hwConf, xml)));
+}
+
+void PrinterPortSimpl::plugHelper(Connector& /*connector*/, EmuTime::param /*time*/)
+{
+	createDAC();
+}
+
+void PrinterPortSimpl::unplugHelper(EmuTime::param /*time*/)
+{
+	dac.reset();
+}
+
+const std::string& PrinterPortSimpl::getName() const
+{
+	static const std::string name("simpl");
+	return name;
+}
+
+string_ref PrinterPortSimpl::getDescription() const
+{
+	return "Play samples via your printer port.";
+}
+
+template<typename Archive>
+void PrinterPortSimpl::serialize(Archive& ar, unsigned /*version*/)
+{
+	if (isPluggedIn()) {
+		if (ar.isLoader()) {
+			createDAC();
+		}
+		ar.serialize("dac", *dac);
+	}
+}
+INSTANTIATE_SERIALIZE_METHODS(PrinterPortSimpl);
+REGISTER_POLYMORPHIC_INITIALIZER(Pluggable, PrinterPortSimpl, "PrinterPortSimpl");
+
+} // namespace openmsx

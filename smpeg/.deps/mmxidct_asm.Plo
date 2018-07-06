@@ -1,0 +1,1 @@
+mmxidct_asm.lo: video/mmxidct_asm.S

@@ -1,0 +1,45 @@
+Probing system:
+Compiler works: /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/bin/mipsel-linux-g++ -march=mips32
+Found function: posix_memalign
+Found function: mmap
+Found function: clock_gettime
+Found function: ftruncate
+Found function: usleep
+AO: Found header
+AO: Found lib
+PNG: Found header
+PNG: Found lib
+SDL: Found header
+SDL: Found lib
+SDL_TTF: Found header
+SDL_TTF: Found lib
+compiler command: /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/bin/mipsel-linux-g++ -c derived/mipsel-dingux-opt/config/TCL.cc -o derived/mipsel-dingux-opt/config/TCL.o -march=mips32
+derived/mipsel-dingux-opt/config/TCL.cc:1:17: fatal error: tcl.h: No such file or directory
+compilation terminated.
+return code from compiler: 1
+TCL: Missing header
+TCL: Cannot test linking because compile failed
+compiler command: /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/bin/mipsel-linux-g++ -c derived/mipsel-dingux-opt/config/XML.cc -o derived/mipsel-dingux-opt/config/XML.o -march=mips32 -I/usr/include/libxml2 -DLIBXML_STATIC
+mipsel-linux-g++: WARNING: unsafe header/library path used in cross-compilation: '-I/usr/include/libxml2'
+In file included from /usr/include/libxml2/libxml/parser.h:810:0,
+                 from derived/mipsel-dingux-opt/config/XML.cc:1:
+/usr/include/libxml2/libxml/encoding.h:31:26: fatal error: unicode/ucnv.h: No such file or directory
+compilation terminated.
+return code from compiler: 1
+XML: Missing header
+XML: Cannot test linking because compile failed
+ZLIB: Found header
+ZLIB: Found lib
+compiler command: /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/bin/mipsel-linux-g++ -c derived/mipsel-dingux-opt/config/type_traits.cc -o derived/mipsel-dingux-opt/config/type_traits.o -march=mips32
+In file included from /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/include/c++/5.4.0/type_traits:35:0,
+                 from derived/mipsel-dingux-opt/config/type_traits.cc:1:
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/include/c++/5.4.0/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+derived/mipsel-dingux-opt/config/type_traits.cc:2:20: error: ‘is_abstract’ is not a member of ‘std’
+ const bool value = std::is_abstract<int>::value;
+                    ^
+derived/mipsel-dingux-opt/config/type_traits.cc:2:37: error: expected primary-expression before ‘int’
+ const bool value = std::is_abstract<int>::value;
+                                     ^
+return code from compiler: 1

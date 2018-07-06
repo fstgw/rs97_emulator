@@ -1,0 +1,18 @@
+file /home/steward/Github/gh_retrogame_emulator/gamebatte/libgambatte/SConstruct,line 61:
+	Configure(confdir = .sconf_temp)
+scons: Configure: Checking for C header file zlib.h... 
+scons: Configure: ".sconf_temp/conftest_0.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_0.c <-
+  |  |
+  |  |#include <zlib.h>
+  |  |
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_0.o" is up to date.
+scons: Configure: The original builder output was:
+  |/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/bin/mipsel-linux-gcc -o .sconf_temp/conftest_0.o -c -Wall -Wextra -O2 -fomit-frame-pointer -ffunction-sections -ffast-math -fsingle-precision-constant -G0 -I/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL -DHAVE_STDINT_H -Isrc -Iinclude -I/home/steward/Github/gh_retrogame_emulator/gamebatte/common .sconf_temp/conftest_0.c
+  |
+scons: Configure: (cached) yes
+
+

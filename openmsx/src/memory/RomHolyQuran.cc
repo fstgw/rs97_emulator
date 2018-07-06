@@ -1,0 +1,51 @@
+// $Id: RomHolyQuran.cc 12527 2012-05-17 17:34:11Z m9710797 $
+
+// Holy Qu'ran  cartridge
+//  It is like an ASCII 8KB, but using the 5000h, 5400h, 5800h and 5C00h
+//  addresses.
+
+
+#include "RomHolyQuran.hh"
+#include "Rom.hh"
+#include "serialize.hh"
+
+namespace openmsx {
+
+RomHolyQuran::RomHolyQuran(const DeviceConfig& config, std::auto_ptr<Rom> rom)
+	: Rom8kBBlocks(config, rom)
+{
+	reset(EmuTime::dummy());
+}
+
+void RomHolyQuran::reset(EmuTime::param /*time*/)
+{
+	setUnmapped(0);
+	setUnmapped(1);
+	for (int i = 2; i < 6; i++) {
+		setRom(i, 0);
+	}
+	setUnmapped(6);
+	setUnmapped(7);
+}
+
+void RomHolyQuran::writeMem(word address, byte value, EmuTime::param /*time*/)
+{
+	// TODO are switch addresses mirrored?
+	if ((0x5000 <= address) && (address < 0x6000)) {
+		byte region = ((address >> 10) & 3) + 2;
+		setRom(region, value);
+	}
+}
+
+byte* RomHolyQuran::getWriteCacheLine(word address) const
+{
+	if ((0x5000 <= address) && (address < 0x6000)) {
+		return NULL;
+	} else {
+		return unmappedWrite;
+	}
+}
+
+REGISTER_MSXDEVICE(RomHolyQuran, "RomHolyQuran");
+
+} // namespace openmsx

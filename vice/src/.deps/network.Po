@@ -1,0 +1,7 @@
+network.o: network.c vice.h config.h network.h
+
+vice.h:
+
+config.h:
+
+network.h:

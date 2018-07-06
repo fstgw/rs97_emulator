@@ -1,0 +1,5 @@
+socket.o: socket.c vice.h config.h
+
+vice.h:
+
+config.h:

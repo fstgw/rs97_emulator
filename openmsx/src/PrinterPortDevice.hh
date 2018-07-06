@@ -1,0 +1,43 @@
+// $Id: PrinterPortDevice.hh 12629 2012-06-14 20:16:30Z m9710797 $
+
+#ifndef PRINTERPORTDEVICE_HH
+#define PRINTERPORTDEVICE_HH
+
+#include "Pluggable.hh"
+#include "openmsx.hh"
+
+namespace openmsx {
+
+class PrinterPortDevice : public Pluggable
+{
+public:
+	/**
+	 * Returns the STATUS signal:
+	 *  false = low  = ready,
+	 *  true  = high = not ready.
+	 */
+	virtual bool getStatus(EmuTime::param time) = 0;
+
+	/**
+	 * Sets the strobe signal:
+	 *  false = low,
+	 *  true  = high.
+	 * Normal high, a short pulse (low, high) means data is valid.
+	 */
+	virtual void setStrobe(bool strobe, EmuTime::param time) = 0;
+
+	/**
+	 * Sets the data signals.
+	 * Always use strobe to see wheter data is valid.
+	 * As an optimization, this method might not be called when the
+	 * new data is the same as the previous data.
+	 */
+	virtual void writeData(byte data, EmuTime::param time) = 0;
+
+	// Pluggable
+	virtual string_ref getClass() const;
+};
+
+} // namespace openmsx
+
+#endif

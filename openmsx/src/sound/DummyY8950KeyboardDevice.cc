@@ -1,0 +1,31 @@
+// $Id: DummyY8950KeyboardDevice.cc 12631 2012-06-14 20:18:24Z m9710797 $
+
+#include "DummyY8950KeyboardDevice.hh"
+
+namespace openmsx {
+
+void DummyY8950KeyboardDevice::write(byte /*data*/, EmuTime::param /*time*/)
+{
+	// ignore data
+}
+
+byte DummyY8950KeyboardDevice::read(EmuTime::param /*time*/)
+{
+	return 255;
+}
+
+string_ref DummyY8950KeyboardDevice::getDescription() const
+{
+	return "";
+}
+
+void DummyY8950KeyboardDevice::plugHelper(Connector& /*connector*/,
+                                          EmuTime::param /*time*/)
+{
+}
+
+void DummyY8950KeyboardDevice::unplugHelper(EmuTime::param /*time*/)
+{
+}
+
+} // namespace openmsx

@@ -1,0 +1,140 @@
+// $Id: WavWriter.cc 12825 2012-08-21 17:05:28Z m9710797 $
+
+#include "WavWriter.hh"
+#include "File.hh"
+#include "MSXException.hh"
+#include "Math.hh"
+#include "vla.hh"
+#include "endian.hh"
+#include <algorithm>
+#include <cstring>
+#include <vector>
+
+namespace openmsx {
+
+WavWriter::WavWriter(const Filename& filename,
+                     unsigned channels, unsigned bits, unsigned frequency)
+	: file(new File(filename, "wb"))
+	, bytes(0)
+{
+	// write wav header
+	struct WavHeader {
+		char        chunkID[4];     // + 0 'RIFF'
+		Endian::L32 chunkSize;      // + 4 total size
+		char        format[4];      // + 8 'WAVE'
+		char        subChunk1ID[4]; // +12 'fmt '
+		Endian::L32 subChunk1Size;  // +16 = 16 (fixed)
+		Endian::L16 audioFormat;    // +20 =  1 (fixed)
+		Endian::L16 numChannels;    // +22
+		Endian::L32 sampleRate;     // +24
+		Endian::L32 byteRate;       // +28
+		Endian::L16 blockAlign;     // +32
+		Endian::L16 bitsPerSample;  // +34
+		char        subChunk2ID[4]; // +36 'data'
+		Endian::L32 subChunk2Size;  // +40
+	} header;
+
+	memcpy(header.chunkID,     "RIFF", sizeof(header.chunkID));
+	header.chunkSize     = 0; // actual value filled in later
+	memcpy(header.format,      "WAVE", sizeof(header.format));
+	memcpy(header.subChunk1ID, "fmt ", sizeof(header.subChunk1ID));
+	header.subChunk1Size = 16;
+	header.audioFormat   = 1;
+	header.numChannels   = channels;
+	header.sampleRate    = frequency;
+	header.byteRate      = (channels * frequency * bits) / 8;
+	header.blockAlign    = (channels * bits) / 8;
+	header.bitsPerSample = bits;
+	memcpy(header.subChunk2ID, "data", sizeof(header.subChunk2ID));
+	header.subChunk2Size = 0; // actaul value filled in later
+
+	file->write(&header, sizeof(header));
+}
+
+WavWriter::~WavWriter()
+{
+	try {
+		// data chunk must have an even number of bytes
+		if (bytes & 1) {
+			unsigned char pad = 0;
+			file->write(&pad, 1);
+		}
+
+		flush(); // write header
+	} catch (MSXException&) {
+		// ignore, can't throw from destructor
+	}
+}
+
+bool WavWriter::isEmpty() const
+{
+	return bytes == 0;
+}
+
+void WavWriter::flush()
+{
+	// TODO For now (before C++11) this needs separate definition and
+	//      initialization. See comments in Endian::EndianT for details.
+	Endian::L32 totalSize, wavSize;
+	totalSize = (bytes + 44 - 8 + 1) & ~1; // round up to even number
+	wavSize   = bytes;
+
+	file->seek(4);
+	file->write(&totalSize, 4);
+	file->seek(40);
+	file->write(&wavSize, 4);
+	file->seek(file->getSize()); // SEEK_END
+	file->flush();
+}
+
+void Wav8Writer::write(const unsigned char* buffer, unsigned samples)
+{
+	file->write(buffer, samples);
+	bytes += samples;
+}
+
+void Wav16Writer::write(const short* buffer, unsigned samples)
+{
+	unsigned size = sizeof(short) * samples;
+	if (OPENMSX_BIGENDIAN) {
+		// Variable length arrays (VLA) are part of c99 but not of c++
+		// (not even c++11). Some compilers (like gcc) do support VLA
+		// in c++ mode, others (like VC++) don't. Still other compilers
+		// (like clang) only support VLA for POD types.
+		// To side-step this issue we simply use a std::vector, this
+		// code is anyway not performance critical.
+		//VLA(Endian::L16, buf, samples); // doesn't work in clang
+		//std::vector<Endian::L16> buf(buffer, buffer + samples); // this needs c++11
+		std::vector<Endian::L16> buf(samples);
+		for (unsigned i = 0; i < samples; ++i) {
+			buf[i] = buffer[i];
+		}
+		file->write(buf.data(), size);
+	} else {
+		file->write(buffer, size);
+	}
+	bytes += size;
+}
+
+void Wav16Writer::write(const int* buffer, unsigned samples, int amp)
+{
+	//VLA(Endian::L16, buf, samples); // doesn't work in clang
+	std::vector<Endian::L16> buf(samples);
+	for (unsigned i = 0; i < samples; ++i) {
+		buf[i] = Math::clipIntToShort(buffer[i] * amp);
+	}
+	unsigned size = sizeof(short) * samples;
+	file->write(buf.data(), size);
+	bytes += size;
+}
+
+void Wav16Writer::writeSilence(unsigned samples)
+{
+	VLA(short, buf, samples);
+	unsigned size = sizeof(short) * samples;
+	memset(buf, 0, size);
+	file->write(buf, size);
+	bytes += size;
+}
+
+} // namespace openmsx

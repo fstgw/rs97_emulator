@@ -1,0 +1,5 @@
+menu_tfe.o: menu_tfe.c ../../../src/vice.h ../../../src/config.h
+
+../../../src/vice.h:
+
+../../../src/config.h:

@@ -1,0 +1,85 @@
+============================
+ABUSIMBEL PROFANATION DELUXE
+============================
+
+Hola a todos..
+
+Os presento una version mejorada de este juego.
+
+Esta vez he querido ser un poco más fiel al original,
+al tiempo que se mejoran los graficos, en tamaño y calidad,
+así como el sonido y la música..
+
+Espero que disfruteis con este juego..
+
+Existen una serie de trucos:
+
+Durante la partida, teclea letra a letra y despacito: V I C T O R
+
+Una vez tecleado, te preguntara una clave
+Las claves disponibles son:
+
+    "MALIVES"    -> Vidas Infinitas
+    "MASUPER"    -> Inmunidad
+    "180174 <espacio> <nº pantalla>" -> Aparece en la pantalla indicada.
+            Luego con los cursores posicionas al Personaje y con RETURN
+	    sigues la partida, tambien pueden seguir cambiando de pantalla
+	    con Shift Izquierdo o Shift Derecho.
+
+Las teclas son:
+Cursor Izquierdo y Cursor derecho: Movimiento.
+Cursor Arriba: Salto Largo.
+Cursor Abajo: Salto Corto.
+ESC: Abortar.
+Pagina Arriba: Subir volumen.
+Pagina abajo: Bajar volumen.
+CTRL+RETURN: Pantalla completa o ventana.
+
+El juego es totalmente gratuito y los fuentes estan disponibles
+desde la web: http://www.masoftware.es
+
+
+No me hago responsable de nada, je, je, esto lo he hecho
+por divertirme y sin ningun animo de lucro..
+
+Si detectais fallos, por favor avisadme.
+
+
+Saludos a todos y mucha suerte con el juego.
+
+-------------------------------------------
+Miguel Angel Jimenez Santana (M.A Software)
+E-mail: masoftware@terra.es
+Web: http://www.masoftware.es
+-------------------------------------------
+
+
+---------------- NOTAS PARA COMPILACION
+
+He dejado 4 archivos Makefile.* para cada uno de los sistemas donde
+he compilado el codigo.
+
+Para compilar, es necesario disponer de las librerias siguientes:
+
+-lSDL -lSDL_Image -ljpeg -lpng12 -lz -lSDL_gfx -lSDL_mixer -lvorbisidec 
+
+Si se dispone de ellas, la compilacion es relativamente sencilla..
+
+Para windows, he dejado el archivo Profanation.dev, que es el proyecto para compilar
+con DEVCPP, además de las librerias "dll" que hacen falta para la ejecución.
+
+Para GP2X y Wii, se usan los Makefile correspondientes, y es muy facil compilar
+si se ha instalado DEVKITPRO y DEVKITGP2X, dejo tambien los archivos de proyect
+.pnproj para compilar con estos entornos.
+
+Finalmente para Linux, simplemente usar el Makefile correspondiente.
+
+Existe un directorio Data y Data.small, realmente siempre debe llamarse Data
+pero debemos tomar el que sea adecuado. Si se compila para GP2X, hay que usar
+el Data.small renombrandolo como "Data" y en otro caso el original "Data", la diferencia
+es que los graficos estan reescalados para una resolucion de 320x240.
+Se puede usar sobre PC tambien el SMALL usando como directiva de compilacion -DSMALL_GAME
+pero no lo aconsejo, es muy incomodo.
+
+Suerte
+M.A Software 2010.

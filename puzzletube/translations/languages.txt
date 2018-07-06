@@ -1,0 +1,8 @@
+# Possible Languages names
+--:languages
+en:English
+de:Deutsch
+fi:Suomi
+it:Italiano
+nl:Nederlands
+nb:Norsk Bokmål

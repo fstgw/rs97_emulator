@@ -1,0 +1,28 @@
+Won't fix:
+Author name must be less than 32 characters.
+
+Minor bugs:
+While a moving platform is moving (not waiting) countdown ticks only count when it is "put in" the level matrix
+Level-files are searched in a linier manner:
+    All levels are found:
+	level0.wzp
+	level1.wzp
+	level2.wzp
+    Only level0 is found:
+	level0.wzp
+	level2.wzp
+	level3.wzp
+
+Outstanding bugs:
+It's not possible to move a brick off a moving platform, you have to hold down the button for a while.
+Falling bricks should "magnet" a moving brick if it's close enough, instead of landing of it, and then sliding off.
+
+0.5creators_edition:
+Level editor
+Minor code cleanup
+
+0.5b:
+Fix silly error that made it impossible to grab bricks that were moving sideways on a platform.
+
+0.5a:
+Initial release

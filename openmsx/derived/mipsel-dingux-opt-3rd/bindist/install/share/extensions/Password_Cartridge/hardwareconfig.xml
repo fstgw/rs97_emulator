@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!-- $Id: hardwareconfig.xml 11188 2010-01-25 00:38:12Z mthuurne $ -->
+<!DOCTYPE msxconfig SYSTEM 'msxconfig2.dtd'>
+<msxconfig>
+  <info>
+    <name>Password Cartridge</name>
+    <manufacturer/>
+    <code/>
+    <description>Password Cartridge implementation</description>
+  </info>
+  <devices>
+    <PasswordCart id="Password Cartridge">
+      <io base="0x7f" num="1"/>
+      <password>0x1234</password>
+    </PasswordCart>
+  </devices>
+</msxconfig>

@@ -1,0 +1,52 @@
+// $Id: LDPixelRenderer.cc 10849 2009-11-30 15:47:53Z m9710797 $
+
+#include "LDPixelRenderer.hh"
+#include "LDRasterizer.hh"
+#include "Display.hh"
+#include "VideoSystem.hh"
+#include "EventDistributor.hh"
+#include "FinishFrameEvent.hh"
+#include "MSXMotherBoard.hh"
+#include "LaserdiscPlayer.hh"
+#include "Reactor.hh"
+
+namespace openmsx {
+
+LDPixelRenderer::LDPixelRenderer(LaserdiscPlayer& ld, Display& display)
+	: motherboard(ld.getMotherBoard())
+	, eventDistributor(motherboard.getReactor().getEventDistributor())
+	, rasterizer(display.getVideoSystem().createLDRasterizer(ld))
+{
+}
+
+LDPixelRenderer::~LDPixelRenderer()
+{
+}
+
+void LDPixelRenderer::frameStart(EmuTime::param time)
+{
+	rasterizer->frameStart(time);
+}
+
+bool LDPixelRenderer::isActive() const
+{
+	return motherboard.isActive();
+}
+
+void LDPixelRenderer::frameEnd()
+{
+	eventDistributor.distributeEvent(
+		new FinishFrameEvent(VIDEO_LASERDISC, !isActive()));
+}
+
+void LDPixelRenderer::drawBlank(int r, int g, int b )
+{
+	rasterizer->drawBlank(r, g, b);
+}
+
+RawFrame* LDPixelRenderer::getRawFrame()
+{
+	return rasterizer->getRawFrame();
+}
+
+} // namespace openmsx

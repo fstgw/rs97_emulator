@@ -1,0 +1,64 @@
+# ketm - level01
+#
+# command syntax:
+# column 1: game-time in 1/10 sec.
+# column 2: command (T=text, E=enemy)
+# column 3: parameter 1 (T: text to display, E: enemy name)
+# column 4: parameter 2 (T: y-pos, E: difficultiy)
+#
+# columns are separated with pipe ('|')
+# comment start with '#'
+#
+# a BOSS must be the last enemy, after the destruction of BOSSXX
+# the next level is loaded.
+#
+################################################################################
+
+
+# Background
+00000|B||0
+
+# Introtext
+00010|T|GET READY|80
+00030|T|FOR LEVEL 01|130
+00050|T|WARM UP|180
+
+# Lets go!
+00080|E|GREETER|0
+00130|E|GREETER|0
+00180|E|GREETER|0
+00230|E|GREETER|0
+00280|E|GREETER|0
+00330|E|GREETER|1
+00380|E|GREETER|1
+00450|E|CRUSHER|0
+00510|E|ZATAK|0
+00560|E|ZATAK|0
+00560|E|MINE|0
+00590|E|MINE|0
+00630|E|CURVER|0
+00690|E|CURVER|1
+00740|E|RWINGX|0
+00800|E|GREETER|1
+00850|E|GREETER|1
+00900|E|GREETER|1
+00950|E|GREETER|1
+01000|E|CUBE|0
+01060|E|XEV|0
+01090|E|XEV|0
+01120|E|XEV|0
+01150|E|XEV|0
+01200|E|MING|0
+01250|E|MING|0
+01300|E|MING|0
+01350|E|MING|1
+01400|E|MING|1
+01450|E|MING|1
+01500|E|EYEFO|0
+01580|E|EYEFO|0
+01650|E|PROBALL|0
+01710|E|PROBALL|0
+
+# The Boss...
+01800|T|ATTENTION, BOSS|100
+01840|E|BOSS01|0

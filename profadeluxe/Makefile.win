@@ -1,0 +1,127 @@
+# Project: Profanation
+# Compiler: Default GCC compiler
+# Compiler Type: MingW 3
+# Makefile created by wxDev-C++ 7.3 on 07/03/10 10:34
+
+WXLIBNAME = wxmsw28
+CPP       = g++.exe
+CC        = gcc.exe
+WINDRES   = "windres.exe"
+OBJ       = object.win/tesc_seleccion_idioma.o object.win/profanation.o object.win/TSprVerticalFlip.o object.win/TSprFlecha.o object.win/TSprGota.o object.win/TSprHorizontal.o object.win/TSprHorizontalConFlip.o object.win/TSprJohny.o object.win/TSprPelotaBota.o object.win/TSprRoca.o object.win/TSprSeleccion.o object.win/TSprTesoro.o object.win/TSprVertical.o object.win/ma_core.o object.win/tmabitmap.o object.win/tmafont.o object.win/tmagame.o object.win/tmaimagebank.o object.win/tmaogg.o object.win/tmasound.o object.win/tmasprite.o object.win/tmafilereader.o object.win/tmamessage.o object.win/tmarandom.o object.win/tmarectangle.o object.win/tmastring.o object.win/tmavector.o object.win/mapas.o object.win/tesc_juego.o object.win/TSpriteEnemigo.o object.win/tmainputcontroller.o object.win/Profanation_private.res
+LINKOBJ   = "object.win/tesc_seleccion_idioma.o" "object.win/profanation.o" "object.win/TSprVerticalFlip.o" "object.win/TSprFlecha.o" "object.win/TSprGota.o" "object.win/TSprHorizontal.o" "object.win/TSprHorizontalConFlip.o" "object.win/TSprJohny.o" "object.win/TSprPelotaBota.o" "object.win/TSprRoca.o" "object.win/TSprSeleccion.o" "object.win/TSprTesoro.o" "object.win/TSprVertical.o" "object.win/ma_core.o" "object.win/tmabitmap.o" "object.win/tmafont.o" "object.win/tmagame.o" "object.win/tmaimagebank.o" "object.win/tmaogg.o" "object.win/tmasound.o" "object.win/tmasprite.o" "object.win/tmafilereader.o" "object.win/tmamessage.o" "object.win/tmarandom.o" "object.win/tmarectangle.o" "object.win/tmastring.o" "object.win/tmavector.o" "object.win/mapas.o" "object.win/tesc_juego.o" "object.win/TSpriteEnemigo.o" "object.win/tmainputcontroller.o" object.win/Profanation_private.res
+LIBS      = -L"F:/Dev-Cpp/Lib" -lmingw32 -mwindows -lSDLmain -lSDL -lSDL_Image -lSDL_gfx -lSDL_mixer  -s 
+INCS      = -I"F:/Dev-Cpp/Include"
+CXXINCS   = -I"F:/Dev-Cpp/lib/gcc/mingw32/3.4.5/include" -I"F:/Dev-Cpp/include/c++/3.4.5/backward" -I"F:/Dev-Cpp/include/c++/3.4.5/mingw32" -I"F:/Dev-Cpp/include/c++/3.4.5" -I"F:/Dev-Cpp/include" -I"F:/Dev-Cpp/" -I"F:/Dev-Cpp/include/3rdparty/wx/plotctrl" -I"F:/Dev-Cpp/include/3rdparty/wx/sheet" -I"F:/Dev-Cpp/include/3rdparty/wx/treemultictrl" -I"F:/Dev-Cpp/include/3rdparty/wx/things" -I"F:/Dev-Cpp/include/3rdparty/wx" -I"F:/Dev-Cpp/include/3rdparty" -I"F:/Dev-Cpp/include/common/wx/msw" -I"F:/Dev-Cpp/include/common/wx/generic" -I"F:/Dev-Cpp/include/common/wx/html" -I"F:/Dev-Cpp/include/common/wx/protocol" -I"F:/Dev-Cpp/include/common/wx/xml" -I"F:/Dev-Cpp/include/common/wx/xrc" -I"F:/Dev-Cpp/include/common/wx" -I"F:/Dev-Cpp/include/common"
+RCINCS    = --include-dir "F:/Dev-Cpp/include/common"
+BIN       = Profanation.exe
+DEFINES   = 
+CXXFLAGS  = $(CXXINCS) $(DEFINES)   -O3
+CFLAGS    = $(INCS) $(DEFINES)   -O3
+GPROF     = gprof.exe
+RM        = rm -f
+LINK      = g++.exe
+
+.PHONY: all all-before all-after clean clean-custom
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	$(RM) $(LINKOBJ) "$(BIN)"
+
+$(BIN): $(OBJ)
+	$(LINK) $(LINKOBJ) -o "$(BIN)" $(LIBS) 
+
+object.win/tesc_seleccion_idioma.o: $(GLOBALDEPS) src/escenas/tesc_seleccion_idioma.cpp src/escenas/escenarios.h src/main/profanation.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/maps/mapas.h src/ma-sdl/ma_classes.h src/ma-sdl/utils/utils.h src/sprites/sprites.h src/ma-sdl/ma_classes.h src/ma-sdl/maps/mapas.h
+	$(CPP) -c src/escenas/tesc_seleccion_idioma.cpp -o object.win/tesc_seleccion_idioma.o $(CXXFLAGS)
+
+object.win/profanation.o: $(GLOBALDEPS) src/main/profanation.cpp src/main/profanation.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/maps/mapas.h src/ma-sdl/ma_classes.h src/ma-sdl/utils/utils.h src/escenas/escenarios.h src/main/profanation.h src/sprites/sprites.h src/ma-sdl/ma_classes.h src/ma-sdl/maps/mapas.h
+	$(CPP) -c src/main/profanation.cpp -o object.win/profanation.o $(CXXFLAGS)
+
+object.win/TSprVerticalFlip.o: $(GLOBALDEPS) src/sprites/TSprVerticalFlip.cpp src/sprites/sprites.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/maps/mapas.h src/ma-sdl/ma_classes.h src/ma-sdl/utils/utils.h src/escenas/escenarios.h src/main/profanation.h src/ma-sdl/ma_classes.h src/ma-sdl/maps/mapas.h src/sprites/sprites.h
+	$(CPP) -c src/sprites/TSprVerticalFlip.cpp -o object.win/TSprVerticalFlip.o $(CXXFLAGS)
+
+object.win/TSprFlecha.o: $(GLOBALDEPS) src/sprites/TSprFlecha.cpp src/sprites/sprites.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/maps/mapas.h src/ma-sdl/ma_classes.h src/ma-sdl/utils/utils.h src/escenas/escenarios.h src/main/profanation.h src/ma-sdl/ma_classes.h src/ma-sdl/maps/mapas.h src/sprites/sprites.h
+	$(CPP) -c src/sprites/TSprFlecha.cpp -o object.win/TSprFlecha.o $(CXXFLAGS)
+
+object.win/TSprGota.o: $(GLOBALDEPS) src/sprites/TSprGota.cpp src/sprites/sprites.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/maps/mapas.h src/ma-sdl/ma_classes.h src/ma-sdl/utils/utils.h src/escenas/escenarios.h src/main/profanation.h src/ma-sdl/ma_classes.h src/ma-sdl/maps/mapas.h src/sprites/sprites.h
+	$(CPP) -c src/sprites/TSprGota.cpp -o object.win/TSprGota.o $(CXXFLAGS)
+
+object.win/TSprHorizontal.o: $(GLOBALDEPS) src/sprites/TSprHorizontal.cpp src/sprites/sprites.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/maps/mapas.h src/ma-sdl/ma_classes.h src/ma-sdl/utils/utils.h src/escenas/escenarios.h src/main/profanation.h src/ma-sdl/ma_classes.h src/ma-sdl/maps/mapas.h src/sprites/sprites.h
+	$(CPP) -c src/sprites/TSprHorizontal.cpp -o object.win/TSprHorizontal.o $(CXXFLAGS)
+
+object.win/TSprHorizontalConFlip.o: $(GLOBALDEPS) src/sprites/TSprHorizontalConFlip.cpp src/sprites/sprites.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/maps/mapas.h src/ma-sdl/ma_classes.h src/ma-sdl/utils/utils.h src/escenas/escenarios.h src/main/profanation.h src/ma-sdl/ma_classes.h src/ma-sdl/maps/mapas.h src/sprites/sprites.h
+	$(CPP) -c src/sprites/TSprHorizontalConFlip.cpp -o object.win/TSprHorizontalConFlip.o $(CXXFLAGS)
+
+object.win/TSprJohny.o: $(GLOBALDEPS) src/sprites/TSprJohny.cpp src/sprites/sprites.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/maps/mapas.h src/ma-sdl/ma_classes.h src/ma-sdl/utils/utils.h src/escenas/escenarios.h src/main/profanation.h src/ma-sdl/ma_classes.h src/ma-sdl/maps/mapas.h src/sprites/sprites.h
+	$(CPP) -c src/sprites/TSprJohny.cpp -o object.win/TSprJohny.o $(CXXFLAGS)
+
+object.win/TSprPelotaBota.o: $(GLOBALDEPS) src/sprites/TSprPelotaBota.cpp src/sprites/sprites.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/maps/mapas.h src/ma-sdl/ma_classes.h src/ma-sdl/utils/utils.h src/escenas/escenarios.h src/main/profanation.h src/ma-sdl/ma_classes.h src/ma-sdl/maps/mapas.h src/sprites/sprites.h
+	$(CPP) -c src/sprites/TSprPelotaBota.cpp -o object.win/TSprPelotaBota.o $(CXXFLAGS)
+
+object.win/TSprRoca.o: $(GLOBALDEPS) src/sprites/TSprRoca.cpp src/sprites/sprites.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/maps/mapas.h src/ma-sdl/ma_classes.h src/ma-sdl/utils/utils.h src/escenas/escenarios.h src/main/profanation.h src/ma-sdl/ma_classes.h src/ma-sdl/maps/mapas.h src/sprites/sprites.h
+	$(CPP) -c src/sprites/TSprRoca.cpp -o object.win/TSprRoca.o $(CXXFLAGS)
+
+object.win/TSprSeleccion.o: $(GLOBALDEPS) src/sprites/TSprSeleccion.cpp src/sprites/sprites.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/maps/mapas.h src/ma-sdl/ma_classes.h src/ma-sdl/utils/utils.h src/escenas/escenarios.h src/main/profanation.h src/ma-sdl/ma_classes.h src/ma-sdl/maps/mapas.h src/sprites/sprites.h
+	$(CPP) -c src/sprites/TSprSeleccion.cpp -o object.win/TSprSeleccion.o $(CXXFLAGS)
+
+object.win/TSprTesoro.o: $(GLOBALDEPS) src/sprites/TSprTesoro.cpp src/sprites/sprites.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/maps/mapas.h src/ma-sdl/ma_classes.h src/ma-sdl/utils/utils.h src/escenas/escenarios.h src/main/profanation.h src/ma-sdl/ma_classes.h src/ma-sdl/maps/mapas.h src/sprites/sprites.h
+	$(CPP) -c src/sprites/TSprTesoro.cpp -o object.win/TSprTesoro.o $(CXXFLAGS)
+
+object.win/TSprVertical.o: $(GLOBALDEPS) src/sprites/TSprVertical.cpp src/sprites/sprites.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/maps/mapas.h src/ma-sdl/ma_classes.h src/ma-sdl/utils/utils.h src/escenas/escenarios.h src/main/profanation.h src/ma-sdl/ma_classes.h src/ma-sdl/maps/mapas.h src/sprites/sprites.h
+	$(CPP) -c src/sprites/TSprVertical.cpp -o object.win/TSprVertical.o $(CXXFLAGS)
+
+object.win/ma_core.o: $(GLOBALDEPS) src/ma-sdl/ma_core.cpp src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h
+	$(CPP) -c src/ma-sdl/ma_core.cpp -o object.win/ma_core.o $(CXXFLAGS)
+
+object.win/tmabitmap.o: $(GLOBALDEPS) src/ma-sdl/tmabitmap.cpp src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h
+	$(CPP) -c src/ma-sdl/tmabitmap.cpp -o object.win/tmabitmap.o $(CXXFLAGS)
+
+object.win/tmafont.o: $(GLOBALDEPS) src/ma-sdl/tmafont.cpp src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h
+	$(CPP) -c src/ma-sdl/tmafont.cpp -o object.win/tmafont.o $(CXXFLAGS)
+
+object.win/tmagame.o: $(GLOBALDEPS) src/ma-sdl/tmagame.cpp src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h
+	$(CPP) -c src/ma-sdl/tmagame.cpp -o object.win/tmagame.o $(CXXFLAGS)
+
+object.win/tmaimagebank.o: $(GLOBALDEPS) src/ma-sdl/tmaimagebank.cpp src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h
+	$(CPP) -c src/ma-sdl/tmaimagebank.cpp -o object.win/tmaimagebank.o $(CXXFLAGS)
+
+object.win/tmaogg.o: $(GLOBALDEPS) src/ma-sdl/tmaogg.cpp src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h
+	$(CPP) -c src/ma-sdl/tmaogg.cpp -o object.win/tmaogg.o $(CXXFLAGS)
+
+object.win/tmasound.o: $(GLOBALDEPS) src/ma-sdl/tmasound.cpp src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h
+	$(CPP) -c src/ma-sdl/tmasound.cpp -o object.win/tmasound.o $(CXXFLAGS)
+
+object.win/tmasprite.o: $(GLOBALDEPS) src/ma-sdl/tmasprite.cpp src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h
+	$(CPP) -c src/ma-sdl/tmasprite.cpp -o object.win/tmasprite.o $(CXXFLAGS)
+
+object.win/tmafilereader.o: $(GLOBALDEPS) src/ma-sdl/utils/tmafilereader.cpp src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h
+	$(CPP) -c src/ma-sdl/utils/tmafilereader.cpp -o object.win/tmafilereader.o $(CXXFLAGS)
+
+object.win/tmamessage.o: $(GLOBALDEPS) src/ma-sdl/utils/tmamessage.cpp src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h
+	$(CPP) -c src/ma-sdl/utils/tmamessage.cpp -o object.win/tmamessage.o $(CXXFLAGS)
+
+object.win/tmarandom.o: $(GLOBALDEPS) src/ma-sdl/utils/tmarandom.cpp src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h
+	$(CPP) -c src/ma-sdl/utils/tmarandom.cpp -o object.win/tmarandom.o $(CXXFLAGS)
+
+object.win/tmarectangle.o: $(GLOBALDEPS) src/ma-sdl/utils/tmarectangle.cpp src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h
+	$(CPP) -c src/ma-sdl/utils/tmarectangle.cpp -o object.win/tmarectangle.o $(CXXFLAGS)
+
+object.win/tmastring.o: $(GLOBALDEPS) src/ma-sdl/utils/tmastring.cpp src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h
+	$(CPP) -c src/ma-sdl/utils/tmastring.cpp -o object.win/tmastring.o $(CXXFLAGS)
+
+object.win/tmavector.o: $(GLOBALDEPS) src/ma-sdl/utils/tmavector.cpp src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h
+	$(CPP) -c src/ma-sdl/utils/tmavector.cpp -o object.win/tmavector.o $(CXXFLAGS)
+
+object.win/mapas.o: $(GLOBALDEPS) src/ma-sdl/maps/mapas.cpp src/ma-sdl/maps/mapas.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h
+	$(CPP) -c src/ma-sdl/maps/mapas.cpp -o object.win/mapas.o $(CXXFLAGS)
+
+object.win/tesc_juego.o: $(GLOBALDEPS) src/escenas/tesc_juego.cpp src/escenas/escenarios.h src/main/profanation.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/maps/mapas.h src/ma-sdl/ma_classes.h src/ma-sdl/utils/utils.h src/sprites/sprites.h src/ma-sdl/ma_classes.h src/ma-sdl/maps/mapas.h src/escenas/idioma.h src/escenas/enemigos.h
+	$(CPP) -c src/escenas/tesc_juego.cpp -o object.win/tesc_juego.o $(CXXFLAGS)
+
+object.win/TSpriteEnemigo.o: $(GLOBALDEPS) src/sprites/TSpriteEnemigo.cpp src/sprites/sprites.h src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h src/ma-sdl/maps/mapas.h src/ma-sdl/ma_classes.h src/ma-sdl/utils/utils.h src/escenas/escenarios.h src/main/profanation.h src/ma-sdl/ma_classes.h src/ma-sdl/maps/mapas.h src/sprites/sprites.h
+	$(CPP) -c src/sprites/TSpriteEnemigo.cpp -o object.win/TSpriteEnemigo.o $(CXXFLAGS)
+
+object.win/tmainputcontroller.o: $(GLOBALDEPS) src/ma-sdl/tmainputcontroller.cpp src/ma-sdl/ma_classes.h src/ma-sdl/ma_object.h src/ma-sdl/utils/utils.h src/ma-sdl/ma_object.h
+	$(CPP) -c src/ma-sdl/tmainputcontroller.cpp -o object.win/tmainputcontroller.o $(CXXFLAGS)
+
+object.win/Profanation_private.res: object.win/Profanation_private.rc 
+	$(WINDRES) --input-format=rc -o object.win/Profanation_private.res $(RCINCS) object.win/PROFAN~1.RC -O coff

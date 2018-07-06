@@ -1,0 +1,41 @@
+CC 		= mipsel-linux-gcc
+
+CFLAGS 		= -Os -fomit-frame-pointer -fdata-sections -ffunction-sections -mips32r2 -std=gnu89 -Wall -I./main/emu -I./main/sdl -I./main/headers ${DEFINES} 
+DEFINES 	= -DGCW -DBETTER_ACCURACY
+LDFLAGS 	= -Wl,--as-needed -Wl,--gc-sections -flto -lSDL -s
+OUT	 	= oswan
+
+SDL 		= main/sdl/main.c main/sdl/menu.c main/sdl/input.c main/sdl/game_input.c main/gcw0/drawing.c main/sdl/gui_drawing.c
+CPU 		= main/emu/cpu/nec.c
+CORE 		= main/emu/WS.c main/emu/WSFileio.c main/emu/WSRender.c
+
+# Sound support
+CORE 	   += main/emu/WSApu.c 
+DEFINES    += -DSOUND_ON -DSOUND_EMULATION
+
+# Enable this to support zip files
+# Here, Support for zips is enabled
+#CFLAGS 	   +=-DZIP_SUPPORT -I./minizip
+#LDFLAGS	   +=-lz
+#THIRD_PARTY = minizip/unzip.o minizip/ioapi.o
+
+SOURCES 	= ${SDL} ${CPU} ${CORE} 
+SOURCES	   += ${THIRD_PARTY}
+
+OBJS 		= ${SOURCES:.c=.o}
+
+all		: ${OUT} pack
+
+pack	:
+		mipsel-linux-strip oswan
+		mv oswan ./opk/oswan
+		mksquashfs ./opk oswan.opk -all-root -noappend -no-exports -no-xattrs
+		mv oswan.opk ./release/oswan.opk
+
+${OUT}	: ${OBJS}
+		${CC} -o ${OUT} ${SOURCES} ${CFLAGS} ${LDFLAGS}
+	
+clean	:
+		rm ${OBJS}
+		rm ${OUT}
+		rm ./opk/${OUT}

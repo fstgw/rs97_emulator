@@ -1,0 +1,5 @@
+menu_network.o: menu_network.c ../../../src/vice.h ../../../src/config.h
+
+../../../src/vice.h:
+
+../../../src/config.h:

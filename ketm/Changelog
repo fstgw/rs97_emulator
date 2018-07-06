@@ -1,0 +1,172 @@
+20010518: v0.0.1
+	* first (in-?) official release (pre-alpha)
+
+20010521:
+	* added preliminary joystick support (start game with option -j)
+	* changed menu-select-key from RETURN to SPACE to simplify joystick
+	  usage
+
+20010522:
+	* small bugfix in command-line-option handling
+	* set SDL_FULLSCREEN and SDL_DOUBLEBUF mutual exclusive to get better
+	  results in DGA mode
+	* new weapon for player: killray
+
+20010525:
+	* small changes in intro (no fadeout anymore)
+	* implemented time-out in menu
+	* got rid of "defines.h"
+	* start of implemtation of the hi-score list (display done)
+
+20010528:
+	* added fullscreen/window toggle switch in option menu
+	* small bugfix in font.h
+	* finished hi-score display
+	* start of hi-score entry code
+
+20010529:
+	* finished hi-score entry code
+	* implemented a cheap-alpha-blit-routine (dont know if i should use it)
+	* added simple ketm logo fadein to game-intro
+	* display actual hiscore in the game-status line
+	* small bugfix in player.c (allow no keycontrol if player is dead)
+
+20010529:
+	* released version 0.0.2
+
+20010530:
+	* small bugfixes (SDL_FillRect), thanks to Charles Vidal for the bugreport
+	* Makefile update, should compile with FreeBSD now. (Thanks to Tsuyoshi
+	  Iguchi for the patch)
+
+20010606:
+	* bugfix in getpixel/putpixel, should work correct with 24bit screen now
+	* quit hiscore-list with anykey (back to menu)
+	* changed default-bitdepth to 16
+	* changed behaviour of killray (dont disappears when hit an enemy)
+
+20010607:
+	* added new method of frameskip/framewait to guarantee same gamespeed
+	  on all machines (Thank you Benjamin Niemann for your suggestion)
+	* added fps-display (activate it in option menu)
+	* another bugfix: added type to sprite_work to prevent moving enemys
+	  when game is paused
+	* changed the menu effect a bit
+	* removed option "-8" (force 8-bit screen), 'cause it doesn't make
+	  sense
+
+20010608:
+	* new enemy (rwingx)
+
+20010611:
+	* new enemy (boss)
+
+20010612:
+	* extracted score display to new file score.c
+	* corrected makefile
+	* new, povray-rendered bonus-items
+	* added bonus "s" (increase player speed)
+	
+20010613:
+	* new gameover-sequence
+	* added a visual feedback when you get a bonusitem
+	* removed bug in particle system which made particles only fly
+	  in north direction when (cross-)compiled with mingw32.
+
+20010615:
+	* new enemy (cir)
+
+20010618:
+	* new player sprite (thanks el fabio)
+
+20010619:
+	* added pixelbased-particlesystem (e.g. for player nozzle)
+
+20010621:
+	* released version 0.0.3
+
+20010622:
+	* corrected cloud parallax scrolling (thanks Elton Fry for your mail)
+	* got some new sprites by Fabien and:
+	* new player weapon: fireball
+	* implemented different weapon strength
+	* new enemys: badguy and protectball
+
+20010626:
+	* new enemy: plasmaball
+
+20010627:
+	* bugfix in show hiscore table
+	* player extra weapon: homing missiles
+
+20010628:
+	* added a reticule on targeted enemys
+	* implemented advanced sprite priority (256 levels)
+	* added new bonus: extra (for now you get only the homing missiles)
+	* added score and lives to player-data struct (hmmm... smells like
+	  multiplayer comming soon ;))
+
+20010704:
+	* new extra: shield
+	* some bugfixes, some code cleanup
+
+20010705:
+	* mmalloc(): starts a GC if malloc() returns NULL
+	* released version 0.0.4
+
+20010708:
+	* some bugfixes
+
+20010709:
+	* some changes on boss01
+	* some changes in menu
+
+20010710:
+	* added "sprite controller". now its possible to "group" sprites.
+	* reworked bonus stuff a bit
+
+20010712:
+	* new extra weapon: homing laser
+	* small bugfix in errorhandler that caused a segfault on some systems
+	  (e.g. PPCLinux)
+
+20010716:
+	* new bonus item: energy/health
+
+20010718:
+	* bugfix in sprite/col.-detect
+	* added boss02
+
+20010719:
+	* some more work on boss02
+
+20010822:
+	* fixed the fps display (display the avg. fps of 50 frames now)
+	* some work on bg display, moved all the bg-related stuff to bg.[c|h]
+	* started work on version 0.0.6 (0.0.5 was never released to
+	  the public)
+
+20010904:
+	* font changes
+	* new display format (portait, 320x480) to make the game more
+	  "shooter-like" and as a bonus it runs faster on slow machines
+	  due to the smaller bitmap size
+	* optimized the behaviour of the hiscore-entry routine a bit
+
+20010905:
+	* some bugfixes
+	* new enemy
+
+20010908:
+	* finetuning on some enemys
+	* some changes int the framewait code
+	* new enemy (curver)
+
+20010910:
+	* some changes on boss01
+
+20010911:
+	* implemented extern level-dat files
+
+20010913:
+	* released version 0.0.6

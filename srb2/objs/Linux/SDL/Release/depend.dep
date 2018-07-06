@@ -1,0 +1,583 @@
+../objs/Linux/SDL/Release/am_map.o: am_map.c g_game.h doomdef.h doomtype.h g_state.h m_swap.h \
+ doomstat.h doomdata.h d_player.h p_pspr.h m_fixed.h tables.h info.h \
+ d_think.h sounds.h p_mobj.h d_ticcmd.h d_clisrv.h d_netcmd.h command.h \
+ dstrings.h d_event.h am_map.h g_input.h keys.h p_local.h m_bbox.h \
+ p_tick.h r_defs.h screen.h p_polyobj.h m_dllist.h p_maputl.h p_spec.h \
+ v_video.h i_video.h r_state.h r_data.h r_draw.h
+../objs/Linux/SDL/Release/command.o: command.c doomdef.h doomtype.h g_state.h m_swap.h doomstat.h \
+ doomdata.h d_player.h p_pspr.h m_fixed.h tables.h info.h d_think.h \
+ sounds.h p_mobj.h d_ticcmd.h d_clisrv.h d_netcmd.h command.h dstrings.h \
+ console.h d_event.h z_zone.h m_menu.h m_misc.h w_wad.h m_argv.h \
+ byteptr.h p_saveg.h g_game.h hu_stuff.h r_defs.h screen.h p_polyobj.h \
+ m_dllist.h
+../objs/Linux/SDL/Release/comptime.o: comptime.c comptime.h
+../objs/Linux/SDL/Release/console.o: console.c doomdef.h doomtype.h g_state.h m_swap.h console.h \
+ d_event.h command.h dstrings.h g_game.h doomstat.h doomdata.h d_player.h \
+ p_pspr.h m_fixed.h tables.h info.h d_think.h sounds.h p_mobj.h \
+ d_ticcmd.h d_clisrv.h d_netcmd.h g_input.h keys.h hu_stuff.h w_wad.h \
+ r_defs.h screen.h p_polyobj.h m_dllist.h st_stuff.h s_sound.h v_video.h \
+ i_video.h z_zone.h i_system.h d_main.h m_menu.h
+../objs/Linux/SDL/Release/d_clisrv.o: d_clisrv.c i_net.h doomdef.h doomtype.h g_state.h m_swap.h \
+ command.h dstrings.h i_system.h d_ticcmd.h m_fixed.h d_event.h i_video.h \
+ d_net.h d_main.h w_wad.h g_game.h doomstat.h doomdata.h d_player.h \
+ p_pspr.h tables.h info.h d_think.h sounds.h p_mobj.h d_clisrv.h \
+ d_netcmd.h hu_stuff.h r_defs.h screen.h p_polyobj.h m_dllist.h keys.h \
+ m_menu.h console.h d_netfil.h byteptr.h p_saveg.h z_zone.h p_local.h \
+ m_bbox.h p_tick.h p_maputl.h p_spec.h m_misc.h am_map.h m_random.h \
+ mserv.h y_inter.h r_local.h r_main.h r_data.h r_state.h r_bsp.h r_segs.h \
+ r_plane.h r_sky.h r_things.h r_draw.h m_argv.h p_setup.h
+../objs/Linux/SDL/Release/d_main.o: d_main.c doomdef.h doomtype.h g_state.h m_swap.h am_map.h \
+ d_event.h console.h command.h dstrings.h d_net.h f_finale.h g_game.h \
+ doomstat.h doomdata.h d_player.h p_pspr.h m_fixed.h tables.h info.h \
+ d_think.h sounds.h p_mobj.h d_ticcmd.h d_clisrv.h d_netcmd.h hu_stuff.h \
+ w_wad.h r_defs.h screen.h p_polyobj.h m_dllist.h i_sound.h i_system.h \
+ i_video.h m_argv.h m_menu.h m_misc.h p_setup.h p_saveg.h r_main.h \
+ r_data.h r_state.h r_local.h m_bbox.h r_bsp.h r_segs.h r_plane.h r_sky.h \
+ r_things.h r_draw.h s_sound.h st_stuff.h v_video.h z_zone.h d_main.h \
+ d_netfil.h m_cheat.h y_inter.h p_local.h p_tick.h p_maputl.h p_spec.h \
+ mserv.h
+../objs/Linux/SDL/Release/d_net.o: d_net.c doomdef.h doomtype.h g_state.h m_swap.h dstrings.h \
+ g_game.h doomstat.h doomdata.h d_player.h p_pspr.h m_fixed.h tables.h \
+ info.h d_think.h sounds.h p_mobj.h d_ticcmd.h d_clisrv.h d_netcmd.h \
+ command.h d_event.h i_net.h i_system.h m_argv.h d_net.h w_wad.h \
+ d_netfil.h z_zone.h i_tcp.h
+../objs/Linux/SDL/Release/d_netcmd.o: d_netcmd.c doomdef.h doomtype.h g_state.h m_swap.h console.h \
+ d_event.h command.h dstrings.h i_system.h d_ticcmd.h m_fixed.h g_game.h \
+ doomstat.h doomdata.h d_player.h p_pspr.h tables.h info.h d_think.h \
+ sounds.h p_mobj.h d_clisrv.h d_netcmd.h hu_stuff.h w_wad.h r_defs.h \
+ screen.h p_polyobj.h m_dllist.h g_input.h keys.h m_menu.h r_local.h \
+ m_bbox.h r_main.h r_data.h r_state.h r_bsp.h r_segs.h r_plane.h r_sky.h \
+ r_things.h r_draw.h p_local.h p_tick.h p_maputl.h p_spec.h p_setup.h \
+ s_sound.h m_misc.h am_map.h byteptr.h d_netfil.h m_cheat.h v_video.h \
+ d_main.h m_random.h f_finale.h mserv.h md5.h z_zone.h
+../objs/Linux/SDL/Release/d_netfil.o: d_netfil.c doomdef.h doomtype.h g_state.h m_swap.h doomstat.h \
+ doomdata.h d_player.h p_pspr.h m_fixed.h tables.h info.h d_think.h \
+ sounds.h p_mobj.h d_ticcmd.h d_clisrv.h d_netcmd.h command.h dstrings.h \
+ d_main.h d_event.h w_wad.h g_game.h i_net.h i_system.h m_argv.h d_net.h \
+ d_netfil.h z_zone.h byteptr.h p_setup.h r_defs.h screen.h p_polyobj.h \
+ m_dllist.h m_misc.h m_menu.h md5.h filesrch.h v_video.h
+../objs/Linux/SDL/Release/dehacked.o: dehacked.c doomdef.h doomtype.h g_state.h m_swap.h g_game.h \
+ doomstat.h doomdata.h d_player.h p_pspr.h m_fixed.h tables.h info.h \
+ d_think.h sounds.h p_mobj.h d_ticcmd.h d_clisrv.h d_netcmd.h command.h \
+ dstrings.h d_event.h m_argv.h z_zone.h w_wad.h m_menu.h m_misc.h \
+ f_finale.h dehacked.h st_stuff.h r_defs.h screen.h p_polyobj.h \
+ m_dllist.h i_system.h
+../objs/Linux/SDL/Release/dstrings.o: dstrings.c doomdef.h doomtype.h g_state.h m_swap.h dstrings.h
+../objs/Linux/SDL/Release/f_finale.o: f_finale.c doomdef.h doomtype.h g_state.h m_swap.h doomstat.h \
+ doomdata.h d_player.h p_pspr.h m_fixed.h tables.h info.h d_think.h \
+ sounds.h p_mobj.h d_ticcmd.h d_clisrv.h d_netcmd.h command.h dstrings.h \
+ am_map.h d_event.h d_main.h w_wad.h f_finale.h g_game.h hu_stuff.h \
+ r_defs.h screen.h p_polyobj.h m_dllist.h r_local.h m_bbox.h r_main.h \
+ r_data.h r_state.h r_bsp.h r_segs.h r_plane.h r_sky.h r_things.h \
+ r_draw.h s_sound.h i_video.h v_video.h z_zone.h i_system.h m_menu.h \
+ dehacked.h g_input.h keys.h console.h m_random.h y_inter.h
+../objs/Linux/SDL/Release/f_wipe.o: f_wipe.c i_video.h doomtype.h v_video.h doomdef.h g_state.h \
+ m_swap.h r_defs.h m_fixed.h d_think.h p_mobj.h tables.h doomdata.h \
+ info.h sounds.h screen.h command.h dstrings.h p_polyobj.h m_dllist.h \
+ r_draw.h p_pspr.h i_system.h d_ticcmd.h d_event.h m_menu.h f_finale.h
+../objs/Linux/SDL/Release/filesrch.o: filesrch.c filesrch.h doomdef.h doomtype.h g_state.h m_swap.h \
+ d_netfil.h w_wad.h m_misc.h
+../objs/Linux/SDL/Release/g_game.o: g_game.c doomdef.h doomtype.h g_state.h m_swap.h console.h \
+ d_event.h command.h dstrings.h d_main.h w_wad.h f_finale.h p_setup.h \
+ doomdata.h r_defs.h m_fixed.h d_think.h p_mobj.h tables.h info.h \
+ sounds.h screen.h p_polyobj.h m_dllist.h p_saveg.h i_system.h d_ticcmd.h \
+ am_map.h m_random.h p_local.h d_player.h p_pspr.h m_bbox.h p_tick.h \
+ p_maputl.h p_spec.h r_draw.h r_main.h r_data.h r_state.h s_sound.h \
+ g_game.h doomstat.h d_clisrv.h d_netcmd.h m_cheat.h m_misc.h m_menu.h \
+ m_argv.h hu_stuff.h st_stuff.h z_zone.h i_video.h byteptr.h i_joy.h \
+ g_input.h keys.h r_local.h r_bsp.h r_segs.h r_plane.h r_sky.h r_things.h \
+ y_inter.h v_video.h
+../objs/Linux/SDL/Release/g_input.o: g_input.c doomdef.h doomtype.h g_state.h m_swap.h doomstat.h \
+ doomdata.h d_player.h p_pspr.h m_fixed.h tables.h info.h d_think.h \
+ sounds.h p_mobj.h d_ticcmd.h d_clisrv.h d_netcmd.h command.h dstrings.h \
+ g_input.h d_event.h keys.h hu_stuff.h w_wad.h r_defs.h screen.h \
+ p_polyobj.h m_dllist.h d_net.h console.h
+../objs/Linux/SDL/Release/hu_stuff.o: hu_stuff.c doomdef.h doomtype.h g_state.h m_swap.h byteptr.h \
+ hu_stuff.h d_event.h w_wad.h r_defs.h m_fixed.h d_think.h p_mobj.h \
+ tables.h doomdata.h info.h sounds.h screen.h command.h dstrings.h \
+ p_polyobj.h m_dllist.h m_menu.h d_clisrv.h d_ticcmd.h d_netcmd.h \
+ d_player.h p_pspr.h g_game.h doomstat.h g_input.h keys.h i_video.h \
+ i_system.h st_stuff.h r_local.h m_bbox.h r_main.h r_data.h r_state.h \
+ r_bsp.h r_segs.h r_plane.h r_sky.h r_things.h r_draw.h v_video.h \
+ z_zone.h console.h am_map.h d_main.h p_tick.h
+../objs/Linux/SDL/Release/i_tcp.o: i_tcp.c doomdef.h doomtype.h g_state.h m_swap.h i_system.h \
+ d_ticcmd.h m_fixed.h d_event.h i_net.h command.h dstrings.h d_net.h \
+ i_tcp.h m_argv.h doomstat.h doomdata.h d_player.h p_pspr.h tables.h \
+ info.h d_think.h sounds.h p_mobj.h d_clisrv.h d_netcmd.h
+../objs/Linux/SDL/Release/info.o: info.c doomdef.h doomtype.h g_state.h m_swap.h doomstat.h \
+ doomdata.h d_player.h p_pspr.h m_fixed.h tables.h info.h d_think.h \
+ sounds.h p_mobj.h d_ticcmd.h d_clisrv.h d_netcmd.h command.h dstrings.h \
+ m_misc.h w_wad.h z_zone.h
+../objs/Linux/SDL/Release/lzf.o: lzf.c lzf.h m_misc.h doomtype.h w_wad.h
+../objs/Linux/SDL/Release/m_argv.o: m_argv.c doomdef.h doomtype.h g_state.h m_swap.h command.h \
+ dstrings.h m_argv.h
+../objs/Linux/SDL/Release/m_bbox.o: m_bbox.c doomtype.h m_bbox.h m_fixed.h
+../objs/Linux/SDL/Release/m_cheat.o: m_cheat.c doomdef.h doomtype.h g_state.h m_swap.h dstrings.h \
+ g_game.h doomstat.h doomdata.h d_player.h p_pspr.h m_fixed.h tables.h \
+ info.h d_think.h sounds.h p_mobj.h d_ticcmd.h d_clisrv.h d_netcmd.h \
+ command.h d_event.h s_sound.h p_local.h m_bbox.h p_tick.h r_defs.h \
+ screen.h p_polyobj.h m_dllist.h p_maputl.h p_spec.h m_cheat.h m_menu.h \
+ m_random.h hu_stuff.h w_wad.h
+../objs/Linux/SDL/Release/m_fixed.o: m_fixed.c doomdef.h doomtype.h g_state.h m_swap.h m_fixed.h
+../objs/Linux/SDL/Release/m_menu.o: m_menu.c am_map.h d_event.h doomtype.h g_state.h doomdef.h \
+ m_swap.h dstrings.h d_main.h w_wad.h d_netcmd.h command.h console.h \
+ r_local.h tables.h m_fixed.h screen.h m_bbox.h r_main.h d_player.h \
+ p_pspr.h info.h d_think.h sounds.h p_mobj.h doomdata.h d_ticcmd.h \
+ r_data.h r_defs.h p_polyobj.h m_dllist.h r_state.h r_bsp.h r_segs.h \
+ r_plane.h r_sky.h r_things.h r_draw.h hu_stuff.h g_game.h doomstat.h \
+ d_clisrv.h g_input.h keys.h m_argv.h s_sound.h i_system.h m_menu.h \
+ v_video.h i_video.h z_zone.h p_local.h p_tick.h p_maputl.h p_spec.h \
+ f_finale.h d_net.h mserv.h m_misc.h byteptr.h st_stuff.h i_sound.h
+../objs/Linux/SDL/Release/m_misc.o: m_misc.c doomdef.h doomtype.h g_state.h m_swap.h g_game.h \
+ doomstat.h doomdata.h d_player.h p_pspr.h m_fixed.h tables.h info.h \
+ d_think.h sounds.h p_mobj.h d_ticcmd.h d_clisrv.h d_netcmd.h command.h \
+ dstrings.h d_event.h m_misc.h w_wad.h hu_stuff.h r_defs.h screen.h \
+ p_polyobj.h m_dllist.h v_video.h z_zone.h g_input.h keys.h i_video.h \
+ d_main.h m_argv.h i_system.h sdl/hwsym_sdl.h
+../objs/Linux/SDL/Release/m_queue.o: m_queue.c z_zone.h doomtype.h m_queue.h m_misc.h w_wad.h
+../objs/Linux/SDL/Release/m_random.o: m_random.c doomdef.h doomtype.h g_state.h m_swap.h m_random.h
+../objs/Linux/SDL/Release/md5.o: md5.c md5.h
+../objs/Linux/SDL/Release/mserv.o: mserv.c doomstat.h doomdata.h doomtype.h doomdef.h g_state.h \
+ m_swap.h d_player.h p_pspr.h m_fixed.h tables.h info.h d_think.h \
+ sounds.h p_mobj.h d_ticcmd.h d_clisrv.h d_netcmd.h command.h dstrings.h \
+ i_net.h console.h d_event.h mserv.h d_net.h i_tcp.h i_system.h byteptr.h \
+ m_menu.h m_argv.h
+../objs/Linux/SDL/Release/p_ceilng.o: p_ceilng.c doomdef.h doomtype.h g_state.h m_swap.h p_local.h \
+ command.h dstrings.h d_player.h p_pspr.h m_fixed.h tables.h info.h \
+ d_think.h sounds.h p_mobj.h doomdata.h d_ticcmd.h m_bbox.h p_tick.h \
+ r_defs.h screen.h p_polyobj.h m_dllist.h p_maputl.h p_spec.h r_main.h \
+ r_data.h r_state.h s_sound.h z_zone.h d_netcmd.h
+../objs/Linux/SDL/Release/p_enemy.o: p_enemy.c doomdef.h doomtype.h g_state.h m_swap.h g_game.h \
+ doomstat.h doomdata.h d_player.h p_pspr.h m_fixed.h tables.h info.h \
+ d_think.h sounds.h p_mobj.h d_ticcmd.h d_clisrv.h d_netcmd.h command.h \
+ dstrings.h d_event.h p_local.h m_bbox.h p_tick.h r_defs.h screen.h \
+ p_polyobj.h m_dllist.h p_maputl.h p_spec.h r_main.h r_data.h r_state.h \
+ s_sound.h m_random.h m_misc.h w_wad.h r_things.h r_plane.h
+../objs/Linux/SDL/Release/p_fab.o: p_fab.c doomdef.h doomtype.h g_state.h m_swap.h g_game.h \
+ doomstat.h doomdata.h d_player.h p_pspr.h m_fixed.h tables.h info.h \
+ d_think.h sounds.h p_mobj.h d_ticcmd.h d_clisrv.h d_netcmd.h command.h \
+ dstrings.h d_event.h p_local.h m_bbox.h p_tick.h r_defs.h screen.h \
+ p_polyobj.h m_dllist.h p_maputl.h p_spec.h m_random.h
+../objs/Linux/SDL/Release/p_floor.o: p_floor.c doomdef.h doomtype.h g_state.h m_swap.h doomstat.h \
+ doomdata.h d_player.h p_pspr.h m_fixed.h tables.h info.h d_think.h \
+ sounds.h p_mobj.h d_ticcmd.h d_clisrv.h d_netcmd.h command.h dstrings.h \
+ p_local.h m_bbox.h p_tick.h r_defs.h screen.h p_polyobj.h m_dllist.h \
+ p_maputl.h p_spec.h r_state.h r_data.h s_sound.h z_zone.h g_game.h \
+ d_event.h r_main.h
+../objs/Linux/SDL/Release/p_inter.o: p_inter.c doomdef.h doomtype.h g_state.h m_swap.h i_system.h \
+ d_ticcmd.h m_fixed.h d_event.h am_map.h dstrings.h g_game.h doomstat.h \
+ doomdata.h d_player.h p_pspr.h tables.h info.h d_think.h sounds.h \
+ p_mobj.h d_clisrv.h d_netcmd.h command.h m_random.h p_local.h m_bbox.h \
+ p_tick.h r_defs.h screen.h p_polyobj.h m_dllist.h p_maputl.h p_spec.h \
+ s_sound.h r_main.h r_data.h r_state.h st_stuff.h hu_stuff.h w_wad.h
+../objs/Linux/SDL/Release/p_lights.o: p_lights.c doomdef.h doomtype.h g_state.h m_swap.h p_local.h \
+ command.h dstrings.h d_player.h p_pspr.h m_fixed.h tables.h info.h \
+ d_think.h sounds.h p_mobj.h doomdata.h d_ticcmd.h m_bbox.h p_tick.h \
+ r_defs.h screen.h p_polyobj.h m_dllist.h p_maputl.h p_spec.h r_state.h \
+ r_data.h z_zone.h m_random.h d_netcmd.h
+../objs/Linux/SDL/Release/p_map.o: p_map.c doomdef.h doomtype.h g_state.h m_swap.h g_game.h \
+ doomstat.h doomdata.h d_player.h p_pspr.h m_fixed.h tables.h info.h \
+ d_think.h sounds.h p_mobj.h d_ticcmd.h d_clisrv.h d_netcmd.h command.h \
+ dstrings.h d_event.h m_bbox.h m_random.h p_local.h p_tick.h r_defs.h \
+ screen.h p_polyobj.h m_dllist.h p_maputl.h p_spec.h r_state.h r_data.h \
+ r_main.h r_sky.h s_sound.h w_wad.h r_splats.h z_zone.h
+../objs/Linux/SDL/Release/p_maputl.o: p_maputl.c p_local.h command.h doomdef.h doomtype.h g_state.h \
+ m_swap.h dstrings.h d_player.h p_pspr.h m_fixed.h tables.h info.h \
+ d_think.h sounds.h p_mobj.h doomdata.h d_ticcmd.h m_bbox.h p_tick.h \
+ r_defs.h screen.h p_polyobj.h m_dllist.h p_maputl.h p_spec.h r_main.h \
+ r_data.h r_state.h z_zone.h
+../objs/Linux/SDL/Release/p_mobj.o: p_mobj.c doomdef.h doomtype.h g_state.h m_swap.h g_game.h \
+ doomstat.h doomdata.h d_player.h p_pspr.h m_fixed.h tables.h info.h \
+ d_think.h sounds.h p_mobj.h d_ticcmd.h d_clisrv.h d_netcmd.h command.h \
+ dstrings.h d_event.h g_input.h keys.h st_stuff.h r_defs.h screen.h \
+ p_polyobj.h m_dllist.h hu_stuff.h w_wad.h p_local.h m_bbox.h p_tick.h \
+ p_maputl.h p_spec.h p_setup.h r_main.h r_data.h r_state.h r_things.h \
+ r_plane.h r_sky.h r_splats.h s_sound.h z_zone.h m_random.h m_misc.h \
+ i_video.h
+../objs/Linux/SDL/Release/p_polyobj.o: p_polyobj.c z_zone.h doomtype.h doomstat.h doomdata.h \
+ doomdef.h g_state.h m_swap.h d_player.h p_pspr.h m_fixed.h tables.h \
+ info.h d_think.h sounds.h p_mobj.h d_ticcmd.h d_clisrv.h d_netcmd.h \
+ command.h dstrings.h g_game.h d_event.h m_bbox.h m_queue.h p_maputl.h \
+ r_defs.h screen.h p_polyobj.h m_dllist.h p_setup.h p_tick.h p_local.h \
+ p_spec.h r_main.h r_data.h r_state.h
+../objs/Linux/SDL/Release/p_saveg.o: p_saveg.c doomdef.h doomtype.h g_state.h m_swap.h byteptr.h \
+ d_main.h d_event.h w_wad.h doomstat.h doomdata.h d_player.h p_pspr.h \
+ m_fixed.h tables.h info.h d_think.h sounds.h p_mobj.h d_ticcmd.h \
+ d_clisrv.h d_netcmd.h command.h dstrings.h g_game.h m_random.h m_misc.h \
+ p_local.h m_bbox.h p_tick.h r_defs.h screen.h p_polyobj.h m_dllist.h \
+ p_maputl.h p_spec.h p_setup.h p_saveg.h r_things.h r_plane.h r_data.h \
+ r_state.h y_inter.h z_zone.h r_main.h r_sky.h
+../objs/Linux/SDL/Release/p_setup.o: p_setup.c doomdef.h doomtype.h g_state.h m_swap.h d_main.h \
+ d_event.h w_wad.h byteptr.h g_game.h doomstat.h doomdata.h d_player.h \
+ p_pspr.h m_fixed.h tables.h info.h d_think.h sounds.h p_mobj.h \
+ d_ticcmd.h d_clisrv.h d_netcmd.h command.h dstrings.h p_local.h m_bbox.h \
+ p_tick.h r_defs.h screen.h p_polyobj.h m_dllist.h p_maputl.h p_spec.h \
+ p_setup.h p_saveg.h i_sound.h i_video.h r_sky.h i_system.h r_data.h \
+ r_state.h r_things.h r_plane.h s_sound.h st_stuff.h z_zone.h r_splats.h \
+ hu_stuff.h console.h m_misc.h m_random.h dehacked.h r_main.h m_argv.h \
+ md5.h
+../objs/Linux/SDL/Release/p_sight.o: p_sight.c doomdef.h doomtype.h g_state.h m_swap.h doomstat.h \
+ doomdata.h d_player.h p_pspr.h m_fixed.h tables.h info.h d_think.h \
+ sounds.h p_mobj.h d_ticcmd.h d_clisrv.h d_netcmd.h command.h dstrings.h \
+ p_local.h m_bbox.h p_tick.h r_defs.h screen.h p_polyobj.h m_dllist.h \
+ p_maputl.h p_spec.h r_main.h r_data.h r_state.h
+../objs/Linux/SDL/Release/p_spec.o: p_spec.c doomdef.h doomtype.h g_state.h m_swap.h g_game.h \
+ doomstat.h doomdata.h d_player.h p_pspr.h m_fixed.h tables.h info.h \
+ d_think.h sounds.h p_mobj.h d_ticcmd.h d_clisrv.h d_netcmd.h command.h \
+ dstrings.h d_event.h p_local.h m_bbox.h p_tick.h r_defs.h screen.h \
+ p_polyobj.h m_dllist.h p_maputl.h p_spec.h p_setup.h r_data.h r_state.h \
+ m_random.h i_system.h s_sound.h w_wad.h z_zone.h r_main.h r_sky.h \
+ hu_stuff.h
+../objs/Linux/SDL/Release/p_telept.o: p_telept.c doomdef.h doomtype.h g_state.h m_swap.h g_game.h \
+ doomstat.h doomdata.h d_player.h p_pspr.h m_fixed.h tables.h info.h \
+ d_think.h sounds.h p_mobj.h d_ticcmd.h d_clisrv.h d_netcmd.h command.h \
+ dstrings.h d_event.h p_local.h m_bbox.h p_tick.h r_defs.h screen.h \
+ p_polyobj.h m_dllist.h p_maputl.h p_spec.h r_state.h r_data.h s_sound.h \
+ r_main.h
+../objs/Linux/SDL/Release/p_tick.o: p_tick.c doomstat.h doomdata.h doomtype.h doomdef.h g_state.h \
+ m_swap.h d_player.h p_pspr.h m_fixed.h tables.h info.h d_think.h \
+ sounds.h p_mobj.h d_ticcmd.h d_clisrv.h d_netcmd.h command.h dstrings.h \
+ g_game.h d_event.h p_local.h m_bbox.h p_tick.h r_defs.h screen.h \
+ p_polyobj.h m_dllist.h p_maputl.h p_spec.h z_zone.h s_sound.h st_stuff.h \
+ m_random.h
+../objs/Linux/SDL/Release/p_user.o: p_user.c doomdef.h doomtype.h g_state.h m_swap.h i_system.h \
+ d_ticcmd.h m_fixed.h d_event.h d_net.h g_game.h doomstat.h doomdata.h \
+ d_player.h p_pspr.h tables.h info.h d_think.h sounds.h p_mobj.h \
+ d_clisrv.h d_netcmd.h command.h dstrings.h p_local.h m_bbox.h p_tick.h \
+ r_defs.h screen.h p_polyobj.h m_dllist.h p_maputl.h p_spec.h r_main.h \
+ r_data.h r_state.h s_sound.h r_things.h r_plane.h r_sky.h p_setup.h \
+ m_random.h m_misc.h w_wad.h i_video.h r_splats.h z_zone.h hu_stuff.h
+../objs/Linux/SDL/Release/r_bsp.o: r_bsp.c doomdef.h doomtype.h g_state.h m_swap.h g_game.h \
+ doomstat.h doomdata.h d_player.h p_pspr.h m_fixed.h tables.h info.h \
+ d_think.h sounds.h p_mobj.h d_ticcmd.h d_clisrv.h d_netcmd.h command.h \
+ dstrings.h d_event.h r_local.h screen.h m_bbox.h r_main.h r_data.h \
+ r_defs.h p_polyobj.h m_dllist.h r_state.h r_bsp.h r_segs.h r_plane.h \
+ r_sky.h r_things.h r_draw.h r_splats.h p_local.h p_tick.h p_maputl.h \
+ p_spec.h z_zone.h
+../objs/Linux/SDL/Release/r_data.o: r_data.c doomdef.h doomtype.h g_state.h m_swap.h g_game.h \
+ doomstat.h doomdata.h d_player.h p_pspr.h m_fixed.h tables.h info.h \
+ d_think.h sounds.h p_mobj.h d_ticcmd.h d_clisrv.h d_netcmd.h command.h \
+ dstrings.h d_event.h i_video.h r_local.h screen.h m_bbox.h r_main.h \
+ r_data.h r_defs.h p_polyobj.h m_dllist.h r_state.h r_bsp.h r_segs.h \
+ r_plane.h r_sky.h r_things.h r_draw.h p_local.h p_tick.h p_maputl.h \
+ p_spec.h m_misc.h w_wad.h z_zone.h p_setup.h v_video.h
+../objs/Linux/SDL/Release/r_draw.o: r_draw.c doomdef.h doomtype.h g_state.h m_swap.h doomstat.h \
+ doomdata.h d_player.h p_pspr.h m_fixed.h tables.h info.h d_think.h \
+ sounds.h p_mobj.h d_ticcmd.h d_clisrv.h d_netcmd.h command.h dstrings.h \
+ r_local.h screen.h m_bbox.h r_main.h r_data.h r_defs.h p_polyobj.h \
+ m_dllist.h r_state.h r_bsp.h r_segs.h r_plane.h r_sky.h r_things.h \
+ r_draw.h st_stuff.h d_event.h i_video.h v_video.h m_misc.h w_wad.h \
+ z_zone.h console.h r_draw8.c r_draw16.c
+../objs/Linux/SDL/Release/r_draw16.o: r_draw16.c
+../objs/Linux/SDL/Release/r_draw8.o: r_draw8.c
+../objs/Linux/SDL/Release/r_main.o: r_main.c doomdef.h doomtype.h g_state.h m_swap.h g_game.h \
+ doomstat.h doomdata.h d_player.h p_pspr.h m_fixed.h tables.h info.h \
+ d_think.h sounds.h p_mobj.h d_ticcmd.h d_clisrv.h d_netcmd.h command.h \
+ dstrings.h d_event.h g_input.h keys.h r_local.h screen.h m_bbox.h \
+ r_main.h r_data.h r_defs.h p_polyobj.h m_dllist.h r_state.h r_bsp.h \
+ r_segs.h r_plane.h r_sky.h r_things.h r_draw.h r_splats.h st_stuff.h \
+ p_local.h p_tick.h p_maputl.h p_spec.h i_video.h m_menu.h am_map.h \
+ d_main.h w_wad.h v_video.h
+../objs/Linux/SDL/Release/r_plane.o: r_plane.c doomdef.h doomtype.h g_state.h m_swap.h console.h \
+ d_event.h command.h dstrings.h g_game.h doomstat.h doomdata.h d_player.h \
+ p_pspr.h m_fixed.h tables.h info.h d_think.h sounds.h p_mobj.h \
+ d_ticcmd.h d_clisrv.h d_netcmd.h r_data.h r_defs.h screen.h p_polyobj.h \
+ m_dllist.h r_state.h r_local.h m_bbox.h r_main.h r_bsp.h r_segs.h \
+ r_plane.h r_sky.h r_things.h r_draw.h r_splats.h v_video.h w_wad.h \
+ z_zone.h p_tick.h p_setup.h
+../objs/Linux/SDL/Release/r_segs.o: r_segs.c doomdef.h doomtype.h g_state.h m_swap.h r_local.h \
+ tables.h m_fixed.h screen.h command.h dstrings.h m_bbox.h r_main.h \
+ d_player.h p_pspr.h info.h d_think.h sounds.h p_mobj.h doomdata.h \
+ d_ticcmd.h r_data.h r_defs.h p_polyobj.h m_dllist.h r_state.h r_bsp.h \
+ r_segs.h r_plane.h r_sky.h r_things.h r_draw.h r_splats.h w_wad.h \
+ z_zone.h d_netcmd.h m_misc.h p_local.h p_tick.h p_maputl.h p_spec.h \
+ console.h d_event.h
+../objs/Linux/SDL/Release/r_sky.o: r_sky.c doomdef.h doomtype.h g_state.h m_swap.h doomstat.h \
+ doomdata.h d_player.h p_pspr.h m_fixed.h tables.h info.h d_think.h \
+ sounds.h p_mobj.h d_ticcmd.h d_clisrv.h d_netcmd.h command.h dstrings.h \
+ r_sky.h r_local.h screen.h m_bbox.h r_main.h r_data.h r_defs.h \
+ p_polyobj.h m_dllist.h r_state.h r_bsp.h r_segs.h r_plane.h r_things.h \
+ r_draw.h w_wad.h z_zone.h p_maputl.h
+../objs/Linux/SDL/Release/r_splats.o: r_splats.c r_draw.h r_defs.h m_fixed.h doomtype.h d_think.h \
+ p_mobj.h tables.h doomdata.h doomdef.h g_state.h m_swap.h info.h \
+ sounds.h screen.h command.h dstrings.h p_polyobj.h m_dllist.h r_main.h \
+ d_player.h p_pspr.h d_ticcmd.h r_data.h r_state.h r_plane.h r_splats.h \
+ w_wad.h z_zone.h d_netcmd.h
+../objs/Linux/SDL/Release/r_things.o: r_things.c doomdef.h doomtype.h g_state.h m_swap.h console.h \
+ d_event.h command.h dstrings.h g_game.h doomstat.h doomdata.h d_player.h \
+ p_pspr.h m_fixed.h tables.h info.h d_think.h sounds.h p_mobj.h \
+ d_ticcmd.h d_clisrv.h d_netcmd.h r_local.h screen.h m_bbox.h r_main.h \
+ r_data.h r_defs.h p_polyobj.h m_dllist.h r_state.h r_bsp.h r_segs.h \
+ r_plane.h r_sky.h r_things.h r_draw.h st_stuff.h w_wad.h z_zone.h \
+ m_misc.h i_video.h i_system.h p_tick.h p_local.h p_maputl.h p_spec.h
+../objs/Linux/SDL/Release/s_sound.o: s_sound.c doomdef.h doomtype.h g_state.h m_swap.h doomstat.h \
+ doomdata.h d_player.h p_pspr.h m_fixed.h tables.h info.h d_think.h \
+ sounds.h p_mobj.h d_ticcmd.h d_clisrv.h d_netcmd.h command.h dstrings.h \
+ g_game.h d_event.h m_argv.h r_main.h r_data.h r_defs.h screen.h \
+ p_polyobj.h m_dllist.h r_state.h r_things.h r_plane.h i_system.h \
+ i_sound.h s_sound.h w_wad.h z_zone.h d_main.h r_sky.h p_local.h m_bbox.h \
+ p_tick.h p_maputl.h p_spec.h
+../objs/Linux/SDL/Release/screen.o: screen.c doomdef.h doomtype.h g_state.h m_swap.h doomstat.h \
+ doomdata.h d_player.h p_pspr.h m_fixed.h tables.h info.h d_think.h \
+ sounds.h p_mobj.h d_ticcmd.h d_clisrv.h d_netcmd.h command.h dstrings.h \
+ screen.h console.h d_event.h am_map.h i_system.h i_video.h r_local.h \
+ m_bbox.h r_main.h r_data.h r_defs.h p_polyobj.h m_dllist.h r_state.h \
+ r_bsp.h r_segs.h r_plane.h r_sky.h r_things.h r_draw.h m_argv.h m_misc.h \
+ w_wad.h v_video.h st_stuff.h hu_stuff.h z_zone.h d_main.h f_finale.h
+../objs/Linux/SDL/Release/sounds.o: sounds.c doomtype.h i_sound.h doomdef.h g_state.h m_swap.h \
+ sounds.h command.h dstrings.h r_defs.h m_fixed.h d_think.h p_mobj.h \
+ tables.h doomdata.h info.h screen.h p_polyobj.h m_dllist.h r_things.h \
+ r_plane.h r_data.h r_state.h d_player.h p_pspr.h d_ticcmd.h z_zone.h \
+ w_wad.h
+../objs/Linux/SDL/Release/st_stuff.o: st_stuff.c doomdef.h doomtype.h g_state.h m_swap.h g_game.h \
+ doomstat.h doomdata.h d_player.h p_pspr.h m_fixed.h tables.h info.h \
+ d_think.h sounds.h p_mobj.h d_ticcmd.h d_clisrv.h d_netcmd.h command.h \
+ dstrings.h d_event.h r_local.h screen.h m_bbox.h r_main.h r_data.h \
+ r_defs.h p_polyobj.h m_dllist.h r_state.h r_bsp.h r_segs.h r_plane.h \
+ r_sky.h r_things.h r_draw.h p_local.h p_tick.h p_maputl.h p_spec.h \
+ f_finale.h st_stuff.h i_video.h v_video.h z_zone.h hu_stuff.h w_wad.h \
+ s_sound.h i_system.h m_menu.h
+../objs/Linux/SDL/Release/string.o: string.c doomdef.h doomtype.h g_state.h m_swap.h
+../objs/Linux/SDL/Release/tables.o: tables.c tables.h m_fixed.h doomtype.h
+../objs/Linux/SDL/Release/v_video.o: v_video.c doomdef.h doomtype.h g_state.h m_swap.h r_local.h \
+ tables.h m_fixed.h screen.h command.h dstrings.h m_bbox.h r_main.h \
+ d_player.h p_pspr.h info.h d_think.h sounds.h p_mobj.h doomdata.h \
+ d_ticcmd.h r_data.h r_defs.h p_polyobj.h m_dllist.h r_state.h r_bsp.h \
+ r_segs.h r_plane.h r_sky.h r_things.h r_draw.h v_video.h hu_stuff.h \
+ d_event.h w_wad.h console.h i_video.h z_zone.h m_misc.h m_random.h \
+ doomstat.h d_clisrv.h d_netcmd.h p_local.h p_tick.h p_maputl.h p_spec.h
+../objs/Linux/SDL/Release/w_wad.o: w_wad.c lzf.h doomdef.h doomtype.h g_state.h m_swap.h w_wad.h \
+ z_zone.h i_video.h d_netfil.h dehacked.h d_clisrv.h d_ticcmd.h m_fixed.h \
+ d_netcmd.h command.h dstrings.h tables.h d_player.h p_pspr.h info.h \
+ d_think.h sounds.h p_mobj.h doomdata.h r_defs.h screen.h p_polyobj.h \
+ m_dllist.h i_system.h d_event.h md5.h
+../objs/Linux/SDL/Release/y_inter.o: y_inter.c doomdef.h doomtype.h g_state.h m_swap.h doomstat.h \
+ doomdata.h d_player.h p_pspr.h m_fixed.h tables.h info.h d_think.h \
+ sounds.h p_mobj.h d_ticcmd.h d_clisrv.h d_netcmd.h command.h dstrings.h \
+ d_main.h d_event.h w_wad.h f_finale.h g_game.h hu_stuff.h r_defs.h \
+ screen.h p_polyobj.h m_dllist.h i_net.h i_video.h p_tick.h r_things.h \
+ r_plane.h r_data.h r_state.h s_sound.h st_stuff.h v_video.h y_inter.h \
+ z_zone.h m_menu.h m_misc.h i_system.h r_local.h m_bbox.h r_main.h \
+ r_bsp.h r_segs.h r_sky.h r_draw.h p_local.h p_maputl.h p_spec.h
+../objs/Linux/SDL/Release/z_zone.o: z_zone.c doomdef.h doomtype.h g_state.h m_swap.h doomstat.h \
+ doomdata.h d_player.h p_pspr.h m_fixed.h tables.h info.h d_think.h \
+ sounds.h p_mobj.h d_ticcmd.h d_clisrv.h d_netcmd.h command.h dstrings.h \
+ i_system.h d_event.h i_video.h z_zone.h m_misc.h w_wad.h
+../objs/Linux/SDL/Release/IMG_xpm.o: sdl/IMG_xpm.c
+../objs/Linux/SDL/Release/dosstr.o: sdl/dosstr.c sdl/../doomtype.h
+../objs/Linux/SDL/Release/endtxt.o: sdl/endtxt.c sdl/../doomdef.h sdl/../doomtype.h \
+ sdl/../g_state.h sdl/../m_swap.h sdl/../w_wad.h sdl/../z_zone.h \
+ sdl/endtxt.h
+../objs/Linux/SDL/Release/hwsym_sdl.o: sdl/hwsym_sdl.c sdl/hwsym_sdl.h sdl/../doomdef.h \
+ sdl/../doomtype.h sdl/../g_state.h sdl/../m_swap.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_main.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_stdinc.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_config.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_platform.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/begin_code.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/close_code.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_audio.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_error.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_endian.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_mutex.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_thread.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_rwops.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_cdrom.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_cpuinfo.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_events.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_active.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_keyboard.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_keysym.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_mouse.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_video.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_joystick.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_quit.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_loadso.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_timer.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_version.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_loadso.h
+../objs/Linux/SDL/Release/i_cdmus.o: sdl/i_cdmus.c \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_main.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_stdinc.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_config.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_platform.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/begin_code.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/close_code.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_audio.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_error.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_endian.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_mutex.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_thread.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_rwops.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_cdrom.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_cpuinfo.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_events.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_active.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_keyboard.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_keysym.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_mouse.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_video.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_joystick.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_quit.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_loadso.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_timer.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_version.h \
+ sdl/../doomtype.h sdl/../i_sound.h sdl/../doomdef.h sdl/../doomtype.h \
+ sdl/../g_state.h sdl/../m_swap.h sdl/../sounds.h sdl/../command.h \
+ sdl/../dstrings.h sdl/../command.h sdl/../m_argv.h sdl/../s_sound.h \
+ sdl/../m_fixed.h
+../objs/Linux/SDL/Release/i_main.o: sdl/i_main.c sdl/../doomdef.h sdl/../doomtype.h \
+ sdl/../g_state.h sdl/../m_swap.h sdl/../m_argv.h sdl/../d_main.h \
+ sdl/../d_event.h sdl/../w_wad.h sdl/../i_system.h sdl/../d_ticcmd.h \
+ sdl/../m_fixed.h
+../objs/Linux/SDL/Release/i_net.o: sdl/i_net.c sdl/../doomdef.h sdl/../doomtype.h sdl/../g_state.h \
+ sdl/../m_swap.h sdl/../i_system.h sdl/../d_ticcmd.h sdl/../m_fixed.h \
+ sdl/../d_event.h sdl/../d_event.h sdl/../d_net.h sdl/../m_argv.h \
+ sdl/../doomstat.h sdl/../doomdata.h sdl/../doomdef.h sdl/../d_player.h \
+ sdl/../p_pspr.h sdl/../tables.h sdl/../info.h sdl/../d_think.h \
+ sdl/../sounds.h sdl/../p_mobj.h sdl/../d_clisrv.h sdl/../d_netcmd.h \
+ sdl/../command.h sdl/../dstrings.h sdl/../i_net.h sdl/../z_zone.h \
+ sdl/../i_tcp.h
+../objs/Linux/SDL/Release/i_sound.o: sdl/i_sound.c sdl/../doomtype.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_main.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_stdinc.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_config.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_platform.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/begin_code.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/close_code.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_audio.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_error.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_endian.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_mutex.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_thread.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_rwops.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_cdrom.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_cpuinfo.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_events.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_active.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_keyboard.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_keysym.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_mouse.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_video.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_joystick.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_quit.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_loadso.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_timer.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_version.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_mixer.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_types.h \
+ sdl/../z_zone.h sdl/../doomtype.h sdl/../m_swap.h sdl/../i_system.h \
+ sdl/../d_ticcmd.h sdl/../m_fixed.h sdl/../d_event.h sdl/../g_state.h \
+ sdl/../i_sound.h sdl/../doomdef.h sdl/../m_swap.h sdl/../sounds.h \
+ sdl/../command.h sdl/../dstrings.h sdl/../m_argv.h sdl/../m_misc.h \
+ sdl/../w_wad.h sdl/../w_wad.h sdl/../screen.h sdl/../doomdef.h \
+ sdl/../doomstat.h sdl/../doomdata.h sdl/../d_player.h sdl/../p_pspr.h \
+ sdl/../tables.h sdl/../info.h sdl/../d_think.h sdl/../p_mobj.h \
+ sdl/../d_clisrv.h sdl/../d_netcmd.h sdl/../s_sound.h sdl/../d_main.h
+../objs/Linux/SDL/Release/i_system.o: sdl/i_system.c \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_main.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_stdinc.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_config.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_platform.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/begin_code.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/close_code.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_audio.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_error.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_endian.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_mutex.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_thread.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_rwops.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_cdrom.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_cpuinfo.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_events.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_active.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_keyboard.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_keysym.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_mouse.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_video.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_joystick.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_quit.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_loadso.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_timer.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_version.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_cpuinfo.h \
+ sdl/../doomdef.h sdl/../doomtype.h sdl/../g_state.h sdl/../m_swap.h \
+ sdl/../m_misc.h sdl/../w_wad.h sdl/../i_video.h sdl/../i_sound.h \
+ sdl/../doomdef.h sdl/../sounds.h sdl/../command.h sdl/../dstrings.h \
+ sdl/../i_system.h sdl/../d_ticcmd.h sdl/../m_fixed.h sdl/../d_event.h \
+ sdl/../screen.h sdl/../d_net.h sdl/../g_game.h sdl/../doomstat.h \
+ sdl/../doomdata.h sdl/../d_player.h sdl/../p_pspr.h sdl/../tables.h \
+ sdl/../info.h sdl/../d_think.h sdl/../p_mobj.h sdl/../d_clisrv.h \
+ sdl/../d_netcmd.h sdl/../filesrch.h sdl/../d_netfil.h sdl/endtxt.h \
+ sdl/sdlmain.h sdl/../i_joy.h sdl/../g_input.h sdl/../keys.h \
+ sdl/../m_argv.h sdl/../d_main.h
+../objs/Linux/SDL/Release/i_video.o: sdl/i_video.c \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_main.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_stdinc.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_config.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_platform.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/begin_code.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/close_code.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_audio.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_error.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_endian.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_mutex.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_thread.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_rwops.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_cdrom.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_cpuinfo.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_events.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_active.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_keyboard.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_keysym.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_mouse.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_video.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_joystick.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_quit.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_loadso.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_timer.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_version.h \
+ sdl/../doomdef.h sdl/../doomtype.h sdl/../g_state.h sdl/../m_swap.h \
+ sdl/../doomstat.h sdl/../doomdata.h sdl/../doomdef.h sdl/../d_player.h \
+ sdl/../p_pspr.h sdl/../m_fixed.h sdl/../tables.h sdl/../info.h \
+ sdl/../d_think.h sdl/../sounds.h sdl/../p_mobj.h sdl/../d_ticcmd.h \
+ sdl/../d_clisrv.h sdl/../d_netcmd.h sdl/../command.h sdl/../dstrings.h \
+ sdl/../i_system.h sdl/../d_event.h sdl/../v_video.h sdl/../r_defs.h \
+ sdl/../screen.h sdl/../p_polyobj.h sdl/../m_dllist.h sdl/../m_argv.h \
+ sdl/../m_menu.h sdl/../d_main.h sdl/../w_wad.h sdl/../s_sound.h \
+ sdl/../i_sound.h sdl/../i_joy.h sdl/../g_input.h sdl/../keys.h \
+ sdl/../st_stuff.h sdl/../g_game.h sdl/../doomstat.h sdl/../i_video.h \
+ sdl/../console.h sdl/../command.h sdl/sdlmain.h
+../objs/Linux/SDL/Release/ogl_sdl.o: sdl/ogl_sdl.c \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_main.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_stdinc.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_config.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_platform.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/begin_code.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/close_code.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_audio.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_error.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_endian.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_mutex.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_thread.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_rwops.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_cdrom.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_cpuinfo.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_events.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_active.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_keyboard.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_keysym.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_mouse.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_video.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_joystick.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_quit.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_loadso.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_timer.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/SDL/SDL_version.h \
+ sdl/../doomdef.h sdl/../doomtype.h sdl/../g_state.h sdl/../m_swap.h

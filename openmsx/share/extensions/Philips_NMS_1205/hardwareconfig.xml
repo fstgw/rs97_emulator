@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<!-- $Id: hardwareconfig.xml 6799 2007-08-04 22:24:13Z manuelbi $ -->
+<!DOCTYPE msxconfig SYSTEM 'msxconfig2.dtd'>
+<msxconfig>
+  <info>
+    <name>Music-Module</name>
+    <manufacturer>Philips</manufacturer>
+    <code>NMS-1205</code>
+    <release_year>1986</release_year>
+    <description>Philips' Yamaha Y8950 MSX-AUDIO cartridge with sound sampler and MIDI.</description>
+    <type>sound expansion</type>
+  </info>
+  <devices>
+    <MSX-AUDIO id="Philips NMS 1205 Music Module MSX-Audio">
+      <io base="0xC0" num="2"/>
+      <io base="0x0A" num="1" type="O"/>
+      <type>Philips</type>
+      <sound>
+        <volume>12000</volume>
+      </sound>
+      <sampleram>32</sampleram>
+    </MSX-AUDIO>
+
+    <MusicModuleMIDI id="Philips NMS 1205 Music Module MSX-Audio-MIDI">
+      <io base="0x00" num="2" type="O"/>
+      <io base="0x04" num="2" type="I"/>
+    </MusicModuleMIDI>
+
+    <primary slot="any">
+      <secondary slot="any">
+        <ROM id="Philips NMS 1205 Music Module ROM Music Box">
+          <mem base="0x4000" size="0x8000"/>
+          <rom>
+            <sha1>c7463e1fd0433c5d41b70670d6c10fd781b66426</sha1>
+            <filename>roms/nms1205.rom</filename>
+          </rom>
+        </ROM>
+      </secondary>
+    </primary>
+  </devices>
+</msxconfig>

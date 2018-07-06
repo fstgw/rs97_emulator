@@ -1,0 +1,172 @@
+list.lo: \
+ /home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/list.c \
+ /home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/libxml.h \
+ config.h include/libxml/xmlversion.h \
+ /home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/xmlexports.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/stdio.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/features.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/uClibc_config.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/sys/cdefs.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/lib/gcc/mipsel-buildroot-linux-uclibc/5.4.0/include/stddef.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/types.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/wordsize.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/typesizes.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/uClibc_stdio.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/wchar.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/wchar.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/pthreadtypes.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/endian.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/endian.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/byteswap.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/byteswap.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/byteswap-common.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/byteswap-16.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/sgidefs.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/lib/gcc/mipsel-buildroot-linux-uclibc/5.4.0/include/stdarg.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/stdio_lim.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/stdlib.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/waitflags.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/waitstatus.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/sys/types.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/time.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/sys/select.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/select.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/sigset.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/time.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/sys/sysmacros.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/alloca.h \
+ /home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/string.h \
+ /home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/xmlmemory.h \
+ /home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/threads.h \
+ /home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/globals.h \
+ /home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/parser.h \
+ /home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/tree.h \
+ /home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/xmlstring.h \
+ /home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/xmlregexp.h \
+ /home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/dict.h \
+ /home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/hash.h \
+ /home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/valid.h \
+ /home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/xmlerror.h \
+ /home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/list.h \
+ /home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/xmlautomata.h \
+ /home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/entities.h \
+ /home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/encoding.h \
+ /home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/xmlIO.h \
+ /home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/SAX.h \
+ /home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/xlink.h \
+ /home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/SAX2.h \
+ /home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/elfgcchack.h
+
+/home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/libxml.h:
+
+config.h:
+
+include/libxml/xmlversion.h:
+
+/home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/xmlexports.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/stdio.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/features.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/uClibc_config.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/sys/cdefs.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/lib/gcc/mipsel-buildroot-linux-uclibc/5.4.0/include/stddef.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/types.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/wordsize.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/typesizes.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/uClibc_stdio.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/wchar.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/wchar.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/pthreadtypes.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/endian.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/endian.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/byteswap.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/byteswap.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/byteswap-common.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/byteswap-16.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/sgidefs.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/lib/gcc/mipsel-buildroot-linux-uclibc/5.4.0/include/stdarg.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/stdio_lim.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/stdlib.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/waitflags.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/waitstatus.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/sys/types.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/time.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/sys/select.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/select.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/sigset.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/bits/time.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/sys/sysmacros.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/alloca.h:
+
+/home/steward/Downloads/buildroot-2017.02.9/output/host/usr/mipsel-buildroot-linux-uclibc/sysroot/usr/include/string.h:
+
+/home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/xmlmemory.h:
+
+/home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/threads.h:
+
+/home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/globals.h:
+
+/home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/parser.h:
+
+/home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/tree.h:
+
+/home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/xmlstring.h:
+
+/home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/xmlregexp.h:
+
+/home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/dict.h:
+
+/home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/hash.h:
+
+/home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/valid.h:
+
+/home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/xmlerror.h:
+
+/home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/list.h:
+
+/home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/xmlautomata.h:
+
+/home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/entities.h:
+
+/home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/encoding.h:
+
+/home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/xmlIO.h:
+
+/home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/SAX.h:
+
+/home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/xlink.h:
+
+/home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/include/libxml/SAX2.h:
+
+/home/steward/Downloads/openmsx-0.9.1/derived/3rdparty/src/libxml2-2.8.0/elfgcchack.h:

@@ -1,0 +1,53 @@
+COREDEFS += -DTINY_COMPILE=1
+# uncomment the following lines to include a CPU core
+CPUS+=Z80@
+CPUS+=M6809@
+CPUS+=M68000@
+CPUS+=M68010@
+CPUS+=M68EC020@
+CPUS+=M68020@
+
+# uncomment the following lines to include a sound core
+SOUNDS+=CUSTOM@
+SOUNDS+=SAMPLES@
+SOUNDS+=DAC@
+SOUNDS+=DISCRETE@
+SOUNDS+=AY8910@
+SOUNDS+=YM2203@
+# enable only one of the following two
+#SOUNDS+=YM2151@
+SOUNDS+=YM2151_ALT@
+SOUNDS+=ADPCM@
+SOUNDS+=SEGAPCM@
+SOUNDS+=YM2612@
+SOUNDS+=YM2413@
+SOUNDS+=YM3438@
+SOUNDS+=SN76496@
+SOUNDS+=MSM5205@
+SOUNDS+=RF5C68@
+SOUNDS+=UPD7759@
+SOUNDS+=SP0250@
+SOUNDS+=POKEY@
+SOUNDS+=TMS5220@
+
+DRVLIBS = $(OBJ)/sega.a
+
+$(OBJ)/sega.a: \
+    	$(OBJ)/machine/segacrpt.o $(OBJ)/sndhrdw/segasnd.o \
+	$(OBJ)/vidhrdw/system1.o $(OBJ)/drivers/system1.o \
+	$(OBJ)/vidhrdw/segasyse.o $(OBJ)/drivers/segasyse.o \
+	$(OBJ)/machine/system16.o $(OBJ)/vidhrdw/system16.o $(OBJ)/vidhrdw/sys16spr.o \
+	$(OBJ)/sndhrdw/system16.o \
+	$(OBJ)/drivers/system16.o $(OBJ)/drivers/aburner.o $(OBJ)/drivers/outrun.o \
+	$(OBJ)/drivers/sharrier.o $(OBJ)/drivers/system18.o \
+	$(OBJ)/machine/irobot.o $(OBJ)/vidhrdw/irobot.o $(OBJ)/drivers/irobot.o \
+	$(OBJ)/machine/starwars.o $(OBJ)/sndhrdw/starwars.o $(OBJ)/drivers/starwars.o \
+
+COREOBJS += $(OBJ)/driver.o $(OBJ)/cheat.o
+
+# generated text files
+TEXTS += gamelist.txt
+
+gamelist.txt: $(EMULATOR)
+	@echo Generating $@...
+	@$(CURPATH)$(EMULATOR) -gamelist -noclones -sortname > docs/gamelist.txt

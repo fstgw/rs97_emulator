@@ -1,0 +1,84 @@
+#!/bin/sh
+
+type=debug
+
+sdlver=`sdl-config --version`
+sdlver1=`echo $sdlver | cut -d. -f1`
+sdlver2=`echo $sdlver | cut -d. -f2`
+sdlver3=`echo $sdlver | cut -d. -f3`
+
+if [ -z $CC ]; then
+echo -n "Checking for gcc..."
+  if [ -x /usr/bin/gcc ]; then
+     echo "Found"
+     CC=gcc
+  elif [ -x /usr/bin/cc ]; then
+     echo "Found"
+     CC=cc
+  else
+     echo "No gcc found, if this is in error, specific the CC variable at the top of the Configure script."
+  fi
+fi 
+
+echo -n "Checking for SDL..."
+if [ "$sdlver1" -ge "1" ]; then
+    if [ "$sdlver2" -ge "2" ]; then
+       if [ "$sdlver3" -ge "0" ]; then
+          echo "Found"
+        else
+          echo "Not found"
+          echo
+          echo "You need to install SDL 1.2.0 or higher."
+          exit 0
+       fi
+    else
+      echo "Not found"
+      echo 
+      echo "You need to install SDL 1.2.0 or higher."
+      exit 0
+    fi
+    else
+      echo "Not found"
+      echo 
+      echo "You need to install SDL 1.2.0 or higher."
+      exit 0
+fi
+
+echo -n "Detecting OS..."
+OS=`uname`
+
+if echo $OS |grep BSD; then
+   OS=BSD
+else
+  echo $OS
+fi
+
+
+if [ "${OS}" == "BSD" ]; then
+   LDFLAGS="`sdl-config --libs` -lm -L/usr/X11R6/lib -lX11 -lXext -lXxf86dga -lXxf86misc -lXxf86vm"
+elif [ "${OS}" == "Linux" ]; then
+   LDFLAGS="`sdl-config --libs`"
+elif [ "${OS}" == "BeOS" ]; then
+   LDFLAGS="`sdl-config --libs`"
+elif  [ "${OS}" == "UNIX" ]; then
+   LDFLAGS="`sdl-config --libs`"
+fi
+
+echo -n "Checking Release Type..."
+if [ "${type}" == "debug" ]; then
+   echo "Debug"
+   CFLAGS="-Wall -g `sdl-config --cflags`"
+else
+   echo "Release"
+   CFLAGS="-Wall -O3 -funroll-loops -fexpensive-optimizations `sdl-config --cflags`"
+fi
+
+if [ -f Makefile ]; then
+   mv Makefile Makefile.old
+fi
+
+echo "CC=$CC">Makefile
+echo "CFLAGS=$CFLAGS">>Makefile
+echo "LDFLAGS=$LDFLAGS">>Makefile
+cat Makefile.temp >>Makefile
+

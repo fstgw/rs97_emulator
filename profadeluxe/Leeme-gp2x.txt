@@ -1,0 +1,64 @@
+============================
+ABUSIMBEL PROFANATION DELUXE
+============================
+
+Hola a todos..
+
+Os presento una versión mejorada de este juego.
+
+Esta vez he querido ser un poco más fiel al 
+original, al tiempo que se mejoran los gráficos,
+en tamaño y calidad,así como el sonido y la 
+música.
+
+Espero que disfruteis con este juego..
+
+Durante la partida, podeis activar el modo de 
+vidas infinitas con la siguiente combinación de 
+teclas de la GP2X-F200 (en modelos anteriores no
+sé si estos son los nombres correctos de las 
+teclas).
+
+Pulsad la teclas de una a una y despacito.
+
+Pulsad: select
+Pulsad: cursor arriba
+Pulsad: cursor abajo
+Pulsad: cursor arriba
+Pulsad: cursor abajo
+Pulsad: select
+
+De esta forma se activa el modo truco, y una vez
+hecho esto con los cursores posicionas al 
+Personaje donde quieras y con "select" sigues la
+partida, también puedes cambiar de pantalla 
+antes de aceptar con "select", pulsando las 
+teclas "L" y "R" de la parte superior de la 
+consola.
+
+Las teclas son:
+Cursor Izquierdo y Cursor derecho: Movimiento.
+Cursor Y: Salto Largo.
+Cursor X: Salto Corto.
+Volumen +: Subir volumen.
+Volumen -: Bajar volumen.
+Home: Abortar la partida.
+Select: Aceptar o seleccionar.
+
+El juego es totalmente gratuito y los fuentes 
+están disponibles desde la web: 
+http://www.masoftware.es
+
+No me hago responsable de nada, je, je, esto lo 
+he hecho por divertirme y sin ningún ánimo de 
+lucro.
+
+Si detectais fallos, por favor avisadme.
+
+Saludos a todos y mucha suerte con el juego.
+
+-------------------------------------------
+Miguel Angel Jimenez Santana (M.A Software)
+E-mail: masoftware@terra.es
+Web: http://www.masoftware.es
+-------------------------------------------

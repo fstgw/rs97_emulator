@@ -1,0 +1,6 @@
+platform_minix_runtime_os.o: platform_minix_runtime_os.c ../../src/vice.h \
+ ../../src/config.h
+
+../../src/vice.h:
+
+../../src/config.h:

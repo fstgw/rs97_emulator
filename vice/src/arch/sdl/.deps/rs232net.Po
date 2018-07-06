@@ -1,0 +1,5 @@
+rs232net.o: rs232net.c ../../../src/vice.h ../../../src/config.h
+
+../../../src/vice.h:
+
+../../../src/config.h:
